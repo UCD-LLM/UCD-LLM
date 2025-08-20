@@ -1,0 +1,9 @@
+I hope to develop a teleconference software to provide a convenient, efficient, and reliable teleconference solution. The specific requirements are as follows:
+1. User login and authentication function: Users can log in to the system using their username and password, and authentication is required before logging in.
+2. Create and Join Meetings: Users can create new conference calls and invite other users to join the meeting. Users can also accept invitations from others and join existing conference calls.
+3. Meeting management function: Users can manage created conference calls, including setting meeting times, adding, editing, and deleting meeting participants.
+4. Conference control function: Users can perform control operations during conference calls, such as muting, unmuting, hanging up, etc.
+5. Recording and playback function: Users can choose to record a conference call and play back the conference recording in the future.
+6. Screen and file sharing function: Users can share their screens or files with other meeting participants and collaborate.
+7. Data statistics and reporting function: The system can collect and summarize meeting data, generate corresponding reports to assist users in meeting efficiency analysis and decision-making.
+The above is my requirement description for conference call software, hoping to develop a high-quality product that meets the above requirements.

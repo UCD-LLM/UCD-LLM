@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "Customer"
+actor "Administrator"
+usecase "Place Order"
+usecase "Log In"
+usecase "Verify Credit Card Information"
+usecase "Modify Product Information"
+usecase "Browse Products"
+usecase "Add Product"
+usecase "Enter Product Information"
+"Customer"--"Browse Products"
+"Customer"--"Log In"
+"Customer"--"Place Order"
+"Administrator"--"Enter Product Information"
+"Administrator"--"Add Product"
+"Administrator"--"Modify Product Information"
+"Verify Credit Card Information"<|."Place Order": <<include>>
+@enduml

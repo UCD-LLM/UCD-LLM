@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Family Members",
+        "Administrators",
+        "Guests",
+        "Security Monitoring Service",
+        "Home Appliance Repairman"
+    ],
+    "usecases": [
+        "Control Lights",
+        "Adjust Temperature",
+        "Operate Curtains",
+        "Check Security Status",
+        "Access Energy Consumption Data",
+        "Add New Devices",
+        "Delete Devices",
+        "Manage Accounts",
+        "Set Up Automation Scenarios",
+        "Configure Security Rules",
+        "Control Lighting (Guest)",
+        "Adjust Temperature (Guest)",
+        "Receive Alarm Information",
+        "Push Alarm Notifications",
+        "Diagnose Faulty Equipment",
+        "Identify Problem",
+        "Update Firmware"
+    ],
+    "association_relationships": {
+        "Family Members": [
+            "Control Lights",
+            "Adjust Temperature",
+            "Operate Curtains",
+            "Check Security Status",
+            "Access Energy Consumption Data"
+        ],
+        "Administrators": [
+            "Control Lights",
+            "Adjust Temperature",
+            "Operate Curtains",
+            "Check Security Status",
+            "Access Energy Consumption Data",
+            "Add New Devices",
+            "Delete Devices",
+            "Manage Accounts",
+            "Set Up Automation Scenarios",
+            "Configure Security Rules"
+        ],
+        "Guests": [
+            "Control Lighting (Guest)",
+            "Adjust Temperature (Guest)"
+        ],
+        "Security Monitoring Service": [
+            "Receive Alarm Information",
+            "Push Alarm Notifications"
+        ],
+        "Home Appliance Repairman": [
+            "Diagnose Faulty Equipment",
+            "Identify Problem",
+            "Update Firmware"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Family Members": [
+            "Administrators"
+        ]
+    }
+}

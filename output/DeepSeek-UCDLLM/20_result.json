@@ -1,0 +1,44 @@
+{
+    "actors": [
+        "User",
+        "Technical Support Personnel"
+    ],
+    "usecases": [
+        "Provide Contact Information",
+        "Provide Problem Description",
+        "Allocate Work Orders",
+        "Process Work Orders",
+        "Select Problem Category",
+        "Submit Technical Support Work Order"
+    ],
+    "association_relationships": {
+        "User": [
+            "Submit Technical Support Work Order",
+            "Provide Problem Description",
+            "Select Problem Category",
+            "Provide Contact Information"
+        ],
+        "Technical Support Personnel": [
+            "Allocate Work Orders",
+            "Process Work Orders"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Technical Support Work Order": [
+            "Provide Contact Information",
+            "Provide Problem Description",
+            "Select Problem Category"
+        ],
+        "Process Work Orders": [
+            "Provide Problem Description",
+            "Allocate Work Orders",
+            "Submit Technical Support Work Order"
+        ],
+        "Allocate Work Orders": [
+            "Submit Technical Support Work Order"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

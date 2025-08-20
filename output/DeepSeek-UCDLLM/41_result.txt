@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+actor "Bloggers"
+actor "Administrators"
+usecase "Reply To Comments"
+usecase "Delete User Accounts"
+usecase "Create Blog Article"
+usecase "Manage User Accounts"
+usecase "View Comments"
+usecase "Set Article Keywords"
+usecase "Set Article Classification"
+usecase "Modify User Accounts"
+usecase "Add User Accounts"
+usecase "Edit Blog Article"
+usecase "Manage Comment Review Mechanism"
+usecase "Review Comments"
+usecase "Log In"
+usecase "Set Article Tags"
+usecase "Publish Blog Article"
+"Bloggers"--"Create Blog Article"
+"Bloggers"--"Edit Blog Article"
+"Bloggers"--"Publish Blog Article"
+"Bloggers"--"View Comments"
+"Bloggers"--"Review Comments"
+"Bloggers"--"Reply To Comments"
+"Administrators"--"Set Article Classification"
+"Administrators"--"Set Article Tags"
+"Administrators"--"Set Article Keywords"
+"Administrators"--"Manage Comment Review Mechanism"
+"Administrators"--"Manage User Accounts"
+"Administrators"--"Add User Accounts"
+"Administrators"--"Modify User Accounts"
+"Administrators"--"Delete User Accounts"
+"Log In"<|."Reply To Comments": <<include>>
+"Log In"<|."Delete User Accounts": <<include>>
+"Log In"<|."View Comments": <<include>>
+"Log In"<|."Set Article Classification": <<include>>
+"Log In"<|."Modify User Accounts": <<include>>
+"Log In"<|."Review Comments": <<include>>
+"Bloggers"--|>"Users"
+@enduml

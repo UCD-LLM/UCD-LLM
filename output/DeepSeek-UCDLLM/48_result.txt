@@ -1,0 +1,50 @@
+@startuml
+left to right direction
+actor "Family Members"
+actor "Administrators"
+actor "Guests"
+actor "Security Monitoring Service"
+actor "Home Appliance Repairman"
+usecase "Diagnose Faulty Equipment"
+usecase "Receive Alarm Information"
+usecase "Control Lights On/Off"
+usecase "Manage Family Member Accounts"
+usecase "Authorize Firmware Updates"
+usecase "Add New Devices"
+usecase "Access Energy Consumption Data"
+usecase "Operate Curtains Opening/Closing"
+usecase "Adjust Indoor Temperature"
+usecase "Identify Problem"
+usecase "Set Up Automation Scenarios"
+usecase "Delete Devices"
+usecase "Update Firmware"
+usecase "Check Security Status"
+usecase "Adjust Light Brightness"
+usecase "Control Lighting"
+usecase "Adjust Temperature"
+usecase "Configure Security Rules"
+usecase "Push Alarm Notification"
+"Family Members"--"Control Lights On/Off"
+"Family Members"--"Adjust Light Brightness"
+"Family Members"--"Adjust Indoor Temperature"
+"Family Members"--"Operate Curtains Opening/Closing"
+"Family Members"--"Check Security Status"
+"Family Members"--"Access Energy Consumption Data"
+"Administrators"--"Add New Devices"
+"Administrators"--"Delete Devices"
+"Administrators"--"Manage Family Member Accounts"
+"Administrators"--"Set Up Automation Scenarios"
+"Administrators"--"Configure Security Rules"
+"Guests"--"Control Lighting"
+"Guests"--"Adjust Temperature"
+"Security Monitoring Service"--"Push Alarm Notification"
+"Home Appliance Repairman"--"Diagnose Faulty Equipment"
+"Authorize Firmware Updates"<|."Diagnose Faulty Equipment": <<include>>
+"Identify Problem"<|."Diagnose Faulty Equipment": <<include>>
+"Receive Alarm Information"<|."Push Alarm Notification": <<include>>
+"Authorize Firmware Updates"<|."Update Firmware": <<include>>
+"Diagnose Faulty Equipment"<|."Update Firmware": <<extend>>
+"Identify Problem"<|."Authorize Firmware Updates": <<extend>>
+"Identify Problem"<|."Update Firmware": <<extend>>
+"Administrators"--|>"Family Members"
+@enduml

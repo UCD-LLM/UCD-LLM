@@ -1,0 +1,62 @@
+{
+    "actors": [
+        "Doctors",
+        "Administrators"
+    ],
+    "usecases": [
+        "Annotate Images",
+        "Manage User Permissions",
+        "Measure Images",
+        "View Imaging Data",
+        "Generate Diagnostic Reports",
+        "Search Imaging Data",
+        "Store Imaging Data",
+        "Upload Imaging Data",
+        "Log In",
+        "Manage Imaging Data",
+        "Send Diagnostic Reports"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Log In",
+            "Upload Imaging Data",
+            "Store Imaging Data",
+            "View Imaging Data",
+            "Manage Imaging Data",
+            "Annotate Images",
+            "Measure Images",
+            "Search Imaging Data",
+            "Generate Diagnostic Reports",
+            "Send Diagnostic Reports"
+        ],
+        "Administrators": [
+            "Manage User Permissions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Annotate Images": [
+            "Log In"
+        ],
+        "View Imaging Data": [
+            "Log In"
+        ],
+        "Generate Diagnostic Reports": [
+            "Manage Imaging Data"
+        ],
+        "Search Imaging Data": [
+            "Log In"
+        ],
+        "Store Imaging Data": [
+            "Upload Imaging Data"
+        ],
+        "Manage Imaging Data": [
+            "Log In"
+        ],
+        "Send Diagnostic Reports": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

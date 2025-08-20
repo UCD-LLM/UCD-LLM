@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor "Users"
+actor "Technical Support Personnel"
+usecase "Assess Problem Severity"
+usecase "Submit Technical Support Work Order"
+usecase "Determine Processing Priority"
+usecase "Provide Contact Information"
+usecase "Assign Work Order"
+usecase "Select Problem Category"
+usecase "Provide Problem Description"
+"Users"--"Submit Technical Support Work Order"
+"Users"--"Provide Contact Information"
+"Technical Support Personnel"--"Assign Work Order"
+"Assess Problem Severity"<|."Determine Processing Priority": <<include>>
+"Assess Problem Severity"<|."Assign Work Order": <<include>>
+"Determine Processing Priority"<|."Assign Work Order": <<include>>
+"Provide Problem Description"<|."Assign Work Order": <<include>>
+"Provide Problem Description"<|."Assess Problem Severity": <<include>>
+"Select Problem Category"<|."Submit Technical Support Work Order": <<include>>
+"Provide Problem Description"<|."Submit Technical Support Work Order": <<include>>
+"Submit Technical Support Work Order"<|."Assess Problem Severity": <<extend>>
+@enduml

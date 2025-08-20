@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "User Login",
+        "Insurance Information Management",
+        "Policy Inquiry",
+        "Claims Management",
+        "Insurance Purchase",
+        "Insurance Calculator",
+        "Customer Service",
+        "System Management"
+    ],
+    "association_relationships": {
+        "User": [
+            "User Login",
+            "Insurance Information Management",
+            "Policy Inquiry",
+            "Claims Management",
+            "Insurance Purchase",
+            "Insurance Calculator",
+            "Customer Service"
+        ],
+        "Administrator": [
+            "System Management"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

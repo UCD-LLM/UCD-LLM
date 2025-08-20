@@ -1,0 +1,53 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Read PDF File",
+        "Make Comment",
+        "Open PDF File",
+        "Search via Keywords",
+        "Search Content",
+        "Add Arrow Annotation",
+        "Print PDF File",
+        "Locate Search Results",
+        "Make Modification",
+        "Browse PDF Files",
+        "Export PDF File",
+        "Add Line Annotation",
+        "Add Text Annotation",
+        "Add Bookmark",
+        "Page Through PDF",
+        "Zoom",
+        "Underline Text",
+        "Highlight Text",
+        "Navigate via Table of Contents"
+    ],
+    "association_relationships": {
+        "User": [
+            "Open PDF File",
+            "Browse PDF Files",
+            "Read PDF File",
+            "Zoom",
+            "Page Through PDF",
+            "Search Content",
+            "Add Text Annotation",
+            "Add Line Annotation",
+            "Add Arrow Annotation",
+            "Make Comment",
+            "Make Modification",
+            "Highlight Text",
+            "Underline Text",
+            "Add Bookmark",
+            "Navigate via Table of Contents",
+            "Search via Keywords",
+            "Locate Search Results",
+            "Export PDF File",
+            "Print PDF File"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

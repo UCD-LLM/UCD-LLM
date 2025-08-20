@@ -1,0 +1,58 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Collect Exhibitions",
+        "Collect Cultural Relics",
+        "Delete Artifact Information",
+        "Download Software",
+        "Browse Museum Information",
+        "Listen to Navigation Information",
+        "Search Museums",
+        "View Indoor Map",
+        "Modify Exhibition Information",
+        "Log In",
+        "Manage Museum Information",
+        "Add Exhibition Information",
+        "Rate Software",
+        "Read Navigation Information",
+        "Leave Comments",
+        "Add Artifact Information",
+        "Modify Artifact Information",
+        "Share Views",
+        "Search Exhibitions",
+        "Delete Exhibition Information"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Software",
+            "Log In",
+            "Browse Museum Information",
+            "Search Museums",
+            "Search Exhibitions",
+            "View Indoor Map",
+            "Read Navigation Information",
+            "Listen to Navigation Information",
+            "Collect Exhibitions",
+            "Collect Cultural Relics",
+            "Leave Comments",
+            "Rate Software",
+            "Share Views"
+        ],
+        "Administrators": [
+            "Manage Museum Information",
+            "Add Exhibition Information",
+            "Modify Exhibition Information",
+            "Delete Exhibition Information",
+            "Add Artifact Information",
+            "Modify Artifact Information",
+            "Delete Artifact Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

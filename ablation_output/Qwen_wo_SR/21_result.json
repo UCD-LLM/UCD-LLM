@@ -1,0 +1,58 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Monitor Production Progress",
+        "Create Supply Chain Documents",
+        "Monitor Business Performance",
+        "Monitor Inventory Levels",
+        "Manage Customer Information",
+        "Generate Financial Statements",
+        "Manage Supply Chain Documents",
+        "Input Financial Data",
+        "Track Order Status",
+        "Query Financial Data",
+        "Create Sales Orders",
+        "Provide Quotes",
+        "Edit Financial Data",
+        "Set Production Plans",
+        "Allocate Work Orders",
+        "Provide Discounts",
+        "Provide Decision Support",
+        "Log In"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Log In",
+            "Input Financial Data",
+            "Edit Financial Data",
+            "Query Financial Data",
+            "Generate Financial Statements",
+            "Create Supply Chain Documents",
+            "Manage Supply Chain Documents",
+            "Track Order Status",
+            "Monitor Inventory Levels",
+            "Set Production Plans",
+            "Allocate Work Orders",
+            "Monitor Production Progress",
+            "Manage Customer Information",
+            "Create Sales Orders",
+            "Provide Quotes",
+            "Provide Discounts"
+        ],
+        "Administrators": [
+            "Monitor Business Performance",
+            "Provide Decision Support"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Supply Chain Documents": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

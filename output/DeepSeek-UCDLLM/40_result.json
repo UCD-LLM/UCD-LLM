@@ -1,0 +1,78 @@
+{
+    "actors": [
+        "Teller",
+        "Customer",
+        "Backend Auditor"
+    ],
+    "usecases": [
+        "Create Bank Account",
+        "Create Fixed-term Deposit Account",
+        "Create Savings Account",
+        "Handle Deposit Transaction",
+        "Generate Daily Transaction Reports",
+        "Verify Customer Identity",
+        "Close Bank Account",
+        "Check Account Balance",
+        "Verify General Ledger",
+        "Create Checking Account",
+        "Mark Suspicious Transactions",
+        "Monitor Transactions",
+        "Deposit Cash",
+        "Handle Transfer Transaction",
+        "Deposit Check"
+    ],
+    "association_relationships": {
+        "Teller": [
+            "Verify Customer Identity",
+            "Create Bank Account",
+            "Close Bank Account",
+            "Handle Deposit Transaction",
+            "Handle Transfer Transaction",
+            "Check Account Balance"
+        ],
+        "Customer": [
+            "Check Account Balance",
+            "Create Checking Account",
+            "Create Savings Account",
+            "Create Fixed-term Deposit Account",
+            "Deposit Cash",
+            "Deposit Check"
+        ],
+        "Backend Auditor": [
+            "Generate Daily Transaction Reports",
+            "Verify General Ledger",
+            "Monitor Transactions",
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Bank Account": [
+            "Verify Customer Identity"
+        ],
+        "Create Fixed-term Deposit Account": [
+            "Verify Customer Identity"
+        ],
+        "Create Savings Account": [
+            "Verify Customer Identity"
+        ],
+        "Handle Deposit Transaction": [
+            "Verify Customer Identity"
+        ],
+        "Close Bank Account": [
+            "Verify Customer Identity"
+        ],
+        "Create Checking Account": [
+            "Verify Customer Identity"
+        ]
+    },
+    "extension_relationships": {
+        "Monitor Transactions": [
+            "Mark Suspicious Transactions"
+        ],
+        "Handle Transfer Transaction": [
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,111 @@
+{
+    "actors": [
+        "Ordinary Customer",
+        "Registered Customer",
+        "Warehouse Administrator",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Handle Book Shipment",
+        "View Book Details",
+        "View Purchase History",
+        "Log In",
+        "Manage Personal Information",
+        "Update Inventory Information",
+        "Place Order",
+        "Add Book To Shopping Cart",
+        "Search For Book",
+        "Proceed With Ordering",
+        "View Order Status",
+        "Manage Book Information",
+        "Manage User Accounts",
+        "Browse Book Catalog",
+        "Search Books",
+        "Add To Shopping Cart"
+    ],
+    "association_relationships": {
+        "Ordinary Customer": [
+            "Browse Book Catalog",
+            "Search For Book",
+            "View Book Details",
+            "Add Book To Shopping Cart",
+            "Proceed With Ordering",
+            "View Order Status"
+        ],
+        "Registered Customer": [
+            "Log In",
+            "Manage Personal Information",
+            "View Purchase History",
+            "Browse Book Catalog",
+            "Search Books",
+            "View Book Details",
+            "Add To Shopping Cart",
+            "Place Order",
+            "View Order Status"
+        ],
+        "Warehouse Administrator": [
+            "Handle Book Shipment",
+            "Update Inventory Information"
+        ],
+        "System Administrator": [
+            "Manage User Accounts",
+            "Manage Book Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "View Purchase History": [
+            "Log In"
+        ],
+        "Add To Shopping Cart": [
+            "Log In"
+        ],
+        "Place Order": [
+            "Add To Shopping Cart"
+        ],
+        "Proceed With Ordering": [
+            "Add Book To Shopping Cart"
+        ]
+    },
+    "extension_relationships": {
+        "View Book Details": [
+            "Place Order",
+            "Add Book To Shopping Cart",
+            "Proceed With Ordering",
+            "Add To Shopping Cart"
+        ],
+        "Browse Book Catalog": [
+            "View Book Details",
+            "Add Book To Shopping Cart",
+            "Add To Shopping Cart"
+        ],
+        "Log In": [
+            "Manage Personal Information",
+            "Search Books"
+        ],
+        "Search For Book": [
+            "Proceed With Ordering"
+        ],
+        "Proceed With Ordering": [
+            "View Order Status"
+        ],
+        "Search Books": [
+            "Add To Shopping Cart"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Proceed With Ordering": [
+            "Place Order"
+        ],
+        "Add Book To Shopping Cart": [
+            "Add To Shopping Cart"
+        ],
+        "Search For Book": [
+            "Search Books"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Ordinary Customer": [
+            "Registered Customer"
+        ]
+    }
+}

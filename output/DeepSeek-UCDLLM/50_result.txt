@@ -1,0 +1,80 @@
+@startuml
+left to right direction
+actor "Citizens"
+actor "Individual Applicants"
+actor "Enterprise Operators"
+actor "Window Staff"
+actor "Approval Personnel"
+usecase "Conduct Preliminary Review"
+usecase "Submit Qualification Certificates"
+usecase "Track Business Dynamics"
+usecase "Download Electronic Certificates"
+usecase "Conduct Substantive Approval"
+usecase "Log In To Personal Account"
+usecase "Submit Business License Application"
+usecase "Check Material Completeness"
+usecase "Verify Application Materials"
+usecase "Make Approval Decisions"
+usecase "Register Personal Account"
+usecase "Collect Application Fees"
+usecase "Pay Application Fees"
+usecase "Obtain Answers Through Online Consultation"
+usecase "Understand Application Process"
+usecase "Manage Certificates and Licenses"
+usecase "Upload Application Materials"
+usecase "Check Application Progress"
+usecase "Issue Notices"
+usecase "Browse Service Guide"
+usecase "Accept Application Materials"
+"Citizens"--"Browse Service Guide"
+"Citizens"--"Understand Application Process"
+"Citizens"--"Check Application Progress"
+"Citizens"--"Track Business Dynamics"
+"Citizens"--"Obtain Answers Through Online Consultation"
+"Citizens"--"Register Personal Account"
+"Enterprise Operators"--"Manage Certificates and Licenses"
+"Window Staff"--"Collect Application Fees"
+"Window Staff"--"Issue Notices"
+"Approval Personnel"--"Make Approval Decisions"
+"Conduct Preliminary Review"<|."Download Electronic Certificates": <<include>>
+"Log In To Personal Account"<|."Download Electronic Certificates": <<include>>
+"Accept Application Materials"<|."Download Electronic Certificates": <<include>>
+"Conduct Preliminary Review"<|."Conduct Substantive Approval": <<include>>
+"Submit Qualification Certificates"<|."Conduct Substantive Approval": <<include>>
+"Verify Application Materials"<|."Conduct Substantive Approval": <<include>>
+"Upload Application Materials"<|."Conduct Substantive Approval": <<include>>
+"Accept Application Materials"<|."Conduct Substantive Approval": <<include>>
+"Conduct Preliminary Review"<|."Submit Business License Application": <<include>>
+"Log In To Personal Account"<|."Submit Business License Application": <<include>>
+"Check Material Completeness"<|."Submit Business License Application": <<include>>
+"Verify Application Materials"<|."Submit Business License Application": <<include>>
+"Pay Application Fees"<|."Submit Business License Application": <<include>>
+"Upload Application Materials"<|."Submit Business License Application": <<include>>
+"Accept Application Materials"<|."Submit Business License Application": <<include>>
+"Check Material Completeness"<|."Conduct Preliminary Review": <<include>>
+"Verify Application Materials"<|."Conduct Preliminary Review": <<include>>
+"Upload Application Materials"<|."Conduct Preliminary Review": <<include>>
+"Accept Application Materials"<|."Conduct Preliminary Review": <<include>>
+"Conduct Preliminary Review"<|."Make Approval Decisions": <<include>>
+"Submit Qualification Certificates"<|."Make Approval Decisions": <<include>>
+"Conduct Substantive Approval"<|."Make Approval Decisions": <<include>>
+"Submit Business License Application"<|."Make Approval Decisions": <<include>>
+"Check Material Completeness"<|."Make Approval Decisions": <<include>>
+"Verify Application Materials"<|."Make Approval Decisions": <<include>>
+"Accept Application Materials"<|."Make Approval Decisions": <<include>>
+"Conduct Preliminary Review"<|."Issue Notices": <<include>>
+"Submit Qualification Certificates"<|."Verify Application Materials": <<include>>
+"Upload Application Materials"<|."Verify Application Materials": <<include>>
+"Accept Application Materials"<|."Verify Application Materials": <<include>>
+"Accept Application Materials"<|."Submit Qualification Certificates": <<include>>
+"Log In To Personal Account"<|."Upload Application Materials": <<include>>
+"Log In To Personal Account"<|."Check Application Progress": <<include>>
+"Check Material Completeness"<|."Accept Application Materials": <<include>>
+"Conduct Substantive Approval"<|."Download Electronic Certificates": <<extend>>
+"Submit Business License Application"<|."Download Electronic Certificates": <<extend>>
+"Make Approval Decisions"<|."Download Electronic Certificates": <<extend>>
+"Individual Applicants"--|>"Citizens"
+"Enterprise Operators"--|>"Citizens"
+"Enterprise Operators"--|>"Individual Applicants"
+"Approval Personnel"--|>"Window Staff"
+@enduml

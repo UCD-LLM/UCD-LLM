@@ -1,0 +1,23 @@
+{
+    "actors": [
+        "User",
+        "Belt",
+        "Vision System",
+        "Robot"
+    ],
+    "usecases": [
+        "Put Parts on Belt",
+        "Convey Parts",
+        "Sense Part",
+        "Recognize Part Type",
+        "Inform Robot",
+        "Pick Up Part",
+        "Move Belt",
+        "Place Parts on Tray"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

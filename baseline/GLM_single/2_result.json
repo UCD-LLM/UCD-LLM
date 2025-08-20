@@ -1,0 +1,38 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Employee Login",
+        "Submit Reimbursement Request",
+        "Manage Reimbursement Classifications",
+        "Review Reimbursement",
+        "Generate Reimbursement Statistics",
+        "Handle Abnormal Reimbursement",
+        "Manage Reimbursement Documents",
+        "Manage Employee Accounts",
+        "Manage Reimbursement Approval Process",
+        "Manage User Permissions"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Employee Login",
+            "Submit Reimbursement Request"
+        ],
+        "Administrator": [
+            "Manage Reimbursement Classifications",
+            "Review Reimbursement",
+            "Generate Reimbursement Statistics",
+            "Handle Abnormal Reimbursement",
+            "Manage Reimbursement Documents",
+            "Manage Employee Accounts",
+            "Manage Reimbursement Approval Process",
+            "Manage User Permissions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

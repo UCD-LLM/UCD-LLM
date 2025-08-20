@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Content Editor"
+actor "Content Reviewer"
+actor "Advanced Editor"
+actor "System Administrator"
+usecase "Manage Content Classification"
+usecase "Modify Existing Articles"
+usecase "Conduct System Backups"
+usecase "Directly Publish Articles"
+usecase "Approve Article Publication"
+usecase "Manage User Roles"
+usecase "Write New Articles"
+usecase "Submit Articles For Review"
+usecase "Conduct Article Review"
+usecase "Check Article Status"
+"Content Editor"--"Modify Existing Articles"
+"Content Editor"--"Check Article Status"
+"Content Reviewer"--"Approve Article Publication"
+"Advanced Editor"--"Directly Publish Articles"
+"Advanced Editor"--"Manage Content Classification"
+"System Administrator"--"Manage User Roles"
+"System Administrator"--"Conduct System Backups"
+"Conduct Article Review"<|."Modify Existing Articles": <<include>>
+"Submit Articles For Review"<|."Approve Article Publication": <<include>>
+"Conduct Article Review"<|."Approve Article Publication": <<include>>
+"Write New Articles"<|."Submit Articles For Review": <<include>>
+"Conduct Article Review"<|."Submit Articles For Review": <<include>>
+"Conduct Article Review"<|."Write New Articles": <<include>>
+"Advanced Editor"--|>"Content Editor"
+@enduml

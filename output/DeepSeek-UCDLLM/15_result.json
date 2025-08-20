@@ -1,0 +1,35 @@
+{
+    "actors": [
+        "Customer"
+    ],
+    "usecases": [
+        "Check Account Balance",
+        "Receive Notification",
+        "Input Transfer Amount",
+        "Perform Transfer Operation",
+        "Input Payee Information"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Check Account Balance",
+            "Perform Transfer Operation",
+            "Input Payee Information",
+            "Input Transfer Amount",
+            "Receive Notification"
+        ]
+    },
+    "inclusion_relationships": {
+        "Perform Transfer Operation": [
+            "Check Account Balance",
+            "Input Transfer Amount",
+            "Input Payee Information"
+        ]
+    },
+    "extension_relationships": {
+        "Perform Transfer Operation": [
+            "Receive Notification"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

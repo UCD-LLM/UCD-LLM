@@ -1,0 +1,56 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Reject Reimbursement Requests",
+        "Log In",
+        "Handle Abnormal Reimbursement Situations",
+        "Download Reimbursement Documents",
+        "Generate Reimbursement Statistics Reports",
+        "Approve Reimbursement Requests",
+        "Manage Reimbursement Classifications",
+        "Manage Reimbursement Approval Process",
+        "View Reimbursement Documents",
+        "Manage Employee Accounts",
+        "Choose Reimbursement Category",
+        "Set Reimbursement Classifications",
+        "Set Reimbursement Approval Process",
+        "View Reimbursement Requests",
+        "Submit Reimbursement Request",
+        "Access Reimbursement Records",
+        "Modify Reimbursement Application"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Log In",
+            "Submit Reimbursement Request",
+            "Choose Reimbursement Category",
+            "Access Reimbursement Records",
+            "Modify Reimbursement Application",
+            "View Reimbursement Documents",
+            "Download Reimbursement Documents"
+        ],
+        "Administrator": [
+            "Set Reimbursement Classifications",
+            "Manage Reimbursement Classifications",
+            "View Reimbursement Requests",
+            "Approve Reimbursement Requests",
+            "Reject Reimbursement Requests",
+            "Generate Reimbursement Statistics Reports",
+            "Handle Abnormal Reimbursement Situations",
+            "Manage Employee Accounts",
+            "Set Reimbursement Approval Process",
+            "Manage Reimbursement Approval Process"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Reimbursement Request": [
+            "Choose Reimbursement Category"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

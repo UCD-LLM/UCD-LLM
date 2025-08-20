@@ -1,0 +1,6 @@
+The requirements for the restaurant ordering system are as follows:
+Customers can log in to the system through their mobile phones or tablets, select restaurants, view menus, and place orders. If there are special needs, customers can add notes and special requirements in the order.
+Restaurant staff can view ordering information and requests, and prepare corresponding dishes.
+The system should provide dish inventory management function, update dish inventory information in real time, and remind employees and customers when inventory is insufficient.
+Customers can pay for orders online and receive notifications when the order is ready.
+Restaurant managers can view sales data and ordering frequency to make better business decisions.

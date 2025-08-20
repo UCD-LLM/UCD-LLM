@@ -1,0 +1,139 @@
+{
+    "actors": [
+        "Buyers",
+        "Sellers",
+        "Gold Medal Sellers",
+        "International Sellers",
+        "Logistics Service Providers"
+    ],
+    "usecases": [
+        "Complete Payment",
+        "Process Orders",
+        "Manage Product Inventory",
+        "Browse Products",
+        "View Sales Data",
+        "Manage Multi Currency Settlements",
+        "Search Products",
+        "Log In",
+        "Participate In Promotional Activities",
+        "Use Data Analysis Tools",
+        "Manage Shopping Cart",
+        "Handle Cross-border Logistics",
+        "View Product Details",
+        "Add To Shopping Cart",
+        "Provide Logistics Tracking Information",
+        "Publish Product Information",
+        "Submit Order",
+        "Arrange Shipments",
+        "Evaluate Products"
+    ],
+    "association_relationships": {
+        "Buyers": [
+            "Browse Products",
+            "Search Products",
+            "View Product Details",
+            "Add To Shopping Cart",
+            "Manage Shopping Cart",
+            "Submit Order",
+            "Complete Payment",
+            "Evaluate Products"
+        ],
+        "Sellers": [
+            "Log In",
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data"
+        ],
+        "Gold Medal Sellers": [
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Participate In Promotional Activities",
+            "Use Data Analysis Tools"
+        ],
+        "International Sellers": [
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Handle Cross-border Logistics",
+            "Manage Multi Currency Settlements"
+        ],
+        "Logistics Service Providers": [
+            "Provide Logistics Tracking Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Complete Payment": [
+            "Manage Shopping Cart",
+            "Add To Shopping Cart",
+            "Submit Order"
+        ],
+        "Process Orders": [
+            "Log In"
+        ],
+        "Manage Product Inventory": [
+            "Log In"
+        ],
+        "View Sales Data": [
+            "Log In"
+        ],
+        "Manage Multi Currency Settlements": [
+            "Log In"
+        ],
+        "Publish Product Information": [
+            "Log In"
+        ],
+        "Submit Order": [
+            "Add To Shopping Cart"
+        ]
+    },
+    "extension_relationships": {
+        "Process Orders": [
+            "Arrange Shipments"
+        ],
+        "Browse Products": [
+            "Manage Shopping Cart",
+            "View Product Details",
+            "Add To Shopping Cart",
+            "Submit Order",
+            "Evaluate Products"
+        ],
+        "Search Products": [
+            "Manage Shopping Cart",
+            "View Product Details",
+            "Add To Shopping Cart"
+        ],
+        "Log In": [
+            "Participate In Promotional Activities",
+            "Use Data Analysis Tools",
+            "Handle Cross-border Logistics",
+            "Arrange Shipments"
+        ],
+        "View Product Details": [
+            "Add To Shopping Cart",
+            "Submit Order",
+            "Evaluate Products"
+        ],
+        "Submit Order": [
+            "Arrange Shipments",
+            "Evaluate Products"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Arrange Shipments": [
+            "Handle Cross-border Logistics"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Sellers": [
+            "Gold Medal Sellers",
+            "International Sellers"
+        ]
+    }
+}

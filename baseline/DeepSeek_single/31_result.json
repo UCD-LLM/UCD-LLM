@@ -1,0 +1,44 @@
+{
+    "actors": [
+        "Registered Members",
+        "Unregistered Visitors",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Browse Product Catalog",
+        "Log In",
+        "Manage Personal Information",
+        "Add Products to Shopping Cart",
+        "Place Orders",
+        "View Order History",
+        "Choose Payment Methods",
+        "Contact Customer Service",
+        "Register as Member",
+        "Manage Product Information",
+        "Manage Registered Member Accounts"
+    ],
+    "association_relationships": {
+        "Registered Members": [
+            "Browse Product Catalog",
+            "Log In",
+            "Manage Personal Information",
+            "Add Products to Shopping Cart",
+            "Place Orders",
+            "View Order History",
+            "Choose Payment Methods",
+            "Contact Customer Service"
+        ],
+        "Unregistered Visitors": [
+            "Browse Product Catalog",
+            "Register as Member"
+        ],
+        "System Administrator": [
+            "Manage Product Information",
+            "Manage Registered Member Accounts"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

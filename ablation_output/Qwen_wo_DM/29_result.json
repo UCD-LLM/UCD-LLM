@@ -1,0 +1,90 @@
+{
+    "actors": [
+        "Advertisers",
+        "Operators"
+    ],
+    "usecases": [
+        "Monitor System Operation Status",
+        "Manage Advertising Account",
+        "Process Ad Comments",
+        "Monitor Ad Effectiveness",
+        "Log In",
+        "Register Account",
+        "Manage Advertiser Accounts",
+        "Set Advertising Parameters",
+        "View Data Analysis",
+        "Create Advertising Account",
+        "View Reports",
+        "Upload Advertising Materials",
+        "Adjust Advertising Strategies"
+    ],
+    "association_relationships": {
+        "Advertisers": [
+            "Register Account",
+            "Log In",
+            "Create Advertising Account",
+            "Manage Advertising Account",
+            "Upload Advertising Materials",
+            "Set Advertising Parameters",
+            "Monitor Ad Effectiveness",
+            "Adjust Advertising Strategies",
+            "View Data Analysis",
+            "View Reports"
+        ],
+        "Operators": [
+            "Manage Advertiser Accounts",
+            "Process Ad Comments",
+            "Monitor System Operation Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "Manage Advertising Account": [
+            "Log In",
+            "Register Account",
+            "Create Advertising Account"
+        ],
+        "Monitor Ad Effectiveness": [
+            "Log In",
+            "Register Account"
+        ],
+        "Log In": [
+            "Register Account"
+        ],
+        "Upload Advertising Materials": [
+            "Log In",
+            "Register Account",
+            "Create Advertising Account"
+        ]
+    },
+    "extension_relationships": {
+        "Manage Advertising Account": [
+            "Monitor Ad Effectiveness",
+            "Set Advertising Parameters",
+            "Adjust Advertising Strategies"
+        ],
+        "Monitor Ad Effectiveness": [
+            "Adjust Advertising Strategies"
+        ],
+        "Log In": [
+            "Set Advertising Parameters",
+            "View Data Analysis",
+            "View Reports",
+            "Adjust Advertising Strategies"
+        ],
+        "Register Account": [
+            "Set Advertising Parameters",
+            "Adjust Advertising Strategies"
+        ],
+        "View Data Analysis": [
+            "Adjust Advertising Strategies"
+        ],
+        "Create Advertising Account": [
+            "Adjust Advertising Strategies"
+        ],
+        "View Reports": [
+            "Adjust Advertising Strategies"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

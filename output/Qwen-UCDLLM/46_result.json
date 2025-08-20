@@ -1,0 +1,75 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "Specialist Doctor",
+        "Head Nurse",
+        "Toll Collector"
+    ],
+    "usecases": [
+        "Triage Patients",
+        "View Electronic Medical Record Summary",
+        "Select Time Slot",
+        "Arrange Examinations",
+        "Issue Prescriptions",
+        "Handle Payments",
+        "Manage Medical Consumables",
+        "Input Diagnostic Information",
+        "Make Appointments",
+        "Guide Patients",
+        "Record Vital Signs",
+        "Pay Consultation Fee",
+        "Arrange Nurse Shifts",
+        "Schedule Special Examinations",
+        "Print Vouchers",
+        "View Doctor Schedule",
+        "Initiate Multidisciplinary Consultations"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Make Appointments",
+            "View Doctor Schedule",
+            "Select Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record Summary"
+        ],
+        "Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations"
+        ],
+        "Nurse": [
+            "Triage Patients",
+            "Guide Patients",
+            "Record Vital Signs"
+        ],
+        "Specialist Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Head Nurse": [
+            "Arrange Nurse Shifts",
+            "Manage Medical Consumables",
+            "Record Vital Signs"
+        ],
+        "Toll Collector": [
+            "Handle Payments",
+            "Print Vouchers"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctor": [
+            "Specialist Doctor"
+        ],
+        "Nurse": [
+            "Head Nurse"
+        ]
+    }
+}

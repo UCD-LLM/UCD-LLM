@@ -1,0 +1,29 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Login and Authentication",
+        "Create and Join Meetings",
+        "Meeting Management",
+        "Conference Control",
+        "Recording and Playback",
+        "Screen and File Sharing",
+        "Data Statistics and Reporting"
+    ],
+    "association_relationships": {
+        "User": [
+            "Login and Authentication",
+            "Create and Join Meetings",
+            "Meeting Management",
+            "Conference Control",
+            "Recording and Playback",
+            "Screen and File Sharing",
+            "Data Statistics and Reporting"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

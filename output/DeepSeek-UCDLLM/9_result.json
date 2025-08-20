@@ -1,0 +1,37 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Create Form",
+        "Edit Form",
+        "Fill Form",
+        "Submit Form",
+        "Query Data",
+        "View Form",
+        "Export Data",
+        "Log In",
+        "Delete Form"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Create Form",
+            "Fill Form",
+            "Submit Form",
+            "View Form",
+            "Edit Form",
+            "Delete Form",
+            "Export Data",
+            "Query Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Form": [
+            "Fill Form"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,54 @@
+{
+    "actors": [
+        "Buyers",
+        "Sellers",
+        "Administrators"
+    ],
+    "usecases": [
+        "Browse Products",
+        "Apply Filters",
+        "Place Orders",
+        "Manage Inventory",
+        "Update Product Details",
+        "Track Sales",
+        "Resolve Disputes",
+        "Monitor Transactions",
+        "User Management",
+        "Payment Processing"
+    ],
+    "association_relationships": {
+        "Buyers": [
+            "Browse Products",
+            "Apply Filters",
+            "Place Orders"
+        ],
+        "Sellers": [
+            "Manage Inventory",
+            "Update Product Details",
+            "Track Sales"
+        ],
+        "Administrators": [
+            "Resolve Disputes",
+            "Monitor Transactions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Manage Inventory": [
+            "Bulk Upload",
+            "Sales Analytics"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "User Management": [
+            "Buyers",
+            "Sellers",
+            "Administrators"
+        ],
+        "Payment Processing": [
+            "Credit Cards",
+            "Digital Wallets"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

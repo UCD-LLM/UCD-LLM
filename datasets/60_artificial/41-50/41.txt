@@ -1,0 +1,7 @@
+I hope to develop a blog management system to more effectively publish, manage, and maintain blog content.
+Bloggers and administrators are users of the system. Users can log in to the system using their username and password;
+The system needs to provide content creation functionality, allowing bloggers to create, edit, and publish blog articles;
+Administrators can set the classification, tags, and keywords of articles for users to retrieve;
+The system needs to provide comment management functionality, allowing bloggers and administrators to view, review, and reply to comments;
+Administrators can set up a comment review mechanism to prevent spam comments and abuse;
+Administrators can manage user accounts, such as adding, modifying, and deleting them;

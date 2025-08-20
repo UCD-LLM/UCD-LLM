@@ -1,0 +1,36 @@
+{
+    "actors": [
+        "Applicants",
+        "Administrators"
+    ],
+    "usecases": [
+        "Generate Registration Reports",
+        "Handle Abnormal Registrations",
+        "Log In",
+        "View Registration Records",
+        "Modify Applicant Accounts",
+        "Delete Applicant Accounts",
+        "Add Applicant Accounts"
+    ],
+    "association_relationships": {
+        "Applicants": [
+            "Log In"
+        ],
+        "Administrators": [
+            "View Registration Records",
+            "Generate Registration Reports",
+            "Handle Abnormal Registrations",
+            "Add Applicant Accounts",
+            "Modify Applicant Accounts",
+            "Delete Applicant Accounts"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "View Registration Records": [
+            "Generate Registration Reports"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

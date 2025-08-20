@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Librarian"
+actor "User"
+usecase "Search Books"
+usecase "Scan Book Barcode"
+usecase "Scan Membership Card"
+usecase "Make Book Reservation"
+usecase "Borrow Books"
+"Librarian"--"Borrow Books"
+"User"--"Search Books"
+"User"--"Make Book Reservation"
+"Scan Membership Card"<|."Scan Book Barcode": <<include>>
+"Scan Book Barcode"<|."Borrow Books": <<include>>
+"Scan Membership Card"<|."Borrow Books": <<include>>
+@enduml

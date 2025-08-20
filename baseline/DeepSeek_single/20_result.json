@@ -1,0 +1,24 @@
+{
+    "actors": [
+        "User",
+        "Technical Support Personnel"
+    ],
+    "usecases": [
+        "Submit Technical Support Work Order",
+        "Assess Problem Severity",
+        "Assign Work Order"
+    ],
+    "association_relationships": {
+        "User": [
+            "Submit Technical Support Work Order"
+        ],
+        "Technical Support Personnel": [
+            "Assess Problem Severity",
+            "Assign Work Order"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,13 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Put Parts Onto Belt"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

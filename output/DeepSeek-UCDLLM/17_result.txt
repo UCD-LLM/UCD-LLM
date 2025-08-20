@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Maintenance Engineers"
+actor "Customer"
+usecase "Verify Customer Signature"
+usecase "Close Work Order"
+usecase "Assign Responsible Engineers"
+usecase "Confirm Equipment Repair Effectiveness"
+usecase "Generate Replenishment Reminder"
+usecase "Sign On Electronic Signature Interface"
+usecase "Create Maintenance Work Order"
+usecase "Update Spare Parts Inventory"
+usecase "Fill Out Maintenance Report"
+usecase "Verify Signature Authenticity"
+"Maintenance Engineers"--"Create Maintenance Work Order"
+"Maintenance Engineers"--"Update Spare Parts Inventory"
+"Maintenance Engineers"--"Close Work Order"
+"Verify Customer Signature"<|."Close Work Order": <<include>>
+"Confirm Equipment Repair Effectiveness"<|."Close Work Order": <<include>>
+"Sign On Electronic Signature Interface"<|."Close Work Order": <<include>>
+"Fill Out Maintenance Report"<|."Close Work Order": <<include>>
+"Verify Signature Authenticity"<|."Close Work Order": <<include>>
+"Sign On Electronic Signature Interface"<|."Verify Customer Signature": <<include>>
+"Assign Responsible Engineers"<|."Create Maintenance Work Order": <<include>>
+"Sign On Electronic Signature Interface"<|."Create Maintenance Work Order": <<include>>
+"Sign On Electronic Signature Interface"<|."Confirm Equipment Repair Effectiveness": <<include>>
+"Verify Signature Authenticity"<|."Confirm Equipment Repair Effectiveness": <<include>>
+"Verify Signature Authenticity"<|."Sign On Electronic Signature Interface": <<include>>
+"Update Spare Parts Inventory"<|."Generate Replenishment Reminder": <<extend>>
+"Fill Out Maintenance Report"<|."Generate Replenishment Reminder": <<extend>>
+@enduml

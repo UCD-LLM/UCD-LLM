@@ -1,0 +1,64 @@
+{
+    "actors": [
+        "Library Member",
+        "Librarian",
+        "Senior Librarian"
+    ],
+    "usecases": [
+        "Search Catalog",
+        "Process Returns",
+        "Generate Monthly Acquisition Reports",
+        "Handle Special Requests",
+        "Process Borrows",
+        "Request Expedited Processing",
+        "Borrow Books",
+        "Oversee Inter-library Loans",
+        "Check Availability",
+        "Place Hold Request"
+    ],
+    "association_relationships": {
+        "Library Member": [
+            "Search Catalog",
+            "Borrow Books",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Librarian": [
+            "Process Borrows",
+            "Process Returns",
+            "Handle Special Requests"
+        ],
+        "Senior Librarian": [
+            "Generate Monthly Acquisition Reports",
+            "Oversee Inter-library Loans"
+        ]
+    },
+    "inclusion_relationships": {
+        "Borrow Books": [
+            "Check Availability"
+        ]
+    },
+    "extension_relationships": {
+        "Search Catalog": [
+            "Place Hold Request"
+        ],
+        "Process Borrows": [
+            "Request Expedited Processing",
+            "Place Hold Request"
+        ],
+        "Borrow Books": [
+            "Request Expedited Processing",
+            "Place Hold Request"
+        ],
+        "Check Availability": [
+            "Place Hold Request"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Librarian": [
+            "Senior Librarian"
+        ]
+    }
+}

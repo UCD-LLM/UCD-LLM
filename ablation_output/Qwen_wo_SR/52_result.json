@@ -1,0 +1,79 @@
+{
+    "actors": [
+        "Library Member",
+        "Student Member",
+        "Librarian",
+        "Senior Librarian"
+    ],
+    "usecases": [
+        "Process Borrows",
+        "Request Expedited Processing",
+        "Process Returns",
+        "Place Hold Request",
+        "Oversee Inter-library Loans",
+        "Handle Special Requests",
+        "Generate Monthly Acquisition Reports",
+        "Generate Acquisition Reports",
+        "Search Catalog",
+        "Access Online Journals",
+        "Check Availability",
+        "Borrow Reference Textbooks",
+        "Borrow Books"
+    ],
+    "association_relationships": {
+        "Library Member": [
+            "Search Catalog",
+            "Borrow Books",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Student Member": [
+            "Search Catalog",
+            "Borrow Books",
+            "Borrow Reference Textbooks",
+            "Access Online Journals",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Librarian": [
+            "Process Borrows",
+            "Process Returns",
+            "Handle Special Requests",
+            "Generate Acquisition Reports",
+            "Oversee Inter-library Loans"
+        ],
+        "Senior Librarian": [
+            "Generate Monthly Acquisition Reports",
+            "Oversee Inter-library Loans"
+        ]
+    },
+    "inclusion_relationships": {
+        "Borrow Books": [
+            "Search Catalog",
+            "Check Availability"
+        ]
+    },
+    "extension_relationships": {
+        "Borrow Books": [
+            "Request Expedited Processing",
+            "Place Hold Request"
+        ],
+        "Search Catalog": [
+            "Place Hold Request"
+        ],
+        "Check Availability": [
+            "Place Hold Request"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Library Member": [
+            "Student Member"
+        ],
+        "Librarian": [
+            "Senior Librarian"
+        ]
+    }
+}

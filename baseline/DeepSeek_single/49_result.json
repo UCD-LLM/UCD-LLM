@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "Gold Medal Seller",
+        "International Seller",
+        "Logistics Service Provider"
+    ],
+    "usecases": [
+        "Browse Products",
+        "Search Products",
+        "View Product Details",
+        "Add Products to Shopping Cart",
+        "Manage Shopping Cart",
+        "Submit Orders",
+        "Complete Payments",
+        "Evaluate Products",
+        "Login to Seller Center",
+        "Publish Product Information",
+        "Manage Product Inventory",
+        "Process Orders",
+        "Arrange Shipments",
+        "View Sales Data",
+        "Participate in Promotional Activities",
+        "Use Advanced Data Analysis Tools",
+        "Handle Cross-border Logistics",
+        "Manage Multi-currency Settlements",
+        "Provide Logistics Tracking Information"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "Browse Products",
+            "Search Products",
+            "View Product Details",
+            "Add Products to Shopping Cart",
+            "Manage Shopping Cart",
+            "Submit Orders",
+            "Complete Payments",
+            "Evaluate Products"
+        ],
+        "Seller": [
+            "Login to Seller Center",
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data"
+        ],
+        "Gold Medal Seller": [
+            "Participate in Promotional Activities",
+            "Use Advanced Data Analysis Tools"
+        ],
+        "International Seller": [
+            "Handle Cross-border Logistics",
+            "Manage Multi-currency Settlements"
+        ],
+        "Logistics Service Provider": [
+            "Provide Logistics Tracking Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Seller": [
+            "Gold Medal Seller",
+            "International Seller"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

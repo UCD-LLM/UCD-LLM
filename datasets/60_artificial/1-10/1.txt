@@ -1,0 +1,8 @@
+PDF readers should have the following functions:
+1. Support opening, browsing, and reading PDF files. Users can open PDF files by clicking on the file or entering the file path, and can zoom, page, and search for content in the reading interface.
+2. Provide annotation and annotation functions. Users can add text, lines, arrows, and other annotations in PDF documents, and can also make comments and modifications.
+3. Support highlighting and underline marking. Users can select text and highlight or underline it for easy viewing or export in the future.
+4. Provide bookmark and directory functions. Users can add bookmarks to PDF files to quickly locate specific pages and navigate and browse file content through the table of contents.
+5. Support search and retrieval functions. Users can input keywords for full-text search and quickly locate the location of search results.
+6. Provide export and printing functions. Users can export PDF files to other formats such as Word or images, or print the files directly.
+7. Support multi platform and multi device usage. PDF readers should support use on operating systems such as Windows, Mac, iOS, and Android, and be able to adapt to screens and devices of different sizes.

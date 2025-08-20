@@ -1,0 +1,51 @@
+{
+    "actors": [
+        "Doctors",
+        "Nurses"
+    ],
+    "usecases": [
+        "Record Vital Signs",
+        "Add Medication Notes",
+        "Input Vital Sign Data",
+        "Modify Vital Sign Data",
+        "Issue Prescription",
+        "Supplement Vital Signs",
+        "Specify Dosage",
+        "Select Drugs",
+        "Label Usage Details"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Select Drugs",
+            "Specify Dosage",
+            "Label Usage Details",
+            "Add Medication Notes",
+            "Issue Prescription"
+        ],
+        "Nurses": [
+            "Record Vital Signs",
+            "Input Vital Sign Data",
+            "Supplement Vital Signs",
+            "Modify Vital Sign Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Issue Prescription": [
+            "Specify Dosage",
+            "Select Drugs"
+        ],
+        "Specify Dosage": [
+            "Select Drugs"
+        ],
+        "Label Usage Details": [
+            "Specify Dosage"
+        ]
+    },
+    "extension_relationships": {
+        "Issue Prescription": [
+            "Add Medication Notes"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

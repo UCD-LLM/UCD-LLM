@@ -1,0 +1,56 @@
+{
+    "actors": [
+        "Users",
+        "Administrator"
+    ],
+    "usecases": [
+        "Enable Real-time Alarm",
+        "Add Vehicle Information",
+        "Download Application",
+        "Query Travel Route",
+        "Switch Vehicles",
+        "View Vehicle Location",
+        "Log In",
+        "Query Stopping Points",
+        "Analyze Energy Consumption",
+        "View Driving Trajectory",
+        "Edit Vehicle Information",
+        "Monitor Vehicle Status",
+        "Receive Notifications",
+        "View Speed",
+        "Delete Vehicle Information",
+        "Set Up Geofencing",
+        "Manage Multiple Vehicles"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Application",
+            "Log In",
+            "View Vehicle Location",
+            "View Driving Trajectory",
+            "View Speed",
+            "Manage Multiple Vehicles",
+            "Switch Vehicles",
+            "Set Up Geofencing",
+            "Receive Notifications",
+            "Enable Real-time Alarm",
+            "Query Travel Route",
+            "Query Stopping Points",
+            "Analyze Energy Consumption"
+        ],
+        "Administrator": [
+            "Add Vehicle Information",
+            "Delete Vehicle Information",
+            "Edit Vehicle Information",
+            "Monitor Vehicle Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "View Vehicle Location": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

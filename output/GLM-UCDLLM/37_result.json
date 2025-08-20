@@ -1,0 +1,37 @@
+{
+    "actors": [
+        "Corporate Finance Personnel",
+        "Customers"
+    ],
+    "usecases": [
+        "Generate Electronic Invoices",
+        "Manage Electronic Invoices",
+        "Query Electronic Invoices",
+        "Share Electronic Invoices",
+        "Delete Existing Invoices",
+        "Modify Existing Invoices",
+        "Batch Upload Invoice Information",
+        "Receive Electronic Invoices",
+        "Query Historical Invoice Records"
+    ],
+    "association_relationships": {
+        "Corporate Finance Personnel": [
+            "Generate Electronic Invoices",
+            "Manage Electronic Invoices",
+            "Query Electronic Invoices",
+            "Share Electronic Invoices",
+            "Batch Upload Invoice Information",
+            "Modify Existing Invoices",
+            "Delete Existing Invoices"
+        ],
+        "Customers": [
+            "Receive Electronic Invoices",
+            "Query Historical Invoice Records",
+            "Share Electronic Invoices"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

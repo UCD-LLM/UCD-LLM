@@ -1,0 +1,30 @@
+{
+    "actors": [
+        "Customer"
+    ],
+    "usecases": [
+        "Check Account Balance",
+        "Perform Transfer Operation",
+        "Verify Account Funds",
+        "Specify Transfer Amount",
+        "Input Payee Information"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Check Account Balance",
+            "Perform Transfer Operation",
+            "Input Payee Information",
+            "Specify Transfer Amount",
+            "Verify Account Funds"
+        ]
+    },
+    "inclusion_relationships": {
+        "Perform Transfer Operation": [
+            "Check Account Balance",
+            "Verify Account Funds"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

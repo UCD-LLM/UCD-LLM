@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Login",
+        "Browse Museum Information",
+        "Search Museums or Exhibitions",
+        "Indoor Navigation",
+        "Text and Audio Guidance",
+        "Collect Favorites",
+        "Leave Comments and Ratings",
+        "Manage Museum Information"
+    ],
+    "association_relationships": {
+        "User": [
+            "Login",
+            "Browse Museum Information",
+            "Search Museums or Exhibitions",
+            "Indoor Navigation",
+            "Text and Audio Guidance",
+            "Collect Favorites",
+            "Leave Comments and Ratings"
+        ],
+        "Administrator": [
+            "Manage Museum Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

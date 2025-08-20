@@ -1,0 +1,76 @@
+{
+    "actors": [
+        "City Drivers",
+        "Road Sensors",
+        "Patrol Cars",
+        "Ambulances",
+        "Traffic Officers",
+        "Senior Officers",
+        "Accident Reconstruction Specialists"
+    ],
+    "usecases": [
+        "Create 3D Collision Analyses",
+        "Provide Congestion Data",
+        "Monitor Violations",
+        "Generate Incident Reports",
+        "Activate SOS Mode",
+        "Find Optimal Routes",
+        "Dispatch Ambulances",
+        "Receive SOS Notification",
+        "Coordinate Disaster Responses"
+    ],
+    "association_relationships": {
+        "City Drivers": [
+            "Find Optimal Routes",
+            "Activate SOS Mode"
+        ],
+        "Road Sensors": [
+            "Provide Congestion Data"
+        ],
+        "Patrol Cars": [
+            "Receive SOS Notification"
+        ],
+        "Ambulances": [
+            "Dispatch Ambulances"
+        ],
+        "Traffic Officers": [
+            "Monitor Violations",
+            "Generate Incident Reports"
+        ],
+        "Senior Officers": [
+            "Coordinate Disaster Responses"
+        ],
+        "Accident Reconstruction Specialists": [
+            "Create 3D Collision Analyses"
+        ]
+    },
+    "inclusion_relationships": {
+        "Find Optimal Routes": [
+            "Provide Congestion Data"
+        ]
+    },
+    "extension_relationships": {
+        "Activate SOS Mode": [
+            "Dispatch Ambulances",
+            "Receive SOS Notification"
+        ],
+        "Find Optimal Routes": [
+            "Dispatch Ambulances",
+            "Receive SOS Notification"
+        ],
+        "Receive SOS Notification": [
+            "Dispatch Ambulances"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Generate Incident Reports": [
+            "Create 3D Collision Analyses"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Traffic Officers": [
+            "Senior Officers",
+            "Accident Reconstruction Specialists"
+        ]
+    }
+}

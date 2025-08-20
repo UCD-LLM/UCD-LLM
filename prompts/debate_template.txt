@@ -1,0 +1,19 @@
+You are debating with the other party about extracting the relationships between use cases from a given natural language requirement text for building use case diagrams.
+
+The given natural language requirement text is: 
+{input_text}
+
+Your viewpoint: between {usecase1} and {usecase2} is {debater1_opinion}. 
+The other party's viewpoint: between {usecase1} and {usecase2} is {debater2_opinion}. 
+
+Strictly adhere to these rules:
+1. Identity Binding: In the first two rounds, you must firmly uphold your viewpoint, and in the third round, you can change your position based on evidence.   
+2. Evidence Driven: All statements must cite specific fragments from the text, and fabrication or generalization is prohibited.   
+3. Debate Process:
+-First Round (statement): Use 1-2 the strongest pieces of evidence to prove one's viewpoint and explain how the evidence supports the relationship (e.g., [Evidence: A must be executed after B is completed] prove that use case A depends on use case B and meets the characteristics of inclusive relationship).
+-Second Round (rebuttal): Directly point out the loopholes in the other party's viewpoint, such as: "The other party ignores the key premise [evidence: triggered only when forgetting the password], which is actually an extension point rather than an inclusion".   
+-Third Round (conclusion): If you persist in your own viewpoint, output 'persist'; If you turn to the other party's viewpoint, output 'abandon'.   
+4. Output specifications:
+Strictly output tasks according to each round, with a word count of ≤ 200 words. Evidence citation format: "[Evidence: Citation]" (e.g. [Evidence: User must log in to make payment]).
+
+Now you can start the first round of statement.

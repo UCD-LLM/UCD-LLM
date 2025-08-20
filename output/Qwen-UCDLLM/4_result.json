@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Log In",
+        "Delete Article",
+        "Manage User Accounts",
+        "Create Blog",
+        "Publish Article",
+        "Comment On Article",
+        "Modify Users",
+        "Add Users",
+        "Delete Blog",
+        "Modify Blog",
+        "Delete Users",
+        "Edit Article",
+        "Search Articles",
+        "Search Topics"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Log In",
+            "Create Blog",
+            "Modify Blog",
+            "Delete Blog",
+            "Edit Article",
+            "Publish Article",
+            "Delete Article",
+            "Comment On Article",
+            "Search Topics",
+            "Search Articles"
+        ],
+        "Administrators": [
+            "Manage User Accounts",
+            "Add Users",
+            "Modify Users",
+            "Delete Users"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

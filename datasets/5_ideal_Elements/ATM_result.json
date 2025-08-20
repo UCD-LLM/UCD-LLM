@@ -1,0 +1,17 @@
+{
+    "actors": [
+        "Bank Client"
+    ],
+    "usecases": [
+        "Deposit Amount",
+        "Withdraw Amount",
+        "Review Transactions",
+        "Gain Access To Account",
+        "Receive Terminate Notification"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

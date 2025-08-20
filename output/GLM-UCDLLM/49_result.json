@@ -1,0 +1,96 @@
+{
+    "actors": [
+        "Buyers",
+        "Sellers",
+        "Gold Medal Sellers",
+        "International Sellers",
+        "Logistics Service Providers"
+    ],
+    "usecases": [
+        "View Product Information",
+        "Add Product to Cart",
+        "Participate In Promotional Activities",
+        "Manage Shopping Cart",
+        "Manage Product Inventory",
+        "Browse Products",
+        "Search Products",
+        "Submit Order",
+        "Process Orders",
+        "Complete Payment",
+        "Arrange Shipments",
+        "Evaluate Product",
+        "Respond to Currency Trading Needs",
+        "Provide Logistics Tracking Information",
+        "Publish Product Information",
+        "Use Advanced Data Analysis Tools",
+        "Manage Multi-currency Settlements",
+        "Log Into Seller Center",
+        "Handle Cross-border Logistics",
+        "View Sales Data"
+    ],
+    "association_relationships": {
+        "Buyers": [
+            "Browse Products",
+            "Search Products",
+            "View Product Information",
+            "Add Product to Cart",
+            "Manage Shopping Cart",
+            "Submit Order",
+            "Complete Payment",
+            "Evaluate Product"
+        ],
+        "Sellers": [
+            "Log Into Seller Center",
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data"
+        ],
+        "Gold Medal Sellers": [
+            "Log Into Seller Center",
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Participate In Promotional Activities",
+            "Use Advanced Data Analysis Tools"
+        ],
+        "International Sellers": [
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Handle Cross-border Logistics",
+            "Manage Multi-currency Settlements",
+            "Respond to Currency Trading Needs"
+        ],
+        "Logistics Service Providers": [
+            "Provide Logistics Tracking Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Process Orders": [
+            "Log Into Seller Center"
+        ],
+        "Arrange Shipments": [
+            "Log Into Seller Center"
+        ],
+        "Publish Product Information": [
+            "Log Into Seller Center"
+        ]
+    },
+    "extension_relationships": {
+        "Arrange Shipments": [
+            "Handle Cross-border Logistics"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Sellers": [
+            "Gold Medal Sellers"
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "actors": [
+        "Doctor",
+        "Nurse"
+    ],
+    "usecases": [
+        "Prescribe Medication",
+        "Select Drugs",
+        "Specify Dosage",
+        "Add Medication Notes",
+        "Generate Prescription Number",
+        "Record Vital Signs",
+        "Input Vital Signs",
+        "Modify Vital Signs"
+    ],
+    "association_relationships": {
+        "Doctor": [
+            "Prescribe Medication",
+            "Select Drugs",
+            "Specify Dosage",
+            "Add Medication Notes",
+            "Generate Prescription Number"
+        ],
+        "Nurse": [
+            "Record Vital Signs",
+            "Input Vital Signs",
+            "Modify Vital Signs"
+        ]
+    },
+    "inclusion_relationships": {
+        "Prescribe Medication": [
+            "Select Drugs",
+            "Specify Dosage",
+            "Add Medication Notes",
+            "Generate Prescription Number"
+        ],
+        "Record Vital Signs": [
+            "Input Vital Signs"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

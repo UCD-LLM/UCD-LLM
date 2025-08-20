@@ -1,0 +1,71 @@
+{
+    "actors": [
+        "Car Rental Customer",
+        "Store Employee"
+    ],
+    "usecases": [
+        "Determine Rental Period",
+        "Provide Driver\u2019s License Information",
+        "Select Car Model",
+        "Pick Up Vehicle",
+        "Verify Identity Information",
+        "Book Vehicle",
+        "Verify Customer Identity",
+        "Read Rental Terms",
+        "Complete Vehicle Booking",
+        "Confirm Rental Terms",
+        "Sign Rental Contract"
+    ],
+    "association_relationships": {
+        "Car Rental Customer": [
+            "Complete Vehicle Booking",
+            "Select Car Model",
+            "Determine Rental Period",
+            "Provide Driver\u2019s License Information",
+            "Read Rental Terms",
+            "Confirm Rental Terms",
+            "Book Vehicle",
+            "Pick Up Vehicle",
+            "Verify Identity Information",
+            "Sign Rental Contract"
+        ],
+        "Store Employee": [
+            "Verify Customer Identity",
+            "Sign Rental Contract"
+        ]
+    },
+    "inclusion_relationships": {
+        "Book Vehicle": [
+            "Determine Rental Period",
+            "Provide Driver\u2019s License Information",
+            "Select Car Model",
+            "Read Rental Terms",
+            "Confirm Rental Terms"
+        ],
+        "Complete Vehicle Booking": [
+            "Determine Rental Period",
+            "Provide Driver\u2019s License Information",
+            "Select Car Model",
+            "Read Rental Terms",
+            "Confirm Rental Terms"
+        ],
+        "Pick Up Vehicle": [
+            "Provide Driver\u2019s License Information",
+            "Verify Identity Information",
+            "Verify Customer Identity",
+            "Sign Rental Contract"
+        ],
+        "Sign Rental Contract": [
+            "Provide Driver\u2019s License Information",
+            "Select Car Model",
+            "Verify Identity Information",
+            "Verify Customer Identity"
+        ],
+        "Confirm Rental Terms": [
+            "Read Rental Terms"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

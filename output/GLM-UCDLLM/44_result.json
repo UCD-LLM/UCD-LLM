@@ -1,0 +1,55 @@
+{
+    "actors": [
+        "Travelers",
+        "Hotel Front Desk",
+        "Hotel Managers",
+        "System Maintenance Personnel"
+    ],
+    "usecases": [
+        "Assign Room Keys",
+        "Book Room Online",
+        "Search Available Rooms",
+        "Manage System Configuration",
+        "Handle Check-in",
+        "Handle Check-out",
+        "View Financial Reports",
+        "Manage User Accounts",
+        "Verify Identity",
+        "Manage Room Prices",
+        "View Room Details"
+    ],
+    "association_relationships": {
+        "Travelers": [
+            "Search Available Rooms",
+            "View Room Details",
+            "Book Room Online"
+        ],
+        "Hotel Front Desk": [
+            "Handle Check-in",
+            "Verify Identity",
+            "Assign Room Keys",
+            "Handle Check-out"
+        ],
+        "Hotel Managers": [
+            "View Financial Reports",
+            "Manage Room Prices"
+        ],
+        "System Maintenance Personnel": [
+            "Manage System Configuration",
+            "Manage User Accounts"
+        ]
+    },
+    "inclusion_relationships": {
+        "Handle Check-in": [
+            "Assign Room Keys",
+            "Verify Identity"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Hotel Front Desk": [
+            "Hotel Managers"
+        ]
+    }
+}

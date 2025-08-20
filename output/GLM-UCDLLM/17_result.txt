@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor "Maintenance Engineer"
+actor "Customer"
+usecase "Create Maintenance Work Order"
+usecase "Sign Work Order"
+usecase "Close Work Order"
+usecase "Verify Customer Signature"
+usecase "Update Spare Parts Inventory"
+usecase "Assign Responsible Engineers"
+usecase "Confirm Repair Effectiveness"
+usecase "Fill Out Maintenance Report"
+"Maintenance Engineer"--"Create Maintenance Work Order"
+"Maintenance Engineer"--"Update Spare Parts Inventory"
+"Maintenance Engineer"--"Close Work Order"
+"Assign Responsible Engineers"<|."Create Maintenance Work Order": <<include>>
+"Sign Work Order"<|."Close Work Order": <<include>>
+"Verify Customer Signature"<|."Close Work Order": <<include>>
+"Confirm Repair Effectiveness"<|."Close Work Order": <<include>>
+"Fill Out Maintenance Report"<|."Close Work Order": <<include>>
+"Verify Customer Signature"<|."Sign Work Order": <<include>>
+"Sign Work Order"<|."Confirm Repair Effectiveness": <<include>>
+@enduml

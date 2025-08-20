@@ -1,0 +1,38 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Employee login",
+        "Reimbursement records",
+        "Reimbursement classification",
+        "Reimbursement Review",
+        "Reimbursement statistics",
+        "Abnormal reimbursement handling",
+        "Reimbursement Document Management",
+        "Employee account management",
+        "Reimbursement approval process",
+        "User permission management"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Employee login",
+            "Reimbursement records"
+        ],
+        "Administrator": [
+            "Reimbursement classification",
+            "Reimbursement Review",
+            "Reimbursement statistics",
+            "Abnormal reimbursement handling",
+            "Reimbursement Document Management",
+            "Employee account management",
+            "Reimbursement approval process",
+            "User permission management"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

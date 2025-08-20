@@ -1,0 +1,105 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Mute Participant",
+        "Invite Users",
+        "Create Conference Call",
+        "Record Conference Call",
+        "Join Conference Call",
+        "Log In",
+        "Edit Meeting Participants",
+        "Delete Meeting Participants",
+        "Share Screen",
+        "Share File",
+        "Authenticate",
+        "Hang Up",
+        "Set Meeting Time",
+        "Add Meeting Participants",
+        "Playback Conference Recording",
+        "Unmute Participant"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Authenticate",
+            "Create Conference Call",
+            "Invite Users",
+            "Join Conference Call",
+            "Set Meeting Time",
+            "Add Meeting Participants",
+            "Edit Meeting Participants",
+            "Delete Meeting Participants",
+            "Mute Participant",
+            "Unmute Participant",
+            "Hang Up",
+            "Record Conference Call",
+            "Playback Conference Recording",
+            "Share Screen",
+            "Share File"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Conference Call": [
+            "Log In",
+            "Authenticate"
+        ],
+        "Record Conference Call": [
+            "Log In",
+            "Authenticate"
+        ],
+        "Join Conference Call": [
+            "Log In",
+            "Authenticate"
+        ],
+        "Log In": [
+            "Authenticate"
+        ],
+        "Set Meeting Time": [
+            "Log In"
+        ],
+        "Add Meeting Participants": [
+            "Log In",
+            "Authenticate"
+        ],
+        "Edit Meeting Participants": [
+            "Authenticate"
+        ],
+        "Delete Meeting Participants": [
+            "Authenticate"
+        ],
+        "Share Screen": [
+            "Authenticate"
+        ],
+        "Share File": [
+            "Authenticate"
+        ]
+    },
+    "extension_relationships": {
+        "Join Conference Call": [
+            "Mute Participant",
+            "Share Screen",
+            "Share File",
+            "Hang Up",
+            "Unmute Participant"
+        ],
+        "Create Conference Call": [
+            "Invite Users",
+            "Record Conference Call",
+            "Edit Meeting Participants",
+            "Share Screen",
+            "Set Meeting Time",
+            "Add Meeting Participants"
+        ],
+        "Record Conference Call": [
+            "Playback Conference Recording"
+        ],
+        "Log In": [
+            "Share File",
+            "Playback Conference Recording"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,36 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Login",
+        "ViewVehicleLocation",
+        "ManageMultipleVehicles",
+        "SetGeofencing",
+        "ReceiveNotifications",
+        "RealTimeAlarms",
+        "QueryHistoryRoute",
+        "EnergyConsumptionAnalysis",
+        "ManageVehicleInformation"
+    ],
+    "association_relationships": {
+        "User": [
+            "Login",
+            "ViewVehicleLocation",
+            "ManageMultipleVehicles",
+            "SetGeofencing",
+            "ReceiveNotifications",
+            "RealTimeAlarms",
+            "QueryHistoryRoute",
+            "EnergyConsumptionAnalysis"
+        ],
+        "Administrator": [
+            "ManageVehicleInformation"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,67 @@
+{
+    "actors": [
+        "Maintenance Engineers",
+        "Customer"
+    ],
+    "usecases": [
+        "Verify Customer Signature",
+        "Close Work Order",
+        "Assign Responsible Engineers",
+        "Confirm Equipment Repair Effectiveness",
+        "Generate Replenishment Reminder",
+        "Sign On Electronic Signature Interface",
+        "Create Maintenance Work Order",
+        "Update Spare Parts Inventory",
+        "Fill Out Maintenance Report",
+        "Verify Signature Authenticity"
+    ],
+    "association_relationships": {
+        "Maintenance Engineers": [
+            "Create Maintenance Work Order",
+            "Assign Responsible Engineers",
+            "Fill Out Maintenance Report",
+            "Update Spare Parts Inventory",
+            "Verify Customer Signature",
+            "Close Work Order",
+            "Generate Replenishment Reminder"
+        ],
+        "Customer": [
+            "Confirm Equipment Repair Effectiveness",
+            "Sign On Electronic Signature Interface",
+            "Verify Signature Authenticity"
+        ]
+    },
+    "inclusion_relationships": {
+        "Close Work Order": [
+            "Verify Customer Signature",
+            "Confirm Equipment Repair Effectiveness",
+            "Sign On Electronic Signature Interface",
+            "Fill Out Maintenance Report",
+            "Verify Signature Authenticity"
+        ],
+        "Verify Customer Signature": [
+            "Sign On Electronic Signature Interface"
+        ],
+        "Create Maintenance Work Order": [
+            "Assign Responsible Engineers",
+            "Sign On Electronic Signature Interface"
+        ],
+        "Confirm Equipment Repair Effectiveness": [
+            "Sign On Electronic Signature Interface",
+            "Verify Signature Authenticity"
+        ],
+        "Sign On Electronic Signature Interface": [
+            "Verify Signature Authenticity"
+        ]
+    },
+    "extension_relationships": {
+        "Update Spare Parts Inventory": [
+            "Generate Replenishment Reminder"
+        ],
+        "Fill Out Maintenance Report": [
+            "Generate Replenishment Reminder"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

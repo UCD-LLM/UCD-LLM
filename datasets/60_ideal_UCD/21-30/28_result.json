@@ -1,0 +1,50 @@
+{
+    "actors": [
+        "Administrator",
+        "Customer"
+    ],
+    "usecases": [
+        "View Order Status",
+        "Process Orders",
+        "Handle Abnormal Orders",
+        "Query Order History",
+        "Browse Products",
+        "View Product Details",
+        "Select Products",
+        "Create Order",
+        "Modify Order",
+        "Cancel Order",
+        "Query Order",
+        "Track Order",
+        "Receive Order Completion Notification",
+        "View Order History"
+    ],
+    "association_relationships": {
+        "Administrator": [
+            "View Order Status",
+            "Process Orders",
+            "Handle Abnormal Orders",
+            "Query Order History"
+        ],
+        "Customer": [
+            "Browse Products",
+            "View Product Details",
+            "Select Products",
+            "Create Order",
+            "Modify Order",
+            "Cancel Order",
+            "Query Order",
+            "Track Order",
+            "Receive Order Completion Notification",
+            "View Order History"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Process Orders": [
+            "Handle Abnormal Orders"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

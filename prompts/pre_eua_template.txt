@@ -1,0 +1,34 @@
+Your task is to determine the relationship between the given two use cases {usecase1} and {usecase2} based strictly on the natural language requirement text for building use case diagrams. Follow these guidelines:
+
+1. Conservative Approach:  
+   Only identify a relationship if the text explicitly describes or strongly implies a direct dependency. If the text does not clearly state a relationship, default to independence (Option G).
+
+2. Relationship Definitions (verify against text evidence):
+   - Inclusion Relationship (mandatory dependency):
+     Base use case cannot complete its goal without the included use case.  The included use cases are typically not directly triggered.
+     Example: "User login" MUST include "authentication" to proceed. The use case 'User login' itself is an independent goal of the user and is generally not treated as included use case.
+   - Extension Relationship (conditional/optional):
+     Base use case functions independently; the extension only triggers under specific conditions.  
+     Example: "Normal payment" MAY extend to "manual review" IF order exceeds limit.
+   - Generalization Relationship (inheritance):
+     Child use case is a specialized form of the parent (e.g., shared core + unique features).  
+     Example: "Student course selection" and "Teacher course selection" ARE TYPES OF "User course selection".
+   - Independent. If {usecase1} and {usecase2} are only mentioned separately without interaction, they are independent.
+     Example: "User login" and "View product catalog" are separate functionalities without explicit dependency
+3. Critical Instructions:
+   - If you are not entirely sure about the relationship between use cases, please choose two possible options.
+
+Here is the text:
+{input_text}
+
+What is the relationship between {usecase1} and {usecase2}?
+Please choose 1-2 options that you think are reasonable:
+(A) Inclusion relationship. {usecase1} must depend on {usecase2};
+(B) Inclusion relationship. {usecase2} must depend on {usecase1};
+(C) Extension relationship. {usecase1} is an optional behavior under specific conditions based on {usecase2};
+(D) Extension relationship. {usecase2} is an optional behavior under specific conditions based on {usecase1};
+(E) Generalization relationship. {usecase1} inherits the behavior of {usecase2} and adds new behaviors;
+(F) Generalization relationship. {usecase2} inherits the behavior of {usecase1} and adds new behaviors;
+(G) {usecase1} and {usecase2} are independent of each other.
+
+In your answer, please strictly only include option letters such as ['A', 'G'] in a list format and do not include any explanation or apologies.

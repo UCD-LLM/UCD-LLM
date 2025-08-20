@@ -1,0 +1,40 @@
+{
+    "actors": [
+        "Doctor",
+        "Administrator"
+    ],
+    "usecases": [
+        "Login",
+        "UploadImagingData",
+        "StoreImagingData",
+        "ViewImagingData",
+        "ManageImagingData",
+        "SupportMultipleFormats",
+        "AnnotateImages",
+        "MeasureImages",
+        "SearchImagingData",
+        "GenerateReports",
+        "ManageUserPermissions"
+    ],
+    "association_relationships": {
+        "Doctor": [
+            "Login",
+            "UploadImagingData",
+            "StoreImagingData",
+            "ViewImagingData",
+            "ManageImagingData",
+            "SupportMultipleFormats",
+            "AnnotateImages",
+            "MeasureImages",
+            "SearchImagingData",
+            "GenerateReports"
+        ],
+        "Administrator": [
+            "ManageUserPermissions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,87 @@
+{
+    "actors": [
+        "Visitor",
+        "Registered User",
+        "Student",
+        "Teacher",
+        "Teaching Assistant",
+        "Administrator"
+    ],
+    "usecases": [
+        "Browse Publicly Available Course Catalog",
+        "View Detailed Introductions Of Specific Courses",
+        "Register",
+        "Log In",
+        "Choose Courses",
+        "Watch Teaching Video",
+        "Submit Assignment",
+        "Participate In Online Quizzes",
+        "View Grade Reports",
+        "Create New Courses",
+        "Upload Teaching Materials",
+        "Publish Homework",
+        "Correct Homework",
+        "Create Online Quizzes",
+        "Manage Students' Course Grades",
+        "Correct Homework",
+        "Answer Students' Questions",
+        "Manage User Accounts",
+        "Classify And Manage Courses",
+        "Review Course Content"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "Browse Publicly Available Course Catalog",
+            "View Detailed Introductions Of Specific Courses",
+            "Register"
+        ],
+       "Registered User": [
+           "Log In"
+       ],
+       "Student": [
+           "Log In",
+           "Choose Courses",
+           "Watch Teaching Video",
+           "Submit Assignment",
+           "Participate In Online Quizzes",
+           "View Grade Reports"
+       ],
+       "Teacher": [
+           "Log In",
+           "Create New Courses",
+           "Upload Teaching Materials",
+           "Publish Homework",
+           "Correct Homework",
+           "Create Online Quizzes",
+           "Manage Students' Course Grades"
+       ],
+       "Teaching Assistant": [
+           "Log In",
+           "Create New Courses",
+           "Upload Teaching Materials",
+           "Publish Homework",
+           "Correct Homework",
+           "Create Online Quizzes",
+           "Manage Students' Course Grades",
+           "Correct Homework",
+           "Answer Students' Questions"
+       ],
+       "Administrator": [
+           "Manage User Accounts",
+           "Classify And Manage Courses",
+           "Review Course Content"
+       ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Registered User": [
+            "Student",
+            "Teacher"
+        ],
+        "Student": [
+            "Teaching Assistant"
+        ]
+    }
+}

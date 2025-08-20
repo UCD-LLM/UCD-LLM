@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor "Visitors"
+actor "Administrators"
+usecase "Use Voice Guidance"
+usecase "View Visitors' Feedback"
+usecase "View Visitors' Browsing History"
+usecase "Access Exhibition Information"
+usecase "Manage Exhibition and Exhibit Information"
+usecase "Search Exhibits"
+usecase "Use Map Function"
+usecase "Log In"
+usecase "View Exhibit Images"
+"Visitors"--"Log In"
+"Visitors"--"Access Exhibition Information"
+"Visitors"--"Use Map Function"
+"Visitors"--"Use Voice Guidance"
+"Visitors"--"Search Exhibits"
+"Visitors"--"View Exhibit Images"
+"Administrators"--"Manage Exhibition and Exhibit Information"
+"Administrators"--"View Visitors' Browsing History"
+"Administrators"--"View Visitors' Feedback"
+@enduml

@@ -1,0 +1,62 @@
+{
+    "actors": [
+        "Doctors",
+        "Nurses"
+    ],
+    "usecases": [
+        "Add Medication Notes",
+        "Modify Vital Sign Data",
+        "Record Vital Signs",
+        "Specify Dosage",
+        "Review Prescription",
+        "Select Drugs",
+        "Input Body Temperature",
+        "Supplement Vital Signs",
+        "Input Blood Pressure",
+        "Issue Prescription",
+        "Input Pulse",
+        "Judge Patient Condition"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Select Drugs",
+            "Specify Dosage",
+            "Add Medication Notes",
+            "Issue Prescription",
+            "Review Prescription",
+            "Judge Patient Condition"
+        ],
+        "Nurses": [
+            "Record Vital Signs",
+            "Input Body Temperature",
+            "Input Blood Pressure",
+            "Input Pulse",
+            "Supplement Vital Signs",
+            "Modify Vital Sign Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Record Vital Signs": [
+            "Input Body Temperature",
+            "Input Pulse"
+        ],
+        "Review Prescription": [
+            "Specify Dosage"
+        ],
+        "Issue Prescription": [
+            "Specify Dosage",
+            "Select Drugs"
+        ]
+    },
+    "extension_relationships": {
+        "Select Drugs": [
+            "Add Medication Notes"
+        ],
+        "Record Vital Signs": [
+            "Modify Vital Sign Data",
+            "Supplement Vital Signs"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

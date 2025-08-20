@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Log In",
+        "Create Custom Form",
+        "Fill In Form",
+        "Submit Form",
+        "View Submitted Form Data",
+        "Edit Submitted Form Data",
+        "Delete Submitted Form Data",
+        "Export Form Data",
+        "Generate Data Statistics",
+        "Query Form Data",
+        "Add User Permissions",
+        "Modify User Permissions",
+        "Delete User Permissions",
+        "View System Logs"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Create Custom Form",
+            "Fill In Form",
+            "Submit Form",
+            "View Submitted Form Data",
+            "Edit Submitted Form Data",
+            "Delete Submitted Form Data",
+            "Export Form Data",
+            "Generate Data Statistics",
+            "Query Form Data"
+        ],
+        "Administrator": [
+            "Add User Permissions",
+            "Modify User Permissions",
+            "Delete User Permissions",
+            "View System Logs"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

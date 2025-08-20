@@ -1,0 +1,38 @@
+{
+    "actors": [
+        "Visitors",
+        "Administrators"
+    ],
+    "usecases": [
+        "Receive Voice Guidance",
+        "Log In",
+        "Manage Exhibition Information",
+        "View Museum Map",
+        "Search Exhibits",
+        "Manage Exhibit Information",
+        "View Visitor Feedback",
+        "View Exhibit Images",
+        "View Visitor Browsing History",
+        "View Exhibition Information"
+    ],
+    "association_relationships": {
+        "Visitors": [
+            "Log In",
+            "View Exhibition Information",
+            "View Museum Map",
+            "Receive Voice Guidance",
+            "Search Exhibits",
+            "View Exhibit Images"
+        ],
+        "Administrators": [
+            "Manage Exhibition Information",
+            "Manage Exhibit Information",
+            "View Visitor Browsing History",
+            "View Visitor Feedback"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

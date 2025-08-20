@@ -1,0 +1,10 @@
+I hope to develop a movie booking system to facilitate users in selecting and booking movie tickets.
+Users can access the movie booking system by registering and logging into the system.
+The system needs to provide a list of movies and detailed movie information, including movie names, directors, actors, genres, release times, etc.
+Users can browse the movie list according to their preferences and needs, and select the movies they want to order.
+The system needs to provide seat reservation function, where users need to choose a cinema and seats, and book designated seats.
+The system should support online payment methods, and users need to choose appropriate payment methods to complete the payment of movie tickets.
+The system should provide electronic ticketing functionality, where users can receive electronic tickets upon successful booking and verify them through their mobile phones or printed electronic tickets upon entry.
+The system should provide user account management functionality, allowing users to view order history, manage personal information, and change passwords.
+The system should have a good interface design and user experience, making it convenient for users to operate and browse movie information.
+The movie ticketing system aims to provide a convenient, reliable, and efficient solution for movie ticketing management, providing users with a good viewing experience and choices.

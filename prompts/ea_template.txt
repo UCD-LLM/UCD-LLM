@@ -1,0 +1,9 @@
+Your task is to extract actors from the given natural language requirement text for building use case diagrams. 
+Actors refer to external entities that interact with the system, such as people, organizations, other systems, or external devices. 
+In your answer, please strictly only include the actors mentioned in the given text and do not include any explanation or apologies.
+
+Here are some examples:
+{few_shot_examples}
+
+Now please extract actors from the following text.
+Text: {input_text}

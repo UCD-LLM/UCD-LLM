@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Create Form"
+usecase "Edit Form"
+usecase "Fill Form"
+usecase "Submit Form"
+usecase "Query Data"
+usecase "View Form"
+usecase "Export Data"
+usecase "Log In"
+usecase "Delete Form"
+"User"--"Log In"
+"User"--"Create Form"
+"User"--"Submit Form"
+"User"--"View Form"
+"User"--"Edit Form"
+"User"--"Delete Form"
+"User"--"Export Data"
+"User"--"Query Data"
+"Fill Form"<|."Submit Form": <<include>>
+@enduml

@@ -1,0 +1,74 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Generate Reimbursement Statistics Reports",
+        "Approve Reimbursement Requests",
+        "Handle Abnormal Reimbursements",
+        "View Reimbursement Requests",
+        "Log In",
+        "Access Reimbursement Records",
+        "Manage Employee Accounts",
+        "Set Reimbursement Approval Process",
+        "Reject Reimbursement Requests",
+        "Manage Reimbursement Classifications",
+        "Manage Reimbursement Documents",
+        "Set Reimbursement Classifications",
+        "Submit Reimbursement Requests",
+        "Choose Reimbursement Categories"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Log In",
+            "Submit Reimbursement Requests",
+            "Access Reimbursement Records",
+            "Choose Reimbursement Categories"
+        ],
+        "Administrator": [
+            "Set Reimbursement Classifications",
+            "Manage Reimbursement Classifications",
+            "View Reimbursement Requests",
+            "Approve Reimbursement Requests",
+            "Reject Reimbursement Requests",
+            "Generate Reimbursement Statistics Reports",
+            "Handle Abnormal Reimbursements",
+            "Manage Employee Accounts",
+            "Set Reimbursement Approval Process",
+            "Manage Reimbursement Documents"
+        ]
+    },
+    "inclusion_relationships": {
+        "Approve Reimbursement Requests": [
+            "View Reimbursement Requests"
+        ],
+        "Access Reimbursement Records": [
+            "Log In"
+        ],
+        "Submit Reimbursement Requests": [
+            "Log In",
+            "Set Reimbursement Approval Process",
+            "Manage Reimbursement Classifications",
+            "Set Reimbursement Classifications"
+        ],
+        "Choose Reimbursement Categories": [
+            "Manage Reimbursement Classifications",
+            "Set Reimbursement Classifications"
+        ]
+    },
+    "extension_relationships": {
+        "View Reimbursement Requests": [
+            "Handle Abnormal Reimbursements",
+            "Reject Reimbursement Requests"
+        ],
+        "Submit Reimbursement Requests": [
+            "Handle Abnormal Reimbursements"
+        ],
+        "Log In": [
+            "Choose Reimbursement Categories"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

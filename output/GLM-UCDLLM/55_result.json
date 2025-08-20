@@ -1,0 +1,53 @@
+{
+    "actors": [
+        "International Buyers",
+        "Premium Members",
+        "Compliance System",
+        "Sellers",
+        "Power Sellers"
+    ],
+    "usecases": [
+        "Access Exclusive Deals",
+        "Run Cross-border Promotions",
+        "Place Orders",
+        "Initiate Anti-fraud Verification",
+        "Request Personal Shopper",
+        "Manage Listings",
+        "Handle VAT Registration",
+        "Request Personal Shoppers"
+    ],
+    "association_relationships": {
+        "International Buyers": [
+            "Place Orders",
+            "Request Personal Shoppers",
+            "Access Exclusive Deals"
+        ],
+        "Premium Members": [
+            "Request Personal Shopper",
+            "Access Exclusive Deals"
+        ],
+        "Compliance System": [
+            "Initiate Anti-fraud Verification"
+        ],
+        "Sellers": [
+            "Manage Listings"
+        ],
+        "Power Sellers": [
+            "Manage Listings",
+            "Run Cross-border Promotions",
+            "Handle VAT Registration"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Manage Listings": [
+            "Run Cross-border Promotions"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Sellers": [
+            "Power Sellers"
+        ]
+    }
+}

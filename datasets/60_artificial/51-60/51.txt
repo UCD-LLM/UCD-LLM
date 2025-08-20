@@ -1,0 +1,7 @@
+Delivery personnel, administrators, and customers are all users of e-commerce delivery management systems.
+1. Users can log in to the system using their username and password;
+2. Delivery personnel record the departure time, arrival time, and return time through the system during the delivery process and clock in;
+3. Administrators can view delivery records and the status of delivery personnel. If there are delays, losses, or other situations, corrective measures need to be taken;
+4. Administrators can manage delivery personnel accounts, such as adding, modifying, and deleting delivery personnel information;
+5. The system needs to provide real-time order tracking function so that customers can view the delivery status of orders at any time;
+6. The system should provide delivery route planning and optimization functions to help delivery personnel choose the best route and improve delivery efficiency;

@@ -1,0 +1,25 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Login",
+        "Memo Recording",
+        "Memo Classification",
+        "Memo Search",
+        "Data Synchronization"
+    ],
+    "association_relationships": {
+        "User": [
+            "Login",
+            "Memo Recording",
+            "Memo Classification",
+            "Memo Search",
+            "Data Synchronization"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,79 @@
+{
+    "actors": [
+        "Bloggers",
+        "Administrators"
+    ],
+    "usecases": [
+        "Set Article Keywords",
+        "Set Comment Review Mechanism",
+        "Log In",
+        "Manage User Accounts",
+        "Edit Blog Article",
+        "View Comments",
+        "Reply To Comments",
+        "Set Article Tags",
+        "Add User Accounts",
+        "Create Blog Article",
+        "Publish Blog Article",
+        "Set Article Classification",
+        "Modify User Accounts",
+        "Review Comments",
+        "Delete User Accounts"
+    ],
+    "association_relationships": {
+        "Bloggers": [
+            "Log In",
+            "Create Blog Article",
+            "Edit Blog Article",
+            "Publish Blog Article",
+            "View Comments",
+            "Review Comments",
+            "Reply To Comments"
+        ],
+        "Administrators": [
+            "Set Article Classification",
+            "Set Article Tags",
+            "Set Article Keywords",
+            "View Comments",
+            "Review Comments",
+            "Reply To Comments",
+            "Set Comment Review Mechanism",
+            "Manage User Accounts",
+            "Add User Accounts",
+            "Modify User Accounts",
+            "Delete User Accounts"
+        ]
+    },
+    "inclusion_relationships": {
+        "Edit Blog Article": [
+            "Log In"
+        ],
+        "Create Blog Article": [
+            "Log In"
+        ],
+        "Publish Blog Article": [
+            "Log In",
+            "Create Blog Article"
+        ]
+    },
+    "extension_relationships": {
+        "Log In": [
+            "View Comments",
+            "Reply To Comments",
+            "Review Comments"
+        ],
+        "Manage User Accounts": [
+            "Delete User Accounts"
+        ],
+        "View Comments": [
+            "Reply To Comments",
+            "Review Comments"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Add User Accounts": [
+            "Manage User Accounts"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

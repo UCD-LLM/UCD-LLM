@@ -1,0 +1,101 @@
+{
+    "actors": [
+        "Customer",
+        "Server"
+    ],
+    "usecases": [
+        "Initiate Checkout Request",
+        "Confirm Order",
+        "Learn About Dishes",
+        "Verify Dish Information",
+        "Confirm Order Content",
+        "Submit Order Request",
+        "Choose Serving Option",
+        "Call Waiter For Assistance",
+        "Receive Order",
+        "Deliver Dishes",
+        "Browse Electronic Menu",
+        "View Total Prices",
+        "Add Dishes To Shopping Cart",
+        "View Selected Dishes",
+        "Handle Customer Requests",
+        "Select Dishes",
+        "Add Dishes During Dining",
+        "Choose Payment Method"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Electronic Menu",
+            "Learn About Dishes",
+            "Select Dishes",
+            "Add Dishes To Shopping Cart",
+            "View Selected Dishes",
+            "View Total Prices",
+            "Confirm Order Content",
+            "Submit Order Request",
+            "Choose Serving Option",
+            "Add Dishes During Dining",
+            "Initiate Checkout Request",
+            "Choose Payment Method",
+            "Call Waiter For Assistance"
+        ],
+        "Server": [
+            "Receive Order",
+            "Verify Dish Information",
+            "Confirm Order",
+            "Deliver Dishes",
+            "Handle Customer Requests"
+        ]
+    },
+    "inclusion_relationships": {
+        "Initiate Checkout Request": [
+            "Choose Payment Method"
+        ],
+        "Confirm Order": [
+            "Submit Order Request"
+        ],
+        "Deliver Dishes": [
+            "Confirm Order",
+            "Verify Dish Information",
+            "Submit Order Request",
+            "Receive Order"
+        ],
+        "Select Dishes": [
+            "Learn About Dishes"
+        ],
+        "Verify Dish Information": [
+            "Submit Order Request",
+            "Receive Order"
+        ],
+        "Submit Order Request": [
+            "Confirm Order Content",
+            "Choose Serving Option",
+            "Select Dishes"
+        ],
+        "Choose Serving Option": [
+            "Confirm Order Content",
+            "Add Dishes To Shopping Cart",
+            "Select Dishes"
+        ],
+        "Confirm Order Content": [
+            "Browse Electronic Menu",
+            "Select Dishes"
+        ],
+        "Receive Order": [
+            "Submit Order Request"
+        ],
+        "Handle Customer Requests": [
+            "Submit Order Request"
+        ],
+        "Add Dishes To Shopping Cart": [
+            "Select Dishes"
+        ]
+    },
+    "extension_relationships": {
+        "Select Dishes": [
+            "Add Dishes During Dining"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

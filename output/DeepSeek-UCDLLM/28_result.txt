@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor "Administrators"
+actor "Customers"
+usecase "Browse Products"
+usecase "Query Past Order Information"
+usecase "Receive Notification"
+usecase "Select Products"
+usecase "Modify Order"
+usecase "Cancel Order"
+usecase "Track Order"
+usecase "Process Orders"
+usecase "Handle Abnormal Orders"
+usecase "Query Order"
+usecase "View Product Details"
+usecase "Create Order"
+usecase "View Order Status"
+"Administrators"--"View Order Status"
+"Administrators"--"Process Orders"
+"Administrators"--"Query Past Order Information"
+"Customers"--"View Product Details"
+"Customers"--"Create Order"
+"Customers"--"Modify Order"
+"Customers"--"Query Order"
+"Customers"--"Track Order"
+"Browse Products"<|."Create Order": <<include>>
+"Select Products"<|."Create Order": <<include>>
+"Process Orders"<|."Receive Notification": <<extend>>
+"Process Orders"<|."Handle Abnormal Orders": <<extend>>
+"Create Order"<|."Receive Notification": <<extend>>
+"Create Order"<|."Cancel Order": <<extend>>
+"View Order Status"<|."Handle Abnormal Orders": <<extend>>
+@enduml

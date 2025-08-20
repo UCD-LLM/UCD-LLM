@@ -1,0 +1,5 @@
+Customers should be able to check their account balance at any time, in order to have real-time access to their account funds and provide reference for subsequent consumption, transfer, and other operations.
+
+When customers perform transfer operations, they must accurately input two key pieces of information as required: first, the detailed information of the payee, including the payee's name, receiving account number, and receiving bank, to ensure that the funds can be accurately transferred to the target account; The second is the specific transfer amount, specifying the amount of funds transferred this time.
+
+At the same time, the system needs to strictly verify whether the customer's account funds are sufficient when processing the transfer process. If the available funds in the account are greater than or equal to the transfer amount, the transfer operation can continue; If the funds are insufficient, the customer should be promptly notified and the transfer process should be terminated to avoid transfer failures or overdrafts, ensuring the accuracy and security of account fund transactions.

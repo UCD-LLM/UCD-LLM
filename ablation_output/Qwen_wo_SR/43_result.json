@@ -1,0 +1,61 @@
+{
+    "actors": [
+        "Ordinary Customer",
+        "Registered Customer",
+        "Warehouse Administrator",
+        "System Administrator"
+    ],
+    "usecases": [
+        "View Book Details",
+        "Add Book To Shopping Cart",
+        "Manage User Accounts",
+        "Manage Personal Information",
+        "View Purchase History",
+        "Proceed With Ordering",
+        "Manage Book Information",
+        "Search For Book",
+        "Handle Book Shipment",
+        "Update Inventory Information",
+        "Log In",
+        "Browse Book Catalog",
+        "View Order Status"
+    ],
+    "association_relationships": {
+        "Ordinary Customer": [
+            "Browse Book Catalog",
+            "Search For Book",
+            "View Book Details",
+            "Add Book To Shopping Cart",
+            "Proceed With Ordering",
+            "View Order Status"
+        ],
+        "Registered Customer": [
+            "Log In",
+            "Manage Personal Information",
+            "View Purchase History"
+        ],
+        "Warehouse Administrator": [
+            "Handle Book Shipment",
+            "Update Inventory Information"
+        ],
+        "System Administrator": [
+            "Manage User Accounts",
+            "Manage Book Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "View Book Details": [
+            "Add Book To Shopping Cart"
+        ],
+        "Proceed With Ordering": [
+            "View Order Status"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Ordinary Customer": [
+            "Registered Customer"
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "actors": [
+        "Buyers",
+        "Sellers",
+        "Administrators"
+    ],
+    "usecases": [
+        "Resolve Disputes",
+        "Place Orders",
+        "Monitor Transactions",
+        "View Sales Analytics",
+        "Update Product Details",
+        "Manage Inventory",
+        "Oversee Platform",
+        "Browse Products",
+        "Apply Filters",
+        "Track Sales",
+        "Bulk Upload"
+    ],
+    "association_relationships": {
+        "Buyers": [
+            "Browse Products",
+            "Apply Filters",
+            "Place Orders"
+        ],
+        "Sellers": [
+            "Manage Inventory",
+            "Update Product Details",
+            "Track Sales",
+            "Bulk Upload",
+            "View Sales Analytics"
+        ],
+        "Administrators": [
+            "Oversee Platform",
+            "Resolve Disputes",
+            "Monitor Transactions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

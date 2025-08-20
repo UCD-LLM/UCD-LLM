@@ -1,0 +1,5 @@
+Hospital patients can schedule standard checkups or specialized treatments like physical therapy. 
+When scheduling any appointment, the system must verify insurance coverage. 
+For urgent cases, patients may request priority scheduling which triggers an alert to the triage nurse.
+Oncologists, as a specialized type of doctor, additionally review chemotherapy plans and order genomic testing. 
+All doctors can access patient histories, but only senior doctors approve experimental treatments.

@@ -1,0 +1,73 @@
+{
+    "actors": [
+        "Citizens",
+        "Individual Applicants",
+        "Enterprise Operators",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Browse Service Guide",
+        "Check Application Progress",
+        "Track Business Dynamics",
+        "Online Consultation",
+        "Register/Login",
+        "Submit Business License Application",
+        "Upload Application Materials",
+        "Pay Application Fees",
+        "Download Electronic Certificates",
+        "Submit Qualification Certificates",
+        "Manage Enterprise Certificates and Licenses",
+        "Accept Application Materials",
+        "Check Material Completeness",
+        "Conduct Preliminary Review",
+        "Collect Application Fees",
+        "Issue Notices",
+        "Conduct Substantive Approval",
+        "Make Approval Decisions"
+    ],
+    "association_relationships": {
+        "Citizens": [
+            "Browse Service Guide",
+            "Check Application Progress",
+            "Track Business Dynamics",
+            "Online Consultation",
+            "Register/Login"
+        ],
+        "Individual Applicants": [
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Pay Application Fees",
+            "Download Electronic Certificates"
+        ],
+        "Enterprise Operators": [
+            "Submit Qualification Certificates",
+            "Manage Enterprise Certificates and Licenses"
+        ],
+        "Window Staff": [
+            "Accept Application Materials",
+            "Check Material Completeness",
+            "Conduct Preliminary Review",
+            "Collect Application Fees",
+            "Issue Notices"
+        ],
+        "Approval Personnel": [
+            "Accept Application Materials",
+            "Conduct Preliminary Review",
+            "Conduct Substantive Approval",
+            "Make Approval Decisions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizens": [
+            "Individual Applicants",
+            "Enterprise Operators"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "Bloggers",
+        "Administrators"
+    ],
+    "usecases": [
+        "Log In",
+        "Create Content",
+        "Edit Content",
+        "Publish Content",
+        "Set Classification",
+        "Set Tags",
+        "Set Keywords",
+        "Manage Comments",
+        "Review Comments",
+        "Reply to Comments",
+        "Set Comment Review Mechanism",
+        "Manage User Accounts"
+    ],
+    "association_relationships": {
+        "Bloggers": [
+            "Log In",
+            "Create Content",
+            "Edit Content",
+            "Publish Content",
+            "Manage Comments",
+            "Review Comments",
+            "Reply to Comments"
+        ],
+        "Administrators": [
+            "Log In",
+            "Set Classification",
+            "Set Tags",
+            "Set Keywords",
+            "Manage Comments",
+            "Review Comments",
+            "Reply to Comments",
+            "Set Comment Review Mechanism",
+            "Manage User Accounts"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

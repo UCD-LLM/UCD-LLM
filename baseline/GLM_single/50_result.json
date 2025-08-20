@@ -1,0 +1,71 @@
+{
+    "actors": [
+        "Citizen",
+        "Individual Applicant",
+        "Enterprise Operator",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Browse Service Guide",
+        "Check Application Progress",
+        "Online Consultation",
+        "Register/Login",
+        "Submit Business License Application",
+        "Upload Application Materials",
+        "Online Payment",
+        "Download Electronic Certificate",
+        "Submit Qualification Certificates",
+        "Manage Certificates and Licenses",
+        "Accept Application Materials",
+        "Check Material Completeness",
+        "Preliminary Review",
+        "Collect Application Fees",
+        "Issue Notices",
+        "Substantive Approval",
+        "Verify Authenticity",
+        "Make Approval Decision"
+    ],
+    "association_relationships": {
+        "Citizen": [
+            "Browse Service Guide",
+            "Check Application Progress",
+            "Online Consultation",
+            "Register/Login"
+        ],
+        "Individual Applicant": [
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Online Payment",
+            "Download Electronic Certificate"
+        ],
+        "Enterprise Operator": [
+            "Submit Qualification Certificates",
+            "Manage Certificates and Licenses"
+        ],
+        "Window Staff": [
+            "Accept Application Materials",
+            "Check Material Completeness",
+            "Preliminary Review",
+            "Collect Application Fees",
+            "Issue Notices"
+        ],
+        "Approval Personnel": [
+            "Substantive Approval",
+            "Verify Authenticity",
+            "Make Approval Decision"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizen": [
+            "Individual Applicant",
+            "Enterprise Operator"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

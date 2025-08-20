@@ -1,0 +1,44 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Find Location",
+        "Search Museums or Exhibitions",
+        "Add Museum Information",
+        "Browse Museum Information",
+        "Collect Favorite Exhibitions and Cultural Relics",
+        "Access Text and Audio Guidance",
+        "Leave Comments and Ratings",
+        "Modify Museum Information",
+        "Share Views and Feelings",
+        "Find Exhibition Location",
+        "Download Software",
+        "Log In",
+        "Delete Museum Information"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Software",
+            "Log In",
+            "Browse Museum Information",
+            "Search Museums or Exhibitions",
+            "Find Location",
+            "Find Exhibition Location",
+            "Access Text and Audio Guidance",
+            "Collect Favorite Exhibitions and Cultural Relics",
+            "Leave Comments and Ratings",
+            "Share Views and Feelings"
+        ],
+        "Administrators": [
+            "Add Museum Information",
+            "Modify Museum Information",
+            "Delete Museum Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

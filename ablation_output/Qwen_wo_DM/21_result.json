@@ -1,0 +1,92 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Create Supply Chain Documents",
+        "Provide Quotes",
+        "Create Sales Orders",
+        "Manage Customer Information",
+        "Manage Supply Chain Documents",
+        "Query Financial Data",
+        "Log In",
+        "Track Order Status",
+        "Set Production Plans",
+        "Provide Decision Support",
+        "Allocate Work Orders",
+        "Generate Financial Statements",
+        "Provide Discounts",
+        "Monitor Business Performance",
+        "Input Financial Data",
+        "Edit Financial Data",
+        "Monitor Inventory Levels",
+        "Monitor Production Progress"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Log In",
+            "Input Financial Data",
+            "Edit Financial Data",
+            "Query Financial Data",
+            "Generate Financial Statements",
+            "Create Supply Chain Documents",
+            "Manage Supply Chain Documents",
+            "Track Order Status",
+            "Monitor Inventory Levels",
+            "Set Production Plans",
+            "Allocate Work Orders",
+            "Monitor Production Progress",
+            "Manage Customer Information",
+            "Create Sales Orders",
+            "Provide Quotes",
+            "Provide Discounts"
+        ],
+        "Administrators": [
+            "Monitor Business Performance",
+            "Provide Decision Support"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Supply Chain Documents": [
+            "Log In"
+        ],
+        "Provide Quotes": [
+            "Log In"
+        ],
+        "Create Sales Orders": [
+            "Log In"
+        ],
+        "Manage Customer Information": [
+            "Log In"
+        ],
+        "Manage Supply Chain Documents": [
+            "Log In"
+        ],
+        "Query Financial Data": [
+            "Log In"
+        ],
+        "Input Financial Data": [
+            "Log In"
+        ],
+        "Edit Financial Data": [
+            "Log In"
+        ],
+        "Generate Financial Statements": [
+            "Input Financial Data"
+        ]
+    },
+    "extension_relationships": {
+        "Create Sales Orders": [
+            "Provide Discounts"
+        ],
+        "Query Financial Data": [
+            "Generate Financial Statements"
+        ],
+        "Log In": [
+            "Generate Financial Statements"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor "Student"
+actor "Teacher"
+usecase "Grade Homework"
+usecase "Upload Homework File"
+usecase "Enter Scores"
+usecase "Provide Feedback"
+usecase "Fill In Submission Instructions"
+usecase "Submit Assignments"
+usecase "Download Homework Files"
+"Teacher"--"Enter Scores"
+"Teacher"--"Provide Feedback"
+"Upload Homework File"<|."Grade Homework": <<include>>
+"Submit Assignments"<|."Grade Homework": <<include>>
+"Download Homework Files"<|."Grade Homework": <<include>>
+"Grade Homework"<|."Enter Scores": <<include>>
+"Grade Homework"<|."Provide Feedback": <<include>>
+"Submit Assignments"<|."Provide Feedback": <<include>>
+"Upload Homework File"<|."Submit Assignments": <<include>>
+"Fill In Submission Instructions"<|."Submit Assignments": <<include>>
+@enduml

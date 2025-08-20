@@ -1,0 +1,95 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "Specialist Doctor",
+        "Head Nurse",
+        "Toll Collector"
+    ],
+    "usecases": [
+        "Input Diagnostic Information",
+        "Ensure Orderly Progress of Nursing Work",
+        "Initiate Multidisciplinary Consultations",
+        "Triage Patients",
+        "Print Payment Vouchers",
+        "Collect Fees",
+        "View Electronic Medical Record Summary",
+        "Guide Patients",
+        "Record Vital Signs",
+        "Handle Payment",
+        "Issue Prescriptions",
+        "Arrange Nurse Shifts",
+        "Pay Consultation Fee",
+        "Schedule Special Examinations",
+        "Select Time Slot",
+        "View Doctor Schedule",
+        "Ensure Rational Use of Medical Supplies",
+        "Make Appointment",
+        "Manage Medical Consumables",
+        "Arrange Examinations"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Make Appointment",
+            "View Doctor Schedule",
+            "Select Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record Summary"
+        ],
+        "Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations"
+        ],
+        "Nurse": [
+            "Triage Patients",
+            "Guide Patients",
+            "Record Vital Signs"
+        ],
+        "Specialist Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Head Nurse": [
+            "Arrange Nurse Shifts",
+            "Ensure Orderly Progress of Nursing Work",
+            "Manage Medical Consumables",
+            "Ensure Rational Use of Medical Supplies"
+        ],
+        "Toll Collector": [
+            "Handle Payment",
+            "Collect Fees",
+            "Print Payment Vouchers"
+        ]
+    },
+    "inclusion_relationships": {
+        "Issue Prescriptions": [
+            "Input Diagnostic Information"
+        ],
+        "Print Payment Vouchers": [
+            "Collect Fees",
+            "Handle Payment"
+        ],
+        "Make Appointment": [
+            "Select Time Slot"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Arrange Examinations": [
+            "Schedule Special Examinations"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Doctor": [
+            "Specialist Doctor"
+        ],
+        "Nurse": [
+            "Head Nurse"
+        ]
+    }
+}

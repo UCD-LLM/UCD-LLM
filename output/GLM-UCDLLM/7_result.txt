@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Log In"
+usecase "Modify Password"
+usecase "Playback Program"
+usecase "Interact with Other Viewers"
+usecase "Send Barrage Message"
+usecase "Watch Live Content"
+usecase "Choose TV Channel"
+usecase "Log Out"
+usecase "Register Account"
+usecase "Subscribe to Channel or Program"
+"User"--"Watch Live Content"
+"User"--"Playback Program"
+"User"--"Send Barrage Message"
+"User"--"Subscribe to Channel or Program"
+"User"--"Interact with Other Viewers"
+"User"--"Register Account"
+"User"--"Modify Password"
+"User"--"Log Out"
+"Log In"<|."Choose TV Channel": <<include>>
+"Choose TV Channel"<|."Watch Live Content": <<include>>
+@enduml

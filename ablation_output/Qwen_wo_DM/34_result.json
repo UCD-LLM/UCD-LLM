@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "Residents",
+        "Voice Assistants"
+    ],
+    "usecases": [
+        "View Device Status",
+        "Adjust Temperature",
+        "Perform Device Control",
+        "Control Devices Using Control Panel",
+        "Set Security Modes",
+        "Use Mobile App",
+        "Receive Voice Commands",
+        "Control Lighting"
+    ],
+    "association_relationships": {
+        "Residents": [
+            "Use Mobile App",
+            "Control Devices Using Control Panel",
+            "View Device Status",
+            "Adjust Temperature",
+            "Control Lighting",
+            "Set Security Modes"
+        ],
+        "Voice Assistants": [
+            "Receive Voice Commands",
+            "Perform Device Control"
+        ]
+    },
+    "inclusion_relationships": {
+        "Perform Device Control": [
+            "Receive Voice Commands"
+        ]
+    },
+    "extension_relationships": {
+        "Receive Voice Commands": [
+            "Adjust Temperature",
+            "Control Lighting"
+        ],
+        "Use Mobile App": [
+            "Control Lighting"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

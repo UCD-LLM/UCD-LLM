@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+actor "Ordinary Customer"
+actor "Registered Customer"
+actor "Warehouse Administrator"
+actor "System Administrator"
+usecase "Manage User Accounts"
+usecase "View Book Details"
+usecase "Add Book to Shopping Cart"
+usecase "Manage Book Information"
+usecase "Manage Personal Information"
+usecase "Update Inventory Information"
+usecase "View Order Status"
+usecase "Search Books"
+usecase "View Purchase History"
+usecase "Search Target Book"
+usecase "Handle Shipment"
+usecase "Place Order"
+usecase "Browse Book Catalog"
+usecase "Log In"
+usecase "Add Book To Shopping Cart"
+usecase "Proceed Purchasing"
+usecase "Proceed Ordering"
+"Ordinary Customer"--"Proceed Ordering"
+"Ordinary Customer"--"View Order Status"
+"Registered Customer"--"Manage Personal Information"
+"Registered Customer"--"View Purchase History"
+"Registered Customer"--"Search Books"
+"Registered Customer"--"Place Order"
+"Warehouse Administrator"--"Handle Shipment"
+"Warehouse Administrator"--"Update Inventory Information"
+"System Administrator"--"Manage User Accounts"
+"System Administrator"--"Manage Book Information"
+"View Book Details"<|."Proceed Ordering": <<include>>
+"Browse Book Catalog"<|."Proceed Ordering": <<include>>
+"Add Book To Shopping Cart"<|."Proceed Ordering": <<include>>
+"Proceed Purchasing"<|."Proceed Ordering": <<include>>
+"Log In"<|."Manage Personal Information": <<include>>
+"Log In"<|."View Purchase History": <<include>>
+"Search Target Book"<|."Place Order": <<include>>
+"Browse Book Catalog"<|."Proceed Purchasing": <<include>>
+"Add Book To Shopping Cart"<|."Proceed Purchasing": <<include>>
+"Add Book to Shopping Cart"--|>"Add Book To Shopping Cart"
+"Registered Customer"--|>"Ordinary Customer"
+@enduml

@@ -1,0 +1,55 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Manage Personal Information",
+        "Change Password",
+        "Log In",
+        "Register",
+        "Receive Electronic Ticket",
+        "Choose Payment Method",
+        "Choose Cinema",
+        "Select Movie",
+        "Complete Payment",
+        "Browse Movie List",
+        "Reserve Seats",
+        "View Order History"
+    ],
+    "association_relationships": {
+        "User": [
+            "Register",
+            "Log In",
+            "Browse Movie List",
+            "Select Movie",
+            "Choose Cinema",
+            "Reserve Seats",
+            "Choose Payment Method",
+            "Complete Payment",
+            "Receive Electronic Ticket",
+            "View Order History",
+            "Manage Personal Information",
+            "Change Password"
+        ]
+    },
+    "inclusion_relationships": {
+        "Select Movie": [
+            "Log In"
+        ],
+        "Browse Movie List": [
+            "Log In"
+        ],
+        "View Order History": [
+            "Log In"
+        ],
+        "Receive Electronic Ticket": [
+            "Complete Payment"
+        ],
+        "Complete Payment": [
+            "Choose Payment Method"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

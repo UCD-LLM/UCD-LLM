@@ -1,0 +1,74 @@
+@startuml
+left to right direction
+actor "Visitors"
+actor "Students"
+actor "Teachers"
+actor "Teaching Assistant"
+actor "Administrators"
+usecase "Manage User Accounts"
+usecase "Create New Courses"
+usecase "Register as User"
+usecase "Answer Questions"
+usecase "Design Course Structure"
+usecase "Create Accounts"
+usecase "Browse Course Catalog"
+usecase "View Grade Reports"
+usecase "Choose Courses"
+usecase "Submit Assignments"
+usecase "View Course Information"
+usecase "Manage Course Classification"
+usecase "Publish Homework"
+usecase "Participate in Course Learning"
+usecase "View Course Details"
+usecase "Correct Homework"
+usecase "Manage Course Grades"
+usecase "Complete Learning Tasks"
+usecase "Create Online Quizzes"
+usecase "Upload Teaching Materials"
+usecase "Watch Teaching Videos"
+usecase "Participate in Online Quizzes"
+usecase "Review Course Content"
+usecase "Participate In Online Quizzes"
+usecase "Log In"
+usecase "Participate In Course Learning"
+usecase "Deactivate Accounts"
+usecase "Modify Account Information"
+"Visitors"--"Browse Course Catalog"
+"Visitors"--"View Course Information"
+"Visitors"--"View Course Details"
+"Students"--"Browse Course Catalog"
+"Students"--"View Course Details"
+"Students"--"Choose Courses"
+"Students"--"Watch Teaching Videos"
+"Students"--"Participate in Course Learning"
+"Students"--"Submit Assignments"
+"Students"--"Complete Learning Tasks"
+"Students"--"Participate in Online Quizzes"
+"Students"--"View Grade Reports"
+"Teachers"--"Create New Courses"
+"Teachers"--"Design Course Structure"
+"Teachers"--"Upload Teaching Materials"
+"Teachers"--"Publish Homework"
+"Teachers"--"Create Online Quizzes"
+"Teaching Assistant"--"Participate In Course Learning"
+"Teaching Assistant"--"Participate In Online Quizzes"
+"Teaching Assistant"--"Answer Questions"
+"Administrators"--"Manage User Accounts"
+"Administrators"--"Create Accounts"
+"Administrators"--"Deactivate Accounts"
+"Administrators"--"Modify Account Information"
+"Administrators"--"Manage Course Classification"
+"Administrators"--"Review Course Content"
+"Register as User"<|."Complete Learning Tasks": <<include>>
+"Log In"<|."Complete Learning Tasks": <<include>>
+"Log In"<|."Choose Courses": <<include>>
+"Log In"<|."Submit Assignments": <<include>>
+"Log In"<|."Participate in Course Learning": <<include>>
+"Log In"<|."Manage Course Grades": <<include>>
+"Log In"<|."Watch Teaching Videos": <<include>>
+"Log In"<|."Participate in Online Quizzes": <<include>>
+"Log In"<|."Participate In Course Learning": <<include>>
+"Publish Homework"<|."Correct Homework": <<extend>>
+"Complete Learning Tasks"<|."Manage Course Grades": <<extend>>
+"Teaching Assistant"--|>"Students"
+@enduml

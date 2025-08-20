@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+actor "Customers"
+actor "Restaurant Staff"
+actor "Restaurant Managers"
+usecase "Log In"
+usecase "Place Orders"
+usecase "Pay For Orders"
+usecase "View Ordering Information"
+usecase "Add Special Requirements"
+usecase "View Ordering Frequency"
+usecase "Receive Notifications"
+usecase "Select Restaurants"
+usecase "View Requests"
+usecase "Prepare Dishes"
+usecase "View Menus"
+usecase "Add Notes"
+usecase "View Sales Data"
+"Customers"--"Log In"
+"Customers"--"Place Orders"
+"Customers"--"Add Notes"
+"Customers"--"Pay For Orders"
+"Customers"--"Receive Notifications"
+"Restaurant Staff"--"View Ordering Information"
+"Restaurant Staff"--"Prepare Dishes"
+"Restaurant Managers"--"View Sales Data"
+"Restaurant Managers"--"View Ordering Frequency"
+"Select Restaurants"<|."Place Orders": <<include>>
+"View Menus"<|."Place Orders": <<include>>
+"View Requests"<|."Prepare Dishes": <<include>>
+"Select Restaurants"<|."Add Special Requirements": <<extend>>
+@enduml

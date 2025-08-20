@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor "Doctor"
+actor "System Administrator"
+usecase "View Imaging Examination Results"
+usecase "Review Examination Results"
+usecase "Record Physical Examination Results"
+usecase "View Blood Test Results"
+usecase "Access Historical Medical Records"
+usecase "Issue Examination Forms"
+usecase "Develop Treatment Plans"
+usecase "Review Testing Results"
+usecase "Maintain Diagnostic Knowledge Base"
+usecase "Manage Doctor Accounts"
+usecase "Issue Testing Forms"
+usecase "View Microbiological Examination Results"
+usecase "Back Up System Data"
+usecase "Record Patient Complaints"
+"Doctor"--"Record Patient Complaints"
+"Doctor"--"Issue Testing Forms"
+"Doctor"--"Develop Treatment Plans"
+"Doctor"--"View Blood Test Results"
+"Doctor"--"View Imaging Examination Results"
+"Doctor"--"View Microbiological Examination Results"
+"System Administrator"--"Manage Doctor Accounts"
+"System Administrator"--"Maintain Diagnostic Knowledge Base"
+"System Administrator"--"Back Up System Data"
+"Review Examination Results"<|."Develop Treatment Plans": <<include>>
+"Record Physical Examination Results"<|."Develop Treatment Plans": <<include>>
+"Access Historical Medical Records"<|."Develop Treatment Plans": <<include>>
+"Issue Examination Forms"<|."Develop Treatment Plans": <<include>>
+"Review Testing Results"<|."Develop Treatment Plans": <<include>>
+@enduml

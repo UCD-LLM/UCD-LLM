@@ -1,0 +1,9 @@
+Hotel Management System Requirements Description
+
+For travelers, the system should support them in searching for available rooms within the hotel, in order to screen suitable accommodation options based on their own itinerary and needs; After finding a room of interest, you can view detailed information about the room, such as room type, area, facilities, capacity, price, etc; If you confirm your check-in, you can directly book a room online.
+
+The main responsibilities of the hotel front desk include handling check-in procedures for arriving guests, verifying identity information, assigning room keys, etc., to ensure smooth check-in for guests; At the end of the passenger's stay, handle check-out and checkout matters.
+
+As a special type of hotel front desk, hotel managers not only have all the operational permissions of the hotel front desk, but also need to have the function of viewing financial reports in order to grasp the financial status of the hotel, such as revenue, expenses, and profits; In addition, room prices can be managed by adjusting the pricing of different types of rooms based on market demand, seasonal changes, and other factors.
+
+The work of system maintenance personnel mainly focuses on system management. On the one hand, they are responsible for managing system configuration, ensuring that the various functional parameters of the system are set reasonably, and guaranteeing the stable operation of the system; On the other hand, responsible for managing user accounts.

@@ -1,0 +1,76 @@
+{
+    "actors": [
+        "Library Members",
+        "Student Members",
+        "Librarians",
+        "Senior Librarians"
+    ],
+    "usecases": [
+        "Place Hold Request",
+        "Handle Special Requests",
+        "Request Expedited Processing",
+        "Access Online Journals",
+        "Borrow Books",
+        "Process Returns",
+        "Oversee Inter-library Loans",
+        "Borrow Reference Textbooks",
+        "Generate Monthly Acquisition Reports",
+        "Process Borrows",
+        "Check Availability",
+        "Search Catalog"
+    ],
+    "association_relationships": {
+        "Library Members": [
+            "Search Catalog",
+            "Borrow Books",
+            "Borrow Reference Textbooks",
+            "Access Online Journals",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Student Members": [
+            "Search Catalog",
+            "Borrow Books",
+            "Borrow Reference Textbooks",
+            "Access Online Journals",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Librarians": [
+            "Process Borrows",
+            "Process Returns",
+            "Handle Special Requests",
+            "Generate Monthly Acquisition Reports",
+            "Oversee Inter-library Loans"
+        ],
+        "Senior Librarians": [
+            "Generate Monthly Acquisition Reports",
+            "Oversee Inter-library Loans"
+        ]
+    },
+    "inclusion_relationships": {
+        "Borrow Books": [
+            "Process Borrows",
+            "Check Availability"
+        ],
+        "Borrow Reference Textbooks": [
+            "Check Availability"
+        ]
+    },
+    "extension_relationships": {
+        "Borrow Books": [
+            "Request Expedited Processing"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Library Members": [
+            "Student Members"
+        ],
+        "Librarians": [
+            "Senior Librarians"
+        ]
+    }
+}

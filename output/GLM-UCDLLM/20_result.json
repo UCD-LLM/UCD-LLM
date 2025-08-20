@@ -1,0 +1,68 @@
+{
+    "actors": [
+        "Users",
+        "Technical Support Personnel"
+    ],
+    "usecases": [
+        "Assess Severity",
+        "Submit Technical Support Work Order",
+        "Process Work Order",
+        "Allocate Work Order",
+        "Select Problem Category",
+        "Assign Work Order",
+        "Provide Contact Information",
+        "Determine Priority",
+        "Provide Problem Description"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Submit Technical Support Work Order",
+            "Provide Problem Description",
+            "Select Problem Category",
+            "Provide Contact Information"
+        ],
+        "Technical Support Personnel": [
+            "Allocate Work Order",
+            "Process Work Order",
+            "Assess Severity",
+            "Determine Priority",
+            "Assign Work Order"
+        ]
+    },
+    "inclusion_relationships": {
+        "Process Work Order": [
+            "Assess Severity",
+            "Assign Work Order",
+            "Provide Contact Information",
+            "Determine Priority",
+            "Provide Problem Description"
+        ],
+        "Allocate Work Order": [
+            "Assess Severity",
+            "Provide Contact Information",
+            "Determine Priority",
+            "Provide Problem Description"
+        ],
+        "Assign Work Order": [
+            "Assess Severity",
+            "Select Problem Category",
+            "Provide Contact Information",
+            "Determine Priority",
+            "Provide Problem Description"
+        ],
+        "Assess Severity": [
+            "Provide Problem Description"
+        ],
+        "Submit Technical Support Work Order": [
+            "Select Problem Category",
+            "Provide Contact Information",
+            "Provide Problem Description"
+        ],
+        "Determine Priority": [
+            "Provide Problem Description"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

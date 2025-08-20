@@ -1,0 +1,28 @@
+{
+    "actors": [
+        "Applicants",
+        "Administrators"
+    ],
+    "usecases": [
+        "Log In",
+        "View Applicant Registration Records",
+        "Manage Applicant Accounts",
+        "Generate Registration Reports",
+        "Handle Abnormal Registration Situations"
+    ],
+    "association_relationships": {
+        "Applicants": [
+            "Log In"
+        ],
+        "Administrators": [
+            "View Applicant Registration Records",
+            "Generate Registration Reports",
+            "Handle Abnormal Registration Situations",
+            "Manage Applicant Accounts"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

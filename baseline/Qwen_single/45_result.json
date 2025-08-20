@@ -1,0 +1,50 @@
+{
+    "actors": [
+        "Content Editor",
+        "Content Reviewer",
+        "Advanced Editor",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Write New Article",
+        "Modify Existing Article",
+        "Submit for Review",
+        "Check Article Status",
+        "Review Article",
+        "Approve Article",
+        "Publish Article",
+        "Manage User Roles",
+        "Perform System Backup",
+        "Manage Content Classification"
+    ],
+    "association_relationships": {
+        "Content Editor": [
+            "Write New Article",
+            "Modify Existing Article",
+            "Submit for Review",
+            "Check Article Status"
+        ],
+        "Content Reviewer": [
+            "Review Article",
+            "Approve Article"
+        ],
+        "Advanced Editor": [
+            "Write New Article",
+            "Modify Existing Article",
+            "Publish Article",
+            "Manage Content Classification"
+        ],
+        "System Administrator": [
+            "Manage User Roles",
+            "Perform System Backup"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Content Editor": [
+            "Advanced Editor"
+        ]
+    }
+}

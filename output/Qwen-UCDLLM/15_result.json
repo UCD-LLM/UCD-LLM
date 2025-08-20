@@ -1,0 +1,28 @@
+{
+    "actors": [
+        "Customer"
+    ],
+    "usecases": [
+        "Perform Transfer Operation",
+        "Check Account Balance",
+        "Specify Transfer Amount",
+        "Input Payee Information"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Check Account Balance",
+            "Perform Transfer Operation",
+            "Input Payee Information",
+            "Specify Transfer Amount"
+        ]
+    },
+    "inclusion_relationships": {
+        "Perform Transfer Operation": [
+            "Check Account Balance",
+            "Input Payee Information"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

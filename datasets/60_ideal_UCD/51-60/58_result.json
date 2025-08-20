@@ -1,0 +1,47 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Create Electronic Contract",
+        "Select Contract Template",
+        "Edit Contract Customly",
+        "Sign Contract",
+        "Sign Contract Handwritten",
+        "Sign Contract Via Scan Code",
+        "Store Signed Contract",
+        "Retrive Signed Contract",
+        "Download Signed Contract",
+        "Modify Signed Contract",
+        "Receive Contract Expiration Reminder"
+    ],
+    "association_relationships": {
+        "User": [
+            "Create Electronic Contract",
+            "Select Contract Template",
+            "Edit Contract Customly",
+            "Sign Contract",
+            "Sign Contract Handwritten",
+            "Sign Contract Via Scan Code",
+            "Store Signed Contract",
+            "Retrive Signed Contract",
+            "Download Signed Contract",
+            "Modify Signed Contract",
+            "Receive Contract Expiration Reminder"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Electronic Contract": [
+            "Select Contract Template",
+            "Edit Contract Customly"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Sign Contract": [
+            "Sign Contract Handwritten",
+            "Sign Contract Via Scan Code"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,56 @@
+{
+    "actors": [
+        "Patient",
+        "Front Desk Receptionist",
+        "Doctor"
+    ],
+    "usecases": [
+        "View Appointment Records",
+        "Manage Patient Information",
+        "View Appointment Times",
+        "Cancel Appointment",
+        "Make Appointment",
+        "Choose Offline Visit",
+        "View Doctor Profiles",
+        "View Daily Appointment Schedule",
+        "Register Account",
+        "Record Treatment Plans",
+        "Record Diagnosis Results",
+        "Log In",
+        "Choose Online Video Consultation",
+        "Handle Appointment Requests"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Register Account",
+            "Log In",
+            "View Doctor Profiles",
+            "View Appointment Times",
+            "Make Appointment",
+            "Choose Online Video Consultation",
+            "Choose Offline Visit",
+            "View Appointment Records",
+            "Cancel Appointment"
+        ],
+        "Front Desk Receptionist": [
+            "Handle Appointment Requests",
+            "Manage Patient Information"
+        ],
+        "Doctor": [
+            "View Daily Appointment Schedule",
+            "Record Diagnosis Results",
+            "Record Treatment Plans"
+        ]
+    },
+    "inclusion_relationships": {
+        "View Appointment Times": [
+            "Log In"
+        ],
+        "Cancel Appointment": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

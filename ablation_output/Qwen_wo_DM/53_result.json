@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Hospital Patients",
+        "Triage Nurse",
+        "Oncologists",
+        "Doctors",
+        "Senior Doctors"
+    ],
+    "usecases": [
+        "Approve Experimental Treatments",
+        "Verify Insurance Coverage",
+        "Receive Urgent Case Alert",
+        "Schedule Specialized Treatments",
+        "Request Priority Scheduling",
+        "Schedule Standard Checkups",
+        "Access Patient Histories",
+        "Review Chemotherapy Plans",
+        "Order Genomic Testing"
+    ],
+    "association_relationships": {
+        "Hospital Patients": [
+            "Schedule Standard Checkups",
+            "Schedule Specialized Treatments",
+            "Request Priority Scheduling",
+            "Verify Insurance Coverage"
+        ],
+        "Triage Nurse": [
+            "Receive Urgent Case Alert"
+        ],
+        "Oncologists": [
+            "Review Chemotherapy Plans",
+            "Order Genomic Testing"
+        ],
+        "Doctors": [
+            "Access Patient Histories",
+            "Review Chemotherapy Plans",
+            "Order Genomic Testing"
+        ],
+        "Senior Doctors": [
+            "Access Patient Histories",
+            "Approve Experimental Treatments"
+        ]
+    },
+    "inclusion_relationships": {
+        "Approve Experimental Treatments": [
+            "Access Patient Histories"
+        ],
+        "Schedule Specialized Treatments": [
+            "Verify Insurance Coverage"
+        ],
+        "Request Priority Scheduling": [
+            "Verify Insurance Coverage"
+        ],
+        "Schedule Standard Checkups": [
+            "Verify Insurance Coverage"
+        ]
+    },
+    "extension_relationships": {
+        "Request Priority Scheduling": [
+            "Receive Urgent Case Alert"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctors": [
+            "Oncologists",
+            "Senior Doctors"
+        ]
+    }
+}

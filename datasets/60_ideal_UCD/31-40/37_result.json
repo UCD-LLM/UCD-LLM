@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Corporate Finance Personnel",
+        "Customer"
+    ],
+    "usecases": [
+        "Uploading Invoice Information",
+        "Generate Electronic Invoice",
+        "Generate Blue Invoice",
+        "Generate Red Invoice",
+        "Modify Existing Invoice",
+        "Delete Existing Invoice",
+        "Receive Electronic Invoice",
+        "Query Historical Invoice Records",
+        "Share Invoice With Others",
+        "Share Invoice Via Email",
+        "Share Invoice Via Social Media"
+    ],
+    "association_relationships": {
+        "Corporate Finance Personnel": [
+            "Uploading Invoice Information",
+            "Generate Electronic Invoice",
+            "Generate Blue Invoice",
+            "Generate Red Invoice",
+            "Modify Existing Invoice",
+            "Delete Existing Invoice"
+        ],
+        "Customer": [
+            "Receive Electronic Invoice",
+            "Query Historical Invoice Records",
+            "Share Invoice With Others",
+            "Share Invoice Via Email",
+            "Share Invoice Via Social Media"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Generate Electronic Invoice": [
+            "Generate Blue Invoice",
+            "Generate Red Invoice"
+        ],
+        "Share Invoice With Others": [
+            "Share Invoice Via Email",
+            "Share Invoice Via Social Media"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

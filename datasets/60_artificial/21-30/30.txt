@@ -1,0 +1,9 @@
+I hope to develop a medical imaging management system with the following functions:
+Doctors can access the system through the Internet and log in with their personal accounts.
+The system needs to provide a user interface where doctors can upload, store, view, and manage patients' medical imaging data, such as X-rays, CT scan images, etc.
+The system should support multiple formats of medical imaging files to ensure compatibility and ease of use.
+Doctors can annotate and measure images to assist in the diagnostic process.
+The system needs to have a powerful search function that allows doctors to quickly retrieve the required imaging data based on patient names, medical records, or other keywords.
+In order to protect patient privacy, the system must strictly comply with relevant data security regulations, ensuring that all sensitive information is encrypted and only authorized personnel can access it.
+The system should also provide a report generation function, where doctors can generate diagnostic reports based on imaging data and choose to send them to patients or relevant medical institutions according to actual needs.
+Administrators need an interface to manage user permissions, including adding, modifying, and deleting user accounts.

@@ -1,0 +1,36 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Submit Reimbursement Request",
+        "Set and Manage Reimbursement Classifications",
+        "Set and Manage Reimbursement Approval Process",
+        "Access System",
+        "View and Approve Reimbursement Requests",
+        "Handle Abnormal Reimbursement Situations",
+        "Login",
+        "Manage Employee Accounts",
+        "Generate Reimbursement Statistics Reports"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Login",
+            "Access System",
+            "Submit Reimbursement Request"
+        ],
+        "Administrator": [
+            "Set and Manage Reimbursement Classifications",
+            "View and Approve Reimbursement Requests",
+            "Generate Reimbursement Statistics Reports",
+            "Handle Abnormal Reimbursement Situations",
+            "Manage Employee Accounts",
+            "Set and Manage Reimbursement Approval Process"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

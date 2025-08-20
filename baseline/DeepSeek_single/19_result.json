@@ -1,0 +1,38 @@
+{
+    "actors": [
+        "Citizens",
+        "Approvers"
+    ],
+    "usecases": [
+        "Submit Application",
+        "Review Application",
+        "Fill Application Form",
+        "Upload Supporting Documents",
+        "Real Name Authentication",
+        "Check Material Completeness",
+        "Verify Information Authenticity"
+    ],
+    "association_relationships": {
+        "Citizens": [
+            "Submit Application",
+            "Fill Application Form",
+            "Upload Supporting Documents",
+            "Real Name Authentication"
+        ],
+        "Approvers": [
+            "Review Application",
+            "Check Material Completeness",
+            "Verify Information Authenticity"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Application": [
+            "Fill Application Form",
+            "Upload Supporting Documents",
+            "Real Name Authentication"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

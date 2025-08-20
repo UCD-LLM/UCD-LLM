@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Log In"
+usecase "Classify Memo"
+usecase "Add Memo"
+usecase "Delete Memo"
+usecase "Edit Memo"
+usecase "Search Memos"
+"User"--"Add Memo"
+"User"--"Edit Memo"
+"User"--"Delete Memo"
+"User"--"Classify Memo"
+"User"--"Search Memos"
+"Log In"<|."Add Memo": <<include>>
+@enduml

@@ -1,0 +1,135 @@
+{
+    "actors": [
+        "Visitor",
+        "Student",
+        "Teacher",
+        "Teaching Assistant",
+        "Administrator"
+    ],
+    "usecases": [
+        "Browse Course Catalog",
+        "Learn About Course Information",
+        "Submit Assignments",
+        "Manage User Accounts",
+        "Watch Teaching Videos",
+        "Choose Courses",
+        "Modify User Information",
+        "Upload Teaching Materials",
+        "Assist In Correcting Homework",
+        "Classify Courses",
+        "Create Online Quiz",
+        "Deactivate User Accounts",
+        "Manage Course Grades",
+        "Participate In Online Quizzes",
+        "Publish Homework",
+        "Manage Course Classification",
+        "Correct Homework",
+        "Log In",
+        "Participate In Course Learning",
+        "Create New Course",
+        "View Grade Reports",
+        "View Course Introduction",
+        "Answer Course Questions In Forum",
+        "Design Course Structure",
+        "Review Course Content"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "Browse Course Catalog",
+            "Learn About Course Information",
+            "View Course Introduction"
+        ],
+        "Student": [
+            "Log In",
+            "Choose Courses",
+            "Watch Teaching Videos",
+            "Participate In Course Learning",
+            "Submit Assignments",
+            "Participate In Online Quizzes",
+            "View Grade Reports"
+        ],
+        "Teacher": [
+            "Log In",
+            "Create New Course",
+            "Design Course Structure",
+            "Upload Teaching Materials",
+            "Publish Homework",
+            "Correct Homework",
+            "Create Online Quiz",
+            "Manage Course Grades"
+        ],
+        "Teaching Assistant": [
+            "Assist In Correcting Homework",
+            "Answer Course Questions In Forum"
+        ],
+        "Administrator": [
+            "Manage User Accounts",
+            "Deactivate User Accounts",
+            "Modify User Information",
+            "Classify Courses",
+            "Manage Course Classification",
+            "Review Course Content"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Assignments": [
+            "Log In"
+        ],
+        "Watch Teaching Videos": [
+            "Choose Courses",
+            "Log In"
+        ],
+        "Choose Courses": [
+            "Log In"
+        ],
+        "Participate In Course Learning": [
+            "Choose Courses",
+            "Log In"
+        ],
+        "Upload Teaching Materials": [
+            "Log In"
+        ],
+        "Assist In Correcting Homework": [
+            "Log In"
+        ],
+        "Create Online Quiz": [
+            "Log In"
+        ],
+        "Manage Course Grades": [
+            "Log In"
+        ],
+        "Participate In Online Quizzes": [
+            "Log In"
+        ],
+        "Publish Homework": [
+            "Log In"
+        ],
+        "Correct Homework": [
+            "Log In"
+        ],
+        "Create New Course": [
+            "Log In",
+            "Design Course Structure"
+        ],
+        "View Grade Reports": [
+            "Log In"
+        ],
+        "Design Course Structure": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Participate In Course Learning": [
+            "Participate In Online Quizzes"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Registered User": [
+            "Student"
+        ],
+        "Student": [
+            "Teaching Assistant"
+        ]
+    }
+}

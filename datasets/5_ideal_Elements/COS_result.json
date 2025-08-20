@@ -1,0 +1,21 @@
+{
+    "actors": [
+        "Patron"
+    ],
+    "usecases": [
+        "Log In",
+        "Place Order",
+        "Register",
+        "Place Order For Pickup",
+        "Exit",
+        "Change Meal Date",
+        "Cancel Order",
+        "Specify Pickup Or Delivery",
+        "Provide Delivery Location"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,86 @@
+{
+    "actors": [
+        "Library Member",
+        "Student Member",
+        "Librarian",
+        "Senior Librarian"
+    ],
+    "usecases": [
+        "Search Catalog",
+        "Borrow Books",
+        "Check Availability",
+        "Place Hold Request",
+        "Request Expedited Processing",
+        "Borrow Reference Textbooks",
+        "Access Online Journals",
+        "Process Borrowing",
+        "Process Returns",
+        "Handle Special Requests",
+        "Generate Monthly Acquisition Reports",
+        "Oversee Inter-Library Loans"
+    ],
+    "association_relationships": {
+        "Library Member": [
+            "Search Catalog",
+            "Borrow Books",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Student Member": [
+            "Search Catalog",
+            "Borrow Books",
+            "Borrow Reference Textbooks",
+            "Access Online Journals",
+            "Check Availability",
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Librarian": [
+            "Process Borrowing",
+            "Process Returns",
+            "Handle Special Requests"
+        ],
+        "Senior Librarian": [
+            "Process Borrowing",
+            "Process Returns",
+            "Handle Special Requests",
+            "Generate Monthly Acquisition Reports",
+            "Oversee Inter-Library Loans"
+        ]
+    },
+    "inclusion_relationships": {
+        "Borrow Books": [
+            "Check Availability"
+        ],
+        "Borrow Reference Textbooks": [
+            "Check Availability"
+        ],
+        "Access Online Journals": [
+            "Check Availability"
+        ]
+    },
+    "extension_relationships": {
+        "Borrow Books": [
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Borrow Reference Textbooks": [
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ],
+        "Access Online Journals": [
+            "Place Hold Request",
+            "Request Expedited Processing"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Library Member": [
+            "Student Member"
+        ],
+        "Librarian": [
+            "Senior Librarian"
+        ]
+    }
+}

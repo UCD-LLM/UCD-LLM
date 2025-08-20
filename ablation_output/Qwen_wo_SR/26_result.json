@@ -1,0 +1,100 @@
+{
+    "actors": [
+        "Operators",
+        "Maintenance Engineers",
+        "Production Manager",
+        "System Administrator",
+        "Automated Assembly Line Monitoring System"
+    ],
+    "usecases": [
+        "Provide Equipment Status Information",
+        "Record Operational Data",
+        "Handle Abnormal Situations",
+        "Trigger Real-time Alarm",
+        "Collect Operational Data",
+        "Add Users",
+        "Generate Analysis Reports",
+        "Generate Comprehensive Production Reports",
+        "Provide Fault Logs",
+        "Control Operations",
+        "Monitor Energy Consumption",
+        "View Production Situation",
+        "Manage System Users",
+        "Perform Preventive Maintenance",
+        "Monitor Production Speed",
+        "Monitor Fault Information",
+        "View Operation Records",
+        "Observe Assembly Line Status",
+        "Troubleshoot Faults",
+        "Delete Users"
+    ],
+    "association_relationships": {
+        "Operators": [
+            "Observe Assembly Line Status",
+            "Control Operations",
+            "Handle Abnormal Situations"
+        ],
+        "Maintenance Engineers": [
+            "Perform Preventive Maintenance",
+            "Troubleshoot Faults"
+        ],
+        "Production Manager": [
+            "View Production Situation",
+            "Generate Analysis Reports"
+        ],
+        "System Administrator": [
+            "View Operation Records",
+            "Generate Comprehensive Production Reports",
+            "Manage System Users",
+            "Add Users",
+            "Delete Users"
+        ],
+        "Automated Assembly Line Monitoring System": [
+            "Collect Operational Data",
+            "Record Operational Data",
+            "Monitor Production Speed",
+            "Monitor Fault Information",
+            "Monitor Energy Consumption",
+            "Trigger Real-time Alarm",
+            "Provide Equipment Status Information",
+            "Provide Fault Logs"
+        ]
+    },
+    "inclusion_relationships": {
+        "Provide Equipment Status Information": [
+            "Collect Operational Data"
+        ],
+        "Observe Assembly Line Status": [
+            "Provide Equipment Status Information",
+            "Collect Operational Data"
+        ],
+        "Record Operational Data": [
+            "Collect Operational Data"
+        ],
+        "Handle Abnormal Situations": [
+            "Collect Operational Data"
+        ],
+        "Trigger Real-time Alarm": [
+            "Collect Operational Data"
+        ],
+        "Monitor Production Speed": [
+            "Collect Operational Data"
+        ],
+        "Perform Preventive Maintenance": [
+            "Monitor Fault Information"
+        ]
+    },
+    "extension_relationships": {
+        "Provide Equipment Status Information": [
+            "Perform Preventive Maintenance"
+        ],
+        "Record Operational Data": [
+            "Generate Comprehensive Production Reports"
+        ],
+        "Monitor Fault Information": [
+            "Handle Abnormal Situations"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

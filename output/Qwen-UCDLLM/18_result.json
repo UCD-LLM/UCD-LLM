@@ -1,0 +1,52 @@
+{
+    "actors": [
+        "Car Rental Customer",
+        "Store Employee"
+    ],
+    "usecases": [
+        "Determine Rental Period",
+        "Complete Vehicle Booking",
+        "Sign Rental Contract",
+        "Confirm Agreement",
+        "Verify Customer Identity",
+        "Provide Driver's License Information",
+        "Select Car Model",
+        "Read Rental Terms",
+        "Pick Up Car"
+    ],
+    "association_relationships": {
+        "Car Rental Customer": [
+            "Select Car Model",
+            "Determine Rental Period",
+            "Provide Driver's License Information",
+            "Read Rental Terms",
+            "Confirm Agreement",
+            "Complete Vehicle Booking",
+            "Pick Up Car",
+            "Sign Rental Contract"
+        ],
+        "Store Employee": [
+            "Verify Customer Identity",
+            "Sign Rental Contract"
+        ]
+    },
+    "inclusion_relationships": {
+        "Complete Vehicle Booking": [
+            "Determine Rental Period",
+            "Read Rental Terms"
+        ],
+        "Sign Rental Contract": [
+            "Verify Customer Identity"
+        ],
+        "Confirm Agreement": [
+            "Read Rental Terms"
+        ],
+        "Pick Up Car": [
+            "Verify Customer Identity",
+            "Select Car Model"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

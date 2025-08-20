@@ -1,0 +1,32 @@
+{
+    "actors": [
+        "Student",
+        "Teacher"
+    ],
+    "usecases": [
+        "Submit Assignment",
+        "Upload Homework File",
+        "Fill Submission Instructions",
+        "Grade Homework",
+        "Download Homework File",
+        "Enter Scores",
+        "Fill Feedback"
+    ],
+    "association_relationships": {
+        "Student": [
+            "Submit Assignment",
+            "Upload Homework File",
+            "Fill Submission Instructions"
+        ],
+        "Teacher": [
+            "Grade Homework",
+            "Download Homework File",
+            "Enter Scores",
+            "Fill Feedback"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

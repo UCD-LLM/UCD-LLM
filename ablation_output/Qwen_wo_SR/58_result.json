@@ -1,0 +1,60 @@
+{
+    "actors": [
+        "User",
+        "Touch Devices",
+        "Mice",
+        "Smartphones"
+    ],
+    "usecases": [
+        "Create Contract",
+        "Sign Contract",
+        "Select Template",
+        "Store Contract",
+        "Receive Expiration Reminder",
+        "Scan Code Signature",
+        "Confirm Resign Contract",
+        "Modify Signed Contract",
+        "Scan QR Code",
+        "Custom Edit Contract",
+        "Retrieve Contract",
+        "Download Contract",
+        "Complete Handwritten Signature",
+        "Complete Identity Verification"
+    ],
+    "association_relationships": {
+        "User": [
+            "Create Contract",
+            "Select Template",
+            "Custom Edit Contract",
+            "Sign Contract",
+            "Complete Handwritten Signature",
+            "Scan Code Signature",
+            "Store Contract",
+            "Retrieve Contract",
+            "Download Contract",
+            "Modify Signed Contract",
+            "Confirm Resign Contract",
+            "Receive Expiration Reminder"
+        ],
+        "Touch Devices": [
+            "Complete Handwritten Signature"
+        ],
+        "Mice": [
+            "Complete Handwritten Signature"
+        ],
+        "Smartphones": [
+            "Scan QR Code",
+            "Complete Identity Verification",
+            "Sign Contract"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Sign Contract": [
+            "Scan Code Signature",
+            "Retrieve Contract"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

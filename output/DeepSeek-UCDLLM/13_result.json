@@ -1,0 +1,28 @@
+{
+    "actors": [
+        "Customer"
+    ],
+    "usecases": [
+        "Verify Credit Card",
+        "Place Order",
+        "Log In",
+        "Browse Products"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Products",
+            "Log In",
+            "Place Order",
+            "Verify Credit Card"
+        ]
+    },
+    "inclusion_relationships": {
+        "Place Order": [
+            "Verify Credit Card",
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

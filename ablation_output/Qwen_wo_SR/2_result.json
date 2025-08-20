@@ -1,0 +1,57 @@
+{
+    "actors": [
+        "Employee",
+        "Administrator"
+    ],
+    "usecases": [
+        "Reject Reimbursement Requests",
+        "Manage Employee Accounts",
+        "Access Reimbursement Records",
+        "Set Reimbursement Classifications",
+        "Set Reimbursement Approval Process",
+        "Generate Reimbursement Statistics Reports",
+        "Submit Reimbursement Requests",
+        "Handle Abnormal Reimbursements",
+        "Manage Reimbursement Approval Process",
+        "Manage Reimbursement Classifications",
+        "Approve Reimbursement Requests",
+        "View Reimbursement Requests",
+        "Log In",
+        "Choose Reimbursement Categories"
+    ],
+    "association_relationships": {
+        "Employee": [
+            "Log In",
+            "Submit Reimbursement Requests",
+            "Access Reimbursement Records",
+            "Choose Reimbursement Categories"
+        ],
+        "Administrator": [
+            "Set Reimbursement Classifications",
+            "Manage Reimbursement Classifications",
+            "View Reimbursement Requests",
+            "Approve Reimbursement Requests",
+            "Reject Reimbursement Requests",
+            "Generate Reimbursement Statistics Reports",
+            "Handle Abnormal Reimbursements",
+            "Manage Employee Accounts",
+            "Set Reimbursement Approval Process",
+            "Manage Reimbursement Approval Process"
+        ]
+    },
+    "inclusion_relationships": {
+        "Access Reimbursement Records": [
+            "Log In"
+        ],
+        "Submit Reimbursement Requests": [
+            "Set Reimbursement Classifications",
+            "Log In"
+        ],
+        "Approve Reimbursement Requests": [
+            "View Reimbursement Requests"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

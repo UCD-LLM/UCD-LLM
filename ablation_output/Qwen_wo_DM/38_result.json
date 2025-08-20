@@ -1,0 +1,75 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Listen To Live Programs",
+        "Modify Program Information",
+        "Add Program Information",
+        "Log In",
+        "Bookmark Programs",
+        "Search Radio Stations",
+        "Leave Messages",
+        "Delete Program Information",
+        "Browse Radio Station Information",
+        "Download Application",
+        "Send Bullet Comments",
+        "Bookmark Radio Stations",
+        "Adjust Playback Time",
+        "Search Programs",
+        "Listen To Recorded Programs"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Application",
+            "Log In",
+            "Browse Radio Station Information",
+            "Search Radio Stations",
+            "Search Programs",
+            "Listen To Live Programs",
+            "Listen To Recorded Programs",
+            "Bookmark Radio Stations",
+            "Bookmark Programs",
+            "Leave Messages",
+            "Send Bullet Comments"
+        ],
+        "Administrators": [
+            "Add Program Information",
+            "Modify Program Information",
+            "Delete Program Information",
+            "Adjust Playback Time"
+        ]
+    },
+    "inclusion_relationships": {
+        "Listen To Live Programs": [
+            "Log In"
+        ],
+        "Browse Radio Station Information": [
+            "Log In",
+            "Download Application"
+        ]
+    },
+    "extension_relationships": {
+        "Listen To Live Programs": [
+            "Send Bullet Comments"
+        ],
+        "Log In": [
+            "Bookmark Programs",
+            "Leave Messages",
+            "Send Bullet Comments",
+            "Bookmark Radio Stations",
+            "Search Programs",
+            "Listen To Recorded Programs"
+        ],
+        "Browse Radio Station Information": [
+            "Bookmark Programs",
+            "Bookmark Radio Stations"
+        ],
+        "Search Radio Stations": [
+            "Bookmark Radio Stations"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

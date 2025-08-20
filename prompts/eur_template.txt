@@ -1,0 +1,13 @@
+Recheck the use cases you extracted for actor {actor} based on the following inspection tips. If any errors are found, make corrections and regenerate the list.
+
+Self-Inspection Tips for Use Cases:
+(1) Use cases must represent distinct actor-system interactions as concise verb-noun phrases (e.g., "Place Order"). Internal system operations are invalid.
+(2) Extract only explicitly described interactions involving actors. Do not infer or add unmentioned actions.
+(3) Maintain granularity - keep separate use cases as mentioned to enable analysis of relationships (e.g., retain "Search By Title" and "Search By Author" separately).
+(4) Each use case must reflect actor's active initiation or direct participation (e.g., "Receive Notification" is valid; passive operations like "Generate Reports" are invalid unless actor-initiated).
+(5) CRITICAL: For actor hierarchies (parent/child relationships):
+- If {actor} is a parent actor, include only use cases that apply to ALL child actors unless explicitly specified otherwise, DO NOT assign the childs' exclusive use cases to the parent.
+- If {actor} is a child actor, include both use cases specific to this child actor and use cases inherited from its parent actor (unless explicitly overridden).
+(6)Do not miss included or extended use cases. For example, if the use case "Log in" contains a sub case "Authentication", then the sub case should also be extracted.
+
+In your answer, please strictly only include the use case list according to the original python list format and do not include any explanation or apologies.

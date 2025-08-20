@@ -1,0 +1,42 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "User login",
+        "Form creation",
+        "Form filling",
+        "Form submission",
+        "Form viewing",
+        "Form editing",
+        "Form deletion",
+        "Data export",
+        "Data statistics",
+        "Data query",
+        "User management",
+        "System logging"
+    ],
+    "association_relationships": {
+        "User": [
+            "User login",
+            "Form creation",
+            "Form filling",
+            "Form submission",
+            "Form viewing",
+            "Form editing",
+            "Form deletion",
+            "Data export",
+            "Data statistics",
+            "Data query"
+        ],
+        "Administrator": [
+            "User management",
+            "System logging"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

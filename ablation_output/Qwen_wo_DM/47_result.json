@@ -1,0 +1,146 @@
+{
+    "actors": [
+        "Visitor",
+        "Student",
+        "Teacher",
+        "Teaching Assistant",
+        "Administrator"
+    ],
+    "usecases": [
+        "Participate In Online Quizzes",
+        "Browse Course Catalog",
+        "Design Course Structure",
+        "Upload Teaching Materials",
+        "Submit Assignments",
+        "View Grade Reports",
+        "Log In",
+        "Create Online Quizzes",
+        "Choose Courses",
+        "Manage User Accounts",
+        "Manage Course Grades",
+        "View Course Details",
+        "Create User Accounts",
+        "Deactivate User Accounts",
+        "Correct Homework",
+        "Manage Courses",
+        "Assist In Correcting Homework",
+        "Answer Course Related Questions",
+        "Review Course Content",
+        "Create New Course",
+        "Modify User Information",
+        "Classify Courses",
+        "Learn About Course Information",
+        "Publish Homework",
+        "Watch Teaching Videos"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "Browse Course Catalog",
+            "Learn About Course Information",
+            "View Course Details"
+        ],
+        "Student": [
+            "Log In",
+            "Choose Courses",
+            "Watch Teaching Videos",
+            "Submit Assignments",
+            "Participate In Online Quizzes",
+            "View Grade Reports"
+        ],
+        "Teacher": [
+            "Log In",
+            "Create New Course",
+            "Design Course Structure",
+            "Upload Teaching Materials",
+            "Publish Homework",
+            "Correct Homework",
+            "Create Online Quizzes",
+            "Manage Course Grades"
+        ],
+        "Teaching Assistant": [
+            "Submit Assignments",
+            "Participate In Online Quizzes",
+            "View Grade Reports",
+            "Assist In Correcting Homework",
+            "Answer Course Related Questions"
+        ],
+        "Administrator": [
+            "Manage User Accounts",
+            "Create User Accounts",
+            "Deactivate User Accounts",
+            "Modify User Information",
+            "Classify Courses",
+            "Manage Courses",
+            "Review Course Content"
+        ]
+    },
+    "inclusion_relationships": {
+        "Participate In Online Quizzes": [
+            "Log In",
+            "Create Online Quizzes"
+        ],
+        "Submit Assignments": [
+            "Log In"
+        ],
+        "View Grade Reports": [
+            "Log In"
+        ],
+        "Choose Courses": [
+            "Log In"
+        ],
+        "Watch Teaching Videos": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Participate In Online Quizzes": [
+            "View Grade Reports"
+        ],
+        "Choose Courses": [
+            "Participate In Online Quizzes",
+            "Answer Course Related Questions",
+            "Watch Teaching Videos"
+        ],
+        "Browse Course Catalog": [
+            "Choose Courses",
+            "View Course Details",
+            "Learn About Course Information"
+        ],
+        "Design Course Structure": [
+            "Upload Teaching Materials",
+            "Submit Assignments",
+            "Create Online Quizzes",
+            "Publish Homework"
+        ],
+        "Create New Course": [
+            "Upload Teaching Materials",
+            "Create Online Quizzes",
+            "Publish Homework"
+        ],
+        "Submit Assignments": [
+            "Correct Homework"
+        ],
+        "Log In": [
+            "Create Online Quizzes",
+            "Correct Homework",
+            "Assist In Correcting Homework",
+            "Answer Course Related Questions"
+        ],
+        "Manage User Accounts": [
+            "Deactivate User Accounts",
+            "Modify User Information"
+        ],
+        "Correct Homework": [
+            "Assist In Correcting Homework"
+        ],
+        "Publish Homework": [
+            "Assist In Correcting Homework"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Student": [
+            "TeachingAssistant"
+        ]
+    }
+}

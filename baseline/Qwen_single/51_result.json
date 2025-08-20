@@ -1,0 +1,37 @@
+{
+    "actors": [
+        "Delivery personnel",
+        "Administrators",
+        "Customers"
+    ],
+    "usecases": [
+        "Log in to the system",
+        "Record delivery times and clock in",
+        "View delivery records and status",
+        "Take corrective measures",
+        "Manage delivery personnel accounts",
+        "Provide real-time order tracking",
+        "Provide delivery route planning and optimization"
+    ],
+    "association_relationships": {
+        "Delivery personnel": [
+            "Log in to the system",
+            "Record delivery times and clock in",
+            "Provide delivery route planning and optimization"
+        ],
+        "Administrators": [
+            "Log in to the system",
+            "View delivery records and status",
+            "Take corrective measures",
+            "Manage delivery personnel accounts"
+        ],
+        "Customers": [
+            "Log in to the system",
+            "Provide real-time order tracking"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

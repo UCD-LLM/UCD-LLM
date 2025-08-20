@@ -1,0 +1,45 @@
+Extract the following elements from requirement texts for use case diagram modeling. Output strictly in JSON format without explanations.
+
+**Elements to Extract:**
+1. Actors
+2. Use Cases
+3. Association relationships (Actors ↔ Use Cases)
+4. <<include>> relationships between use cases
+5. <<extend>> relationships between use cases
+6. <<generalize>> relationships between use cases (parent-child inheritance)
+7. <<generalize>> relationships between actors (parent-child inheritance)
+
+**Output Specifications:**
+{{
+  "actors": ["Actor1", ...],
+  "usecases": ["UseCase1", ...],
+  "association_relationships": {{
+    "ActorA": ["AssociatedUseCaseX", ...],
+    ...
+  }},
+  "inclusion_relationships": {{
+    "BaseUseCase": ["IncludedUseCase1", ...],
+    ...
+  }},
+  "extension_relationships": {{
+    "BaseUseCase": ["ExtendingUseCase1", ...],
+    ...
+  }},
+  "generalization_relationships_for_usecases": {{
+    "ParentUseCase": ["ChildUseCase1", ...],
+    ...
+  }},
+  "generalization_relationships_for_actors": {{
+    "ParentActor": ["ChildActor1", ...],
+    ...
+  }}
+}}
+
+Processing rules:
+1. Extract only clearly existing elements from the text
+2. Use an empty dictionary to represent empty relationships
+3. Strictly follow the above data structure
+4. Prohibit outputting any explanatory content
+
+Please process the following text:
+{input_text}

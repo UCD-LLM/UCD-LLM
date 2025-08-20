@@ -1,0 +1,9 @@
+Develop a registration system to more effectively manage and track the information of applicants, with the following features:
+1. Applicants can log in to the system using their username and password.
+2. The system can automatically record the registration time of applicants.
+3. Administrators can view the applicant's registration records and choose to generate registration reports for statistical analysis when needed.
+4. Administrators should be able to handle abnormal registration situations, such as duplicate registrations, error messages, etc., and take corresponding measures.
+5. Administrators can manage the accounts of applicants, such as adding, modifying, and deleting them.
+6. The registration system needs to provide a user-friendly interface for easy operation and management.
+7. The registration system should have data security to protect the personal information of applicants from leakage and abuse.
+The registration system aims to provide a comprehensive, efficient, and easy-to-use registration management solution that can help institutions or organizations improve registration efficiency, reduce workload, and provide data support for decision-making reference.

@@ -1,0 +1,156 @@
+{
+    "actors": [
+        "Citizens",
+        "Individual Applicants",
+        "Enterprise Operators",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Conduct Preliminary Review",
+        "Submit Qualification Certificates",
+        "Track Business Dynamics",
+        "Download Electronic Certificates",
+        "Conduct Substantive Approval",
+        "Log In To Personal Account",
+        "Submit Business License Application",
+        "Check Material Completeness",
+        "Verify Application Materials",
+        "Make Approval Decisions",
+        "Register Personal Account",
+        "Collect Application Fees",
+        "Pay Application Fees",
+        "Obtain Answers Through Online Consultation",
+        "Understand Application Process",
+        "Manage Certificates and Licenses",
+        "Upload Application Materials",
+        "Check Application Progress",
+        "Issue Notices",
+        "Browse Service Guide",
+        "Accept Application Materials"
+    ],
+    "association_relationships": {
+        "Citizens": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Track Business Dynamics",
+            "Obtain Answers Through Online Consultation",
+            "Register Personal Account",
+            "Log In To Personal Account"
+        ],
+        "Individual Applicants": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Track Business Dynamics",
+            "Obtain Answers Through Online Consultation",
+            "Register Personal Account",
+            "Log In To Personal Account",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Pay Application Fees",
+            "Download Electronic Certificates"
+        ],
+        "Enterprise Operators": [
+            "Submit Qualification Certificates",
+            "Manage Certificates and Licenses"
+        ],
+        "Window Staff": [
+            "Accept Application Materials",
+            "Check Material Completeness",
+            "Conduct Preliminary Review",
+            "Collect Application Fees",
+            "Issue Notices"
+        ],
+        "Approval Personnel": [
+            "Accept Application Materials",
+            "Conduct Preliminary Review",
+            "Conduct Substantive Approval",
+            "Verify Application Materials",
+            "Make Approval Decisions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Download Electronic Certificates": [
+            "Conduct Preliminary Review",
+            "Log In To Personal Account",
+            "Accept Application Materials"
+        ],
+        "Conduct Substantive Approval": [
+            "Conduct Preliminary Review",
+            "Submit Qualification Certificates",
+            "Verify Application Materials",
+            "Upload Application Materials",
+            "Accept Application Materials"
+        ],
+        "Submit Business License Application": [
+            "Conduct Preliminary Review",
+            "Log In To Personal Account",
+            "Check Material Completeness",
+            "Verify Application Materials",
+            "Pay Application Fees",
+            "Upload Application Materials",
+            "Accept Application Materials"
+        ],
+        "Conduct Preliminary Review": [
+            "Check Material Completeness",
+            "Verify Application Materials",
+            "Upload Application Materials",
+            "Accept Application Materials"
+        ],
+        "Make Approval Decisions": [
+            "Conduct Preliminary Review",
+            "Submit Qualification Certificates",
+            "Conduct Substantive Approval",
+            "Submit Business License Application",
+            "Check Material Completeness",
+            "Verify Application Materials",
+            "Accept Application Materials"
+        ],
+        "Issue Notices": [
+            "Conduct Preliminary Review"
+        ],
+        "Verify Application Materials": [
+            "Submit Qualification Certificates",
+            "Upload Application Materials",
+            "Accept Application Materials"
+        ],
+        "Submit Qualification Certificates": [
+            "Accept Application Materials"
+        ],
+        "Upload Application Materials": [
+            "Log In To Personal Account"
+        ],
+        "Check Application Progress": [
+            "Log In To Personal Account"
+        ],
+        "Accept Application Materials": [
+            "Check Material Completeness"
+        ]
+    },
+    "extension_relationships": {
+        "Conduct Substantive Approval": [
+            "Download Electronic Certificates"
+        ],
+        "Submit Business License Application": [
+            "Download Electronic Certificates"
+        ],
+        "Make Approval Decisions": [
+            "Download Electronic Certificates"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizens": [
+            "Individual Applicants",
+            "Enterprise Operators"
+        ],
+        "Individual Applicants": [
+            "Enterprise Operators"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

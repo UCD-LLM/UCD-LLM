@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+actor "Library Member"
+actor "Student Member"
+actor "Librarian"
+actor "Senior Librarian"
+usecase "Process Returns"
+usecase "Search Catalog"
+usecase "Borrow Books"
+usecase "Borrow Reference Textbooks"
+usecase "Generate Monthly Acquisition Reports"
+usecase "Access Online Journals"
+usecase "Process Borrows"
+usecase "Request Expedited Processing"
+usecase "Handle Special Requests"
+usecase "Oversee Inter-library Loans"
+usecase "Check Availability"
+usecase "Place Hold Request"
+"Library Member"--"Search Catalog"
+"Library Member"--"Borrow Books"
+"Library Member"--"Place Hold Request"
+"Student Member"--"Borrow Reference Textbooks"
+"Student Member"--"Access Online Journals"
+"Librarian"--"Process Returns"
+"Librarian"--"Handle Special Requests"
+"Senior Librarian"--"Generate Monthly Acquisition Reports"
+"Senior Librarian"--"Oversee Inter-library Loans"
+"Check Availability"<|."Borrow Books": <<include>>
+"Process Borrows"<|."Borrow Reference Textbooks": <<include>>
+"Check Availability"<|."Borrow Reference Textbooks": <<include>>
+"Handle Special Requests"<|."Request Expedited Processing": <<extend>>
+"Student Member"--|>"Library Member"
+"Senior Librarian"--|>"Librarian"
+@enduml

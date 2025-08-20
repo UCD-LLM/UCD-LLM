@@ -1,0 +1,38 @@
+{
+    "actors": [
+        "Librarian",
+        "Readers"
+    ],
+    "usecases": [
+        "Check Library Collection",
+        "Manage Book Information",
+        "Perform Simple Search",
+        "Manage Reader Accounts",
+        "Renew Borrowed Books",
+        "Make Online Reservations",
+        "Perform Advanced Search",
+        "Handle Book Borrowing",
+        "View Borrowing Records",
+        "View Overdue Fines"
+    ],
+    "association_relationships": {
+        "Librarian": [
+            "Handle Book Borrowing",
+            "Manage Reader Accounts",
+            "Manage Book Information"
+        ],
+        "Readers": [
+            "Check Library Collection",
+            "Make Online Reservations",
+            "Renew Borrowed Books",
+            "View Borrowing Records",
+            "View Overdue Fines",
+            "Perform Simple Search",
+            "Perform Advanced Search"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

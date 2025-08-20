@@ -1,0 +1,29 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Search Memos",
+        "Edit Memo",
+        "Synchronize Data",
+        "Delete Memo",
+        "Add Memo",
+        "Classify Memos",
+        "Log In"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Add Memo",
+            "Edit Memo",
+            "Delete Memo",
+            "Classify Memos",
+            "Search Memos",
+            "Synchronize Data"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

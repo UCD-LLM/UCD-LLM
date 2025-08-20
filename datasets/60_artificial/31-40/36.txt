@@ -1,0 +1,17 @@
+User roles and capabilities of project management and defect tracking system:
+Project Manager:
+New project
+Define project milestones
+Assign tasks to developers/testers
+Generate project progress report (summary report or detailed task report)
+
+Developer:
+Claim assigned tasks
+Update task status
+Submit code change related tasks
+Create defect report
+
+Testers:
+Execute test cases (manual testing or running automated test scripts)
+Verify the repaired defects
+Create defect report

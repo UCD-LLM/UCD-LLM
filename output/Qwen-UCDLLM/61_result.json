@@ -1,0 +1,18 @@
+{
+    "actors": [
+        "Bank Client"
+    ],
+    "usecases": [
+        "Deposit Amount",
+        "Withdraw Amount",
+        "Record Transaction",
+        "Review Transactions",
+        "Verify Access",
+        "Access Account"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

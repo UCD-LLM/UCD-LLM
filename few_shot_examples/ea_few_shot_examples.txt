@@ -1,0 +1,17 @@
+Example 1:
+Text: 
+A library member logs into the system to browse the digital book collection, search by title or author, and borrow an e-book for a limited period. An automated sorting system is used to manage the physical return process of books from the drop-off box.
+Actors: 
+['Library Member', 'Automated Sorting System']
+
+Example 2:
+Text: 
+A customer places an order through the online shopping platform. The payment is processed by a third-party payment gateway. After confirmation, the warehouse management system receives the order details for shipment.
+Actors: 
+['Customer', 'Third-Party Payment Gateway', 'Warehouse Management System']
+
+Example 3:
+Text:
+A smart home security camera detects motion and sends alerts to the homeowner's mobile app. The system also notifies the local security service if an intrusion is confirmed.
+Actors:
+['Smart Home Security Camera', 'Homeowner', 'Local Security Service']

@@ -1,0 +1,69 @@
+{
+    "actors": [
+        "Tellers",
+        "Customers",
+        "Backend Auditor"
+    ],
+    "usecases": [
+        "Mark Suspicious Transactions",
+        "Process Check Deposit",
+        "Handle Account Transfer",
+        "Create New Bank Account",
+        "Process Cash Deposit",
+        "Verify General Ledger",
+        "Handle Account Deposit",
+        "Verify Customer Identity",
+        "Create Savings Account",
+        "Create Fixed-Term Deposit Account",
+        "Close Bank Account",
+        "Check Account Balance",
+        "Create Checking Account",
+        "Generate Daily Transaction Reports",
+        "Monitor Transactions"
+    ],
+    "association_relationships": {
+        "Tellers": [
+            "Verify Customer Identity",
+            "Create New Bank Account",
+            "Close Bank Account",
+            "Handle Account Deposit",
+            "Handle Account Transfer",
+            "Check Account Balance",
+            "Create Checking Account",
+            "Create Savings Account",
+            "Create Fixed-Term Deposit Account",
+            "Process Cash Deposit",
+            "Process Check Deposit"
+        ],
+        "Customers": [
+            "Check Account Balance"
+        ],
+        "Backend Auditor": [
+            "Generate Daily Transaction Reports",
+            "Verify General Ledger",
+            "Monitor Transactions",
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Process Check Deposit": [
+            "Verify Customer Identity"
+        ],
+        "Create New Bank Account": [
+            "Verify Customer Identity"
+        ],
+        "Handle Account Deposit": [
+            "Verify Customer Identity"
+        ],
+        "Create Fixed-Term Deposit Account": [
+            "Verify Customer Identity"
+        ]
+    },
+    "extension_relationships": {
+        "Monitor Transactions": [
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

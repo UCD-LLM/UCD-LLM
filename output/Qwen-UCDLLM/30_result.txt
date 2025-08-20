@@ -1,0 +1,37 @@
+@startuml
+left to right direction
+actor "Doctors"
+actor "Administrators"
+usecase "Add User Accounts"
+usecase "Store Medical Imaging Data"
+usecase "Measure Images"
+usecase "Annotate Images"
+usecase "Manage Medical Imaging Data"
+usecase "Send Reports To Medical Institutions"
+usecase "Log In"
+usecase "Delete User Accounts"
+usecase "Manage User Permissions"
+usecase "Send Reports To Patients"
+usecase "Generate Diagnostic Reports"
+usecase "Modify User Accounts"
+usecase "Upload Medical Imaging Data"
+usecase "View Medical Imaging Data"
+usecase "Search Imaging Data"
+"Doctors"--"Upload Medical Imaging Data"
+"Doctors"--"Store Medical Imaging Data"
+"Doctors"--"View Medical Imaging Data"
+"Doctors"--"Manage Medical Imaging Data"
+"Doctors"--"Annotate Images"
+"Doctors"--"Measure Images"
+"Doctors"--"Search Imaging Data"
+"Doctors"--"Send Reports To Medical Institutions"
+"Administrators"--"Manage User Permissions"
+"Administrators"--"Add User Accounts"
+"Administrators"--"Modify User Accounts"
+"Administrators"--"Delete User Accounts"
+"Log In"<|."Store Medical Imaging Data": <<include>>
+"Log In"<|."Manage Medical Imaging Data": <<include>>
+"Log In"<|."Upload Medical Imaging Data": <<include>>
+"Generate Diagnostic Reports"<|."Send Reports To Patients": <<extend>>
+"View Medical Imaging Data"<|."Generate Diagnostic Reports": <<extend>>
+@enduml

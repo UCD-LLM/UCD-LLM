@@ -1,0 +1,96 @@
+{
+    "actors": [
+        "Scientific Expedition Team Members",
+        "Chief of the Scientific Expedition Station",
+        "Remote Logistics Coordinator",
+        "Meteorological Analysts"
+    ],
+    "usecases": [
+        "Register Material Consumption",
+        "Develop Supply Order",
+        "Provide Meteorological Forecast Data",
+        "Process Supply Orders",
+        "Coordinate Transportation Arrangements",
+        "Track Order Progress",
+        "Approve Material Applications",
+        "Check Inventory Level",
+        "Manage Task Scheduling",
+        "Estimate Future Material Demand",
+        "Confirm Warehouse Storage",
+        "Allocate Human Resources",
+        "Submit Material Replenishment Request",
+        "Release Weekly Reports",
+        "Negotiate With Suppliers"
+    ],
+    "association_relationships": {
+        "Scientific Expedition Team Members": [
+            "Register Material Consumption",
+            "Submit Material Replenishment Request",
+            "Check Inventory Level",
+            "Estimate Future Material Demand"
+        ],
+        "Chief of the Scientific Expedition Station": [
+            "Approve Material Applications",
+            "Develop Supply Order",
+            "Manage Task Scheduling",
+            "Allocate Human Resources",
+            "Release Weekly Reports"
+        ],
+        "Remote Logistics Coordinator": [
+            "Process Supply Orders",
+            "Track Order Progress",
+            "Coordinate Transportation Arrangements",
+            "Confirm Warehouse Storage",
+            "Negotiate With Suppliers"
+        ],
+        "Meteorological Analysts": [
+            "Provide Meteorological Forecast Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Develop Supply Order": [
+            "Register Material Consumption",
+            "Approve Material Applications",
+            "Submit Material Replenishment Request"
+        ],
+        "Approve Material Applications": [
+            "Register Material Consumption",
+            "Submit Material Replenishment Request"
+        ],
+        "Register Material Consumption": [
+            "Check Inventory Level"
+        ],
+        "Estimate Future Material Demand": [
+            "Register Material Consumption",
+            "Provide Meteorological Forecast Data",
+            "Check Inventory Level"
+        ],
+        "Process Supply Orders": [
+            "Develop Supply Order",
+            "Approve Material Applications"
+        ],
+        "Coordinate Transportation Arrangements": [
+            "Develop Supply Order",
+            "Provide Meteorological Forecast Data",
+            "Process Supply Orders"
+        ],
+        "Confirm Warehouse Storage": [
+            "Coordinate Transportation Arrangements"
+        ],
+        "Submit Material Replenishment Request": [
+            "Check Inventory Level",
+            "Estimate Future Material Demand"
+        ]
+    },
+    "extension_relationships": {
+        "Coordinate Transportation Arrangements": [
+            "Negotiate With Suppliers"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Scientific Expedition Team Members": [
+            "Chief of the Scientific Expedition Station"
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "actors": [
+        "Doctors",
+        "Administrators"
+    ],
+    "usecases": [
+        "Login",
+        "Upload Medical Imaging Data",
+        "Store Medical Imaging Data",
+        "View Medical Imaging Data",
+        "Manage Medical Imaging Data",
+        "Annotate Images",
+        "Measure Images",
+        "Search Imaging Data",
+        "Generate Diagnostic Reports",
+        "Send Reports",
+        "Manage User Permissions"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Login",
+            "Upload Medical Imaging Data",
+            "Store Medical Imaging Data",
+            "View Medical Imaging Data",
+            "Manage Medical Imaging Data",
+            "Annotate Images",
+            "Measure Images",
+            "Search Imaging Data",
+            "Generate Diagnostic Reports",
+            "Send Reports"
+        ],
+        "Administrators": [
+            "Manage User Permissions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

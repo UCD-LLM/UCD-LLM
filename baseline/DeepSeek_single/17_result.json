@@ -1,0 +1,28 @@
+{
+    "actors": [
+        "Maintenance engineers",
+        "Customer"
+    ],
+    "usecases": [
+        "Create maintenance work orders",
+        "Fill out maintenance report",
+        "Update spare parts inventory",
+        "Verify customer signature",
+        "Close work order"
+    ],
+    "association_relationships": {
+        "Maintenance engineers": [
+            "Create maintenance work orders",
+            "Fill out maintenance report",
+            "Update spare parts inventory",
+            "Close work order"
+        ],
+        "Customer": [
+            "Verify customer signature"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

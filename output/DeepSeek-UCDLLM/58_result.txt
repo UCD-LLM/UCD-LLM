@@ -1,0 +1,47 @@
+@startuml
+left to right direction
+actor "User"
+actor "Mobile Devices"
+usecase "Scan QR Code"
+usecase "Create Contract"
+usecase "Download Contract"
+usecase "Re-sign Contract"
+usecase "Sign Contract"
+usecase "Manage Contract"
+usecase "Confirm Contract Modification"
+usecase "Select Template"
+usecase "Scan QR Code for Signature"
+usecase "Edit Contract"
+usecase "Verify Identity via QR Code"
+usecase "Store Contract"
+usecase "Complete Handwritten Signature"
+usecase "Retrieve Contract"
+usecase "Complete Signature"
+usecase "Modify Signed Contract"
+usecase "Receive Contract Expiration Reminder"
+"User"--"Sign Contract"
+"User"--"Manage Contract"
+"User"--"Download Contract"
+"User"--"Receive Contract Expiration Reminder"
+"User"--"Scan QR Code for Signature"
+"Verify Identity via QR Code"<|."Scan QR Code": <<include>>
+"Create Contract"<|."Sign Contract": <<include>>
+"Verify Identity via QR Code"<|."Sign Contract": <<include>>
+"Store Contract"<|."Sign Contract": <<include>>
+"Complete Handwritten Signature"<|."Sign Contract": <<include>>
+"Select Template"<|."Create Contract": <<include>>
+"Confirm Contract Modification"<|."Re-sign Contract": <<include>>
+"Re-sign Contract"<|."Modify Signed Contract": <<include>>
+"Retrieve Contract"<|."Modify Signed Contract": <<include>>
+"Verify Identity via QR Code"<|."Scan QR Code for Signature": <<include>>
+"Verify Identity via QR Code"<|."Complete Signature": <<include>>
+"Complete Handwritten Signature"<|."Store Contract": <<include>>
+"Complete Signature"<|."Store Contract": <<include>>
+"Sign Contract"<|."Scan QR Code": <<extend>>
+"Sign Contract"<|."Re-sign Contract": <<extend>>
+"Sign Contract"<|."Edit Contract": <<extend>>
+"Sign Contract"<|."Modify Signed Contract": <<extend>>
+"Edit Contract"<|."Re-sign Contract": <<extend>>
+"Edit Contract"<|."Confirm Contract Modification": <<extend>>
+"Manage Contract"<|."Confirm Contract Modification": <<extend>>
+@enduml

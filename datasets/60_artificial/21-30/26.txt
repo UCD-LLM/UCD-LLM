@@ -1,0 +1,7 @@
+The automated assembly line monitoring system is dedicated to real-time monitoring and effective management of the operating status of the production line, ensuring the efficiency and stability of the production process.  
+The system automatically collects and records operational data of equipment, including key indicators such as production speed, fault information, energy consumption, and has real-time alarm function.  
+Operators can observe the status of the assembly line in real time through the monitoring interface, control operations, and quickly handle abnormal situations when problems occur.  
+Maintenance engineers use the detailed equipment status information and fault logs provided by the system for preventive maintenance and troubleshooting, ensuring the continuous operation of the equipment.  
+The production manager can view the production situation and choose to generate analysis reports to monitor production progress and evaluate efficiency.  
+The system administrator has privileges to view the operation records of all employees and can choose to generate comprehensive production reports for in-depth analysis of production line efficiency.
+The system administrator is also responsible for managing system users, including adding and deleting users, to comprehensively improve the management level and production efficiency of the production line.

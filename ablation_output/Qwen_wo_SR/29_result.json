@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Advertisers",
+        "Operators"
+    ],
+    "usecases": [
+        "Process Ad Comments",
+        "Manage Advertiser Accounts",
+        "Monitor System Operation Status",
+        "Create Advertising Account",
+        "View Data Analysis",
+        "Set Advertising Parameters",
+        "View Reports",
+        "Upload Advertising Materials",
+        "Monitor Ad Effectiveness",
+        "Adjust Advertising Strategies",
+        "Register Account",
+        "Manage Advertising Account",
+        "Log In"
+    ],
+    "association_relationships": {
+        "Advertisers": [
+            "Register Account",
+            "Log In",
+            "Create Advertising Account",
+            "Manage Advertising Account",
+            "Upload Advertising Materials",
+            "Set Advertising Parameters",
+            "Monitor Ad Effectiveness",
+            "Adjust Advertising Strategies",
+            "View Data Analysis",
+            "View Reports"
+        ],
+        "Operators": [
+            "Manage Advertiser Accounts",
+            "Process Ad Comments",
+            "Monitor System Operation Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Advertising Account": [
+            "Register Account"
+        ],
+        "Manage Advertising Account": [
+            "Create Advertising Account",
+            "Register Account",
+            "Log In"
+        ],
+        "View Data Analysis": [
+            "Log In"
+        ],
+        "Set Advertising Parameters": [
+            "Register Account"
+        ],
+        "Adjust Advertising Strategies": [
+            "Register Account",
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Create Advertising Account": [
+            "Adjust Advertising Strategies"
+        ],
+        "Monitor Ad Effectiveness": [
+            "Adjust Advertising Strategies"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

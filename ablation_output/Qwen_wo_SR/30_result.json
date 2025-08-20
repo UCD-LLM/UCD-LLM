@@ -1,0 +1,73 @@
+{
+    "actors": [
+        "Doctors",
+        "Administrators"
+    ],
+    "usecases": [
+        "Add User Accounts",
+        "Search Imaging Data",
+        "Send Reports To Patients",
+        "Measure Images",
+        "Send Reports To Medical Institutions",
+        "Delete User Accounts",
+        "Generate Diagnostic Reports",
+        "Modify User Accounts",
+        "View Medical Imaging Data",
+        "Store Medical Imaging Data",
+        "Manage Medical Imaging Data",
+        "Manage User Permissions",
+        "Log In",
+        "Upload Medical Imaging Data",
+        "Annotate Images"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Log In",
+            "Upload Medical Imaging Data",
+            "Store Medical Imaging Data",
+            "View Medical Imaging Data",
+            "Manage Medical Imaging Data",
+            "Annotate Images",
+            "Measure Images",
+            "Search Imaging Data",
+            "Generate Diagnostic Reports",
+            "Send Reports To Patients",
+            "Send Reports To Medical Institutions"
+        ],
+        "Administrators": [
+            "Manage User Permissions",
+            "Add User Accounts",
+            "Modify User Accounts",
+            "Delete User Accounts"
+        ]
+    },
+    "inclusion_relationships": {
+        "Search Imaging Data": [
+            "Log In"
+        ],
+        "Send Reports To Medical Institutions": [
+            "Log In"
+        ],
+        "Generate Diagnostic Reports": [
+            "Store Medical Imaging Data",
+            "Log In"
+        ],
+        "View Medical Imaging Data": [
+            "Log In"
+        ],
+        "Store Medical Imaging Data": [
+            "Log In",
+            "Upload Medical Imaging Data"
+        ],
+        "Manage Medical Imaging Data": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Store Medical Imaging Data": [
+            "Annotate Images"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

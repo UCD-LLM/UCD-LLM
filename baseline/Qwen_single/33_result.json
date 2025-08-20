@@ -1,0 +1,45 @@
+{
+    "actors": [
+        "Patient",
+        "FrontDeskReceptionist",
+        "Doctor"
+    ],
+    "usecases": [
+        "RegisterAccount",
+        "LogIn",
+        "ViewDoctorProfiles",
+        "ViewAppointmentTimes",
+        "BookOutpatientAppointment",
+        "ViewAppointmentRecords",
+        "CancelAppointment",
+        "HandleAppointmentRequests",
+        "ManageBasicInformation",
+        "ViewDailyAppointmentSchedule",
+        "RecordDiagnosisResults",
+        "RecordTreatmentPlans"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "RegisterAccount",
+            "LogIn",
+            "ViewDoctorProfiles",
+            "ViewAppointmentTimes",
+            "BookOutpatientAppointment",
+            "ViewAppointmentRecords",
+            "CancelAppointment"
+        ],
+        "FrontDeskReceptionist": [
+            "HandleAppointmentRequests",
+            "ManageBasicInformation"
+        ],
+        "Doctor": [
+            "ViewDailyAppointmentSchedule",
+            "RecordDiagnosisResults",
+            "RecordTreatmentPlans"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

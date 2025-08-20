@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+actor "Citizen"
+actor "Approver"
+usecase "Fill Application Form"
+usecase "Complete Real Name Authentication"
+usecase "Check Completeness of Materials"
+usecase "Submit Application"
+usecase "Verify Consistency of Information"
+usecase "Upload Supporting Documents"
+"Citizen"--"Submit Application"
+"Approver"--"Check Completeness of Materials"
+"Approver"--"Verify Consistency of Information"
+"Complete Real Name Authentication"<|."Fill Application Form": <<include>>
+"Upload Supporting Documents"<|."Fill Application Form": <<include>>
+"Fill Application Form"<|."Submit Application": <<include>>
+"Complete Real Name Authentication"<|."Submit Application": <<include>>
+"Upload Supporting Documents"<|."Submit Application": <<include>>
+"Upload Supporting Documents"<|."Check Completeness of Materials": <<include>>
+@enduml

@@ -1,0 +1,71 @@
+{
+    "actors": [
+        "Family Members",
+        "Administrators",
+        "Guests",
+        "Security Monitoring Service",
+        "Home Appliance Repairman"
+    ],
+    "usecases": [
+        "Add New Devices",
+        "Update Firmware",
+        "Receive Alarm Information",
+        "Adjust Indoor Temperature",
+        "Identify Problem",
+        "Adjust Temperature",
+        "Check Home Security",
+        "Control Lights",
+        "Access Energy Consumption Data",
+        "Control Lighting",
+        "Diagnose Faulty Equipment",
+        "Manage Family Member Accounts",
+        "Set Up Automation Scenarios",
+        "Push Alarm Notifications",
+        "Operate Curtains",
+        "Configure Security Rules",
+        "Delete Devices",
+        "Check Home Security Status"
+    ],
+    "association_relationships": {
+        "Family Members": [
+            "Control Lights",
+            "Adjust Indoor Temperature",
+            "Operate Curtains",
+            "Check Home Security",
+            "Access Energy Consumption Data"
+        ],
+        "Administrators": [
+            "Add New Devices",
+            "Delete Devices",
+            "Manage Family Member Accounts",
+            "Set Up Automation Scenarios",
+            "Configure Security Rules",
+            "Control Lights",
+            "Adjust Indoor Temperature",
+            "Operate Curtains",
+            "Check Home Security Status",
+            "Access Energy Consumption Data"
+        ],
+        "Guests": [
+            "Control Lighting",
+            "Adjust Temperature"
+        ],
+        "Security Monitoring Service": [
+            "Receive Alarm Information",
+            "Push Alarm Notifications"
+        ],
+        "Home Appliance Repairman": [
+            "Diagnose Faulty Equipment",
+            "Identify Problem",
+            "Update Firmware"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Family Members": [
+            "Administrators"
+        ]
+    }
+}

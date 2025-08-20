@@ -1,0 +1,64 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "Administrator",
+        "Payment Gateway",
+        "User"
+    ],
+    "usecases": [
+        "Process Payment",
+        "Confirm Payment Success",
+        "Handle Payment Authorization",
+        "Place Order",
+        "Validate Payment Details",
+        "Monitor Transactions",
+        "Manage Inventory",
+        "Access Sales Analytics",
+        "Perform Bulk Upload",
+        "Apply Filters",
+        "Notify Payment Failure",
+        "Browse Products",
+        "Resolve Disputes",
+        "Update Product Details",
+        "Track Sales"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "Perform Authentication",
+            "Browse Products",
+            "Apply Filters",
+            "Place Order"
+        ],
+        "Seller": [
+            "Perform Authentication",
+            "Manage Inventory",
+            "Update Product Details",
+            "Track Sales",
+            "Perform Bulk Upload",
+            "Access Sales Analytics"
+        ],
+        "Administrator": [
+            "Perform Authentication",
+            "Resolve Disputes",
+            "Monitor Transactions"
+        ],
+        "Payment Gateway": [
+            "Process Payment",
+            "Handle Payment Authorization"
+        ],
+        "User":[
+            "Perform Authentication"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "User": [
+            "Buyer",
+            "Seller",
+            "Administrator"
+        ]
+    }
+}

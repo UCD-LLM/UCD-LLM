@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+actor "Doctor"
+actor "System Administrator"
+usecase "Issue Testing Forms"
+usecase "Record Physical Examination Results"
+usecase "Develop Treatment Plans"
+usecase "Review Examination Results"
+usecase "Review Testing Results"
+usecase "Maintain Diagnostic Knowledge Base"
+usecase "Access Historical Medical Records"
+usecase "Issue Examination Forms"
+usecase "Backup System Data"
+usecase "Record Patient Complaints"
+usecase "Manage Doctor Accounts"
+"Doctor"--"Record Patient Complaints"
+"Doctor"--"Access Historical Medical Records"
+"Doctor"--"Issue Examination Forms"
+"Doctor"--"Issue Testing Forms"
+"Doctor"--"Review Examination Results"
+"Doctor"--"Review Testing Results"
+"Doctor"--"Develop Treatment Plans"
+"System Administrator"--"Manage Doctor Accounts"
+"System Administrator"--"Maintain Diagnostic Knowledge Base"
+"System Administrator"--"Backup System Data"
+"Record Physical Examination Results"<|."Develop Treatment Plans": <<include>>
+@enduml

@@ -1,0 +1,61 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Send Bullet Comment",
+        "Log In",
+        "Bookmark Radio Station",
+        "Delete Program Information",
+        "Adjust Playback Time",
+        "Leave Message",
+        "Playback Program",
+        "Search Radio Stations",
+        "Listen Online",
+        "Add Program Information",
+        "Bookmark Program",
+        "Modify Program Information",
+        "Browse Radio Station Information",
+        "Download Application",
+        "Record Program",
+        "Search Programs"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Application",
+            "Log In",
+            "Browse Radio Station Information",
+            "Search Radio Stations",
+            "Search Programs",
+            "Listen Online",
+            "Record Program",
+            "Playback Program",
+            "Bookmark Radio Station",
+            "Bookmark Program",
+            "Leave Message",
+            "Send Bullet Comment"
+        ],
+        "Administrators": [
+            "Add Program Information",
+            "Modify Program Information",
+            "Delete Program Information",
+            "Adjust Playback Time"
+        ]
+    },
+    "inclusion_relationships": {
+        "Playback Program": [
+            "Download Application"
+        ],
+        "Listen Online": [
+            "Download Application"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Users": [
+            "Administrators"
+        ]
+    }
+}

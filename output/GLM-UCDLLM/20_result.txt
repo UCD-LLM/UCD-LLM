@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+actor "Users"
+actor "Technical Support Personnel"
+usecase "Assess Severity"
+usecase "Submit Technical Support Work Order"
+usecase "Process Work Order"
+usecase "Allocate Work Order"
+usecase "Select Problem Category"
+usecase "Assign Work Order"
+usecase "Provide Contact Information"
+usecase "Determine Priority"
+usecase "Provide Problem Description"
+"Users"--"Submit Technical Support Work Order"
+"Technical Support Personnel"--"Allocate Work Order"
+"Technical Support Personnel"--"Process Work Order"
+"Assess Severity"<|."Process Work Order": <<include>>
+"Assign Work Order"<|."Process Work Order": <<include>>
+"Provide Contact Information"<|."Process Work Order": <<include>>
+"Determine Priority"<|."Process Work Order": <<include>>
+"Provide Problem Description"<|."Process Work Order": <<include>>
+"Assess Severity"<|."Allocate Work Order": <<include>>
+"Provide Contact Information"<|."Allocate Work Order": <<include>>
+"Determine Priority"<|."Allocate Work Order": <<include>>
+"Provide Problem Description"<|."Allocate Work Order": <<include>>
+"Assess Severity"<|."Assign Work Order": <<include>>
+"Select Problem Category"<|."Assign Work Order": <<include>>
+"Provide Contact Information"<|."Assign Work Order": <<include>>
+"Determine Priority"<|."Assign Work Order": <<include>>
+"Provide Problem Description"<|."Assign Work Order": <<include>>
+"Provide Problem Description"<|."Assess Severity": <<include>>
+"Select Problem Category"<|."Submit Technical Support Work Order": <<include>>
+"Provide Contact Information"<|."Submit Technical Support Work Order": <<include>>
+"Provide Problem Description"<|."Submit Technical Support Work Order": <<include>>
+"Provide Problem Description"<|."Determine Priority": <<include>>
+@enduml

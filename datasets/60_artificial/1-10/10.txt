@@ -1,0 +1,9 @@
+The requirements for the electronic museum navigation system are as follows:
+The system requires a user login interface where visitors can log in to the system using their username and password.
+The system should be able to provide detailed information about all exhibitions in the museum, including exhibition names, exhibit introductions, author information, etc.
+The system needs a map function that can clearly display the layout of the museum and various exhibition areas, making it convenient for visitors to locate and navigate.
+The system should provide voice guidance function, allowing visitors to hear detailed explanations and background knowledge about various exhibits through headphones.
+The system needs to have a search function where visitors can search for exhibits or exhibitions that interest them through keywords.
+The system should provide high-quality images and multi angle displays of exhibits, allowing visitors to better observe and appreciate the exhibits.
+Administrators should be able to manage exhibition and exhibit information in the system, including adding, modifying, and deleting.
+Administrators should also be able to view visitors' browsing history and feedback in order to understand their needs and improve the system.

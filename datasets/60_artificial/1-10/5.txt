@@ -1,0 +1,9 @@
+I hope to develop a museum tour guide software with the following features:
+Users can download the software and log in to the system using their own mobile phones.
+Museum navigation software needs to provide a user interface that allows users to browse information about different museums, including exhibition content, opening hours, locations, etc.
+Users can search for specific museums or exhibitions to quickly find content of interest.
+The navigation function requires an indoor map that allows users to find their location and the location of the exhibition or cultural relic they wish to visit.
+The navigation function should also provide text and audio guidance, allowing users to understand the relevant background knowledge of exhibitions and cultural relics by reading or listening to the navigation information.
+Users can also collect their favorite exhibitions or cultural relics for quick access and browsing in the future.
+Museum navigation software should also provide an interactive feature where users can leave comments and ratings on the software, and share their views and feelings with other users.
+Administrators also need an interface to manage museum information, including adding, modifying, and deleting information on exhibitions and artifacts.

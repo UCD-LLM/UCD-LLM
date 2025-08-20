@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+actor "Scientific Expedition Team Members"
+actor "Chief of the Scientific Expedition Station"
+actor "Remote Logistics Coordinator"
+actor "Meteorological Analysts"
+usecase "Estimate Future Material Demand"
+usecase "Process Supply Orders"
+usecase "Provide Meteorological Forecast"
+usecase "Confirm Material Storage"
+usecase "Submit Material Replenishment Request"
+usecase "Coordinate Transportation Arrangements"
+usecase "Negotiate With Suppliers"
+usecase "Track Order Progress"
+usecase "Check Current Inventory"
+usecase "Release Weekly Reports"
+usecase "Register Material Consumption"
+usecase "Manage Task Scheduling"
+usecase "Approve Material Applications"
+usecase "Allocate Human Resources"
+usecase "Develop Supply Order"
+"Scientific Expedition Team Members"--"Register Material Consumption"
+"Chief of the Scientific Expedition Station"--"Develop Supply Order"
+"Chief of the Scientific Expedition Station"--"Manage Task Scheduling"
+"Chief of the Scientific Expedition Station"--"Allocate Human Resources"
+"Chief of the Scientific Expedition Station"--"Release Weekly Reports"
+"Remote Logistics Coordinator"--"Process Supply Orders"
+"Remote Logistics Coordinator"--"Track Order Progress"
+"Remote Logistics Coordinator"--"Coordinate Transportation Arrangements"
+"Remote Logistics Coordinator"--"Confirm Material Storage"
+"Meteorological Analysts"--"Provide Meteorological Forecast"
+"Estimate Future Material Demand"<|."Develop Supply Order": <<include>>
+"Submit Material Replenishment Request"<|."Develop Supply Order": <<include>>
+"Approve Material Applications"<|."Develop Supply Order": <<include>>
+"Approve Material Applications"<|."Process Supply Orders": <<include>>
+"Check Current Inventory"<|."Submit Material Replenishment Request": <<include>>
+"Check Current Inventory"<|."Register Material Consumption": <<include>>
+"Process Supply Orders"<|."Negotiate With Suppliers": <<extend>>
+"Submit Material Replenishment Request"<|."Approve Material Applications": <<extend>>
+"Chief of the Scientific Expedition Station"--|>"Scientific Expedition Team Members"
+@enduml

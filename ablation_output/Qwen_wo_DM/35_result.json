@@ -1,0 +1,109 @@
+{
+    "actors": [
+        "Customer",
+        "Server"
+    ],
+    "usecases": [
+        "Add Dishes To Shopping Cart",
+        "Submit Order Request",
+        "Add Dishes During Dining",
+        "Make Cash Payment",
+        "Select Dishes",
+        "Receive Order",
+        "Verify Dish Information",
+        "Call Waiter For Assistance",
+        "Confirm Order",
+        "Initiate Checkout Request",
+        "Handle Customer Requests",
+        "View Total Price",
+        "Browse Electronic Menu",
+        "Deliver Dishes",
+        "Make QR Code Payment",
+        "View Selected Dishes"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Electronic Menu",
+            "Select Dishes",
+            "Add Dishes To Shopping Cart",
+            "View Selected Dishes",
+            "View Total Price",
+            "Submit Order Request",
+            "Add Dishes During Dining",
+            "Initiate Checkout Request",
+            "Make Cash Payment",
+            "Make QR Code Payment",
+            "Call Waiter For Assistance"
+        ],
+        "Server": [
+            "Receive Order",
+            "Verify Dish Information",
+            "Confirm Order",
+            "Deliver Dishes",
+            "Handle Customer Requests"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Order Request": [
+            "Add Dishes To Shopping Cart",
+            "Select Dishes",
+            "Browse Electronic Menu"
+        ],
+        "Add Dishes To Shopping Cart": [
+            "Select Dishes"
+        ],
+        "Make Cash Payment": [
+            "View Total Price"
+        ],
+        "Select Dishes": [
+            "Browse Electronic Menu"
+        ],
+        "Deliver Dishes": [
+            "Verify Dish Information"
+        ],
+        "View Total Price": [
+            "View Selected Dishes"
+        ]
+    },
+    "extension_relationships": {
+        "Add Dishes To Shopping Cart": [
+            "Add Dishes During Dining",
+            "Make Cash Payment",
+            "View Total Price",
+            "Make QR Code Payment",
+            "View Selected Dishes"
+        ],
+        "Browse Electronic Menu": [
+            "Add Dishes To Shopping Cart",
+            "View Selected Dishes"
+        ],
+        "Submit Order Request": [
+            "Add Dishes During Dining",
+            "Make Cash Payment",
+            "Confirm Order",
+            "Handle Customer Requests",
+            "Deliver Dishes",
+            "Make QR Code Payment"
+        ],
+        "Select Dishes": [
+            "Add Dishes During Dining",
+            "Verify Dish Information",
+            "View Total Price",
+            "Deliver Dishes",
+            "View Selected Dishes"
+        ],
+        "Initiate Checkout Request": [
+            "Make Cash Payment",
+            "Make QR Code Payment"
+        ],
+        "Receive Order": [
+            "Verify Dish Information",
+            "Deliver Dishes"
+        ],
+        "Call Waiter For Assistance": [
+            "Handle Customer Requests"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

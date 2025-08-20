@@ -1,0 +1,10 @@
+When prescribing medication to patients, doctors need to accurately select the required drugs from the system's drug database. 
+The selected drugs should match the patient's diagnosis, severity of the condition, and individual constitution, and avoid allergic drugs; 
+The second is to clearly specify the specific dosage for each drug, and the dosage should be determined comprehensively based on factors such as the patient's age, weight, liver and kidney function. 
+At the same time, the single dose, daily usage frequency, and total treatment duration should be labeled. 
+In addition, the system should also support doctors to add medication notes, such as special instructions such as "take after meals" and "avoid taking with certain types of drugs".
+After the prescription is issued, it should automatically associate the patient's basic information and generate a unique prescription number for subsequent prescription review, drug dispensing, and medical record tracing. ​
+When nurses perform the operation of recording vital signs, the system needs to provide them with a convenient information entry portal. 
+Nurses need to input three key vital sign data of patients in sequence: body temperature, blood pressure, and pulse. In addition to the above basic items, the system should also support nurses to supplement and record other vital signs based on the patient's condition, such as respiratory rate, blood oxygen saturation, heart rate, etc. 
+After the input is completed, the system needs to automatically generate a timestamp, mark the specific time of the record, and associate it with the corresponding patient's medical record. 
+Nurses are also allowed to modify the entered information to ensure the real-time and traceability of vital sign data, providing reliable basis for doctors to judge changes in the patient's condition.

@@ -1,0 +1,66 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Modify Signed Contract",
+        "Retrieve Contract",
+        "Create Contract",
+        "Complete Handwritten Signature",
+        "Scan Code Signature",
+        "Store Contract",
+        "Select Template",
+        "Confirm Resign Contract",
+        "Custom Edit Contract",
+        "Receive Expiration Reminder",
+        "Download Contract",
+        "Sign Contract"
+    ],
+    "association_relationships": {
+        "User": [
+            "Create Contract",
+            "Select Template",
+            "Custom Edit Contract",
+            "Sign Contract",
+            "Complete Handwritten Signature",
+            "Scan Code Signature",
+            "Store Contract",
+            "Retrieve Contract",
+            "Download Contract",
+            "Modify Signed Contract",
+            "Confirm Resign Contract",
+            "Receive Expiration Reminder"
+        ]
+    },
+    "inclusion_relationships": {
+        "Modify Signed Contract": [
+            "Sign Contract"
+        ],
+        "Create Contract": [
+            "Select Template"
+        ],
+        "Sign Contract": [
+            "Create Contract",
+            "Complete Handwritten Signature"
+        ],
+        "Custom Edit Contract": [
+            "Select Template"
+        ]
+    },
+    "extension_relationships": {
+        "Create Contract": [
+            "Complete Handwritten Signature",
+            "Scan Code Signature",
+            "Store Contract",
+            "Custom Edit Contract",
+            "Download Contract"
+        ],
+        "Sign Contract": [
+            "Scan Code Signature",
+            "Store Contract",
+            "Confirm Resign Contract"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

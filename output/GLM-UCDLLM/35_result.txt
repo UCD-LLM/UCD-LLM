@@ -1,0 +1,42 @@
+@startuml
+left to right direction
+actor "Customers"
+actor "Servers"
+usecase "Submit Order Request"
+usecase "Select Dishes"
+usecase "Learn About Dishes"
+usecase "View Selected Dishes And Total Prices"
+usecase "Deliver Dishes"
+usecase "Add Dishes To Shopping Cart"
+usecase "Call Waiter"
+usecase "Initiate Checkout Request"
+usecase "Verify Dish Information"
+usecase "Receive Ordering Orders"
+usecase "Browse Electronic Menu"
+usecase "Handle Customer Requests"
+usecase "Add Dishes During Dining"
+usecase "Make QR Code Payment"
+usecase "Choose Serving Time"
+usecase "Confirm Orders"
+usecase "Make Cash Payment"
+"Customers"--"Browse Electronic Menu"
+"Customers"--"Learn About Dishes"
+"Customers"--"Choose Serving Time"
+"Customers"--"Add Dishes During Dining"
+"Customers"--"Initiate Checkout Request"
+"Customers"--"Make Cash Payment"
+"Customers"--"Make QR Code Payment"
+"Customers"--"Call Waiter"
+"Servers"--"Confirm Orders"
+"Servers"--"Deliver Dishes"
+"Servers"--"Handle Customer Requests"
+"Select Dishes"<|."Submit Order Request": <<include>>
+"View Selected Dishes And Total Prices"<|."Submit Order Request": <<include>>
+"Add Dishes To Shopping Cart"<|."Submit Order Request": <<include>>
+"Submit Order Request"<|."Receive Ordering Orders": <<include>>
+"Verify Dish Information"<|."Receive Ordering Orders": <<include>>
+"Verify Dish Information"<|."Deliver Dishes": <<include>>
+"Receive Ordering Orders"<|."Deliver Dishes": <<include>>
+"Verify Dish Information"<|."Confirm Orders": <<include>>
+"Receive Ordering Orders"<|."Confirm Orders": <<include>>
+@enduml

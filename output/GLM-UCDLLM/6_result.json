@@ -1,0 +1,60 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Choose Payment Method",
+        "Cancel Order",
+        "Browse Products",
+        "Select Products",
+        "Set Product Price",
+        "Create Promotional Activity",
+        "Ship Order",
+        "Manage Order Status",
+        "Generate Order",
+        "View Order Status",
+        "Modify Product Information",
+        "Set Product Inventory",
+        "Add Product Information",
+        "Manage Promotional Activity",
+        "Log In",
+        "Query Logistics Information",
+        "Delete Product Information",
+        "Confirm Payment",
+        "Register Account"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Register Account",
+            "Browse Products",
+            "Select Products",
+            "Generate Order",
+            "Choose Payment Method",
+            "Query Logistics Information"
+        ],
+        "Administrator": [
+            "Add Product Information",
+            "Modify Product Information",
+            "Delete Product Information",
+            "Set Product Price",
+            "Set Product Inventory",
+            "View Order Status",
+            "Manage Order Status",
+            "Confirm Payment",
+            "Ship Order",
+            "Cancel Order",
+            "Create Promotional Activity",
+            "Manage Promotional Activity"
+        ]
+    },
+    "inclusion_relationships": {
+        "Generate Order": [
+            "Choose Payment Method"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

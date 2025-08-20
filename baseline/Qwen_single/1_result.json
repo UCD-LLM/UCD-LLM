@@ -1,0 +1,33 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Open PDF File",
+        "Browse and Read PDF",
+        "Add Annotations",
+        "Highlight and Underline Text",
+        "Add Bookmarks",
+        "Search PDF Content",
+        "Export PDF",
+        "Print PDF",
+        "Support Multi Platform"
+    ],
+    "association_relationships": {
+        "User": [
+            "Open PDF File",
+            "Browse and Read PDF",
+            "Add Annotations",
+            "Highlight and Underline Text",
+            "Add Bookmarks",
+            "Search PDF Content",
+            "Export PDF",
+            "Print PDF",
+            "Support Multi Platform"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

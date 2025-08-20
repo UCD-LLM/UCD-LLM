@@ -1,0 +1,31 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Register",
+        "Login",
+        "Browse Movies",
+        "Select Movie",
+        "Reserve Seats",
+        "Make Payment",
+        "Receive Electronic Ticket",
+        "Manage Account"
+    ],
+    "association_relationships": {
+        "User": [
+            "Register",
+            "Login",
+            "Browse Movies",
+            "Select Movie",
+            "Reserve Seats",
+            "Make Payment",
+            "Receive Electronic Ticket",
+            "Manage Account"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

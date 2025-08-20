@@ -1,0 +1,18 @@
+{
+    "actors": [
+        "Bank Client"
+    ],
+    "usecases": [
+        "Deposit Amount",
+        "Verify Account Balance",
+        "Inform Insufficient Balance",
+        "Access Account",
+        "Withdraw Amount",
+        "Review Transactions"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

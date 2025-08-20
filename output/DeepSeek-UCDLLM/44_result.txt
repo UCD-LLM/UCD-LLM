@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+actor "Travelers"
+actor "Hotel Front Desk"
+actor "Hotel Managers"
+actor "System Maintenance Personnel"
+usecase "Manage User Accounts"
+usecase "Verify Identity Information"
+usecase "View Room Details"
+usecase "Manage System Configuration"
+usecase "View Financial Reports"
+usecase "Search Available Rooms"
+usecase "Adjust Room Pricing"
+usecase "Handle Check-in Procedures"
+usecase "Handle Check-out Procedures"
+usecase "Assign Room Keys"
+usecase "Book Room Online"
+"Travelers"--"Book Room Online"
+"Hotel Front Desk"--"Handle Check-in Procedures"
+"Hotel Front Desk"--"Handle Check-out Procedures"
+"Hotel Managers"--"View Financial Reports"
+"Hotel Managers"--"Adjust Room Pricing"
+"System Maintenance Personnel"--"Manage System Configuration"
+"System Maintenance Personnel"--"Manage User Accounts"
+"Verify Identity Information"<|."Handle Check-in Procedures": <<include>>
+"Assign Room Keys"<|."Handle Check-in Procedures": <<include>>
+"Verify Identity Information"<|."Assign Room Keys": <<include>>
+"View Room Details"<|."Book Room Online": <<include>>
+"Search Available Rooms"<|."Book Room Online": <<include>>
+"Search Available Rooms"<|."View Room Details": <<extend>>
+"Hotel Managers"--|>"Hotel Front Desk"
+@enduml

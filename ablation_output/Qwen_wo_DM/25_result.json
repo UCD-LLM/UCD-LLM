@@ -1,0 +1,86 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "View Product Details",
+        "Manage User Information",
+        "Search Products",
+        "Add Item To Shopping Cart",
+        "Evaluate Product",
+        "Receive Personalized Recommendations",
+        "Log In",
+        "Manage Orders",
+        "Checkout Order",
+        "Complete Payment",
+        "Manage Product Information",
+        "View Order Status",
+        "Request Refund",
+        "Track Order Logistics",
+        "Register User"
+    ],
+    "association_relationships": {
+        "User": [
+            "Register User",
+            "Log In",
+            "Search Products",
+            "View Product Details",
+            "Add Item To Shopping Cart",
+            "Checkout Order",
+            "View Order Status",
+            "Track Order Logistics",
+            "Complete Payment",
+            "Request Refund",
+            "Evaluate Product",
+            "Receive Personalized Recommendations"
+        ],
+        "Administrator": [
+            "Manage Product Information",
+            "Manage Orders",
+            "Manage User Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Add Item To Shopping Cart": [
+            "Log In"
+        ],
+        "Checkout Order": [
+            "Add Item To Shopping Cart",
+            "Log In",
+            "Complete Payment",
+            "Register User"
+        ],
+        "Complete Payment": [
+            "Add Item To Shopping Cart"
+        ],
+        "Receive Personalized Recommendations": [
+            "Log In"
+        ],
+        "View Order Status": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "View Product Details": [
+            "Add Item To Shopping Cart",
+            "Evaluate Product"
+        ],
+        "Search Products": [
+            "Add Item To Shopping Cart"
+        ],
+        "Log In": [
+            "Request Refund",
+            "Track Order Logistics"
+        ],
+        "Checkout Order": [
+            "Request Refund",
+            "Track Order Logistics"
+        ],
+        "Complete Payment": [
+            "Request Refund"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

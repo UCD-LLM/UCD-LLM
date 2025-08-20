@@ -1,0 +1,77 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "Specialist Doctor",
+        "Head Nurse",
+        "Toll Collector"
+    ],
+    "usecases": [
+        "Make Appointment",
+        "View Doctor Schedule",
+        "Select Time Slot",
+        "Pay Consultation Fee",
+        "View Electronic Medical Record",
+        "Input Diagnostic Information",
+        "Issue Prescriptions",
+        "Arrange Examinations",
+        "Triage Patients",
+        "Guide to Departments",
+        "Record Vital Signs",
+        "Schedule Special Examinations",
+        "Initiate Multidisciplinary Consultations",
+        "Arrange Nurse Shifts",
+        "Manage Medical Consumables",
+        "Handle Payments",
+        "Print Payment Vouchers"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Make Appointment",
+            "View Doctor Schedule",
+            "Select Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record"
+        ],
+        "Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations"
+        ],
+        "Nurse": [
+            "Triage Patients",
+            "Guide to Departments",
+            "Record Vital Signs"
+        ],
+        "Specialist Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Head Nurse": [
+            "Triage Patients",
+            "Guide to Departments",
+            "Record Vital Signs",
+            "Arrange Nurse Shifts",
+            "Manage Medical Consumables"
+        ],
+        "Toll Collector": [
+            "Handle Payments",
+            "Print Payment Vouchers"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Doctor": [
+            "Specialist Doctor"
+        ],
+        "Nurse": [
+            "Head Nurse"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

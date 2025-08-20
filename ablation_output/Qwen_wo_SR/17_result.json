@@ -1,0 +1,69 @@
+{
+    "actors": [
+        "Maintenance Engineer",
+        "Customer",
+        "System"
+    ],
+    "usecases": [
+        "Verify Customer Signature",
+        "Generate Unique Work Order Number",
+        "Deduct Spare Parts Inventory",
+        "Create Maintenance Work Order",
+        "Confirm Equipment Repair",
+        "Assign Responsible Engineers",
+        "Sign Electronic Signature",
+        "Record Work Order Information",
+        "Update Spare Parts Inventory",
+        "Record Equipment Failure Description",
+        "Fill Out Maintenance Report",
+        "Issue Replenishment Reminder"
+    ],
+    "association_relationships": {
+        "Maintenance Engineer": [
+            "Create Maintenance Work Order",
+            "Record Equipment Failure Description",
+            "Assign Responsible Engineers",
+            "Fill Out Maintenance Report",
+            "Update Spare Parts Inventory",
+            "Verify Customer Signature"
+        ],
+        "Customer": [
+            "Confirm Equipment Repair",
+            "Sign Electronic Signature"
+        ],
+        "System": [
+            "Generate Unique Work Order Number",
+            "Record Work Order Information",
+            "Deduct Spare Parts Inventory",
+            "Issue Replenishment Reminder",
+            "Verify Customer Signature"
+        ]
+    },
+    "inclusion_relationships": {
+        "Verify Customer Signature": [
+            "Sign Electronic Signature"
+        ],
+        "Create Maintenance Work Order": [
+            "Generate Unique Work Order Number",
+            "Record Work Order Information",
+            "Record Equipment Failure Description"
+        ],
+        "Record Work Order Information": [
+            "Generate Unique Work Order Number"
+        ]
+    },
+    "extension_relationships": {
+        "Fill Out Maintenance Report": [
+            "Deduct Spare Parts Inventory"
+        ],
+        "Deduct Spare Parts Inventory": [
+            "Issue Replenishment Reminder"
+        ],
+        "Create Maintenance Work Order": [
+            "Confirm Equipment Repair",
+            "Update Spare Parts Inventory"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

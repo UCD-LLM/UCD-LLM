@@ -1,0 +1,50 @@
+{
+    "actors": [
+        "Delivery personnel",
+        "Administrators",
+        "Customers"
+    ],
+    "usecases": [
+        "Log in to the system",
+        "Record departure time",
+        "Record arrival time",
+        "Record return time",
+        "Clock in",
+        "View delivery records",
+        "View status of delivery personnel",
+        "Take corrective measures",
+        "Manage delivery personnel accounts",
+        "Add delivery personnel information",
+        "Modify delivery personnel information",
+        "Delete delivery personnel information",
+        "Provide real-time order tracking",
+        "View delivery status of orders",
+        "Provide delivery route planning and optimization"
+    ],
+    "association_relationships": {
+        "Delivery personnel": [
+            "Record departure time",
+            "Record arrival time",
+            "Record return time",
+            "Clock in",
+            "Provide delivery route planning and optimization"
+        ],
+        "Administrators": [
+            "View delivery records",
+            "View status of delivery personnel",
+            "Take corrective measures",
+            "Manage delivery personnel accounts",
+            "Add delivery personnel information",
+            "Modify delivery personnel information",
+            "Delete delivery personnel information"
+        ],
+        "Customers": [
+            "Provide real-time order tracking",
+            "View delivery status of orders"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

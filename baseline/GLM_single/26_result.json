@@ -1,0 +1,48 @@
+{
+    "actors": [
+        "Operators",
+        "Maintenance engineers",
+        "Production manager",
+        "System administrator"
+    ],
+    "usecases": [
+        "Observe assembly line status",
+        "Control operations",
+        "Handle abnormal situations",
+        "Use detailed equipment status information",
+        "Use fault logs",
+        "View production situation",
+        "Generate analysis reports",
+        "View operation records of all employees",
+        "Generate comprehensive production reports",
+        "Manage system users",
+        "Add users",
+        "Delete users"
+    ],
+    "association_relationships": {
+        "Operators": [
+            "Observe assembly line status",
+            "Control operations",
+            "Handle abnormal situations"
+        ],
+        "Maintenance engineers": [
+            "Use detailed equipment status information",
+            "Use fault logs"
+        ],
+        "Production manager": [
+            "View production situation",
+            "Generate analysis reports"
+        ],
+        "System administrator": [
+            "View operation records of all employees",
+            "Generate comprehensive production reports",
+            "Manage system users",
+            "Add users",
+            "Delete users"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

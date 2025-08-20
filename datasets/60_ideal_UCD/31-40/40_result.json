@@ -1,0 +1,55 @@
+{
+    "actors": [
+        "Teller",
+        "Customer",
+        "Backend Auditor"
+    ],
+    "usecases": [
+        "Verify Customer Identities",
+        "Create New Bank Accounts",
+        "Create Checking Accounts",
+        "Create Saving Accounts",
+        "Create Fixed-term Deposit Accounts",
+        "Close Bank Accounts",
+        "Handle Account Deposit Transactions",
+        "Handle Cash Deposits",
+        "Handle Check Deposits",
+        "Handle Account Transfer Transactions",
+        "Check Account Balance",
+        "Generate Daily Transaction Reports",
+        "Verify General Account Ledger",
+        "Monitor Transactions"
+    ],
+    "association_relationships": {
+        "Teller": [
+            "Verify Customer Identities",
+            "Create New Bank Accounts",
+            "Close Bank Accounts",
+            "Handle Account Deposit Transactions",
+            "Handle Account Transfer Transactions",
+            "Check Account Balance"
+        ],
+        "Customer": [
+            "Check Account Balance"
+        ],
+        "Backend Auditor":[
+            "Generate Daily Transaction Reports",
+            "Verify General Account Ledger",
+            "Monitor Transactions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Create New Bank Accounts": [
+            "Create Checking Accounts",
+            "Create Saving Accounts",
+            "Create Fixed-term Deposit Accounts"
+        ],
+        "Handle Account Deposit Transactions": [
+            "Handle Cash Deposits",
+            "Handle Check Deposits"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

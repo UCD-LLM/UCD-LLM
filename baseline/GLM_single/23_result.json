@@ -1,0 +1,25 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "User registration and login",
+        "Financial report import",
+        "Data visualization and chart display",
+        "Key indicator calculation",
+        "Custom report generation"
+    ],
+    "association_relationships": {
+        "User": [
+            "User registration and login",
+            "Financial report import",
+            "Data visualization and chart display",
+            "Key indicator calculation",
+            "Custom report generation"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

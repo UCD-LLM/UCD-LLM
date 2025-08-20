@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Customers",
+        "Servers"
+    ],
+    "usecases": [
+        "Submit Order Request",
+        "Select Dishes",
+        "Learn About Dishes",
+        "View Selected Dishes And Total Prices",
+        "Deliver Dishes",
+        "Add Dishes To Shopping Cart",
+        "Call Waiter",
+        "Initiate Checkout Request",
+        "Verify Dish Information",
+        "Receive Ordering Orders",
+        "Browse Electronic Menu",
+        "Handle Customer Requests",
+        "Add Dishes During Dining",
+        "Make QR Code Payment",
+        "Choose Serving Time",
+        "Confirm Orders",
+        "Make Cash Payment"
+    ],
+    "association_relationships": {
+        "Customers": [
+            "Browse Electronic Menu",
+            "Learn About Dishes",
+            "Select Dishes",
+            "Add Dishes To Shopping Cart",
+            "View Selected Dishes And Total Prices",
+            "Submit Order Request",
+            "Choose Serving Time",
+            "Add Dishes During Dining",
+            "Initiate Checkout Request",
+            "Make Cash Payment",
+            "Make QR Code Payment",
+            "Call Waiter"
+        ],
+        "Servers": [
+            "Receive Ordering Orders",
+            "Verify Dish Information",
+            "Confirm Orders",
+            "Deliver Dishes",
+            "Handle Customer Requests"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Order Request": [
+            "Select Dishes",
+            "View Selected Dishes And Total Prices",
+            "Add Dishes To Shopping Cart"
+        ],
+        "Receive Ordering Orders": [
+            "Submit Order Request",
+            "Verify Dish Information"
+        ],
+        "Deliver Dishes": [
+            "Verify Dish Information",
+            "Receive Ordering Orders"
+        ],
+        "Confirm Orders": [
+            "Verify Dish Information",
+            "Receive Ordering Orders"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

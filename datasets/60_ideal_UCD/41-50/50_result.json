@@ -1,0 +1,83 @@
+{
+    "actors": [
+        "Citizen",
+        "Individual Applicant",
+        "Enterprise Operator",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Browse Service Guide",
+        "Check Progress Of Application",
+        "Consult Questions Online",
+        "Register",
+        "Log In",
+        "Submit Applications For Business Licenses",
+        "Upload Application Materials",
+        "Pay Application Fees",
+        "Download Electronic Certificates",
+        "Submit Enterprise Qualification Certificates",
+        "Manage Enterprise Certificates And Licenses",
+        "Accept Application Materials",
+        "Review Application Materials Preliminarily",
+        "Collect Application Fees",
+        "Issue Relevant Notices To Applicants",
+        "Review Application Materials Substantively",
+        "Make Approval Decisions"
+    ],
+    "association_relationships": {
+        "Citizen": [
+            "Browse Service Guide",
+            "Check Progress Of Application",
+            "Consult Questions Online",
+            "Register",
+            "Log In"
+        ],
+       "Individual Applicant": [
+           "Browse Service Guide",
+           "Check Progress Of Application",
+           "Consult Questions Online",
+           "Register",
+           "Log In",
+           "Submit Applications For Business Licenses",
+           "Upload Application Materials",
+           "Pay Application Fees",
+           "Download Electronic Certificates"
+       ],
+       "Enterprise Operator": [
+           "Browse Service Guide",
+           "Check Progress Of Application",
+           "Consult Questions Online",
+           "Register",
+           "Log In",
+           "Submit Enterprise Qualification Certificates",
+           "Manage Enterprise Certificates And Licenses"
+       ],
+       "Window Staff": [
+           "Accept Application Materials",
+           "Review Application Materials Preliminarily",
+           "Collect Application Fees",
+           "Issue Relevant Notices To Applicants"
+       ],
+       "Approval Personnel": [
+           "Accept Application Materials",
+           "Review Application Materials Preliminarily",
+           "Collect Application Fees",
+           "Issue Relevant Notices To Applicants",
+           "Review Application Materials Substantively",
+           "Make Approval Decisions"
+       ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizen": [
+            "Individual Applicant",
+            "Enterprise Operator"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

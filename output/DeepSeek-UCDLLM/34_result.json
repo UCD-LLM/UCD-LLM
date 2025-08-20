@@ -1,0 +1,60 @@
+{
+    "actors": [
+        "Residents",
+        "Voice Assistants"
+    ],
+    "usecases": [
+        "Activate Sleep Mode",
+        "Activate Away Mode",
+        "Activate At Home Mode",
+        "Set Security Modes",
+        "Turn On All Lights",
+        "Adjust Indoor Temperature",
+        "View Device Status",
+        "Control Devices",
+        "Receive Voice Commands",
+        "Control Devices Locally",
+        "Turn Off All Lights",
+        "Control Lighting",
+        "Control Room Lighting",
+        "Use Mobile App for Remote Operation"
+    ],
+    "association_relationships": {
+        "Residents": [
+            "Use Mobile App for Remote Operation",
+            "Control Devices Locally",
+            "View Device Status",
+            "Adjust Indoor Temperature",
+            "Control Lighting",
+            "Turn On All Lights",
+            "Turn Off All Lights",
+            "Control Room Lighting",
+            "Set Security Modes",
+            "Activate Away Mode",
+            "Activate At Home Mode",
+            "Activate Sleep Mode"
+        ],
+        "Voice Assistants": [
+            "Receive Voice Commands",
+            "Control Devices"
+        ]
+    },
+    "inclusion_relationships": {
+        "Control Devices": [
+            "Receive Voice Commands"
+        ]
+    },
+    "extension_relationships": {
+        "Activate Sleep Mode": [
+            "Turn Off All Lights"
+        ],
+        "Control Lighting": [
+            "Turn On All Lights"
+        ],
+        "Use Mobile App for Remote Operation": [
+            "Turn Off All Lights"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

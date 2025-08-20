@@ -1,0 +1,43 @@
+@startuml
+left to right direction
+actor "User"
+actor "Administrator"
+usecase "Participate In Promotions"
+usecase "Manage User Information"
+usecase "Register"
+usecase "Manage Orders"
+usecase "Manage Product Information"
+usecase "Track Logistics Information"
+usecase "View Product Reviews"
+usecase "Complete Order Payment"
+usecase "Return And Refund"
+usecase "Receive Personalized Recommendations"
+usecase "View Product Details"
+usecase "Evaluate Products"
+usecase "Use Coupons"
+usecase "Search Products"
+usecase "Add Items To Shopping Cart"
+usecase "View Order Status"
+usecase "Log In"
+usecase "Select Checkout"
+"User"--"Register"
+"User"--"Search Products"
+"User"--"View Product Details"
+"User"--"View Product Reviews"
+"User"--"Complete Order Payment"
+"User"--"View Order Status"
+"User"--"Track Logistics Information"
+"User"--"Return And Refund"
+"User"--"Evaluate Products"
+"User"--"Receive Personalized Recommendations"
+"User"--"Use Coupons"
+"User"--"Participate In Promotions"
+"Administrator"--"Manage Product Information"
+"Administrator"--"Manage Orders"
+"Administrator"--"Manage User Information"
+"Add Items To Shopping Cart"<|."Complete Order Payment": <<include>>
+"Select Checkout"<|."Complete Order Payment": <<include>>
+"Add Items To Shopping Cart"<|."Select Checkout": <<include>>
+"Log In"<|."Select Checkout": <<include>>
+"Administrator"--|>"User"
+@enduml

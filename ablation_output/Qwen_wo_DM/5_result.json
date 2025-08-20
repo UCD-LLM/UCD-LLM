@@ -1,0 +1,87 @@
+{
+    "actors": [
+        "Users",
+        "Administrators"
+    ],
+    "usecases": [
+        "Use Indoor Navigation",
+        "Collect Exhibitions",
+        "Modify Exhibition Information",
+        "Search Exhibitions",
+        "Leave Comments",
+        "Manage Museum Information",
+        "Log In",
+        "Share Views",
+        "Download Software",
+        "Browse Museum Information",
+        "Rate Software",
+        "Add Artifact Information",
+        "Delete Artifact Information",
+        "Modify Artifact Information",
+        "Search Museums",
+        "Delete Exhibition Information",
+        "Add Exhibition Information",
+        "Access Text Guidance",
+        "Access Audio Guidance"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Software",
+            "Log In",
+            "Browse Museum Information",
+            "Search Museums",
+            "Search Exhibitions",
+            "Use Indoor Navigation",
+            "Access Text Guidance",
+            "Access Audio Guidance",
+            "Collect Exhibitions",
+            "Leave Comments",
+            "Rate Software",
+            "Share Views"
+        ],
+        "Administrators": [
+            "Manage Museum Information",
+            "Add Exhibition Information",
+            "Modify Exhibition Information",
+            "Delete Exhibition Information",
+            "Add Artifact Information",
+            "Modify Artifact Information",
+            "Delete Artifact Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Use Indoor Navigation": [
+            "Download Software"
+        ],
+        "Collect Exhibitions": [
+            "Log In",
+            "Download Software"
+        ],
+        "Search Exhibitions": [
+            "Download Software"
+        ]
+    },
+    "extension_relationships": {
+        "Use Indoor Navigation": [
+            "Access Text Guidance",
+            "Access Audio Guidance"
+        ],
+        "Log In": [
+            "Leave Comments",
+            "Share Views",
+            "Rate Software",
+            "Search Museums",
+            "Access Text Guidance",
+            "Access Audio Guidance"
+        ],
+        "Download Software": [
+            "Share Views",
+            "Rate Software"
+        ],
+        "Browse Museum Information": [
+            "Access Audio Guidance"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

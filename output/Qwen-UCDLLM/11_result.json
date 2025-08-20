@@ -1,0 +1,64 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Add Meeting Participants",
+        "Log In",
+        "Invite Users",
+        "Edit Meeting Participants",
+        "Delete Meeting Participants",
+        "Playback Conference Recording",
+        "Set Meeting Time",
+        "Record Conference Call",
+        "Share Screen",
+        "Mute",
+        "Authenticate",
+        "Hang Up",
+        "Join Conference Call",
+        "Share Files",
+        "Create Conference Call",
+        "Unmute"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Authenticate",
+            "Create Conference Call",
+            "Invite Users",
+            "Join Conference Call",
+            "Set Meeting Time",
+            "Add Meeting Participants",
+            "Edit Meeting Participants",
+            "Delete Meeting Participants",
+            "Mute",
+            "Unmute",
+            "Hang Up",
+            "Record Conference Call",
+            "Playback Conference Recording",
+            "Share Screen",
+            "Share Files"
+        ]
+    },
+    "inclusion_relationships": {
+        "Add Meeting Participants": [
+            "Log In"
+        ],
+        "Join Conference Call": [
+            "Log In"
+        ],
+        "Playback Conference Recording": [
+            "Authenticate"
+        ]
+    },
+    "extension_relationships": {
+        "Create Conference Call": [
+            "Share Screen"
+        ],
+        "Join Conference Call": [
+            "Unmute"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

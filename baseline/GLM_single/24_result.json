@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Customer",
+        "Restaurant Staff",
+        "Restaurant Manager"
+    ],
+    "usecases": [
+        "Log In",
+        "Select Restaurant",
+        "View Menu",
+        "Place Order",
+        "Add Notes",
+        "View Ordering Information",
+        "Prepare Dishes",
+        "Manage Dish Inventory",
+        "Update Inventory",
+        "Inventory Reminder",
+        "Pay Online",
+        "Receive Notification",
+        "View Sales Data",
+        "View Ordering Frequency"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Log In",
+            "Select Restaurant",
+            "View Menu",
+            "Place Order",
+            "Add Notes",
+            "Pay Online",
+            "Receive Notification"
+        ],
+        "Restaurant Staff": [
+            "View Ordering Information",
+            "Prepare Dishes",
+            "Manage Dish Inventory",
+            "Update Inventory",
+            "Inventory Reminder"
+        ],
+        "Restaurant Manager": [
+            "View Sales Data",
+            "View Ordering Frequency"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

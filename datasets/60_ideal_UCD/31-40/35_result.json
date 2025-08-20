@@ -1,0 +1,59 @@
+{
+    "actors": [
+        "Customer",
+        "Waiter"
+    ],
+    "usecases": [
+        "Browse Electronic Menu",
+        "Select Dishes",
+        "Add Dishes To Cart",
+        "Submit Order Request",
+        "Choose To Serve Immediately",
+        "Choose To Serve All dishes Together",
+        "Add Dishes",
+        "Initiate Checkout Requests",
+        "Pay By Cash",
+        "Pay By QR Code",
+        "Call Waiter For Help",
+        "Receive Real-Time Orders",
+        "Vertify Dish Information",
+        "Deliver Orders To Kitchen",
+        "Deliver Dishs To Customer",
+        "Handle Customers' Requests"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Electronic Menu",
+            "Select Dishes",
+            "Add Dishes To Cart",
+            "Submit Order Request",
+            "Choose To Serve Immediately",
+            "Choose To Serve All dishes Together",
+            "Add Dishes",
+            "Initiate Checkout Requests",
+            "Pay By Cash",
+            "Pay By QR Code",
+            "Call Waiter For Help"
+        ],
+        "Waiter": [
+            "Receive Real-Time Orders",
+            "Vertify Dish Information",
+            "Deliver Orders To Kitchen",
+            "Deliver Dishs To Customer",
+            "Handle Customers' Requests"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Submit Order Request": [
+            "Choose To Serve Immediately",
+            "Choose To Serve All dishes Together"
+        ],
+        "Initiate Checkout Requests": [
+            "Pay By Cash",
+            "Pay By QR Code"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

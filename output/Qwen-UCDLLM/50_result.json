@@ -1,0 +1,142 @@
+{
+    "actors": [
+        "Citizens",
+        "Individual Applicants",
+        "Enterprise Operators",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Obtain Online Consultation",
+        "Verify Compliance",
+        "Check Application Progress",
+        "Register Personal Account",
+        "Download Electronic Certificates",
+        "Accept Application Materials",
+        "Upload Application Materials",
+        "Manage Enterprise Certificates",
+        "Check Material Completeness",
+        "Make Online Payment",
+        "Understand Application Process",
+        "Verify Legality",
+        "Log In To Personal Account",
+        "Make Approval Decision",
+        "Register Account",
+        "Submit Business License Application",
+        "Submit Enterprise Qualification Certificates",
+        "Issue Material Correction Notices",
+        "Issue Approval Result Notices",
+        "Collect Application Fees",
+        "Verify Authenticity",
+        "Conduct Preliminary Review",
+        "Update Enterprise Certificates",
+        "Browse Service Guide",
+        "Log In",
+        "View Enterprise Certificates"
+    ],
+    "association_relationships": {
+        "Citizens": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Obtain Online Consultation",
+            "Register Account",
+            "Log In",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Make Online Payment",
+            "Download Electronic Certificates"
+        ],
+        "Individual Applicants": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Obtain Online Consultation",
+            "Register Personal Account",
+            "Log In",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Make Online Payment",
+            "Download Electronic Certificates"
+        ],
+        "Enterprise Operators": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Obtain Online Consultation",
+            "Register Personal Account",
+            "Log In To Personal Account",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Make Online Payment",
+            "Download Electronic Certificates",
+            "Submit Enterprise Qualification Certificates",
+            "Manage Enterprise Certificates",
+            "View Enterprise Certificates",
+            "Update Enterprise Certificates"
+        ],
+        "Window Staff": [
+            "Accept Application Materials",
+            "Check Material Completeness",
+            "Conduct Preliminary Review",
+            "Collect Application Fees",
+            "Issue Material Correction Notices",
+            "Issue Approval Result Notices"
+        ],
+        "Approval Personnel": [
+            "Accept Application Materials",
+            "Conduct Preliminary Review",
+            "Verify Authenticity",
+            "Verify Legality",
+            "Verify Compliance",
+            "Make Approval Decision"
+        ]
+    },
+    "inclusion_relationships": {
+        "Verify Compliance": [
+            "Upload Application Materials"
+        ],
+        "Make Approval Decision": [
+            "Verify Compliance",
+            "Accept Application Materials",
+            "Check Material Completeness",
+            "Verify Legality",
+            "Verify Authenticity"
+        ],
+        "Submit Business License Application": [
+            "Upload Application Materials"
+        ],
+        "Upload Application Materials": [
+            "Log In"
+        ],
+        "Verify Authenticity": [
+            "Check Material Completeness"
+        ],
+        "Conduct Preliminary Review": [
+            "Check Material Completeness"
+        ]
+    },
+    "extension_relationships": {
+        "Accept Application Materials": [
+            "Verify Legality",
+            "Issue Material Correction Notices"
+        ],
+        "Upload Application Materials": [
+            "Submit Enterprise Qualification Certificates"
+        ],
+        "Submit Business License Application": [
+            "Make Online Payment",
+            "Issue Approval Result Notices",
+            "Conduct Preliminary Review"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizens": [
+            "Individual Applicants"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

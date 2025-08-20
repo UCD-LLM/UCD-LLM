@@ -1,0 +1,6 @@
+I hope to develop a memo software to provide users with a convenient tool for managing personal memos.
+1. User login function: Users need to log in to the system through their username and password to ensure data security and user privacy.
+2. Memo recording function: Users can add, edit, and delete memo records, including memo titles, content, dates, and reminders.
+3. Memo classification function: Users can classify memos according to their needs in order to better organize and manage their content.
+4. Memo search function: Users can search for memos by keywords to quickly find specific memo records.
+5. Data synchronization function: The software can provide data synchronization function, allowing users to access and synchronize their memo content on different devices.

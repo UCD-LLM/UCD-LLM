@@ -1,0 +1,24 @@
+{
+    "actors": [
+        "Customer"
+    ],
+    "usecases": [
+        "Check Account Balance",
+        "Perform Transfer",
+        "Verify Funds Sufficiency"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Check Account Balance",
+            "Perform Transfer"
+        ]
+    },
+    "inclusion_relationships": {
+        "Perform Transfer": [
+            "Verify Funds Sufficiency"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

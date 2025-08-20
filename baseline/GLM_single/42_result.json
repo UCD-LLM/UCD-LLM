@@ -1,0 +1,60 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "Administrator"
+    ],
+    "usecases": [
+        "Browse Products",
+        "Apply Filters",
+        "Place Orders",
+        "Manage Inventory",
+        "Update Product Details",
+        "Track Sales",
+        "Resolve Disputes",
+        "Monitor Transactions",
+        "Manage User Accounts",
+        "Process Payment"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "Browse Products",
+            "Apply Filters",
+            "Place Orders"
+        ],
+        "Seller": [
+            "Manage Inventory",
+            "Update Product Details",
+            "Track Sales"
+        ],
+        "Administrator": [
+            "Resolve Disputes",
+            "Monitor Transactions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Manage Inventory": [
+            "Bulk Upload",
+            "Sales Analytics"
+        ],
+        "Process Payment": [
+            "Credit Card Payment",
+            "Digital Wallet Payment"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Manage User Accounts": [
+            "Manage Buyer Accounts",
+            "Manage Seller Accounts",
+            "Manage Admin Accounts"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "User": [
+            "Buyer",
+            "Seller",
+            "Administrator"
+        ]
+    }
+}

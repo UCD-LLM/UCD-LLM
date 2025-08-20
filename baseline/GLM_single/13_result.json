@@ -1,0 +1,28 @@
+{
+    "actors": [
+        "Customer",
+        "Administrator"
+    ],
+    "usecases": [
+        "Browse Products",
+        "Place Order",
+        "Login",
+        "Process Payment",
+        "Manage Products"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Products",
+            "Place Order",
+            "Login",
+            "Process Payment"
+        ],
+        "Administrator": [
+            "Manage Products"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

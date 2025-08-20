@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor "City Drivers"
+actor "Road Sensors"
+actor "Patrol Cars"
+actor "Ambulances"
+actor "Traffic Officers"
+actor "Senior Officers"
+actor "Accident Reconstruction Specialists"
+usecase "Generate Incident Reports"
+usecase "Find Optimal Routes"
+usecase "Provide Real-time Congestion Data"
+usecase "Monitor Violations"
+usecase "Coordinate Disaster Responses"
+usecase "Create Detailed 3D Collision Analysis"
+usecase "Activate SOS Mode"
+"City Drivers"--"Find Optimal Routes"
+"City Drivers"--"Activate SOS Mode"
+"Patrol Cars"--"Activate SOS Mode"
+"Ambulances"--"Activate SOS Mode"
+"Traffic Officers"--"Monitor Violations"
+"Traffic Officers"--"Generate Incident Reports"
+"Senior Officers"--"Coordinate Disaster Responses"
+"Accident Reconstruction Specialists"--"Create Detailed 3D Collision Analysis"
+"Provide Real-time Congestion Data"<|."Find Optimal Routes": <<include>>
+"Senior Officers"--|>"Traffic Officers"
+"Accident Reconstruction Specialists"--|>"Traffic Officers"
+@enduml

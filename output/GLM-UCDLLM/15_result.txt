@@ -1,0 +1,8 @@
+@startuml
+left to right direction
+actor "Customers"
+usecase "Perform Transfer"
+usecase "Check Account Balance"
+"Customers"--"Check Account Balance"
+"Customers"--"Perform Transfer"
+@enduml

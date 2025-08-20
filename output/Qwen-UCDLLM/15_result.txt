@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "Customer"
+usecase "Perform Transfer Operation"
+usecase "Check Account Balance"
+usecase "Specify Transfer Amount"
+usecase "Input Payee Information"
+"Customer"--"Perform Transfer Operation"
+"Customer"--"Specify Transfer Amount"
+"Check Account Balance"<|."Perform Transfer Operation": <<include>>
+"Input Payee Information"<|."Perform Transfer Operation": <<include>>
+@enduml

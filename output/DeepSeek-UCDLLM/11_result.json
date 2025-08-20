@@ -1,0 +1,43 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Add Participant",
+        "Create Meeting",
+        "Log In",
+        "Playback Recording",
+        "Unmute",
+        "Edit Participant",
+        "Set Meeting Time",
+        "Share Screen",
+        "Record Conference",
+        "Join Meeting",
+        "Mute",
+        "Share File",
+        "Hang Up",
+        "Delete Participant"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Create Meeting",
+            "Join Meeting",
+            "Set Meeting Time",
+            "Add Participant",
+            "Edit Participant",
+            "Delete Participant",
+            "Mute",
+            "Unmute",
+            "Hang Up",
+            "Record Conference",
+            "Playback Recording",
+            "Share Screen",
+            "Share File"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

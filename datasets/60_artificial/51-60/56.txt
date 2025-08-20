@@ -1,0 +1,4 @@
+The intelligent medical diagnosis system assists doctors in accurately diagnosing diseases by analyzing patient data and medical images. 
+Doctors can use the system to input examination findings, review AI-generated diagnostic suggestions, and finalize treatment plans. 
+Radiologists and pathologists rely on the extended subsystems to annotate images, they can choose to generate detailed reports further.
+Hospital administrators oversee system usage, ensuring compliance with healthcare regulations, and manage user roles (doctors, specialists, admins) through a centralized access control module.

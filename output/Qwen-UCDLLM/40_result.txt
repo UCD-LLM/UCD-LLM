@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+actor "Tellers"
+actor "Customers"
+actor "Backend Auditor"
+usecase "Mark Suspicious Transactions"
+usecase "Process Check Deposit"
+usecase "Handle Account Transfer"
+usecase "Create New Bank Account"
+usecase "Process Cash Deposit"
+usecase "Verify General Ledger"
+usecase "Handle Account Deposit"
+usecase "Verify Customer Identity"
+usecase "Create Savings Account"
+usecase "Create Fixed-Term Deposit Account"
+usecase "Close Bank Account"
+usecase "Check Account Balance"
+usecase "Create Checking Account"
+usecase "Generate Daily Transaction Reports"
+usecase "Monitor Transactions"
+"Tellers"--"Create New Bank Account"
+"Tellers"--"Close Bank Account"
+"Tellers"--"Handle Account Deposit"
+"Tellers"--"Handle Account Transfer"
+"Tellers"--"Check Account Balance"
+"Tellers"--"Create Checking Account"
+"Tellers"--"Create Savings Account"
+"Tellers"--"Create Fixed-Term Deposit Account"
+"Tellers"--"Process Cash Deposit"
+"Tellers"--"Process Check Deposit"
+"Customers"--"Check Account Balance"
+"Backend Auditor"--"Generate Daily Transaction Reports"
+"Backend Auditor"--"Verify General Ledger"
+"Backend Auditor"--"Monitor Transactions"
+"Verify Customer Identity"<|."Process Check Deposit": <<include>>
+"Verify Customer Identity"<|."Create New Bank Account": <<include>>
+"Verify Customer Identity"<|."Handle Account Deposit": <<include>>
+"Verify Customer Identity"<|."Create Fixed-Term Deposit Account": <<include>>
+"Monitor Transactions"<|."Mark Suspicious Transactions": <<extend>>
+@enduml

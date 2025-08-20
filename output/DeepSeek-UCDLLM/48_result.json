@@ -1,0 +1,88 @@
+{
+    "actors": [
+        "Family Members",
+        "Administrators",
+        "Guests",
+        "Security Monitoring Service",
+        "Home Appliance Repairman"
+    ],
+    "usecases": [
+        "Diagnose Faulty Equipment",
+        "Receive Alarm Information",
+        "Control Lights On/Off",
+        "Manage Family Member Accounts",
+        "Authorize Firmware Updates",
+        "Add New Devices",
+        "Access Energy Consumption Data",
+        "Operate Curtains Opening/Closing",
+        "Adjust Indoor Temperature",
+        "Identify Problem",
+        "Set Up Automation Scenarios",
+        "Delete Devices",
+        "Update Firmware",
+        "Check Security Status",
+        "Adjust Light Brightness",
+        "Control Lighting",
+        "Adjust Temperature",
+        "Configure Security Rules",
+        "Push Alarm Notification"
+    ],
+    "association_relationships": {
+        "Family Members": [
+            "Control Lights On/Off",
+            "Adjust Light Brightness",
+            "Adjust Indoor Temperature",
+            "Operate Curtains Opening/Closing",
+            "Check Security Status",
+            "Access Energy Consumption Data"
+        ],
+        "Administrators": [
+            "Add New Devices",
+            "Delete Devices",
+            "Manage Family Member Accounts",
+            "Set Up Automation Scenarios",
+            "Configure Security Rules",
+            "Authorize Firmware Updates"
+        ],
+        "Guests": [
+            "Control Lighting",
+            "Adjust Temperature"
+        ],
+        "Security Monitoring Service": [
+            "Receive Alarm Information",
+            "Push Alarm Notification"
+        ],
+        "Home Appliance Repairman": [
+            "Diagnose Faulty Equipment",
+            "Identify Problem",
+            "Update Firmware"
+        ]
+    },
+    "inclusion_relationships": {
+        "Diagnose Faulty Equipment": [
+            "Authorize Firmware Updates",
+            "Identify Problem"
+        ],
+        "Push Alarm Notification": [
+            "Receive Alarm Information"
+        ],
+        "Update Firmware": [
+            "Authorize Firmware Updates"
+        ]
+    },
+    "extension_relationships": {
+        "Diagnose Faulty Equipment": [
+            "Update Firmware"
+        ],
+        "Identify Problem": [
+            "Authorize Firmware Updates",
+            "Update Firmware"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Family Members": [
+            "Administrators"
+        ]
+    }
+}

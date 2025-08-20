@@ -1,0 +1,54 @@
+{
+    "actors": [
+        "Operators",
+        "Maintenance Engineers",
+        "Production Manager",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Monitor Assembly Line Status",
+        "Control Operations",
+        "Handle Abnormal Situations",
+        "Provide Detailed Equipment Status Information",
+        "Preventive Maintenance",
+        "Troubleshooting",
+        "View Production Situation",
+        "Generate Analysis Reports",
+        "Monitor Production Progress",
+        "Evaluate Efficiency",
+        "View Operation Records",
+        "Generate Comprehensive Production Reports",
+        "Manage System Users",
+        "Add Users",
+        "Delete Users"
+    ],
+    "association_relationships": {
+        "Operators": [
+            "Monitor Assembly Line Status",
+            "Control Operations",
+            "Handle Abnormal Situations"
+        ],
+        "Maintenance Engineers": [
+            "Provide Detailed Equipment Status Information",
+            "Preventive Maintenance",
+            "Troubleshooting"
+        ],
+        "Production Manager": [
+            "View Production Situation",
+            "Generate Analysis Reports",
+            "Monitor Production Progress",
+            "Evaluate Efficiency"
+        ],
+        "System Administrator": [
+            "View Operation Records",
+            "Generate Comprehensive Production Reports",
+            "Manage System Users",
+            "Add Users",
+            "Delete Users"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,9 @@
+Your task is to extract all granular use cases associated with the actor {actor} from the provided natural language requirement text for UML use case diagram construction.
+Each use case should be a concise verb-noun phrase describing a distinct interaction that the actor {actor} initiates or participates in with the system, as explicitly mentioned in the text.
+In your response, please strictly include only the python list of use cases associated with the actor {actor}, and do not include any explanation or apology.
+
+Here are some examples:
+{few_shot_examples}
+
+Now please extract the usecases related to actor {actor} from the following text.
+Text: {input_text}

@@ -1,0 +1,10 @@
+I hope to develop an electronic insurance service aimed at providing a comprehensive, efficient, and easy-to-use insurance management solution. The system should have the following functions:
+1. User login function: Users can log in to the system using their username and password.
+2. Insurance information management: The system needs to be able to record users' insurance information, including insurance type, insured amount, insurance period, etc.
+3. Policy inquiry function: Users can check their policy information at any time, including insurance details, insurance period, premium, etc.
+4. Claims management: Users can submit claims applications online, and the system needs to be able to record claim information and provide the function of viewing claim progress.
+5. Insurance purchase function: Users can purchase insurance online, and the system needs to provide browsing and selection functions for insurance products, as well as support online payment.
+6. Insurance Calculator: The system needs to provide an insurance calculator to help users calculate the amount of insurance they need to purchase based on their personal situation.
+7. Customer service function: The system needs to provide customer service channels, including online consultation, complaint suggestions, etc.
+8. System management function: Administrators can manage insurance products, including adding, modifying, and deleting insurance products.
+By developing this electronic insurance service, I hope to simplify the insurance management process, provide a better user experience, and improve the management efficiency and service quality of insurance companies.

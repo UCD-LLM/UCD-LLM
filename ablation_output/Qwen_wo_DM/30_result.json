@@ -1,0 +1,90 @@
+{
+    "actors": [
+        "Doctors",
+        "Administrators"
+    ],
+    "usecases": [
+        "Generate Diagnostic Reports",
+        "Annotate Images",
+        "Manage User Permissions",
+        "Log In",
+        "Send Reports To Patients",
+        "Upload Medical Imaging Data",
+        "Search Imaging Data",
+        "Delete User Accounts",
+        "Send Reports To Medical Institutions",
+        "View Medical Imaging Data",
+        "Measure Images",
+        "Modify User Accounts",
+        "Add User Accounts",
+        "Manage Medical Imaging Data"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Log In",
+            "Upload Medical Imaging Data",
+            "View Medical Imaging Data",
+            "Manage Medical Imaging Data",
+            "Annotate Images",
+            "Measure Images",
+            "Search Imaging Data",
+            "Generate Diagnostic Reports",
+            "Send Reports To Patients",
+            "Send Reports To Medical Institutions"
+        ],
+        "Administrators": [
+            "Manage User Permissions",
+            "Add User Accounts",
+            "Modify User Accounts",
+            "Delete User Accounts"
+        ]
+    },
+    "inclusion_relationships": {
+        "Generate Diagnostic Reports": [
+            "Log In",
+            "Manage Medical Imaging Data"
+        ],
+        "Annotate Images": [
+            "Log In",
+            "Upload Medical Imaging Data",
+            "Manage Medical Imaging Data"
+        ],
+        "Upload Medical Imaging Data": [
+            "Log In"
+        ],
+        "View Medical Imaging Data": [
+            "Log In"
+        ],
+        "Measure Images": [
+            "Log In"
+        ],
+        "Manage Medical Imaging Data": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Generate Diagnostic Reports": [
+            "Send Reports To Patients",
+            "Send Reports To Medical Institutions"
+        ],
+        "View Medical Imaging Data": [
+            "Generate Diagnostic Reports",
+            "Annotate Images",
+            "Send Reports To Patients",
+            "Measure Images"
+        ],
+        "Log In": [
+            "Send Reports To Patients",
+            "Send Reports To Medical Institutions"
+        ],
+        "Manage Medical Imaging Data": [
+            "Send Reports To Patients",
+            "Measure Images"
+        ],
+        "Upload Medical Imaging Data": [
+            "Measure Images"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

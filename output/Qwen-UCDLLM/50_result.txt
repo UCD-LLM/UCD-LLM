@@ -1,0 +1,73 @@
+@startuml
+left to right direction
+actor "Citizens"
+actor "Individual Applicants"
+actor "Enterprise Operators"
+actor "Window Staff"
+actor "Approval Personnel"
+usecase "Obtain Online Consultation"
+usecase "Verify Compliance"
+usecase "Check Application Progress"
+usecase "Register Personal Account"
+usecase "Download Electronic Certificates"
+usecase "Accept Application Materials"
+usecase "Upload Application Materials"
+usecase "Manage Enterprise Certificates"
+usecase "Check Material Completeness"
+usecase "Make Online Payment"
+usecase "Understand Application Process"
+usecase "Verify Legality"
+usecase "Log In To Personal Account"
+usecase "Make Approval Decision"
+usecase "Register Account"
+usecase "Submit Business License Application"
+usecase "Submit Enterprise Qualification Certificates"
+usecase "Issue Material Correction Notices"
+usecase "Issue Approval Result Notices"
+usecase "Collect Application Fees"
+usecase "Verify Authenticity"
+usecase "Conduct Preliminary Review"
+usecase "Update Enterprise Certificates"
+usecase "Browse Service Guide"
+usecase "Log In"
+usecase "View Enterprise Certificates"
+"Citizens"--"Browse Service Guide"
+"Citizens"--"Understand Application Process"
+"Citizens"--"Check Application Progress"
+"Citizens"--"Obtain Online Consultation"
+"Citizens"--"Register Account"
+"Citizens"--"Submit Business License Application"
+"Citizens"--"Download Electronic Certificates"
+"Individual Applicants"--"Register Personal Account"
+"Enterprise Operators"--"Browse Service Guide"
+"Enterprise Operators"--"Understand Application Process"
+"Enterprise Operators"--"Check Application Progress"
+"Enterprise Operators"--"Obtain Online Consultation"
+"Enterprise Operators"--"Register Personal Account"
+"Enterprise Operators"--"Log In To Personal Account"
+"Enterprise Operators"--"Submit Business License Application"
+"Enterprise Operators"--"Download Electronic Certificates"
+"Enterprise Operators"--"Manage Enterprise Certificates"
+"Enterprise Operators"--"View Enterprise Certificates"
+"Enterprise Operators"--"Update Enterprise Certificates"
+"Window Staff"--"Collect Application Fees"
+"Approval Personnel"--"Make Approval Decision"
+"Upload Application Materials"<|."Verify Compliance": <<include>>
+"Verify Compliance"<|."Make Approval Decision": <<include>>
+"Accept Application Materials"<|."Make Approval Decision": <<include>>
+"Check Material Completeness"<|."Make Approval Decision": <<include>>
+"Verify Legality"<|."Make Approval Decision": <<include>>
+"Verify Authenticity"<|."Make Approval Decision": <<include>>
+"Upload Application Materials"<|."Submit Business License Application": <<include>>
+"Log In"<|."Upload Application Materials": <<include>>
+"Check Material Completeness"<|."Verify Authenticity": <<include>>
+"Check Material Completeness"<|."Conduct Preliminary Review": <<include>>
+"Accept Application Materials"<|."Verify Legality": <<extend>>
+"Accept Application Materials"<|."Issue Material Correction Notices": <<extend>>
+"Upload Application Materials"<|."Submit Enterprise Qualification Certificates": <<extend>>
+"Submit Business License Application"<|."Make Online Payment": <<extend>>
+"Submit Business License Application"<|."Issue Approval Result Notices": <<extend>>
+"Submit Business License Application"<|."Conduct Preliminary Review": <<extend>>
+"Individual Applicants"--|>"Citizens"
+"Approval Personnel"--|>"Window Staff"
+@enduml

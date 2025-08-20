@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Doctors",
+        "Radiologists",
+        "Pathologists",
+        "Hospital Administrators"
+    ],
+    "usecases": [
+        "Review Diagnostic Suggestions",
+        "Input Examination Findings",
+        "Ensure Compliance With Healthcare Regulations",
+        "Finalize Treatment Plans",
+        "Generate Detailed Reports",
+        "Oversee System Usage",
+        "Manage User Roles",
+        "Annotate Images"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Input Examination Findings",
+            "Review Diagnostic Suggestions",
+            "Finalize Treatment Plans"
+        ],
+        "Radiologists": [
+            "Input Examination Findings",
+            "Review Diagnostic Suggestions",
+            "Finalize Treatment Plans",
+            "Annotate Images",
+            "Generate Detailed Reports"
+        ],
+        "Pathologists": [
+            "Annotate Images",
+            "Generate Detailed Reports"
+        ],
+        "Hospital Administrators": [
+            "Oversee System Usage",
+            "Ensure Compliance With Healthcare Regulations",
+            "Manage User Roles"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctors": [
+            "Radiologists"
+        ]
+    }
+}

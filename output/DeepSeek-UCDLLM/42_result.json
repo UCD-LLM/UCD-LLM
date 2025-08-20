@@ -1,0 +1,48 @@
+{
+    "actors": [
+        "Buyers",
+        "Sellers",
+        "Administrators",
+        "Multiple Gateways"
+    ],
+    "usecases": [
+        "Manage User Permissions",
+        "Apply Filters",
+        "Resolve Disputes",
+        "Support Multiple Payment Gateways",
+        "Place Orders",
+        "Monitor Transactions",
+        "Manage Inventory",
+        "Browse Products",
+        "Track Sales",
+        "Update Product Details"
+    ],
+    "association_relationships": {
+        "Buyers": [
+            "Browse Products",
+            "Apply Filters",
+            "Place Orders"
+        ],
+        "Sellers": [
+            "Manage Inventory",
+            "Update Product Details",
+            "Track Sales"
+        ],
+        "Administrators": [
+            "Resolve Disputes",
+            "Monitor Transactions",
+            "Manage User Permissions"
+        ],
+        "Multiple Gateways": [
+            "Support Multiple Payment Gateways"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Browse Products": [
+            "Apply Filters"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

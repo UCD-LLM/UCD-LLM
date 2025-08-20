@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+actor "Car Rental Customer"
+actor "Store Employee"
+usecase "Determine Rental Period"
+usecase "Complete Vehicle Booking"
+usecase "Sign Rental Contract"
+usecase "Confirm Agreement"
+usecase "Verify Customer Identity"
+usecase "Provide Driver's License Information"
+usecase "Select Car Model"
+usecase "Read Rental Terms"
+usecase "Pick Up Car"
+"Car Rental Customer"--"Provide Driver's License Information"
+"Car Rental Customer"--"Confirm Agreement"
+"Car Rental Customer"--"Complete Vehicle Booking"
+"Car Rental Customer"--"Pick Up Car"
+"Car Rental Customer"--"Sign Rental Contract"
+"Store Employee"--"Sign Rental Contract"
+"Determine Rental Period"<|."Complete Vehicle Booking": <<include>>
+"Read Rental Terms"<|."Complete Vehicle Booking": <<include>>
+"Verify Customer Identity"<|."Sign Rental Contract": <<include>>
+"Read Rental Terms"<|."Confirm Agreement": <<include>>
+"Verify Customer Identity"<|."Pick Up Car": <<include>>
+"Select Car Model"<|."Pick Up Car": <<include>>
+@enduml

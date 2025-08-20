@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Project Manager",
+        "Developer",
+        "Testers"
+    ],
+    "usecases": [
+        "Generate Project Progress Report",
+        "Update Task Status",
+        "Submit Code Change Related Tasks",
+        "Execute Test Cases",
+        "Verify Repaired Defects",
+        "Create New Project",
+        "Assign Tasks",
+        "Define Project Milestones",
+        "Create Defect Report",
+        "Claim Assigned Tasks"
+    ],
+    "association_relationships": {
+        "Project Manager": [
+            "Create New Project",
+            "Define Project Milestones",
+            "Assign Tasks",
+            "Generate Project Progress Report"
+        ],
+        "Developer": [
+            "Claim Assigned Tasks",
+            "Update Task Status",
+            "Submit Code Change Related Tasks",
+            "Create Defect Report"
+        ],
+        "Testers": [
+            "Execute Test Cases",
+            "Verify Repaired Defects",
+            "Create Defect Report"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Execute Test Cases": [
+            "Verify Repaired Defects"
+        ],
+        "Assign Tasks": [
+            "Claim Assigned Tasks"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

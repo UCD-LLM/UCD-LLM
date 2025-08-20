@@ -1,0 +1,50 @@
+{
+    "actors": [
+        "Maintenance Engineer",
+        "Customer"
+    ],
+    "usecases": [
+        "Create Maintenance Work Order",
+        "Sign Work Order",
+        "Close Work Order",
+        "Verify Customer Signature",
+        "Update Spare Parts Inventory",
+        "Assign Responsible Engineers",
+        "Confirm Repair Effectiveness",
+        "Fill Out Maintenance Report"
+    ],
+    "association_relationships": {
+        "Maintenance Engineer": [
+            "Create Maintenance Work Order",
+            "Assign Responsible Engineers",
+            "Fill Out Maintenance Report",
+            "Update Spare Parts Inventory",
+            "Verify Customer Signature",
+            "Close Work Order"
+        ],
+        "Customer": [
+            "Confirm Repair Effectiveness",
+            "Sign Work Order"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Maintenance Work Order": [
+            "Assign Responsible Engineers"
+        ],
+        "Close Work Order": [
+            "Sign Work Order",
+            "Verify Customer Signature",
+            "Confirm Repair Effectiveness",
+            "Fill Out Maintenance Report"
+        ],
+        "Sign Work Order": [
+            "Verify Customer Signature"
+        ],
+        "Confirm Repair Effectiveness": [
+            "Sign Work Order"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

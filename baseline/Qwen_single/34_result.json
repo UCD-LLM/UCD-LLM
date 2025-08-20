@@ -1,0 +1,32 @@
+{
+    "actors": [
+        "Residents",
+        "Voice Assistants"
+    ],
+    "usecases": [
+        "Remote Operation",
+        "Local Control",
+        "Real-Time Status Viewing",
+        "Temperature Adjustment",
+        "Lighting Control",
+        "Security Mode Setting"
+    ],
+    "association_relationships": {
+        "Residents": [
+            "Remote Operation",
+            "Local Control",
+            "Real-Time Status Viewing",
+            "Temperature Adjustment",
+            "Lighting Control",
+            "Security Mode Setting"
+        ],
+        "Voice Assistants": [
+            "Remote Operation",
+            "Local Control"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

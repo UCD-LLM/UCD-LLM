@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Manage Personal Information"
+usecase "Change Password"
+usecase "Log In"
+usecase "Register"
+usecase "Receive Electronic Ticket"
+usecase "Choose Payment Method"
+usecase "Choose Cinema"
+usecase "Select Movie"
+usecase "Complete Payment"
+usecase "Browse Movie List"
+usecase "Reserve Seats"
+usecase "View Order History"
+"User"--"Register"
+"User"--"Browse Movie List"
+"User"--"Select Movie"
+"User"--"Choose Cinema"
+"User"--"Reserve Seats"
+"User"--"Receive Electronic Ticket"
+"User"--"View Order History"
+"User"--"Manage Personal Information"
+"User"--"Change Password"
+"Log In"<|."Select Movie": <<include>>
+"Log In"<|."Browse Movie List": <<include>>
+"Log In"<|."View Order History": <<include>>
+"Complete Payment"<|."Receive Electronic Ticket": <<include>>
+"Choose Payment Method"<|."Complete Payment": <<include>>
+@enduml

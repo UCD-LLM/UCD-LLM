@@ -1,0 +1,107 @@
+{
+    "actors": [
+        "Users",
+        "Administrator"
+    ],
+    "usecases": [
+        "Monitor Vehicle Status",
+        "Edit Vehicle Information",
+        "Manage Multiple Vehicles",
+        "Analyze Energy Consumption",
+        "Query Travel Route",
+        "Log In",
+        "View Speed",
+        "Receive Notifications",
+        "View Vehicle Location",
+        "Switch Vehicles",
+        "Use Real-time Alarm",
+        "Set Up Geofencing",
+        "View Driving Trajectory",
+        "Download Application",
+        "Add Vehicle Information",
+        "Delete Vehicle Information",
+        "Query Stopping Points"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Application",
+            "Log In",
+            "View Vehicle Location",
+            "View Driving Trajectory",
+            "View Speed",
+            "Manage Multiple Vehicles",
+            "Switch Vehicles",
+            "Set Up Geofencing",
+            "Receive Notifications",
+            "Use Real-time Alarm",
+            "Query Travel Route",
+            "Query Stopping Points",
+            "Analyze Energy Consumption"
+        ],
+        "Administrator": [
+            "Add Vehicle Information",
+            "Delete Vehicle Information",
+            "Edit Vehicle Information",
+            "Monitor Vehicle Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "Manage Multiple Vehicles": [
+            "Log In",
+            "Download Application"
+        ],
+        "Analyze Energy Consumption": [
+            "Log In"
+        ],
+        "Query Travel Route": [
+            "Log In",
+            "Download Application"
+        ],
+        "View Speed": [
+            "Log In",
+            "Download Application"
+        ],
+        "View Vehicle Location": [
+            "Log In",
+            "Download Application"
+        ],
+        "View Driving Trajectory": [
+            "Log In",
+            "Download Application"
+        ],
+        "Log In": [
+            "Download Application"
+        ],
+        "Switch Vehicles": [
+            "Download Application"
+        ],
+        "Set Up Geofencing": [
+            "Download Application"
+        ]
+    },
+    "extension_relationships": {
+        "Manage Multiple Vehicles": [
+            "Receive Notifications",
+            "Switch Vehicles",
+            "Set Up Geofencing"
+        ],
+        "Log In": [
+            "Receive Notifications",
+            "Switch Vehicles",
+            "Use Real-time Alarm",
+            "Set Up Geofencing",
+            "Query Stopping Points"
+        ],
+        "Use Real-time Alarm": [
+            "Receive Notifications"
+        ],
+        "Set Up Geofencing": [
+            "Receive Notifications"
+        ],
+        "Download Application": [
+            "Receive Notifications"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

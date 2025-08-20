@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+actor "Hospital Patients"
+actor "Triage Nurse"
+actor "Oncologists"
+actor "Doctors"
+actor "Senior Doctors"
+usecase "Receive Priority Scheduling Alert"
+usecase "Order Genomic Testing"
+usecase "Access Patient Histories"
+usecase "Verify Insurance Coverage"
+usecase "Review Chemotherapy Plans"
+usecase "Schedule Checkup"
+usecase "Schedule Specialized Treatment"
+usecase "Approve Experimental Treatments"
+usecase "Request Priority Scheduling"
+"Hospital Patients"--"Schedule Checkup"
+"Hospital Patients"--"Schedule Specialized Treatment"
+"Hospital Patients"--"Request Priority Scheduling"
+"Oncologists"--"Review Chemotherapy Plans"
+"Oncologists"--"Order Genomic Testing"
+"Doctors"--"Access Patient Histories"
+"Doctors"--"Approve Experimental Treatments"
+"Verify Insurance Coverage"<|."Schedule Checkup": <<include>>
+"Verify Insurance Coverage"<|."Schedule Specialized Treatment": <<include>>
+"Request Priority Scheduling"<|."Receive Priority Scheduling Alert": <<extend>>
+"Oncologists"--|>"Doctors"
+"Senior Doctors"--|>"Doctors"
+@enduml

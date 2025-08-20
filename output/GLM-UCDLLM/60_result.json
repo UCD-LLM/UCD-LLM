@@ -1,0 +1,101 @@
+{
+    "actors": [
+        "Scientific Expedition Team Members",
+        "Chief of the Scientific Expedition Station",
+        "Remote Logistics Coordinator",
+        "Meteorological Analysts",
+        "Predictive Model"
+    ],
+    "usecases": [
+        "Influence Material Demand Forecast",
+        "Approve Material Applications",
+        "Provide Meteorological Forecast Data",
+        "Process Supply Orders",
+        "Check Inventory Level",
+        "Coordinate Transportation Arrangements",
+        "Analyze Historical Consumption Data",
+        "Track Supply Orders",
+        "Confirm Material Storage",
+        "Submit Material Replenishment Request",
+        "Register Material Consumption",
+        "Develop Supply Order",
+        "Allocate Human Resources",
+        "Influence Transportation Arrangements",
+        "Release Weekly Reports",
+        "Estimate Material Demand",
+        "Manage Task Scheduling",
+        "Generate Demand Forecasting Reports",
+        "Negotiate with Suppliers"
+    ],
+    "association_relationships": {
+        "Scientific Expedition Team Members": [
+            "Register Material Consumption",
+            "Submit Material Replenishment Request",
+            "Check Inventory Level",
+            "Estimate Material Demand"
+        ],
+        "Chief of the Scientific Expedition Station": [
+            "Approve Material Applications",
+            "Develop Supply Order",
+            "Manage Task Scheduling",
+            "Allocate Human Resources",
+            "Release Weekly Reports"
+        ],
+        "Remote Logistics Coordinator": [
+            "Process Supply Orders",
+            "Track Supply Orders",
+            "Coordinate Transportation Arrangements",
+            "Confirm Material Storage",
+            "Negotiate with Suppliers"
+        ],
+        "Meteorological Analysts": [
+            "Provide Meteorological Forecast Data",
+            "Influence Transportation Arrangements",
+            "Influence Material Demand Forecast"
+        ],
+        "Predictive Model": [
+            "Analyze Historical Consumption Data",
+            "Generate Demand Forecasting Reports"
+        ]
+    },
+    "inclusion_relationships": {
+        "Influence Material Demand Forecast": [
+            "Provide Meteorological Forecast Data"
+        ],
+        "Develop Supply Order": [
+            "Approve Material Applications",
+            "Provide Meteorological Forecast Data",
+            "Check Inventory Level",
+            "Analyze Historical Consumption Data",
+            "Register Material Consumption",
+            "Generate Demand Forecasting Reports"
+        ],
+        "Coordinate Transportation Arrangements": [
+            "Provide Meteorological Forecast Data"
+        ],
+        "Submit Material Replenishment Request": [
+            "Check Inventory Level",
+            "Estimate Material Demand"
+        ],
+        "Register Material Consumption": [
+            "Check Inventory Level"
+        ],
+        "Estimate Material Demand": [
+            "Analyze Historical Consumption Data"
+        ],
+        "Generate Demand Forecasting Reports": [
+            "Analyze Historical Consumption Data"
+        ]
+    },
+    "extension_relationships": {
+        "Process Supply Orders": [
+            "Coordinate Transportation Arrangements"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Scientific Expedition Team Members": [
+            "Chief of the Scientific Expedition Station"
+        ]
+    }
+}

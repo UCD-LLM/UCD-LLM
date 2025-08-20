@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+actor "User"
+actor "Administrator"
+usecase "Query Data"
+usecase "Submit Form"
+usecase "Fill Form"
+usecase "Log In"
+usecase "Modify User Permissions"
+usecase "Manage Users"
+usecase "Add User Permissions"
+usecase "Edit Form"
+usecase "View Form"
+usecase "Delete User Permissions"
+usecase "Create Form"
+usecase "Delete Form"
+usecase "Export Data"
+"User"--"Submit Form"
+"User"--"View Form"
+"User"--"Edit Form"
+"User"--"Delete Form"
+"User"--"Export Data"
+"User"--"Query Data"
+"Administrator"--"Manage Users"
+"Administrator"--"Add User Permissions"
+"Administrator"--"Modify User Permissions"
+"Administrator"--"Delete User Permissions"
+"Log In"<|."Query Data": <<include>>
+"Fill Form"<|."Submit Form": <<include>>
+"Log In"<|."Submit Form": <<include>>
+"Log In"<|."Fill Form": <<include>>
+"Create Form"<|."Fill Form": <<include>>
+"Administrator"--|>"User"
+@enduml

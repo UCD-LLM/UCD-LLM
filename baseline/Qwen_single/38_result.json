@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Login",
+        "BrowseRadioStationInfo",
+        "SearchRadioStationsOrPrograms",
+        "OnlineListening",
+        "RecordingAndPlayback",
+        "BookmarkFavoriteContent",
+        "LeaveMessagesOrComments",
+        "ManageProgramInformation"
+    ],
+    "association_relationships": {
+        "User": [
+            "Login",
+            "BrowseRadioStationInfo",
+            "SearchRadioStationsOrPrograms",
+            "OnlineListening",
+            "RecordingAndPlayback",
+            "BookmarkFavoriteContent",
+            "LeaveMessagesOrComments"
+        ],
+        "Administrator": [
+            "ManageProgramInformation"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+actor "Advertisers"
+actor "Operators"
+usecase "Process Ad Comments"
+usecase "Register Account"
+usecase "Monitor Ad Effectiveness"
+usecase "Monitor System Operation Status"
+usecase "View Reports"
+usecase "Set Advertising Parameters"
+usecase "Upload Advertising Materials"
+usecase "Adjust Advertising Strategies"
+usecase "Log In"
+usecase "View Data Analysis"
+usecase "Manage Advertising Account"
+usecase "Create Advertising Account"
+usecase "Manage Advertiser Accounts"
+"Advertisers"--"Create Advertising Account"
+"Advertisers"--"Manage Advertising Account"
+"Advertisers"--"Upload Advertising Materials"
+"Advertisers"--"Monitor Ad Effectiveness"
+"Advertisers"--"View Data Analysis"
+"Advertisers"--"View Reports"
+"Operators"--"Manage Advertiser Accounts"
+"Operators"--"Process Ad Comments"
+"Operators"--"Monitor System Operation Status"
+"Register Account"<|."Manage Advertising Account": <<include>>
+"Log In"<|."Manage Advertising Account": <<include>>
+"Register Account"<|."Set Advertising Parameters": <<extend>>
+"Register Account"<|."Adjust Advertising Strategies": <<extend>>
+"Monitor Ad Effectiveness"<|."Adjust Advertising Strategies": <<extend>>
+"View Reports"<|."Adjust Advertising Strategies": <<extend>>
+"Set Advertising Parameters"<|."Adjust Advertising Strategies": <<extend>>
+@enduml

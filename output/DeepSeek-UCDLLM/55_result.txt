@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor "International Buyers"
+actor "Premium Members"
+actor "Compliance System"
+actor "Sellers"
+actor "Power Sellers"
+usecase "Initiate Anti-Fraud Verification"
+usecase "Place Order"
+usecase "Run Cross-border Promotions"
+usecase "Handle VAT Registration"
+usecase "Access Exclusive Deals"
+usecase "Manage Listings"
+usecase "Request Personal Shopper"
+"International Buyers"--"Place Order"
+"International Buyers"--"Request Personal Shopper"
+"International Buyers"--"Access Exclusive Deals"
+"Sellers"--"Manage Listings"
+"Power Sellers"--"Run Cross-border Promotions"
+"Power Sellers"--"Handle VAT Registration"
+"Place Order"<|."Initiate Anti-Fraud Verification": <<extend>>
+"Premium Members"--|>"International Buyers"
+"Power Sellers"--|>"Sellers"
+@enduml

@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "User Registration and Login",
+        "Product Display and Search",
+        "Shopping Cart and Checkout",
+        "Order Management and Tracking",
+        "Payment and Refund",
+        "User Evaluation and Recommendation",
+        "Coupons and Promotions",
+        "Backend Management"
+    ],
+    "association_relationships": {
+        "User": [
+            "User Registration and Login",
+            "Product Display and Search",
+            "Shopping Cart and Checkout",
+            "Order Management and Tracking",
+            "Payment and Refund",
+            "User Evaluation and Recommendation",
+            "Coupons and Promotions"
+        ],
+        "Administrator": [
+            "Backend Management"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

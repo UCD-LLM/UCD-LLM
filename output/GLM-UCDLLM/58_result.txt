@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor "Users"
+usecase "Create Contract"
+usecase "Download Contract"
+usecase "Resign Contract"
+usecase "Select Template"
+usecase "Modify Contract"
+usecase "Retrieve Contract"
+usecase "Handwritten Signature"
+usecase "Custom Edit"
+usecase "Scan Code Signature"
+usecase "Store Contract"
+usecase "Receive Expiration Reminder"
+usecase "Sign Contract"
+"Users"--"Create Contract"
+"Users"--"Sign Contract"
+"Users"--"Handwritten Signature"
+"Users"--"Scan Code Signature"
+"Users"--"Retrieve Contract"
+"Users"--"Download Contract"
+"Users"--"Modify Contract"
+"Users"--"Resign Contract"
+"Users"--"Receive Expiration Reminder"
+"Select Template"<|."Create Contract": <<include>>
+"Custom Edit"<|."Create Contract": <<include>>
+"Store Contract"<|."Download Contract": <<include>>
+"Select Template"<|."Sign Contract": <<include>>
+"Scan Code Signature"<|."Store Contract": <<extend>>
+@enduml

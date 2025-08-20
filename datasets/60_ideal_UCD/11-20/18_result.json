@@ -1,0 +1,48 @@
+{
+    "actors": [
+        "Car Rental Customer",
+        "Store Employee"
+    ],
+    "usecases": [
+        "Make Online Reservation",
+        "Select Car",
+        "Provide License Information",
+        "Confirm Agreement To Rental Terms",
+        "Pick Up Car",
+        "Sign Formal Rental Contract",
+        "Verify Customer's Identity Information",
+        "Handle Pick-up Matter"
+    ],
+    "association_relationships": {
+        "Car Rental Customer": [
+            "Make Online Reservation",
+            "Select Car",
+            "Provide License Information",
+            "Confirm Agreement To Rental Terms",
+            "Pick Up Car",
+            "Sign Formal Rental Contract"
+        ],
+        "Store Employee": [
+            "Verify Customer's Identity Information",
+            "Handle Pick-up Matter",
+            "Sign Formal Rental Contract"
+        ]
+    },
+    "inclusion_relationships": {
+        "Make Online Reservation": [
+            "Select Car",
+            "Provide License Information",
+            "Confirm Agreement To Rental Terms"
+        ],
+        "Pick Up Car": [
+            "Sign Formal Rental Contract"
+        ],
+        "Handle Pick-up Matter": [
+            "Verify Customer's Identity Information",
+            "Sign Formal Rental Contract"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

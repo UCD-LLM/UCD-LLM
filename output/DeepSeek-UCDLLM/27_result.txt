@@ -1,0 +1,43 @@
+@startuml
+left to right direction
+actor "User"
+actor "Administrator"
+usecase "Receive Real-Time Alarms"
+usecase "Receive Geofencing Notifications"
+usecase "Download Application"
+usecase "View Energy Consumption Analysis"
+usecase "Delete Vehicle Information"
+usecase "Add Vehicle Information"
+usecase "Switch Between Vehicles"
+usecase "Edit Vehicle Information"
+usecase "Query Travel Route"
+usecase "Monitor Vehicle Status"
+usecase "View Speed"
+usecase "View Other Data"
+usecase "Set Up Geofencing"
+usecase "Query Stopping Points"
+usecase "View Vehicle Location"
+usecase "Log In"
+usecase "View Driving Trajectory"
+"User"--"Download Application"
+"User"--"View Vehicle Location"
+"User"--"View Driving Trajectory"
+"User"--"View Speed"
+"User"--"View Other Data"
+"User"--"Switch Between Vehicles"
+"User"--"Set Up Geofencing"
+"User"--"Receive Real-Time Alarms"
+"User"--"Query Travel Route"
+"User"--"Query Stopping Points"
+"User"--"View Energy Consumption Analysis"
+"Administrator"--"Add Vehicle Information"
+"Administrator"--"Delete Vehicle Information"
+"Administrator"--"Edit Vehicle Information"
+"Administrator"--"Monitor Vehicle Status"
+"Log In"<|."View Energy Consumption Analysis": <<include>>
+"Log In"<|."View Speed": <<include>>
+"Log In"<|."Set Up Geofencing": <<include>>
+"Log In"<|."View Vehicle Location": <<include>>
+"Set Up Geofencing"<|."Receive Geofencing Notifications": <<extend>>
+"Administrator"--|>"User"
+@enduml

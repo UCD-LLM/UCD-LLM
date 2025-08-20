@@ -1,0 +1,37 @@
+{
+    "actors": [
+        "Customer",
+        "Administrator"
+    ],
+    "usecases": [
+        "Enter Product Information",
+        "Log In",
+        "Modify Product Information",
+        "Place Order",
+        "Add Product",
+        "Verify Credit Card Information",
+        "Browse Products"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Products",
+            "Log In",
+            "Place Order",
+            "Verify Credit Card Information"
+        ],
+        "Administrator": [
+            "Enter Product Information",
+            "Add Product",
+            "Modify Product Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Place Order": [
+            "Log In",
+            "Verify Credit Card Information"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

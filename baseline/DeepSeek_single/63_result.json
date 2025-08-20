@@ -1,0 +1,25 @@
+{
+    "actors": [
+        "Customer",
+        "Member",
+        "Library"
+    ],
+    "usecases": [
+        "Issue Loan Items",
+        "Issue Membership Card",
+        "Keep Customer Details",
+        "Search Item",
+        "Update Records",
+        "Borrow Item",
+        "Reserve Item",
+        "Renew Loan",
+        "Scan Membership Number",
+        "Read Book's Bar-code",
+        "Stamp and Issue Item"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

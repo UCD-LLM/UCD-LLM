@@ -1,0 +1,73 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Receive Real-Time Alarms",
+        "Receive Geofencing Notifications",
+        "Download Application",
+        "View Energy Consumption Analysis",
+        "Delete Vehicle Information",
+        "Add Vehicle Information",
+        "Switch Between Vehicles",
+        "Edit Vehicle Information",
+        "Query Travel Route",
+        "Monitor Vehicle Status",
+        "View Speed",
+        "View Other Data",
+        "Set Up Geofencing",
+        "Query Stopping Points",
+        "View Vehicle Location",
+        "Log In",
+        "View Driving Trajectory"
+    ],
+    "association_relationships": {
+        "User": [
+            "Download Application",
+            "Log In",
+            "View Vehicle Location",
+            "View Driving Trajectory",
+            "View Speed",
+            "View Other Data",
+            "Switch Between Vehicles",
+            "Set Up Geofencing",
+            "Receive Geofencing Notifications",
+            "Receive Real-Time Alarms",
+            "Query Travel Route",
+            "Query Stopping Points",
+            "View Energy Consumption Analysis"
+        ],
+        "Administrator": [
+            "Add Vehicle Information",
+            "Delete Vehicle Information",
+            "Edit Vehicle Information",
+            "Monitor Vehicle Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "View Energy Consumption Analysis": [
+            "Log In"
+        ],
+        "View Speed": [
+            "Log In"
+        ],
+        "Set Up Geofencing": [
+            "Log In"
+        ],
+        "View Vehicle Location": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Set Up Geofencing": [
+            "Receive Geofencing Notifications"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "User": [
+            "Administrator"
+        ]
+    }
+}

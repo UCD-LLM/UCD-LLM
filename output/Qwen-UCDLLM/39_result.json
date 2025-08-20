@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "Doctors",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Develop Treatment Plans",
+        "Record Patient Complaints",
+        "Access Historical Medical Records",
+        "Review Examination Results",
+        "Record Physical Examination Results",
+        "Issue Testing Forms",
+        "Manage Doctor Accounts",
+        "Maintain Diagnostic Knowledge Base",
+        "Backup System Data",
+        "Issue Examination Forms",
+        "Review Testing Results"
+    ],
+    "association_relationships": {
+        "Doctors": [
+            "Record Patient Complaints",
+            "Access Historical Medical Records",
+            "Record Physical Examination Results",
+            "Issue Examination Forms",
+            "Issue Testing Forms",
+            "Review Examination Results",
+            "Review Testing Results",
+            "Develop Treatment Plans"
+        ],
+        "System Administrator": [
+            "Manage Doctor Accounts",
+            "Maintain Diagnostic Knowledge Base",
+            "Backup System Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Develop Treatment Plans": [
+            "Record Patient Complaints",
+            "Record Physical Examination Results",
+            "Review Testing Results"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

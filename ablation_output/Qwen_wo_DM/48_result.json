@@ -1,0 +1,85 @@
+{
+    "actors": [
+        "Family Members",
+        "Administrators",
+        "Guests",
+        "Security Monitoring Service",
+        "Home Appliance Repairman"
+    ],
+    "usecases": [
+        "Configure Security Rules",
+        "Check Security Status",
+        "Manage Family Member Accounts",
+        "Adjust Temperature",
+        "Adjust Brightness",
+        "Delete Devices",
+        "Access Energy Consumption Data",
+        "Receive Alarm Information",
+        "Adjust Indoor Temperature",
+        "Identify Problem",
+        "Update Firmware",
+        "Push Alarm Notifications",
+        "Operate Curtains",
+        "Add New Devices",
+        "Control Lights",
+        "Control Lighting",
+        "Set Up Automation Scenarios",
+        "Diagnose Faulty Equipment"
+    ],
+    "association_relationships": {
+        "Family Members": [
+            "Control Lights",
+            "Adjust Brightness",
+            "Adjust Indoor Temperature",
+            "Operate Curtains",
+            "Check Security Status",
+            "Access Energy Consumption Data"
+        ],
+        "Administrators": [
+            "Add New Devices",
+            "Delete Devices",
+            "Manage Family Member Accounts",
+            "Set Up Automation Scenarios",
+            "Configure Security Rules"
+        ],
+        "Guests": [
+            "Control Lighting",
+            "Adjust Temperature"
+        ],
+        "Security Monitoring Service": [
+            "Receive Alarm Information",
+            "Push Alarm Notifications"
+        ],
+        "Home Appliance Repairman": [
+            "Diagnose Faulty Equipment",
+            "Identify Problem",
+            "Update Firmware"
+        ]
+    },
+    "inclusion_relationships": {
+        "Push Alarm Notifications": [
+            "Receive Alarm Information"
+        ],
+        "Diagnose Faulty Equipment": [
+            "Identify Problem"
+        ]
+    },
+    "extension_relationships": {
+        "Identify Problem": [
+            "Update Firmware"
+        ],
+        "Diagnose Faulty Equipment": [
+            "Update Firmware"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Control Lights": [
+            "Set Up Automation Scenarios"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Family Members": [
+            "Administrators"
+        ]
+    }
+}

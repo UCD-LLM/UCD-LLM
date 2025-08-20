@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+actor "Customer"
+actor "Server"
+usecase "Add Dishes During Dining"
+usecase "Make QR Code Payment"
+usecase "Initiate Checkout Request"
+usecase "Receive Real-time Orders"
+usecase "Deliver Dishes"
+usecase "View Total Prices"
+usecase "Confirm Orders"
+usecase "Verify Dish Information"
+usecase "Browse Electronic Menu"
+usecase "Submit Order Request"
+usecase "Call Waiter For Assistance"
+usecase "View Selected Dishes"
+usecase "Add Dishes To Shopping Cart"
+usecase "Handle Customer Requests"
+usecase "Make Cash Payment"
+usecase "Select Dishes"
+"Customer"--"Browse Electronic Menu"
+"Customer"--"Add Dishes To Shopping Cart"
+"Customer"--"View Selected Dishes"
+"Customer"--"View Total Prices"
+"Customer"--"Submit Order Request"
+"Customer"--"Initiate Checkout Request"
+"Customer"--"Make Cash Payment"
+"Customer"--"Make QR Code Payment"
+"Customer"--"Call Waiter For Assistance"
+"Server"--"Receive Real-time Orders"
+"Server"--"Verify Dish Information"
+"Server"--"Confirm Orders"
+"Server"--"Deliver Dishes"
+"Select Dishes"<|."Submit Order Request": <<include>>
+"Select Dishes"<|."Add Dishes During Dining": <<extend>>
+"Submit Order Request"<|."Handle Customer Requests": <<extend>>
+"Call Waiter For Assistance"<|."Handle Customer Requests": <<extend>>
+@enduml

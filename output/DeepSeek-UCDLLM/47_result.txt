@@ -1,0 +1,74 @@
+@startuml
+left to right direction
+actor "Visitor"
+actor "Student"
+actor "Teacher"
+actor "Teaching Assistant"
+actor "Administrator"
+usecase "Browse Course Catalog"
+usecase "Learn About Course Information"
+usecase "Submit Assignments"
+usecase "Manage User Accounts"
+usecase "Watch Teaching Videos"
+usecase "Choose Courses"
+usecase "Modify User Information"
+usecase "Upload Teaching Materials"
+usecase "Assist In Correcting Homework"
+usecase "Classify Courses"
+usecase "Create Online Quiz"
+usecase "Deactivate User Accounts"
+usecase "Manage Course Grades"
+usecase "Participate In Online Quizzes"
+usecase "Publish Homework"
+usecase "Manage Course Classification"
+usecase "Correct Homework"
+usecase "Log In"
+usecase "Participate In Course Learning"
+usecase "Create New Course"
+usecase "View Grade Reports"
+usecase "View Course Introduction"
+usecase "Answer Course Questions In Forum"
+usecase "Design Course Structure"
+usecase "Review Course Content"
+"Visitor"--"Browse Course Catalog"
+"Visitor"--"Learn About Course Information"
+"Visitor"--"View Course Introduction"
+"Student"--"Watch Teaching Videos"
+"Student"--"Participate In Course Learning"
+"Student"--"Submit Assignments"
+"Student"--"View Grade Reports"
+"Teacher"--"Create New Course"
+"Teacher"--"Upload Teaching Materials"
+"Teacher"--"Publish Homework"
+"Teacher"--"Correct Homework"
+"Teacher"--"Create Online Quiz"
+"Teacher"--"Manage Course Grades"
+"Teaching Assistant"--"Assist In Correcting Homework"
+"Teaching Assistant"--"Answer Course Questions In Forum"
+"Administrator"--"Manage User Accounts"
+"Administrator"--"Deactivate User Accounts"
+"Administrator"--"Modify User Information"
+"Administrator"--"Classify Courses"
+"Administrator"--"Manage Course Classification"
+"Administrator"--"Review Course Content"
+"Log In"<|."Submit Assignments": <<include>>
+"Choose Courses"<|."Watch Teaching Videos": <<include>>
+"Log In"<|."Watch Teaching Videos": <<include>>
+"Log In"<|."Choose Courses": <<include>>
+"Choose Courses"<|."Participate In Course Learning": <<include>>
+"Log In"<|."Participate In Course Learning": <<include>>
+"Log In"<|."Upload Teaching Materials": <<include>>
+"Log In"<|."Assist In Correcting Homework": <<include>>
+"Log In"<|."Create Online Quiz": <<include>>
+"Log In"<|."Manage Course Grades": <<include>>
+"Log In"<|."Participate In Online Quizzes": <<include>>
+"Log In"<|."Publish Homework": <<include>>
+"Log In"<|."Correct Homework": <<include>>
+"Log In"<|."Create New Course": <<include>>
+"Design Course Structure"<|."Create New Course": <<include>>
+"Log In"<|."View Grade Reports": <<include>>
+"Log In"<|."Design Course Structure": <<include>>
+"Participate In Course Learning"<|."Participate In Online Quizzes": <<extend>>
+"Student"--|>"Registered User"
+"Teaching Assistant"--|>"Student"
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "Customer"
+usecase "Verify Credit Card"
+usecase "Place Order"
+usecase "Log In"
+usecase "Browse Products"
+"Customer"--"Browse Products"
+"Customer"--"Place Order"
+"Verify Credit Card"<|."Place Order": <<include>>
+"Log In"<|."Place Order": <<include>>
+@enduml

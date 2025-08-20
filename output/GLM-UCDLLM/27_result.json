@@ -1,0 +1,74 @@
+{
+    "actors": [
+        "Users",
+        "Administrator"
+    ],
+    "usecases": [
+        "Switch Between Vehicles",
+        "Query Stopping Points",
+        "Log In",
+        "Delete Vehicle Information",
+        "View Speed",
+        "View Vehicle Location Information",
+        "View Energy Consumption Analysis",
+        "View Other Data",
+        "Receive Real-time Alarms",
+        "Edit Vehicle Information",
+        "Manage Multiple Vehicles",
+        "Add Vehicle Information",
+        "Receive Notifications",
+        "Query Travel Route",
+        "View Driving Trajectory",
+        "Monitor Vehicle Status",
+        "Download Application",
+        "Set Up Geofencing"
+    ],
+    "association_relationships": {
+        "Users": [
+            "Download Application",
+            "Log In",
+            "View Vehicle Location Information",
+            "View Driving Trajectory",
+            "View Speed",
+            "View Other Data",
+            "Manage Multiple Vehicles",
+            "Switch Between Vehicles",
+            "Set Up Geofencing",
+            "Receive Notifications",
+            "Receive Real-time Alarms",
+            "Query Travel Route",
+            "Query Stopping Points",
+            "View Energy Consumption Analysis"
+        ],
+        "Administrator": [
+            "Add Vehicle Information",
+            "Delete Vehicle Information",
+            "Edit Vehicle Information",
+            "Monitor Vehicle Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "Query Stopping Points": [
+            "Log In"
+        ],
+        "View Vehicle Location Information": [
+            "Log In"
+        ],
+        "View Other Data": [
+            "Log In"
+        ],
+        "Query Travel Route": [
+            "Log In"
+        ],
+        "View Driving Trajectory": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Users": [
+            "Administrator"
+        ]
+    }
+}

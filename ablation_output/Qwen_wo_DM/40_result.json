@@ -1,0 +1,90 @@
+{
+    "actors": [
+        "Tellers",
+        "Customers",
+        "Backend Auditor"
+    ],
+    "usecases": [
+        "Create Checking Account",
+        "Mark Suspicious Transactions",
+        "Handle Account Deposit",
+        "Close Bank Account",
+        "Create Fixed-term Deposit Account",
+        "Generate Daily Transaction Reports",
+        "Process Check Deposit",
+        "Handle Account Transfer",
+        "Check Account Balance",
+        "Process Cash Deposit",
+        "Verify General Ledger",
+        "Verify Customer Identity",
+        "Create New Bank Account",
+        "Create Savings Account",
+        "Monitor Transactions"
+    ],
+    "association_relationships": {
+        "Tellers": [
+            "Verify Customer Identity",
+            "Create New Bank Account",
+            "Close Bank Account",
+            "Handle Account Deposit",
+            "Handle Account Transfer",
+            "Check Account Balance",
+            "Create Checking Account",
+            "Create Savings Account",
+            "Create Fixed-term Deposit Account",
+            "Process Cash Deposit",
+            "Process Check Deposit"
+        ],
+        "Customers": [
+            "Check Account Balance"
+        ],
+        "Backend Auditor": [
+            "Generate Daily Transaction Reports",
+            "Verify General Ledger",
+            "Monitor Transactions",
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Checking Account": [
+            "Verify Customer Identity"
+        ],
+        "Handle Account Deposit": [
+            "Verify Customer Identity"
+        ],
+        "Close Bank Account": [
+            "Verify Customer Identity"
+        ],
+        "Create Fixed-term Deposit Account": [
+            "Verify Customer Identity"
+        ],
+        "Process Check Deposit": [
+            "Verify Customer Identity"
+        ],
+        "Handle Account Transfer": [
+            "Verify Customer Identity"
+        ],
+        "Process Cash Deposit": [
+            "Verify Customer Identity"
+        ],
+        "Create New Bank Account": [
+            "Verify Customer Identity"
+        ],
+        "Create Savings Account": [
+            "Verify Customer Identity"
+        ]
+    },
+    "extension_relationships": {
+        "Monitor Transactions": [
+            "Mark Suspicious Transactions"
+        ]
+    },
+    "generalization_relationships_for_usecases": {
+        "Create New Bank Account": [
+            "Create Checking Account",
+            "Create Fixed-term Deposit Account",
+            "Create Savings Account"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,58 @@
+{
+    "actors": [
+        "User",
+        "Blogger",
+        "Administrator"
+    ],
+    "usecases": [
+        "Log In",
+        "View Comments",
+        "Review Comments",
+        "Reply to Comments",
+        "Create Blog Article",
+        "Edit Blog Article",
+        "Publish Blog Article",
+        "Set Article Classification",
+        "Set Article Tags",
+        "Set Article Keywords",
+        "Set Comment Review Mechanism",
+        "Manage User Accounts"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "View Comments",
+            "Review Comments",
+            "Reply to Comments"
+        ],
+        "Blogger": [
+            "Log In",
+            "View Comments",
+            "Review Comments",
+            "Reply to Comments",
+            "Create Blog Article",
+            "Edit Blog Article",
+            "Publish Blog Article"
+        ],
+        "Administrator": [
+            "Log In",
+            "View Comments",
+            "Review Comments",
+            "Reply to Comments",
+            "Set Article Classification",
+            "Set Article Tags",
+            "Set Article Keywords",
+            "Set Comment Review Mechanism",
+            "Manage User Accounts"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "User": [
+            "Blogger",
+            "Administrator"
+        ]
+    }
+}

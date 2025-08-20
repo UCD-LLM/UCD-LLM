@@ -1,0 +1,46 @@
+{
+    "actors": [
+        "Customer",
+        "Server"
+    ],
+    "usecases": [
+        "Browse Menu",
+        "Select Dishes",
+        "Add to Cart",
+        "Submit Order",
+        "Add Dishes During Dining",
+        "Initiate Checkout",
+        "Cash Payment",
+        "QR Code Payment",
+        "Call Waiter",
+        "Receive Orders",
+        "Verify Dish Information",
+        "Confirm Orders",
+        "Deliver Dishes",
+        "Handle Customer Requests"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Menu",
+            "Select Dishes",
+            "Add to Cart",
+            "Submit Order",
+            "Add Dishes During Dining",
+            "Initiate Checkout",
+            "Cash Payment",
+            "QR Code Payment",
+            "Call Waiter"
+        ],
+        "Server": [
+            "Receive Orders",
+            "Verify Dish Information",
+            "Confirm Orders",
+            "Deliver Dishes",
+            "Handle Customer Requests"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

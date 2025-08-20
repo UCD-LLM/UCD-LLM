@@ -1,0 +1,5 @@
+City drivers use the traffic app to find optimal routes. 
+Route calculation always checks real-time congestion data from road sensors. 
+During emergencies, drivers can activate SOS mode which notifies nearby patrol cars and dispatches ambulances.
+Traffic officers monitor violations, while senior officers additionally coordinate disaster responses. 
+All traffic officers generate incident reports, but accident reconstruction specialists create detailed 3D collision analyses using the same reporting framework.

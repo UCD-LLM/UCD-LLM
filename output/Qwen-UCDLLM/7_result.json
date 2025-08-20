@@ -1,0 +1,39 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Modify Password",
+        "Select Channel",
+        "Share",
+        "Log In",
+        "Subscribe Channel",
+        "Register Account",
+        "Like",
+        "Comment",
+        "Log Out",
+        "Play Back Program",
+        "Watch Live Stream",
+        "Send Barrage Message"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Select Channel",
+            "Watch Live Stream",
+            "Play Back Program",
+            "Send Barrage Message",
+            "Subscribe Channel",
+            "Comment",
+            "Like",
+            "Share",
+            "Register Account",
+            "Modify Password",
+            "Log Out"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

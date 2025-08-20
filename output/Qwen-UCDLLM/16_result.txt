@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+actor "Doctors"
+actor "Nurses"
+usecase "Input Blood Pressure"
+usecase "Specify Dosage"
+usecase "Record Vital Signs"
+usecase "Input Body Temperature"
+usecase "Issue Prescription"
+usecase "Modify Entered Information"
+usecase "Add Medication Notes"
+usecase "Input Pulse"
+usecase "Supplement Vital Signs"
+usecase "Select Drugs"
+usecase "Generate Prescription Number"
+"Doctors"--"Select Drugs"
+"Doctors"--"Specify Dosage"
+"Doctors"--"Add Medication Notes"
+"Doctors"--"Issue Prescription"
+"Doctors"--"Generate Prescription Number"
+"Nurses"--"Record Vital Signs"
+"Nurses"--"Input Blood Pressure"
+"Nurses"--"Modify Entered Information"
+"Input Body Temperature"<|."Record Vital Signs": <<include>>
+"Input Pulse"<|."Record Vital Signs": <<include>>
+"Record Vital Signs"<|."Supplement Vital Signs": <<extend>>
+@enduml

@@ -1,0 +1,6 @@
+The e-commerce management system should be able to meet the following requirements:
+User login and registration function: Users can log in to the system with their username and password, and register new accounts.
+Product management function: Administrators can add, modify, and delete product information, and set attributes such as price and inventory of products.
+Order management function: Users can browse and select purchased products, and generate orders. Administrators can view and manage the status of orders, such as confirming payment, shipping, cancellation, and other operations.
+Marketing activity function: Administrators can create and manage promotional activities, such as discounts and promotions, to attract users to purchase products.
+Payment and logistics functions: Users can choose appropriate payment methods and query the logistics information of orders.

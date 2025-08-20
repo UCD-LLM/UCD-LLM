@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+actor "Residents"
+actor "Voice Assistants"
+usecase "Activate Sleep Mode"
+usecase "Activate Away Mode"
+usecase "Activate At Home Mode"
+usecase "Set Security Modes"
+usecase "Turn On All Lights"
+usecase "Adjust Indoor Temperature"
+usecase "View Device Status"
+usecase "Control Devices"
+usecase "Receive Voice Commands"
+usecase "Control Devices Locally"
+usecase "Turn Off All Lights"
+usecase "Control Lighting"
+usecase "Control Room Lighting"
+usecase "Use Mobile App for Remote Operation"
+"Residents"--"Use Mobile App for Remote Operation"
+"Residents"--"Control Devices Locally"
+"Residents"--"View Device Status"
+"Residents"--"Adjust Indoor Temperature"
+"Residents"--"Control Lighting"
+"Residents"--"Control Room Lighting"
+"Residents"--"Set Security Modes"
+"Residents"--"Activate Away Mode"
+"Residents"--"Activate At Home Mode"
+"Residents"--"Activate Sleep Mode"
+"Voice Assistants"--"Control Devices"
+"Receive Voice Commands"<|."Control Devices": <<include>>
+"Activate Sleep Mode"<|."Turn Off All Lights": <<extend>>
+"Control Lighting"<|."Turn On All Lights": <<extend>>
+"Use Mobile App for Remote Operation"<|."Turn Off All Lights": <<extend>>
+@enduml

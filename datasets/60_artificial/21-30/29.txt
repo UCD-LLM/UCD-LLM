@@ -1,0 +1,8 @@
+I hope to develop an advertising publishing system with the following features:
+Advertisers can register and log into the system to create and manage their own advertising accounts.
+The system needs to provide a user-friendly interface where advertisers can upload advertising materials, including images, videos, links, etc. If you need to modify the default parameters, you can set parameters such as advertising placement time, location, and target audience.
+Advertisers can monitor the effectiveness of their ads in real-time, including click through rates, conversion rates, and exposure rates. When the system detects that the budget consumption rate of an advertising campaign is significantly higher than expected or the performance indicators are below a preset threshold, advertisers can adjust their advertising strategies.
+The system should support various forms of advertising, such as banner ads, interstitial ads, native ads, etc., to meet the needs of different advertisers.
+The advertising publishing system also needs a review mechanism to ensure that the published advertising content complies with laws, regulations, and social ethical standards, and to avoid the dissemination of harmful content.
+The system should provide data analysis and reporting functions to help advertisers better understand advertising effectiveness and provide references for future advertising placements.
+The system should also provide a management backend for operators to manage advertiser accounts, process ad comments, monitor system operation status, etc.

@@ -1,0 +1,31 @@
+{
+    "actors": [
+        "Car Rental Customer",
+        "Store Employee"
+    ],
+    "usecases": [
+        "Verify Customer Identity",
+        "Sign Rental Contract",
+        "Handle Pick-up"
+    ],
+    "association_relationships": {
+        "Car Rental Customer": [],
+        "Store Employee": [
+            "Handle Pick-up",
+            "Verify Customer Identity",
+            "Sign Rental Contract"
+        ]
+    },
+    "inclusion_relationships": {
+        "Sign Rental Contract": [
+            "Verify Customer Identity"
+        ],
+        "Handle Pick-up": [
+            "Verify Customer Identity",
+            "Sign Rental Contract"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

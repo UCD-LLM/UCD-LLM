@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Registered Members"
+actor "Unregistered Visitors"
+actor "System Administrator"
+usecase "Browse Product Catalog"
+usecase "Add Products To Shopping Cart"
+usecase "Manage Registered Member Accounts"
+usecase "Choose Payment Methods"
+usecase "Contact Customer Service"
+usecase "View Order History"
+usecase "Place Orders"
+usecase "Manage Product Information"
+usecase "Manage Personal Information"
+usecase "Log In"
+"Registered Members"--"Manage Personal Information"
+"Registered Members"--"Place Orders"
+"Registered Members"--"View Order History"
+"Registered Members"--"Contact Customer Service"
+"Unregistered Visitors"--"Browse Product Catalog"
+"System Administrator"--"Manage Product Information"
+"System Administrator"--"Manage Registered Member Accounts"
+"Add Products To Shopping Cart"<|."Place Orders": <<include>>
+"Choose Payment Methods"<|."Place Orders": <<include>>
+"Log In"<|."Place Orders": <<include>>
+"Log In"<|."Add Products To Shopping Cart": <<include>>
+"Log In"<|."Choose Payment Methods": <<include>>
+"Log In"<|."View Order History": <<include>>
+"Log In"<|."Manage Personal Information": <<include>>
+"Registered Members"--|>"Unregistered Visitors"
+@enduml

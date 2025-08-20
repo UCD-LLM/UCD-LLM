@@ -1,0 +1,96 @@
+{
+    "actors": [
+        "User",
+        "Mobile Devices"
+    ],
+    "usecases": [
+        "Scan QR Code",
+        "Create Contract",
+        "Download Contract",
+        "Re-sign Contract",
+        "Sign Contract",
+        "Manage Contract",
+        "Confirm Contract Modification",
+        "Select Template",
+        "Scan QR Code for Signature",
+        "Edit Contract",
+        "Verify Identity via QR Code",
+        "Store Contract",
+        "Complete Handwritten Signature",
+        "Retrieve Contract",
+        "Complete Signature",
+        "Modify Signed Contract",
+        "Receive Contract Expiration Reminder"
+    ],
+    "association_relationships": {
+        "User": [
+            "Create Contract",
+            "Sign Contract",
+            "Manage Contract",
+            "Store Contract",
+            "Retrieve Contract",
+            "Download Contract",
+            "Modify Signed Contract",
+            "Re-sign Contract",
+            "Confirm Contract Modification",
+            "Receive Contract Expiration Reminder",
+            "Select Template",
+            "Edit Contract",
+            "Complete Handwritten Signature",
+            "Scan QR Code for Signature",
+            "Verify Identity via QR Code"
+        ],
+        "Mobile Devices": [
+            "Scan QR Code",
+            "Complete Signature"
+        ]
+    },
+    "inclusion_relationships": {
+        "Scan QR Code": [
+            "Verify Identity via QR Code"
+        ],
+        "Sign Contract": [
+            "Create Contract",
+            "Verify Identity via QR Code",
+            "Store Contract",
+            "Complete Handwritten Signature"
+        ],
+        "Create Contract": [
+            "Select Template"
+        ],
+        "Re-sign Contract": [
+            "Confirm Contract Modification"
+        ],
+        "Modify Signed Contract": [
+            "Re-sign Contract",
+            "Retrieve Contract"
+        ],
+        "Scan QR Code for Signature": [
+            "Verify Identity via QR Code"
+        ],
+        "Complete Signature": [
+            "Verify Identity via QR Code"
+        ],
+        "Store Contract": [
+            "Complete Handwritten Signature",
+            "Complete Signature"
+        ]
+    },
+    "extension_relationships": {
+        "Sign Contract": [
+            "Scan QR Code",
+            "Re-sign Contract",
+            "Edit Contract",
+            "Modify Signed Contract"
+        ],
+        "Edit Contract": [
+            "Re-sign Contract",
+            "Confirm Contract Modification"
+        ],
+        "Manage Contract": [
+            "Confirm Contract Modification"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,71 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "SpecialistDoctor",
+        "HeadNurse",
+        "TollCollector"
+    ],
+    "usecases": [
+        "MakeAppointment",
+        "ViewDoctorSchedule",
+        "PayConsultationFee",
+        "ViewMedicalRecord",
+        "InputDiagnosticInformation",
+        "IssuePrescription",
+        "ArrangeExamination",
+        "TriagePatient",
+        "GuideToDepartment",
+        "RecordVitalSigns",
+        "ScheduleSpecialExamination",
+        "ProvideAccurateDiagnosticSupport",
+        "InitiateMultidisciplinaryConsultation",
+        "ArrangeNurseShifts",
+        "ManageMedicalConsumables",
+        "HandlePayment",
+        "PrintPaymentVoucher"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "MakeAppointment",
+            "ViewDoctorSchedule",
+            "PayConsultationFee",
+            "ViewMedicalRecord"
+        ],
+        "Doctor": [
+            "InputDiagnosticInformation",
+            "IssuePrescription",
+            "ArrangeExamination"
+        ],
+        "Nurse": [
+            "TriagePatient",
+            "GuideToDepartment",
+            "RecordVitalSigns"
+        ],
+        "SpecialistDoctor": [
+            "ScheduleSpecialExamination",
+            "ProvideAccurateDiagnosticSupport",
+            "InitiateMultidisciplinaryConsultation"
+        ],
+        "HeadNurse": [
+            "ArrangeNurseShifts",
+            "ManageMedicalConsumables"
+        ],
+        "TollCollector": [
+            "HandlePayment",
+            "PrintPaymentVoucher"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctor": [
+            "SpecialistDoctor"
+        ],
+        "Nurse": [
+            "HeadNurse"
+        ]
+    }
+}

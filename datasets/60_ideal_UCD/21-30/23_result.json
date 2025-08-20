@@ -1,0 +1,36 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Register Account",
+        "Log In",
+        "Import Financial Report",
+        "Generate Visual Charts",
+        "Calculate Key Indicators",
+        "Generate Custom Report",
+        "Export Report",
+        "Share Report"
+    ],
+    "association_relationships": {
+        "User": [
+            "Register Account",
+            "Log In",
+            "Import Financial Report",
+            "Generate Visual Charts",
+            "Calculate Key Indicators",
+            "Generate Custom Report",
+            "Export Report",
+            "Share Report"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Generate Custom Report": [
+            "Export Report",
+            "Share Report"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

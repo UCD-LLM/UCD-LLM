@@ -1,0 +1,45 @@
+{
+    "actors": [
+        "Patient",
+        "Front Desk Receptionist",
+        "Doctor"
+    ],
+    "usecases": [
+        "Cancel Appointment",
+        "View Daily Appointment Schedule",
+        "Record Diagnosis Results",
+        "View Appointment Records",
+        "Manage Patient Information",
+        "Log In",
+        "Record Treatment Plans",
+        "View Appointment Times",
+        "Make Appointment",
+        "Handle Appointment Requests",
+        "Register Account",
+        "View Doctor Profiles"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Register Account",
+            "Log In",
+            "View Doctor Profiles",
+            "View Appointment Times",
+            "Make Appointment",
+            "View Appointment Records",
+            "Cancel Appointment"
+        ],
+        "Front Desk Receptionist": [
+            "Handle Appointment Requests",
+            "Manage Patient Information"
+        ],
+        "Doctor": [
+            "View Daily Appointment Schedule",
+            "Record Diagnosis Results",
+            "Record Treatment Plans"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

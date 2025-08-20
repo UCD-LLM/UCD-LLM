@@ -1,0 +1,57 @@
+{
+    "actors": [
+        "City Drivers",
+        "Road Sensors",
+        "Traffic Officers",
+        "Senior Officers",
+        "Accident Reconstruction Specialists"
+    ],
+    "usecases": [
+        "Find Optimal Routes",
+        "Activate SOS Mode",
+        "Monitor Traffic Congestion",
+        "Transmit Real-Time Congestion Data",
+        "Monitor Violations",
+        "Generate Incident Reports",
+        "Coordinate Disaster Responses",
+        "Create 3D Collision Analysis"
+    ],
+    "association_relationships": {
+        "City Drivers": [
+            "Find Optimal Routes",
+            "Activate SOS Mode"
+        ],
+        "Road Sensors": [
+            "Monitor Traffic Congestion",
+            "Transmit Real-Time Congestion Data"
+        ],
+        "Traffic Officers": [
+            "Monitor Violations",
+            "Generate Incident Reports"
+        ],
+        "Senior Officers": [
+            "Monitor Violations",
+            "Generate Incident Reports",
+            "Coordinate Disaster Responses"
+        ],
+        "Accident Reconstruction Specialists": [
+            "Monitor Violations",
+            "Generate Incident Reports",
+            "Create 3D Collision Analysis"
+        ]
+    },
+    "inclusion_relationships": {
+        "Find Optimal Routes": [
+            "Monitor Traffic Congestion",
+            "Transmit Real-Time Congestion Data"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Traffic Officers": [
+            "Senior Officers",
+            "Accident Reconstruction Specialists"
+        ]
+    }
+}

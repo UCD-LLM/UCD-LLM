@@ -1,0 +1,50 @@
+{
+    "actors": [
+        "Customer",
+        "Server"
+    ],
+    "usecases": [
+        "BrowseMenu",
+        "ViewDishDetails",
+        "SelectDishes",
+        "AddToShoppingCart",
+        "ViewSelectedDishesAndTotalPrices",
+        "SubmitOrder",
+        "ChooseServingOption",
+        "AddDishes",
+        "InitiateCheckout",
+        "ChoosePaymentMethod",
+        "CallWaiter",
+        "ReceiveOrder",
+        "VerifyDishInformation",
+        "ConfirmOrder",
+        "DeliverDishes",
+        "HandleCustomerRequests"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "BrowseMenu",
+            "ViewDishDetails",
+            "SelectDishes",
+            "AddToShoppingCart",
+            "ViewSelectedDishesAndTotalPrices",
+            "SubmitOrder",
+            "ChooseServingOption",
+            "AddDishes",
+            "InitiateCheckout",
+            "ChoosePaymentMethod",
+            "CallWaiter"
+        ],
+        "Server": [
+            "ReceiveOrder",
+            "VerifyDishInformation",
+            "ConfirmOrder",
+            "DeliverDishes",
+            "HandleCustomerRequests"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

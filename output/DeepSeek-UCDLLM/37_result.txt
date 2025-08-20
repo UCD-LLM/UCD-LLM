@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "Corporate Finance Personnel"
+actor "Customers"
+usecase "Receive Electronic Invoices"
+usecase "Delete Invoices"
+usecase "Share Electronic Invoices"
+usecase "Generate Electronic Invoices"
+usecase "Query Historical Invoice Records"
+usecase "Batch Upload Invoice Information"
+usecase "Modify Invoices"
+"Corporate Finance Personnel"--"Batch Upload Invoice Information"
+"Corporate Finance Personnel"--"Generate Electronic Invoices"
+"Corporate Finance Personnel"--"Modify Invoices"
+"Corporate Finance Personnel"--"Delete Invoices"
+"Customers"--"Receive Electronic Invoices"
+"Customers"--"Query Historical Invoice Records"
+"Receive Electronic Invoices"<|."Share Electronic Invoices": <<extend>>
+@enduml

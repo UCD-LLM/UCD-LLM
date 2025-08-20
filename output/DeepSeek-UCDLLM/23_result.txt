@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Register"
+usecase "Generate Visual Charts"
+usecase "Calculate Key Financial Indicators"
+usecase "Export Financial Analysis Report"
+usecase "Import Financial Report"
+usecase "Log In"
+usecase "Generate Custom Report"
+"User"--"Register"
+"User"--"Import Financial Report"
+"User"--"Generate Visual Charts"
+"User"--"Calculate Key Financial Indicators"
+"User"--"Generate Custom Report"
+"User"--"Export Financial Analysis Report"
+"Log In"<|."Generate Custom Report": <<include>>
+@enduml

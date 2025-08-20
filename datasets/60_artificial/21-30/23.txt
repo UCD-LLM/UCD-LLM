@@ -1,0 +1,6 @@
+I hope to develop a financial statement analysis tool that will have the following requirements:
+1. User registration and login function: Users can use their own username and password to log in and use this tool.
+2. Financial report import function: Users can import financial report files into this tool, which supports various common financial report formats such as Excel and CSV.
+3. Data visualization and chart display function: Users can use imported financial statement data to generate visual charts such as bar charts and line charts for a more intuitive understanding of the data.
+4. Key indicator calculation function: Users can use tools to calculate various key financial indicators, such as profit margin, asset liability ratio, etc., to help evaluate the financial situation of the enterprise.
+5. Custom report generation function: Users can generate financial statement analysis reports based on the indicators and time ranges they need to display. After generating a custom report, users can choose to export the generated financial analysis report in PDF, Excel, or other formats and share it with others for viewing and analysis.

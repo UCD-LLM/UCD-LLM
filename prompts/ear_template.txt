@@ -1,0 +1,10 @@
+Now recheck the actors you extracted based on the following tips. If there are any errors, please make changes and regenerate them.
+
+Self-Inspection Tips for Actors:
+(1) Actors are external individuals, organizations, systems, or devices that interact with the target system, excluding internal components and user tools or media; For example, "Database" and "Browser" cannot be actors, while "Customer" is an actor.
+(2) Only extract actors directly and explicitly mentioned in the text, and prohibit adding actors that are not mentioned. For example, when the text only mentions "Customer Submits Order", the only actor is "Customer" and "Administrator" that is not mentioned cannot be added to the list.
+(3) Merge different expressions of actors with identical behaviors, but do not merge actors with different behaviors. For example, "Reader", "Borrower", and "Library Member" can be merged into "Library Member" if their interaction with the system is completely identical.
+(4) Actors usually initiate interactions actively and can also passively receive external entities output by the system as actors, but purely passive objects are not considered. For example, the "Printer" in "Printer Receiving Print Tasks" is an actor, but the "Monitored Temperature" is not an actor.
+(5) Try to use noun phrases that clearly identify external entities in the text, ensuring that the names are clear and unambiguous, and avoiding broad or internal terms. For example, in the text, "Administrator" and "Ordinary User" should be clearly distinguished, and avoid using "System" and "Module" as part of the actor name (except in special circumstances).
+
+In your answer, please strictly only include the actor list according to the original format and do not include any explanation or apologies.

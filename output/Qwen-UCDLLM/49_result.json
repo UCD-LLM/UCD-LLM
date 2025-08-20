@@ -1,0 +1,91 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "Gold Medal Seller",
+        "International Seller",
+        "Logistics Service Provider"
+    ],
+    "usecases": [
+        "Add Product To Shopping Cart",
+        "Manage Shopping Cart",
+        "Submit Order",
+        "Evaluate Product",
+        "Manage Product Inventory",
+        "Provide Logistics Tracking Information",
+        "Browse Products",
+        "Arrange Shipments",
+        "Log In",
+        "Handle Cross-border Logistics",
+        "Publish Product Information",
+        "Search Products",
+        "Use Data Analysis Tools",
+        "Process Orders",
+        "Participate In Promotional Activities",
+        "Complete Payment",
+        "Manage Multi-currency Settlements",
+        "View Product Details",
+        "View Sales Data"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "Browse Products",
+            "Search Products",
+            "View Product Details",
+            "Add Product To Shopping Cart",
+            "Manage Shopping Cart",
+            "Submit Order",
+            "Complete Payment",
+            "Evaluate Product"
+        ],
+        "Seller": [
+            "Log In",
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data"
+        ],
+        "Gold Medal Seller": [
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Participate In Promotional Activities",
+            "Use Data Analysis Tools"
+        ],
+        "International Seller": [
+            "Publish Product Information",
+            "Manage Product Inventory",
+            "Process Orders",
+            "Arrange Shipments",
+            "View Sales Data",
+            "Handle Cross-border Logistics",
+            "Manage Multi-currency Settlements"
+        ],
+        "Logistics Service Provider": [
+            "Provide Logistics Tracking Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Publish Product Information": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Log In": [
+            "Handle Cross-border Logistics"
+        ],
+        "Search Products": [
+            "View Product Details"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Seller": [
+            "Gold Medal Seller",
+            "International Seller"
+        ]
+    }
+}

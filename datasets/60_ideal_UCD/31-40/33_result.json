@@ -1,0 +1,54 @@
+{
+    "actors": [
+        "Patient",
+        "Front Desk Receptionist",
+        "Doctor"
+    ],
+    "usecases": [
+        "Register Account Online",
+        "Log in",
+        "View Doctor Profiles",
+        "View Appointment Times",
+        "Make Appointment For Outpatient Services",
+        "Make Online Video Consultation",
+        "Make Office Visit",
+        "View Appointment Records",
+        "Cancel Appointment",
+        "Handle Patients' Appointment Requests",
+        "Manage Patients' Basic Information",
+        "View Daily Appointment Schedule",
+        "Record Dianoise Results",
+        "Record Treatment Plans"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Register Account Online",
+            "Log in",
+            "View Doctor Profiles",
+            "View Appointment Times",
+            "Make Appointment For Outpatient Services",
+            "Make Online Video Consultation",
+            "Make Office Visit",
+            "View Appointment Records",
+            "Cancel Appointment"
+        ],
+        "Front Desk Receptionist": [
+            "Handle Patients' Appointment Requests",
+            "Manage Patients' Basic Information"
+        ],
+        "Doctor": [
+            "View Daily Appointment Schedule",
+            "Record Dianoise Results",
+            "Record Treatment Plans"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Make Appointment For Outpatient Services": [
+            "Make Online Video Consultation",
+            "Make Office Visit"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Operator"
+actor "Maintenance Engineer"
+actor "Production Manager"
+actor "System Administrator"
+usecase "Manage System Users"
+usecase "Use Fault Logs"
+usecase "Handle Abnormal Situations"
+usecase "Generate Analysis Reports"
+usecase "View Production Situation"
+usecase "View Operation Records"
+usecase "Add Users"
+usecase "Delete Users"
+usecase "Control Operations"
+usecase "Observe Assembly Line Status"
+usecase "Use Detailed Equipment Status Information"
+usecase "Generate Comprehensive Production Reports"
+"Operator"--"Observe Assembly Line Status"
+"Operator"--"Control Operations"
+"Maintenance Engineer"--"Use Detailed Equipment Status Information"
+"Maintenance Engineer"--"Use Fault Logs"
+"Production Manager"--"View Production Situation"
+"Production Manager"--"Generate Analysis Reports"
+"System Administrator"--"View Operation Records"
+"System Administrator"--"Manage System Users"
+"System Administrator"--"Add Users"
+"System Administrator"--"Delete Users"
+"Observe Assembly Line Status"<|."Handle Abnormal Situations": <<extend>>
+"View Operation Records"<|."Generate Comprehensive Production Reports": <<extend>>
+@enduml

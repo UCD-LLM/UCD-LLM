@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "Visitor",
+        "Administrator"
+    ],
+    "usecases": [
+        "Login",
+        "Provide Exhibition Information",
+        "Map Function",
+        "Voice Guidance",
+        "Search Function",
+        "Display High-Quality Images",
+        "Manage Exhibition Information",
+        "View Browsing History and Feedback"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "Login",
+            "Provide Exhibition Information",
+            "Map Function",
+            "Voice Guidance",
+            "Search Function",
+            "Display High-Quality Images"
+        ],
+        "Administrator": [
+            "Manage Exhibition Information",
+            "View Browsing History and Feedback"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

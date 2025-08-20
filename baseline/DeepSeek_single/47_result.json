@@ -1,0 +1,80 @@
+{
+    "actors": [
+        "Visitor",
+        "Student",
+        "Teacher",
+        "TeachingAssistant",
+        "Administrator"
+    ],
+    "usecases": [
+        "BrowsePublicCatalog",
+        "ViewCourseDetails",
+        "Register",
+        "Login",
+        "ChooseCourses",
+        "WatchTeachingVideos",
+        "SubmitAssignments",
+        "ParticipateInQuizzes",
+        "ViewGradeReports",
+        "CreateCourses",
+        "DesignCourseStructure",
+        "UploadTeachingMaterials",
+        "PublishHomework",
+        "CorrectHomework",
+        "CreateQuizzes",
+        "ManageGrades",
+        "ManageUserAccounts",
+        "ManageCourses",
+        "ReviewCourseContent"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "BrowsePublicCatalog",
+            "ViewCourseDetails",
+            "Register"
+        ],
+        "Student": [
+            "Login",
+            "ChooseCourses",
+            "WatchTeachingVideos",
+            "SubmitAssignments",
+            "ParticipateInQuizzes",
+            "ViewGradeReports"
+        ],
+        "Teacher": [
+            "Login",
+            "CreateCourses",
+            "DesignCourseStructure",
+            "UploadTeachingMaterials",
+            "PublishHomework",
+            "CorrectHomework",
+            "CreateQuizzes",
+            "ManageGrades"
+        ],
+        "TeachingAssistant": [
+            "Login",
+            "WatchTeachingVideos",
+            "SubmitAssignments",
+            "ParticipateInQuizzes",
+            "ViewGradeReports",
+            "CorrectHomework",
+            "AnswerQuestions"
+        ],
+        "Administrator": [
+            "ManageUserAccounts",
+            "ManageCourses",
+            "ReviewCourseContent"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Student": [
+            "TeachingAssistant"
+        ],
+        "Teacher": [
+            "TeachingAssistant"
+        ]
+    }
+}

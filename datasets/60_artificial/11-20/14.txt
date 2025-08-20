@@ -1,0 +1,7 @@
+To meet the daily operation of the library and the borrowing needs of users, the system needs to implement the following functions:
+
+The librarian has the authority to borrow books. When handling book lending business, two scanning operations must be completed: one is to scan the user's membership card to confirm the borrower's identity information; The second is to scan the barcode of the books to be borrowed, in order to accurately record the borrowing status of the books and ensure that the circulation of each book can be traced.
+
+Users can search for books through the library's online catalog function, which should contain rich book information such as title, author, publisher, ISBN number, and book introduction, making it convenient for users to quickly find the books they need.
+
+When a user needs to make a book reservation, the system needs to first verify the user's account status. The verification content includes whether the user account is in a normal state (such as whether there are any outstanding fees, violations, etc. that affect the reservation), whether the account is valid, etc. Only users whose account status meets the requirements can successfully complete the book reservation operation to ensure the reasonable allocation and standardized use of library resources.

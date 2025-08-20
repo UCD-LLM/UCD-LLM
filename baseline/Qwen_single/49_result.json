@@ -1,0 +1,82 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "GoldMedalSeller",
+        "InternationalSeller",
+        "LogisticsServiceProvider"
+    ],
+    "usecases": [
+        "BrowseProducts",
+        "SearchProducts",
+        "ViewProductDetails",
+        "AddToCart",
+        "ManageCart",
+        "SubmitOrder",
+        "CompletePayment",
+        "EvaluateProduct",
+        "LoginSellerCenter",
+        "PublishProductInfo",
+        "ManageInventory",
+        "ProcessOrders",
+        "ArrangeShipments",
+        "ViewSalesData",
+        "ParticipatePromotions",
+        "UseAdvancedDataAnalysis",
+        "HandleCrossBorderLogistics",
+        "ManageMultiCurrencySettlements",
+        "ProvideLogisticsTracking"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "BrowseProducts",
+            "SearchProducts",
+            "ViewProductDetails",
+            "AddToCart",
+            "ManageCart",
+            "SubmitOrder",
+            "CompletePayment",
+            "EvaluateProduct"
+        ],
+        "Seller": [
+            "LoginSellerCenter",
+            "PublishProductInfo",
+            "ManageInventory",
+            "ProcessOrders",
+            "ArrangeShipments",
+            "ViewSalesData"
+        ],
+        "GoldMedalSeller": [
+            "LoginSellerCenter",
+            "PublishProductInfo",
+            "ManageInventory",
+            "ProcessOrders",
+            "ArrangeShipments",
+            "ViewSalesData",
+            "ParticipatePromotions",
+            "UseAdvancedDataAnalysis"
+        ],
+        "InternationalSeller": [
+            "LoginSellerCenter",
+            "PublishProductInfo",
+            "ManageInventory",
+            "ProcessOrders",
+            "ArrangeShipments",
+            "ViewSalesData",
+            "HandleCrossBorderLogistics",
+            "ManageMultiCurrencySettlements"
+        ],
+        "LogisticsServiceProvider": [
+            "ProvideLogisticsTracking"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Seller": [
+            "GoldMedalSeller",
+            "InternationalSeller"
+        ]
+    }
+}

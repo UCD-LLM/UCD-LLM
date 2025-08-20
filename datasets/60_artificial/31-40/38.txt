@@ -1,0 +1,9 @@
+I hope to develop a radio station application with the following functions:
+Users can download the application and log in to the system using their own account.
+The radio station application needs to provide a user interface where users can browse different radio station information, including program names, playback times, program types, etc.
+Users can search for specific radio stations or programs to quickly find content of interest.
+The application needs to provide online listening function, allowing users to listen to live programs from various radio stations in real time.
+The application also needs to provide recording and playback functions, allowing users to listen to program content that they have missed in the past period of time.
+Users can bookmark their favorite radio stations or programs for quick access and listening in the future.
+The radio station application should also provide an interactive feature where users can leave messages or send bullet comments to communicate and share their feelings with other listeners.
+Administrators also need an interface to add, modify, and delete program information, as well as adjust the playback time of programs.

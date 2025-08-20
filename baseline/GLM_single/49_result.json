@@ -1,0 +1,70 @@
+{
+    "actors": [
+        "Buyer",
+        "Seller",
+        "GoldMedalSeller",
+        "InternationalSeller",
+        "LogisticsServiceProvider"
+    ],
+    "usecases": [
+        "BrowseProducts",
+        "SearchProducts",
+        "ViewProductDetails",
+        "AddToShoppingCart",
+        "ManageShoppingCart",
+        "SubmitOrder",
+        "CompletePayment",
+        "EvaluateProduct",
+        "LogInSellerCenter",
+        "PublishProductInfo",
+        "ManageInventory",
+        "ProcessOrder",
+        "ArrangeShipment",
+        "ViewSalesData",
+        "ParticipatePromotionalActivities",
+        "UseAdvancedDataAnalysis",
+        "HandleCrossBorderLogistics",
+        "ManageMultiCurrencySettlements",
+        "ProvideLogisticsTracking"
+    ],
+    "association_relationships": {
+        "Buyer": [
+            "BrowseProducts",
+            "SearchProducts",
+            "ViewProductDetails",
+            "AddToShoppingCart",
+            "ManageShoppingCart",
+            "SubmitOrder",
+            "CompletePayment",
+            "EvaluateProduct"
+        ],
+        "Seller": [
+            "LogInSellerCenter",
+            "PublishProductInfo",
+            "ManageInventory",
+            "ProcessOrder",
+            "ArrangeShipment",
+            "ViewSalesData"
+        ],
+        "GoldMedalSeller": [
+            "ParticipatePromotionalActivities",
+            "UseAdvancedDataAnalysis"
+        ],
+        "InternationalSeller": [
+            "HandleCrossBorderLogistics",
+            "ManageMultiCurrencySettlements"
+        ],
+        "LogisticsServiceProvider": [
+            "ProvideLogisticsTracking"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Seller": [
+            "GoldMedalSeller",
+            "InternationalSeller"
+        ]
+    }
+}

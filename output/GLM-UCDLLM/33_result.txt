@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Patient"
+actor "Front Desk Receptionist"
+actor "Doctor"
+usecase "View Appointment Records"
+usecase "Record Diagnosis Results"
+usecase "Log In"
+usecase "Record Treatment Plans"
+usecase "View Appointment Times"
+usecase "Make Appointment"
+usecase "Cancel Appointment"
+usecase "View Doctor Profiles"
+usecase "Manage Patient Basic Information"
+usecase "View Daily Appointment Schedule"
+usecase "Handle Appointment Requests"
+usecase "Register Account"
+"Patient"--"Register Account"
+"Patient"--"View Doctor Profiles"
+"Patient"--"View Appointment Times"
+"Patient"--"Make Appointment"
+"Patient"--"View Appointment Records"
+"Patient"--"Cancel Appointment"
+"Front Desk Receptionist"--"Handle Appointment Requests"
+"Front Desk Receptionist"--"Manage Patient Basic Information"
+"Doctor"--"View Daily Appointment Schedule"
+"Doctor"--"Record Diagnosis Results"
+"Doctor"--"Record Treatment Plans"
+"Log In"<|."View Appointment Records": <<include>>
+"Log In"<|."Make Appointment": <<include>>
+@enduml

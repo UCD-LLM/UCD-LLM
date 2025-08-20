@@ -1,0 +1,22 @@
+{
+    "actors": [
+        "Patron"
+    ],
+    "usecases": [
+        "Provide Delivery Location",
+        "Place Order for Pickup",
+        "Prompt for Meal Date",
+        "Cancel Order",
+        "Change Meal Date",
+        "Confirm Payroll Deduction",
+        "Exit COS",
+        "Register for Payroll Deduction",
+        "Place Order",
+        "Specify Pickup or Delivery"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

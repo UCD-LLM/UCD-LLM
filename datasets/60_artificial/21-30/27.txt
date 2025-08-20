@@ -1,0 +1,10 @@
+I hope to develop a vehicle GPS tracking system with the following functions:
+Users can download the application and log in to the system using their own account.
+The vehicle GPS tracking system needs to provide a user interface where users can view their vehicle's location information, driving trajectory, speed, and other data.
+The system needs to support the management and tracking of multiple vehicles, allowing users to easily switch between different vehicles for monitoring.
+Users can set up geofencing, and the system automatically sends notifications to users when vehicles leave or enter designated areas.
+The system should provide real-time alarm functions, such as speeding, abnormal parking, etc., to ensure vehicle safety.
+Users can use the history function to query the vehicle's travel route and stopping points during any time period.
+The system also needs to provide energy consumption analysis to help users understand the fuel or electricity consumption of vehicles and optimize driving habits.
+The administrator interface allows administrators to add, delete, and edit vehicle information while monitoring the status of all registered vehicles.
+The system supports multi platform operations, including mobile apps and web platforms, making it convenient for users to view and manage vehicle information anytime and anywhere.

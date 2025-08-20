@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Divers",
+        "Diving Master",
+        "Surface Support Personnel"
+    ],
+    "usecases": [
+        "Generate Diving Report Summary",
+        "Manage Gas Cylinder Inventory",
+        "Coordinate Depressurization Procedures",
+        "Develop Diving Plan",
+        "Mark Potential Risk Events",
+        "Keep Diving Log",
+        "Receive Signals",
+        "Mark Key Event Points",
+        "Record Observation Notes",
+        "Monitor Diver Status",
+        "Initiate Emergency Response",
+        "Review Diving Plan"
+    ],
+    "association_relationships": {
+        "Divers": [
+            "Develop Diving Plan",
+            "Keep Diving Log",
+            "Record Observation Notes",
+            "Mark Key Event Points"
+        ],
+        "Diving Master": [
+            "Review Diving Plan",
+            "Generate Diving Report Summary",
+            "Mark Potential Risk Events",
+            "Receive Signals",
+            "Initiate Emergency Response"
+        ],
+        "Surface Support Personnel": [
+            "Monitor Diver Status",
+            "Manage Gas Cylinder Inventory",
+            "Coordinate Depressurization Procedures"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Divers": [
+            "Diving Master"
+        ]
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "actors": [
+        "Ordinary Customer",
+        "Registered Customer",
+        "Warehouse Administrator",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Manage User Accounts",
+        "View Book Details",
+        "Add Book to Shopping Cart",
+        "Manage Book Information",
+        "Manage Personal Information",
+        "Update Inventory Information",
+        "View Order Status",
+        "Search Books",
+        "View Purchase History",
+        "Search Target Book",
+        "Handle Shipment",
+        "Place Order",
+        "Browse Book Catalog",
+        "Log In",
+        "Add Book To Shopping Cart",
+        "Proceed Purchasing",
+        "Proceed Ordering"
+    ],
+    "association_relationships": {
+        "Ordinary Customer": [
+            "Browse Book Catalog",
+            "Search Target Book",
+            "View Book Details",
+            "Add Book To Shopping Cart",
+            "Proceed Ordering",
+            "Proceed Purchasing",
+            "View Order Status"
+        ],
+        "Registered Customer": [
+            "Log In",
+            "Manage Personal Information",
+            "View Purchase History",
+            "Browse Book Catalog",
+            "Search Books",
+            "View Book Details",
+            "Add Book to Shopping Cart",
+            "Place Order",
+            "View Order Status"
+        ],
+        "Warehouse Administrator": [
+            "Handle Shipment",
+            "Update Inventory Information"
+        ],
+        "System Administrator": [
+            "Manage User Accounts",
+            "Manage Book Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Proceed Ordering": [
+            "View Book Details",
+            "Browse Book Catalog",
+            "Add Book To Shopping Cart",
+            "Proceed Purchasing"
+        ],
+        "Manage Personal Information": [
+            "Log In"
+        ],
+        "View Purchase History": [
+            "Log In"
+        ],
+        "Place Order": [
+            "Search Target Book"
+        ],
+        "Proceed Purchasing": [
+            "Browse Book Catalog",
+            "Add Book To Shopping Cart"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Add Book To Shopping Cart": [
+            "Add Book to Shopping Cart"
+        ]
+    },
+    "generalization_relationships_for_actors": {
+        "Ordinary Customer": [
+            "Registered Customer"
+        ]
+    }
+}

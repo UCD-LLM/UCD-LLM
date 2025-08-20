@@ -1,0 +1,18 @@
+{
+    "actors": [
+        "User",
+        "Robot"
+    ],
+    "usecases": [
+        "Place Dish On Tray",
+        "Place Cup On Tray",
+        "Put Cup On Belt",
+        "Put Dish On Belt",
+        "Pick Up Part"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,21 @@
+{
+    "actors": [
+        "Application",
+        "Client"
+    ],
+    "usecases": [
+        "Cover",
+        "Deposit",
+        "Gain",
+        "Withdraw",
+        "Have",
+        "Include",
+        "Inform",
+        "Review"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

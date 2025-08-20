@@ -1,0 +1,12 @@
+Your task is to extract the generalization relationships between actors from the given natural language requirement text.
+Generalization relationships represent inheritance relationships between actors , where child actors inherit all structures, behaviors, and relationships from their parent actors but exhibit more specific behaviors.
+
+The given natural language requirement text is: 
+{input_text}
+
+Now determine whether there is a generalization relationship between  {actor1} and {actor2}.
+
+If there is a generalization relationship between two actors, output a Python tuple of actors, where the parent actor comes first and the child actor comes second.
+If there is no generalization relationship between the two actors, output single word "False" without any punctuation mark.
+
+In your answer, please strictly only output the actor pair or single word "False" and do not include any explanation or apologies.

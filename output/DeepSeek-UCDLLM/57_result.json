@@ -1,0 +1,49 @@
+{
+    "actors": [
+        "Student",
+        "Teacher"
+    ],
+    "usecases": [
+        "Grade Homework",
+        "Upload Homework File",
+        "Enter Scores",
+        "Provide Feedback",
+        "Fill In Submission Instructions",
+        "Submit Assignments",
+        "Download Homework Files"
+    ],
+    "association_relationships": {
+        "Student": [
+            "Submit Assignments",
+            "Upload Homework File",
+            "Fill In Submission Instructions"
+        ],
+        "Teacher": [
+            "Download Homework Files",
+            "Grade Homework",
+            "Enter Scores",
+            "Provide Feedback"
+        ]
+    },
+    "inclusion_relationships": {
+        "Grade Homework": [
+            "Upload Homework File",
+            "Submit Assignments",
+            "Download Homework Files"
+        ],
+        "Enter Scores": [
+            "Grade Homework"
+        ],
+        "Provide Feedback": [
+            "Grade Homework",
+            "Submit Assignments"
+        ],
+        "Submit Assignments": [
+            "Upload Homework File",
+            "Fill In Submission Instructions"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

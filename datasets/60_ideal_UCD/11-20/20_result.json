@@ -1,0 +1,42 @@
+{
+    "actors": [
+        "User",
+        "Technical Support Personnel"
+    ],
+    "usecases": [
+        "Submit Technical Support Work Order",
+        "Provide Detailed Description Of Problem",
+        "Select The Category Of The Problem",
+        "Provide Effective Contact Information",
+        "Allocate And Process Work Orders",
+        "Assess Severity Of Problem",
+        "Assign Work Order To Engineer"
+    ],
+    "association_relationships": {
+        "User": [
+            "Submit Technical Support Work Order",
+            "Provide Detailed Description Of Problem",
+            "Select The Category Of The Problem",
+            "Provide Effective Contact Information"
+        ],
+        "Technical Support Personnel": [
+            "Allocate And Process Work Orders",
+            "Assess Severity Of Problem",
+            "Assign Work Order To Engineer"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Technical Support Work Order": [
+            "Provide Detailed Description Of Problem",
+            "Select The Category Of The Problem",
+            "Provide Effective Contact Information"
+        ],
+        "Allocate And Process Work Orders": [
+            "Assess Severity Of Problem",
+            "Assign Work Order To Engineer"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

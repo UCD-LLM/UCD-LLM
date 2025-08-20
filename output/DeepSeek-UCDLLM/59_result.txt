@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+actor "Divers"
+actor "Diving Master"
+actor "Surface Support Personnel"
+usecase "Review Diving Plan"
+usecase "Monitor Diver Status"
+usecase "Keep Diving Log"
+usecase "Record Observation Notes"
+usecase "Manage Diving Gas Cylinder Inventory"
+usecase "Mark Potential Risk Events"
+usecase "Coordinate Depressurization Procedures"
+usecase "Mark Key Event Points"
+usecase "Receive Signals"
+usecase "Generate Diving Report Summary"
+usecase "Develop Diving Plan"
+"Divers"--"Keep Diving Log"
+"Divers"--"Mark Key Event Points"
+"Diving Master"--"Review Diving Plan"
+"Diving Master"--"Generate Diving Report Summary"
+"Diving Master"--"Mark Potential Risk Events"
+"Diving Master"--"Receive Signals"
+"Surface Support Personnel"--"Monitor Diver Status"
+"Surface Support Personnel"--"Manage Diving Gas Cylinder Inventory"
+"Surface Support Personnel"--"Coordinate Depressurization Procedures"
+"Develop Diving Plan"<|."Review Diving Plan": <<include>>
+"Record Observation Notes"<|."Keep Diving Log": <<include>>
+"Diving Master"--|>"Diver"
+@enduml

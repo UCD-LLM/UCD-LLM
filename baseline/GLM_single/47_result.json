@@ -1,0 +1,81 @@
+{
+    "actors": [
+        "Visitor",
+        "Student",
+        "Teacher",
+        "TeachingAssistant",
+        "Administrator"
+    ],
+    "usecases": [
+        "BrowseCourseCatalog",
+        "ViewCourseDetails",
+        "RegisterAsUser",
+        "Login",
+        "ChooseCourse",
+        "WatchTeachingVideos",
+        "ParticipateInCourseLearning",
+        "SubmitAssignments",
+        "CompleteLearningTasks",
+        "ParticipateInOnlineQuizzes",
+        "ViewGradeReports",
+        "CreateNewCourses",
+        "DesignCourseStructure",
+        "UploadTeachingMaterials",
+        "PublishHomework",
+        "CorrectHomework",
+        "CreateOnlineQuizzes",
+        "ManageCourseGrades",
+        "AssistInCorrectingHomework",
+        "AnswerCourseForumQuestions",
+        "ManageUserAccounts",
+        "ClassifyAndManageCourses",
+        "ReviewCourseContent"
+    ],
+    "association_relationships": {
+        "Visitor": [
+            "BrowseCourseCatalog",
+            "ViewCourseDetails",
+            "RegisterAsUser"
+        ],
+        "Student": [
+            "Login",
+            "ChooseCourse",
+            "WatchTeachingVideos",
+            "ParticipateInCourseLearning",
+            "SubmitAssignments",
+            "CompleteLearningTasks",
+            "ParticipateInOnlineQuizzes",
+            "ViewGradeReports"
+        ],
+        "Teacher": [
+            "Login",
+            "CreateNewCourses",
+            "DesignCourseStructure",
+            "UploadTeachingMaterials",
+            "PublishHomework",
+            "CorrectHomework",
+            "CreateOnlineQuizzes",
+            "ManageCourseGrades"
+        ],
+        "TeachingAssistant": [
+            "Login",
+            "AssistInCorrectingHomework",
+            "AnswerCourseForumQuestions"
+        ],
+        "Administrator": [
+            "ManageUserAccounts",
+            "ClassifyAndManageCourses",
+            "ReviewCourseContent"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "RegisteredUser": [
+            "Student",
+            "Teacher",
+            "TeachingAssistant"
+        ]
+    }
+}

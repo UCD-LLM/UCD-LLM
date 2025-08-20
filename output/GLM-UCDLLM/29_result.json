@@ -1,0 +1,57 @@
+{
+    "actors": [
+        "Advertisers",
+        "Operators"
+    ],
+    "usecases": [
+        "Review Advertising Content",
+        "Access Reporting Functions",
+        "Log In",
+        "Upload Advertising Materials",
+        "Access Data Analysis",
+        "Manage Advertiser Accounts",
+        "Manage Advertising Account",
+        "Register",
+        "Monitor System Operation Status",
+        "Set Advertising Parameters",
+        "Adjust Advertising Strategy",
+        "Create Advertising Account",
+        "Process Ad Comments",
+        "Monitor Ad Effectiveness"
+    ],
+    "association_relationships": {
+        "Advertisers": [
+            "Register",
+            "Log In",
+            "Create Advertising Account",
+            "Manage Advertising Account",
+            "Upload Advertising Materials",
+            "Set Advertising Parameters",
+            "Monitor Ad Effectiveness",
+            "Adjust Advertising Strategy",
+            "Review Advertising Content",
+            "Access Data Analysis",
+            "Access Reporting Functions"
+        ],
+        "Operators": [
+            "Manage Advertiser Accounts",
+            "Process Ad Comments",
+            "Monitor System Operation Status"
+        ]
+    },
+    "inclusion_relationships": {
+        "Access Reporting Functions": [
+            "Log In"
+        ],
+        "Manage Advertising Account": [
+            "Log In",
+            "Register"
+        ],
+        "Create Advertising Account": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

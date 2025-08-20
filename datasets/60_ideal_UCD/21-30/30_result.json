@@ -1,0 +1,59 @@
+{
+    "actors": [
+        "Doctor",
+        "Administrator"
+    ],
+    "usecases": [
+        "Access System Via Internet",
+        "Log In Using Personal Account",
+        "Upload Medical Imaging Data",
+        "Store Medical Imaging Data",
+        "View Medical Imaging Data",
+        "Manage Medical Imaging Data",
+        "Annotate Images",
+        "Measure Images",
+        "Search Imaging Data By Patient Name",
+        "Search Imaging Data By Medical Record",
+        "Search Imaging Data By Keyword",
+        "Generate Diagnostic Report",
+        "Send Diagnostic Report To Patient",
+        "Send Diagnostic Report To Medical Institution",
+        "Manage User Permissions",
+        "Add User Account",
+        "Modify User Account",
+        "Delete User Account"
+    ],
+    "association_relationships": {
+        "Doctor": [
+            "Access System Via Internet",
+            "Log In Using Personal Account",
+            "Upload Medical Imaging Data",
+            "Store Medical Imaging Data",
+            "View Medical Imaging Data",
+            "Manage Medical Imaging Data",
+            "Annotate Images",
+            "Measure Images",
+            "Search Imaging Data By Patient Name",
+            "Search Imaging Data By Medical Record",
+            "Search Imaging Data By Keyword",
+            "Generate Diagnostic Report",
+            "Send Diagnostic Report To Patient",
+            "Send Diagnostic Report To Medical Institution"
+        ],
+        "Administrator": [
+            "Manage User Permissions",
+            "Add User Account",
+            "Modify User Account",
+            "Delete User Account"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {
+        "Generate Diagnostic Report": [
+            "Send Diagnostic Report To Patient",
+            "Send Diagnostic Report To Medical Institution"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

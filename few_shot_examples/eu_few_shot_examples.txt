@@ -1,0 +1,23 @@
+Example 1:
+Text: 
+A library member logs into the system to browse the digital book collection, search by title or author, and borrow an e-book for a limited period. An automated sorting system is used to manage the physical return process of books from the drop-off box.
+Actor:
+Library Member
+Use Cases: 
+['Log In', 'Browse Book Collection', 'Search Books By Title', 'Search Books By Author', 'Borrow E-book']
+
+Example 2:
+Text:
+Patients schedule appointments via the telehealth portal, upload medical records, and have virtual consultations with doctors. Prescriptions are electronically sent to partnered pharmacies.
+Actor: 
+Patient
+Use Cases: 
+['Schedule Appointment', 'Upload Medical Records', 'Have Virtual Consultation']
+
+Example 3:
+Text:
+The IoT sensor monitors temperature fluctuations, detects anomalies exceeding thresholds, and triggers emergency alerts to the facility manager's dashboard. Regular reports are generated weekly.
+Actor: 
+IoT Sensor
+Use Cases: 
+['Monitor Temperature', 'Detect Anomalies', 'Trigger Emergency Alert']

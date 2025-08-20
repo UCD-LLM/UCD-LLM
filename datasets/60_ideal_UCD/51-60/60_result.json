@@ -1,0 +1,69 @@
+{
+    "actors": [
+        "Scientific Expedition Team Member",
+        "Scientific Expedition Team Chief",
+        "Remote Logistics Coordinator",
+        "Meteorological Analyst"
+    ],
+    "usecases": [
+        "Register Materials Consumption",
+        "Submit Material Replenishment Request",
+        "Check Current Inventory Level",
+        "Estimate Future Material Demand",
+        "Approve Material Applications",
+        "Develop Final Supply Order",
+        "Manage Team Members' Task Scheduling",
+        "Release Weekly Reports",
+        "Process Supply Orders",
+        "Track Supply Orders",
+        "Coordinate Transportation Arrangements",
+        "Confirm Materials Stored",
+        "Negotiate With Suppliers",
+        "Provide Meteorological Forecast Data"
+    ],
+    "association_relationships": {
+        "Scientific Expedition Team Member": [
+            "Register Materials Consumption",
+            "Submit Material Replenishment Request",
+            "Check Current Inventory Level",
+            "Estimate Future Material Demand"
+        ],
+        "Scientific Expedition Team Chief": [
+            "Register Materials Consumption",
+            "Submit Material Replenishment Request",
+            "Check Current Inventory Level",
+            "Estimate Future Material Demand",
+            "Approve Material Applications",
+            "Develop Final Supply Order",
+            "Manage Team Members' Task Scheduling",
+            "Release Weekly Reports"
+        ],
+        "Remote Logistics Coordinator": [
+            "Process Supply Orders",
+            "Track Supply Orders",
+            "Coordinate Transportation Arrangements",
+            "Confirm Materials Stored",
+            "Negotiate With Suppliers"
+        ],
+        "Meteorological Analyst": [
+            "Provide Meteorological Forecast Data"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Material Replenishment Request": [
+            "Check Current Inventory Level",
+            "Estimate Future Material Demand"
+        ]
+    },
+    "extension_relationships": {
+        "Process Supply Orders": [
+            "Negotiate With Suppliers"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Scientific Expedition Team Member":[
+            "Scientific Expedition Team Chief"
+        ]
+    }
+}

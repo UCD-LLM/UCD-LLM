@@ -1,0 +1,53 @@
+@startuml
+left to right direction
+actor "Scientific Expedition Team Members"
+actor "Chief of the Scientific Expedition Station"
+actor "Remote Logistics Coordinator"
+actor "Meteorological Analysts"
+actor "Predictive Model"
+usecase "Influence Material Demand Forecast"
+usecase "Approve Material Applications"
+usecase "Provide Meteorological Forecast Data"
+usecase "Process Supply Orders"
+usecase "Check Inventory Level"
+usecase "Coordinate Transportation Arrangements"
+usecase "Analyze Historical Consumption Data"
+usecase "Track Supply Orders"
+usecase "Confirm Material Storage"
+usecase "Submit Material Replenishment Request"
+usecase "Register Material Consumption"
+usecase "Develop Supply Order"
+usecase "Allocate Human Resources"
+usecase "Influence Transportation Arrangements"
+usecase "Release Weekly Reports"
+usecase "Estimate Material Demand"
+usecase "Manage Task Scheduling"
+usecase "Generate Demand Forecasting Reports"
+usecase "Negotiate with Suppliers"
+"Scientific Expedition Team Members"--"Submit Material Replenishment Request"
+"Chief of the Scientific Expedition Station"--"Develop Supply Order"
+"Chief of the Scientific Expedition Station"--"Manage Task Scheduling"
+"Chief of the Scientific Expedition Station"--"Allocate Human Resources"
+"Chief of the Scientific Expedition Station"--"Release Weekly Reports"
+"Remote Logistics Coordinator"--"Process Supply Orders"
+"Remote Logistics Coordinator"--"Track Supply Orders"
+"Remote Logistics Coordinator"--"Confirm Material Storage"
+"Remote Logistics Coordinator"--"Negotiate with Suppliers"
+"Meteorological Analysts"--"Influence Transportation Arrangements"
+"Meteorological Analysts"--"Influence Material Demand Forecast"
+"Provide Meteorological Forecast Data"<|."Influence Material Demand Forecast": <<include>>
+"Approve Material Applications"<|."Develop Supply Order": <<include>>
+"Provide Meteorological Forecast Data"<|."Develop Supply Order": <<include>>
+"Check Inventory Level"<|."Develop Supply Order": <<include>>
+"Analyze Historical Consumption Data"<|."Develop Supply Order": <<include>>
+"Register Material Consumption"<|."Develop Supply Order": <<include>>
+"Generate Demand Forecasting Reports"<|."Develop Supply Order": <<include>>
+"Provide Meteorological Forecast Data"<|."Coordinate Transportation Arrangements": <<include>>
+"Check Inventory Level"<|."Submit Material Replenishment Request": <<include>>
+"Estimate Material Demand"<|."Submit Material Replenishment Request": <<include>>
+"Check Inventory Level"<|."Register Material Consumption": <<include>>
+"Analyze Historical Consumption Data"<|."Estimate Material Demand": <<include>>
+"Analyze Historical Consumption Data"<|."Generate Demand Forecasting Reports": <<include>>
+"Process Supply Orders"<|."Coordinate Transportation Arrangements": <<extend>>
+"Chief of the Scientific Expedition Station"--|>"Scientific Expedition Team Members"
+@enduml

@@ -1,0 +1,36 @@
+{
+    "actors": [
+        "Librarian",
+        "User"
+    ],
+    "usecases": [
+        "Search For Books",
+        "Scan Membership Card",
+        "Scan Book Barcode",
+        "Borrow Books",
+        "Make Book Reservation"
+    ],
+    "association_relationships": {
+        "Librarian": [
+            "Borrow Books",
+            "Scan Membership Card",
+            "Scan Book Barcode"
+        ],
+        "User": [
+            "Search For Books",
+            "Make Book Reservation"
+        ]
+    },
+    "inclusion_relationships": {
+        "Scan Book Barcode": [
+            "Scan Membership Card"
+        ],
+        "Borrow Books": [
+            "Scan Membership Card",
+            "Scan Book Barcode"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

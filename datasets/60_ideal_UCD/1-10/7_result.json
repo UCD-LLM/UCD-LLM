@@ -1,0 +1,35 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Log In",
+        "Select Channel",
+        "Watch Live Stream",
+        "Review Program Content",
+        "Send Barrage Message",
+        "Subscribe to Channel or Program",
+        "Interact with Other Viewers",
+        "Register Account",
+        "Modify Password",
+        "Log Out"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Select Channel",
+            "Watch Live Stream",
+            "Review Program Content",
+            "Send Barrage Message",
+            "Subscribe to Channel or Program",
+            "Interact with Other Viewers",
+            "Register Account",
+            "Modify Password",
+            "Log Out"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

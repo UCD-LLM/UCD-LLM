@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+actor "Buyers"
+actor "Sellers"
+actor "Administrators"
+actor "Multiple Gateways"
+usecase "Manage User Permissions"
+usecase "Apply Filters"
+usecase "Resolve Disputes"
+usecase "Support Multiple Payment Gateways"
+usecase "Place Orders"
+usecase "Monitor Transactions"
+usecase "Manage Inventory"
+usecase "Browse Products"
+usecase "Track Sales"
+usecase "Update Product Details"
+"Buyers"--"Browse Products"
+"Buyers"--"Place Orders"
+"Sellers"--"Manage Inventory"
+"Sellers"--"Update Product Details"
+"Sellers"--"Track Sales"
+"Administrators"--"Resolve Disputes"
+"Administrators"--"Monitor Transactions"
+"Administrators"--"Manage User Permissions"
+"Multiple Gateways"--"Support Multiple Payment Gateways"
+"Browse Products"<|."Apply Filters": <<extend>>
+@enduml

@@ -1,0 +1,63 @@
+{
+    "actors": [
+        "Content Editor",
+        "Content Reviewer",
+        "Advanced Editor",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Manage Content Classification",
+        "Modify Existing Articles",
+        "Conduct System Backups",
+        "Directly Publish Articles",
+        "Approve Article Publication",
+        "Manage User Roles",
+        "Write New Articles",
+        "Submit Articles For Review",
+        "Conduct Article Review",
+        "Check Article Status"
+    ],
+    "association_relationships": {
+        "Content Editor": [
+            "Write New Articles",
+            "Modify Existing Articles",
+            "Submit Articles For Review",
+            "Check Article Status"
+        ],
+        "Content Reviewer": [
+            "Conduct Article Review",
+            "Approve Article Publication"
+        ],
+        "Advanced Editor": [
+            "Directly Publish Articles",
+            "Manage Content Classification"
+        ],
+        "System Administrator": [
+            "Manage User Roles",
+            "Conduct System Backups"
+        ]
+    },
+    "inclusion_relationships": {
+        "Modify Existing Articles": [
+            "Conduct Article Review"
+        ],
+        "Approve Article Publication": [
+            "Submit Articles For Review",
+            "Conduct Article Review"
+        ],
+        "Submit Articles For Review": [
+            "Write New Articles",
+            "Conduct Article Review"
+        ],
+        "Write New Articles": [
+            "Conduct Article Review"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Content Editor": [
+            "Advanced Editor"
+        ]
+    }
+}

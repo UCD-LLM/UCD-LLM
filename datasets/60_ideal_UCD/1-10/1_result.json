@@ -1,0 +1,55 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Open PDF File",
+        "Browse PDF File",
+        "Read PDF File",
+        "Zoom in Reading Interface",
+        "Zoom out Reading Interface",
+        "Navigate Pages",
+        "Search Content in PDF",
+        "Add Text Annotation",
+        "Add Line Annotation",
+        "Add Arrow Annotation",
+        "Add Comment",
+        "Modify Annotation",
+        "Highlight Text",
+        "Underline Text",
+        "Add Bookmark",
+        "Navigate via Table of Contents",
+        "Perform Full-Text Search",
+        "Export PDF to Word",
+        "Export PDF to Image",
+        "Print PDF File"
+    ],
+    "association_relationships": {
+        "User": [
+            "Open PDF File",
+            "Browse PDF File",
+            "Read PDF File",
+            "Zoom in Reading Interface",
+            "Zoom out Reading Interface",
+            "Navigate Pages",
+            "Search Content in PDF",
+            "Add Text Annotation",
+            "Add Line Annotation",
+            "Add Arrow Annotation",
+            "Add Comment",
+            "Modify Annotation",
+            "Highlight Text",
+            "Underline Text",
+            "Add Bookmark",
+            "Navigate via Table of Contents",
+            "Perform Full-Text Search",
+            "Export PDF to Word",
+            "Export PDF to Image",
+            "Print PDF File"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

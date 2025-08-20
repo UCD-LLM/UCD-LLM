@@ -1,0 +1,9 @@
+The City Library System serves various types of members. 
+All library members can search the catalog and borrow books.
+Student members, a specialized category of library members, have additional privileges: 
+they can borrow reference textbooks and access online journals. 
+When borrowing any material, members must first check availability. 
+If an item is unavailable, they may place a hold request. 
+For popular titles, members can also request expedited processing by paying a small fee. 
+Librarians manage all borrowing operations, including processing borrows, processing returns and handling special requests. 
+Senior librarians additionally generate monthly acquisition reports and oversee inter-library loans.

@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Search Memos"
+usecase "Edit Memo"
+usecase "Synchronize Data"
+usecase "Delete Memo"
+usecase "Add Memo"
+usecase "Classify Memos"
+usecase "Log In"
+"User"--"Log In"
+"User"--"Add Memo"
+"User"--"Edit Memo"
+"User"--"Delete Memo"
+"User"--"Classify Memos"
+"User"--"Search Memos"
+"User"--"Synchronize Data"
+@enduml

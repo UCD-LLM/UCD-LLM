@@ -1,0 +1,42 @@
+{
+    "actors": [
+        "User"
+    ],
+    "usecases": [
+        "Create Contract",
+        "Select Template",
+        "Custom Edit",
+        "Sign Contract",
+        "Handwritten Signature",
+        "Scan Code Signature",
+        "Store Contract",
+        "Retrieve Contract",
+        "Download Contract",
+        "Modify Signed Contract",
+        "Contract Expiration Reminder"
+    ],
+    "association_relationships": {
+        "User": [
+            "Create Contract",
+            "Sign Contract",
+            "Store Contract",
+            "Retrieve Contract",
+            "Download Contract",
+            "Modify Signed Contract",
+            "Contract Expiration Reminder"
+        ]
+    },
+    "inclusion_relationships": {
+        "Create Contract": [
+            "Select Template",
+            "Custom Edit"
+        ],
+        "Sign Contract": [
+            "Handwritten Signature",
+            "Scan Code Signature"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

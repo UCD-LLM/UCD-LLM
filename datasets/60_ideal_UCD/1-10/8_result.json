@@ -1,0 +1,42 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Log In",
+        "Record Insurance Information",
+        "Check Policy Information",
+        "Submit Claims Application",
+        "View Claim Progress",
+        "Browse Insurance Products",
+        "Select Insurance Product",
+        "Make Online Payment",
+        "Use Insurance Calculator",
+        "Access Online Consultation",
+        "Submit Complaint Suggestions",
+        "Manage Insurance Products"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Record Insurance Information",
+            "Check Policy Information",
+            "Submit Claims Application",
+            "View Claim Progress",
+            "Browse Insurance Products",
+            "Select Insurance Product",
+            "Make Online Payment",
+            "Use Insurance Calculator",
+            "Access Online Consultation",
+            "Submit Complaint Suggestions"
+        ],
+        "Administrator": [
+            "Manage Insurance Products"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

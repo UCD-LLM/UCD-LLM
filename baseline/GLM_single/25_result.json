@@ -1,0 +1,58 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "User Registration",
+        "User Login",
+        "Product Display",
+        "Product Search",
+        "View Product Details",
+        "View Product Reviews",
+        "Add to Shopping Cart",
+        "Checkout",
+        "Complete Order Payment",
+        "View Order Status",
+        "View Logistics Information",
+        "Make Payment",
+        "Request Refund",
+        "Evaluate Product",
+        "Receive Product Recommendations",
+        "Use Coupons",
+        "Use Promotions",
+        "Manage Product Information",
+        "Manage Orders",
+        "Manage User Information"
+    ],
+    "association_relationships": {
+        "User": [
+            "User Registration",
+            "User Login",
+            "Product Display",
+            "Product Search",
+            "View Product Details",
+            "View Product Reviews",
+            "Add to Shopping Cart",
+            "Checkout",
+            "Complete Order Payment",
+            "View Order Status",
+            "View Logistics Information",
+            "Make Payment",
+            "Request Refund",
+            "Evaluate Product",
+            "Receive Product Recommendations",
+            "Use Coupons",
+            "Use Promotions"
+        ],
+        "Administrator": [
+            "Manage Product Information",
+            "Manage Orders",
+            "Manage User Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

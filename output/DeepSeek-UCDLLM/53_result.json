@@ -1,0 +1,60 @@
+{
+    "actors": [
+        "Hospital Patients",
+        "Triage Nurse",
+        "Oncologists",
+        "Doctors",
+        "Senior Doctors"
+    ],
+    "usecases": [
+        "Schedule Standard Checkup",
+        "Review Chemotherapy Plans",
+        "Schedule Specialized Treatment",
+        "Access Patient Histories",
+        "Request Priority Scheduling",
+        "Receive Alert",
+        "Approve Experimental Treatments",
+        "Order Genomic Testing"
+    ],
+    "association_relationships": {
+        "Hospital Patients": [
+            "Schedule Standard Checkup",
+            "Schedule Specialized Treatment",
+            "Request Priority Scheduling"
+        ],
+        "Triage Nurse": [
+            "Receive Alert"
+        ],
+        "Oncologists": [
+            "Review Chemotherapy Plans",
+            "Order Genomic Testing",
+            "Access Patient Histories"
+        ],
+        "Doctors": [
+            "Access Patient Histories"
+        ],
+        "Senior Doctors": [
+            "Approve Experimental Treatments"
+        ]
+    },
+    "inclusion_relationships": {
+        "Review Chemotherapy Plans": [
+            "Access Patient Histories"
+        ]
+    },
+    "extension_relationships": {
+        "Schedule Specialized Treatment": [
+            "Receive Alert"
+        ],
+        "Request Priority Scheduling": [
+            "Receive Alert"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctors": [
+            "Oncologists",
+            "Senior Doctors"
+        ]
+    }
+}

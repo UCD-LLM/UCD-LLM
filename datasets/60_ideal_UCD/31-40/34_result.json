@@ -1,0 +1,66 @@
+{
+    "actors": [
+        "Resident",
+        "Voice Assistant"
+    ],
+    "usecases": [
+        "Use Control Panel To Control Home Devices",
+        "View Status Of Home Devices",
+        "View indoor Temperature",
+        "View Lighting Status",
+        "View Security System Operation Status",
+        "Adjust Indoor Temperature",
+        "Control Lighting",
+        "Turn On All Lights",
+        "Turn Off All Lights",
+        "Control The Lighting Switch Of Certain Room",
+        "Set Security Mode",
+        "Set Away Mode",
+        "Set Home Mode",
+        "Set Sleep Mode",
+        "Receive Voice Command",
+        "Perform Device Control Operations"
+    ],
+    "association_relationships": {
+        "Resident": [
+            "Use Control Panel To Control Home Devices",
+            "View Status Of Home Devices",
+            "View indoor Temperature",
+            "View Lighting Status",
+            "View Security System Operation Status",
+            "Adjust Indoor Temperature",
+            "Control Lighting",
+            "Turn On All Lights",
+            "Turn Off All Lights",
+            "Control The Lighting Switch Of Certain Room",
+            "Set Security Mode",
+            "Set Away Mode",
+            "Set Home Mode",
+            "Set Sleep Mode"
+        ],
+        "Voice Assistant": [
+            "Receive Voice Command",
+            "Perform Device Control Operations"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "View Status Of Home Devices": [
+            "View indoor Temperature",
+            "View Lighting Status",
+            "View Security System Operation Status"
+        ],
+        "Control Lighting": [
+            "Turn On All Lights",
+            "Turn Off All Lights",
+            "Control The Lighting Switch Of Certain Room"
+        ],
+        "Set Security Mode": [
+            "Set Away Mode",
+            "Set Home Mode",
+            "Set Sleep Mode"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,87 @@
+{
+    "actors": [
+        "Customer",
+        "Server",
+        "Tablet Device"
+    ],
+    "usecases": [
+        "Confirm Orders",
+        "Add Dishes To Shopping Cart",
+        "View Total Price",
+        "Add Dishes During Dining",
+        "View Selected Dishes",
+        "Submit Order Request",
+        "Choose Serve Immediately",
+        "Choose Serve All Together",
+        "Initiate Checkout Request",
+        "Handle Customer Requests",
+        "Receive Real-time Orders",
+        "Browse Electronic Menu",
+        "Select Dishes",
+        "Call Waiter For Assistance",
+        "Verify Dish Information",
+        "Make QR Code Payment",
+        "Make Cash Payment",
+        "Deliver Dishes"
+    ],
+    "association_relationships": {
+        "Customer": [
+            "Browse Electronic Menu",
+            "Select Dishes",
+            "Add Dishes To Shopping Cart",
+            "View Selected Dishes",
+            "View Total Price",
+            "Submit Order Request",
+            "Choose Serve Immediately",
+            "Choose Serve All Together",
+            "Add Dishes During Dining",
+            "Initiate Checkout Request",
+            "Make Cash Payment",
+            "Make QR Code Payment",
+            "Call Waiter For Assistance"
+        ],
+        "Server": [
+            "Receive Real-time Orders",
+            "Verify Dish Information",
+            "Confirm Orders",
+            "Deliver Dishes",
+            "Handle Customer Requests"
+        ],
+        "Tablet Device": [
+            "Browse Electronic Menu",
+            "Select Dishes",
+            "Add Dishes To Shopping Cart",
+            "Submit Order Request",
+            "Add Dishes During Dining",
+            "Initiate Checkout Request",
+            "Make Cash Payment",
+            "Make QR Code Payment",
+            "Call Waiter For Assistance"
+        ]
+    },
+    "inclusion_relationships": {
+        "Confirm Orders": [
+            "Receive Real-time Orders"
+        ],
+        "View Total Price": [
+            "View Selected Dishes"
+        ],
+        "Select Dishes": [
+            "Browse Electronic Menu"
+        ],
+        "Deliver Dishes": [
+            "Verify Dish Information"
+        ]
+    },
+    "extension_relationships": {
+        "Submit Order Request": [
+            "Choose Serve All Together",
+            "Make QR Code Payment"
+        ],
+        "Initiate Checkout Request": [
+            "Make Cash Payment"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

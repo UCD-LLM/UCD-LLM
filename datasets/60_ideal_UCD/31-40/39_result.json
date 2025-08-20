@@ -1,0 +1,53 @@
+{
+    "actors": [
+        "Doctor",
+        "System Administrator"
+    ],
+    "usecases": [
+        "Record Patient Complaints",
+        "Access Historical Medical Records",
+        "Record Physical Examination Results",
+        "Issue Examination And Testing Forms",
+        "Issue Blood Examination Forms",
+        "Issue Imaging Examination Forms",
+        "Issue Microbial Examination Forms",
+        "Review Examination Results",
+        "Review Blood Examination Results",
+        "Review Imaging Examination Results",
+        "Review Microbial Examination Results",
+        "Develop Treatment Plans",
+        "Manage Doctor Accounts",
+        "Maintain Diagnostic Knowledge Base",
+        "Back Up System Data"
+    ],
+    "association_relationships": {
+        "Doctor": [
+            "Record Patient Complaints",
+            "Access Historical Medical Records",
+            "Record Physical Examination Results",
+            "Issue Examination And Testing Forms",
+            "Review Examination Results",
+            "Develop Treatment Plans"
+        ],
+        "System Administrator": [
+            "Manage Doctor Accounts",
+            "Maintain Diagnostic Knowledge Base",
+            "Back Up System Data"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {
+        "Issue Examination And Testing Forms": [
+            "Issue Blood Examination Forms",
+            "Issue Imaging Examination Forms",
+            "Issue Microbial Examination Forms"
+        ],
+        "Review Examination Results": [
+            "Review Blood Examination Results",
+            "Review Imaging Examination Results",
+            "Review Microbial Examination Results"
+        ]
+    },
+    "generalization_relationships_for_actors": {}
+}

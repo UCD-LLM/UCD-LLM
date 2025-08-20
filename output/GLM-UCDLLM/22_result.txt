@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor "Applicants"
+actor "Administrators"
+usecase "Log In"
+usecase "View Applicant Registration Records"
+usecase "Manage Applicant Accounts"
+usecase "Generate Registration Reports"
+usecase "Handle Abnormal Registration Situations"
+"Applicants"--"Log In"
+"Administrators"--"View Applicant Registration Records"
+"Administrators"--"Generate Registration Reports"
+"Administrators"--"Handle Abnormal Registration Situations"
+"Administrators"--"Manage Applicant Accounts"
+@enduml

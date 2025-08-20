@@ -1,0 +1,46 @@
+@startuml
+left to right direction
+actor "Users"
+actor "Administrator"
+usecase "Switch Between Vehicles"
+usecase "Query Stopping Points"
+usecase "Log In"
+usecase "Delete Vehicle Information"
+usecase "View Speed"
+usecase "View Vehicle Location Information"
+usecase "View Energy Consumption Analysis"
+usecase "View Other Data"
+usecase "Receive Real-time Alarms"
+usecase "Edit Vehicle Information"
+usecase "Manage Multiple Vehicles"
+usecase "Add Vehicle Information"
+usecase "Receive Notifications"
+usecase "Query Travel Route"
+usecase "View Driving Trajectory"
+usecase "Monitor Vehicle Status"
+usecase "Download Application"
+usecase "Set Up Geofencing"
+"Users"--"Download Application"
+"Users"--"View Vehicle Location Information"
+"Users"--"View Driving Trajectory"
+"Users"--"View Speed"
+"Users"--"View Other Data"
+"Users"--"Manage Multiple Vehicles"
+"Users"--"Switch Between Vehicles"
+"Users"--"Set Up Geofencing"
+"Users"--"Receive Notifications"
+"Users"--"Receive Real-time Alarms"
+"Users"--"Query Travel Route"
+"Users"--"Query Stopping Points"
+"Users"--"View Energy Consumption Analysis"
+"Administrator"--"Add Vehicle Information"
+"Administrator"--"Delete Vehicle Information"
+"Administrator"--"Edit Vehicle Information"
+"Administrator"--"Monitor Vehicle Status"
+"Log In"<|."Query Stopping Points": <<include>>
+"Log In"<|."View Vehicle Location Information": <<include>>
+"Log In"<|."View Other Data": <<include>>
+"Log In"<|."Query Travel Route": <<include>>
+"Log In"<|."View Driving Trajectory": <<include>>
+"Administrator"--|>"Users"
+@enduml

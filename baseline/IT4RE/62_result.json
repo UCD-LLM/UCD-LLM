@@ -1,0 +1,19 @@
+{
+    "actors": [
+        "Patron",
+        "System"
+    ],
+    "usecases": [
+        "Cancel",
+        "Change",
+        "Inform",
+        "Let",
+        "Place",
+        "Provide"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

@@ -1,0 +1,75 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Register",
+        "Receive Product Recommendations",
+        "Use Promotion",
+        "View Product Classification",
+        "View Logistics Information",
+        "Add To Shopping Cart",
+        "Return Product",
+        "Search Products",
+        "Manage Product Information",
+        "Checkout",
+        "Manage Orders",
+        "View Product Reviews",
+        "Manage User Information",
+        "Make Payment",
+        "View Order Status",
+        "Track Delivery",
+        "Evaluate Product",
+        "View Product Details",
+        "Log In",
+        "Complete Order Payment",
+        "Use Coupon",
+        "Request Refund"
+    ],
+    "association_relationships": {
+        "User": [
+            "Register",
+            "Log In",
+            "View Product Classification",
+            "Search Products",
+            "View Product Details",
+            "View Product Reviews",
+            "Add To Shopping Cart",
+            "Checkout",
+            "Complete Order Payment",
+            "View Order Status",
+            "View Logistics Information",
+            "Track Delivery",
+            "Make Payment",
+            "Request Refund",
+            "Return Product",
+            "Evaluate Product",
+            "Receive Product Recommendations",
+            "Use Coupon",
+            "Use Promotion"
+        ],
+        "Administrator": [
+            "Manage Product Information",
+            "Manage Orders",
+            "Manage User Information"
+        ]
+    },
+    "inclusion_relationships": {
+        "Return Product": [
+            "Log In"
+        ],
+        "Checkout": [
+            "Make Payment"
+        ],
+        "Make Payment": [
+            "Log In"
+        ],
+        "View Order Status": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

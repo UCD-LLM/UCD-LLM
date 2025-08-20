@@ -1,0 +1,46 @@
+@startuml
+left to right direction
+actor "Scientific Expedition Team Members"
+actor "Chief of the Scientific Expedition Station"
+actor "Remote Logistics Coordinator"
+actor "Meteorological Analysts"
+usecase "Register Material Consumption"
+usecase "Develop Supply Order"
+usecase "Provide Meteorological Forecast Data"
+usecase "Process Supply Orders"
+usecase "Coordinate Transportation Arrangements"
+usecase "Track Order Progress"
+usecase "Approve Material Applications"
+usecase "Check Inventory Level"
+usecase "Manage Task Scheduling"
+usecase "Estimate Future Material Demand"
+usecase "Confirm Warehouse Storage"
+usecase "Allocate Human Resources"
+usecase "Submit Material Replenishment Request"
+usecase "Release Weekly Reports"
+usecase "Negotiate With Suppliers"
+"Chief of the Scientific Expedition Station"--"Manage Task Scheduling"
+"Chief of the Scientific Expedition Station"--"Allocate Human Resources"
+"Chief of the Scientific Expedition Station"--"Release Weekly Reports"
+"Remote Logistics Coordinator"--"Track Order Progress"
+"Remote Logistics Coordinator"--"Confirm Warehouse Storage"
+"Register Material Consumption"<|."Develop Supply Order": <<include>>
+"Approve Material Applications"<|."Develop Supply Order": <<include>>
+"Submit Material Replenishment Request"<|."Develop Supply Order": <<include>>
+"Register Material Consumption"<|."Approve Material Applications": <<include>>
+"Submit Material Replenishment Request"<|."Approve Material Applications": <<include>>
+"Check Inventory Level"<|."Register Material Consumption": <<include>>
+"Register Material Consumption"<|."Estimate Future Material Demand": <<include>>
+"Provide Meteorological Forecast Data"<|."Estimate Future Material Demand": <<include>>
+"Check Inventory Level"<|."Estimate Future Material Demand": <<include>>
+"Develop Supply Order"<|."Process Supply Orders": <<include>>
+"Approve Material Applications"<|."Process Supply Orders": <<include>>
+"Develop Supply Order"<|."Coordinate Transportation Arrangements": <<include>>
+"Provide Meteorological Forecast Data"<|."Coordinate Transportation Arrangements": <<include>>
+"Process Supply Orders"<|."Coordinate Transportation Arrangements": <<include>>
+"Coordinate Transportation Arrangements"<|."Confirm Warehouse Storage": <<include>>
+"Check Inventory Level"<|."Submit Material Replenishment Request": <<include>>
+"Estimate Future Material Demand"<|."Submit Material Replenishment Request": <<include>>
+"Coordinate Transportation Arrangements"<|."Negotiate With Suppliers": <<extend>>
+"Chief of the Scientific Expedition Station"--|>"Scientific Expedition Team Members"
+@enduml

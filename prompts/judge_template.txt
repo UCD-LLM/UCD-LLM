@@ -1,0 +1,23 @@
+Two students are discussing extracting the relationships between use cases from a given natural language requirement text for building use case diagrams, and you will be the final decision maker.
+
+Please make a fair and professional judgment based on the following rules:
+(1) Evidence Relevance: Whether the speech cites direct evidence from the text (such as voting against it if not cited). 
+(2) Logical Rigor: Whether the argument conforms to the UML use case relationship definition:
+- The inclusion relationship is defined as the behavior of one use case forcing the inclusion of another use case (the execution of the base use case must depend on the included use case), for example, the "user login" use case must include the "authentication" use case to complete the login process.
+  Critical: Note that the included use case is usually a sub step of the base use case and is not directly triggered. Please distinguish between the preconditions and the included use case. For example, The use case 'User login' itself is an independent goal of the user and is generally not treated as included use case.
+- The extension relationship is defined as adding optional behaviors to a base case under specific conditions (the extension case can choose whether to trigger the extension when the base case is executed), for example, the "normal payment" case can be extended to the "manual review" case when the "order amount exceeds the limit".
+- The generalization relationship is defined as a child use case inheriting the behavior of the parent use case and possibly adding or overriding it (the child use case is a specialization of the parent use case), for example, "student course selection" and "teacher course selection" both generalize from the "user course selection" use case, but each has specific operations.
+- The independent relationship is defined as two use cases having no behavioral dependency or interaction (neither use case requires, triggers, or modifies the execution flow of the other), for example, the "browse product catalog" use case and the "update user profile" use case are mutually independent because they represent distinct user goals with no shared steps, conditions, or data dependencies.
+  Critical: No default relationships: Absence of explicit evidence ⇒ Independence.
+(3) Validity of rebuttal: Whether it successfully weakens the opponent's evidence (such as proving that the opponent took it out of context).
+
+The given natural language requirement text is: 
+{input_text}
+
+Debater 1's speech is as follows: {debater1_statement}
+
+Debater 2's speech is as follows: {debater2_statement}
+
+Please choose the correct viewpoint based on the speeches of both parties in this round, and only output the number 1 or 2.
+If both viewpoints are invalid, output number 0.
+In your answer, please strictly only include the chosen number and do not include any explanation or apologies.

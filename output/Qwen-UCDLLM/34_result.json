@@ -1,0 +1,34 @@
+{
+    "actors": [
+        "Residents",
+        "Voice Assistants"
+    ],
+    "usecases": [
+        "Control Devices Locally",
+        "Use Mobile App",
+        "View Device Status",
+        "Perform Device Control Operations",
+        "Control Lighting",
+        "Adjust Temperature",
+        "Receive Voice Commands",
+        "Set Security Modes"
+    ],
+    "association_relationships": {
+        "Residents": [
+            "Use Mobile App",
+            "Control Devices Locally",
+            "View Device Status",
+            "Adjust Temperature",
+            "Control Lighting",
+            "Set Security Modes"
+        ],
+        "Voice Assistants": [
+            "Receive Voice Commands",
+            "Perform Device Control Operations"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

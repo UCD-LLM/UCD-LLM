@@ -1,0 +1,67 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "Specialist Doctor",
+        "Head Nurse"
+    ],
+    "usecases": [
+        "Make Appointment",
+        "View Doctor's Schedule",
+        "Select Treatment Time Slot",
+        "Pay Consultation Fee",
+        "View Electronic Medical Record Summary",
+        "Input Diagnostic Information",
+        "Issue Prescriptions",
+        "Arrange Examination",
+        "Triage Patients",
+        "Record Vital Signs",
+        "Schedule Special Examinations",
+        "Initiate Multidisciplinary Consultations",
+        "Arrange Nurse Shifts",
+        "Manage Medical Consumables"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Make Appointment",
+            "View Doctor's Schedule",
+            "Select Treatment Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record Summary"
+        ],
+       "Doctor": [
+           "Input Diagnostic Information",
+           "Issue Prescriptions",
+           "Arrange Examination"
+       ],
+       "Nurse": [
+           "Triage Patients",
+           "Record Vital Signs"
+       ],
+       "Specialist Doctor": [
+           "Input Diagnostic Information",
+           "Issue Prescriptions",
+           "Arrange Examination",
+           "Schedule Special Examinations",
+           "Initiate Multidisciplinary Consultations"
+       ],
+       "Head Nurse": [
+           "Triage Patients",
+           "Record Vital Signs",
+           "Arrange Nurse Shifts",
+           "Manage Medical Consumables"
+       ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctor": [
+            "Specialist Doctor"
+        ],
+        "Nurse": [
+            "Head Nurse"
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+@startuml
+left to right direction
+actor "Buyer"
+actor "Seller"
+actor "Gold Medal Seller"
+actor "International Seller"
+actor "Logistics Service Provider"
+usecase "Search Products"
+usecase "Publish Product Information"
+usecase "Evaluate Products"
+usecase "Process Orders"
+usecase "Use Advanced Data Analysis Tools"
+usecase "Arrange Shipments"
+usecase "Manage Product Inventory"
+usecase "Provide Logistics Tracking Information"
+usecase "Add Products To Shopping Cart"
+usecase "Browse Products"
+usecase "Submit Order"
+usecase "Complete Payment"
+usecase "View Sales Data"
+usecase "Log In"
+usecase "Manage Multi-currency Settlements"
+usecase "Handle Cross-border Logistics"
+usecase "Manage Shopping Cart"
+usecase "Participate In Promotional Activities"
+usecase "View Product Information"
+"Buyer"--"Browse Products"
+"Buyer"--"Search Products"
+"Buyer"--"Submit Order"
+"Buyer"--"Complete Payment"
+"Buyer"--"Evaluate Products"
+"Seller"--"Process Orders"
+"Seller"--"View Sales Data"
+"Gold Medal Seller"--"Participate In Promotional Activities"
+"Gold Medal Seller"--"Use Advanced Data Analysis Tools"
+"International Seller"--"Manage Multi-currency Settlements"
+"Logistics Service Provider"--"Provide Logistics Tracking Information"
+"Log In"<|."Publish Product Information": <<include>>
+"Publish Product Information"<|."View Product Information": <<include>>
+"Arrange Shipments"<|."Process Orders": <<include>>
+"Log In"<|."Process Orders": <<include>>
+"Handle Cross-border Logistics"<|."Process Orders": <<include>>
+"Log In"<|."Use Advanced Data Analysis Tools": <<include>>
+"Log In"<|."Arrange Shipments": <<include>>
+"Handle Cross-border Logistics"<|."Arrange Shipments": <<include>>
+"Manage Product Inventory"<|."Submit Order": <<include>>
+"Add Products To Shopping Cart"<|."Submit Order": <<include>>
+"Manage Shopping Cart"<|."Submit Order": <<include>>
+"Log In"<|."Manage Product Inventory": <<include>>
+"Add Products To Shopping Cart"<|."Complete Payment": <<include>>
+"Manage Shopping Cart"<|."Complete Payment": <<include>>
+"View Product Information"<|."Browse Products": <<include>>
+"Log In"<|."View Sales Data": <<include>>
+"Log In"<|."Participate In Promotional Activities": <<include>>
+"Gold Medal Seller"--|>"Seller"
+"International Seller"--|>"Seller"
+@enduml

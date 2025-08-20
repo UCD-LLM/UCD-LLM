@@ -1,0 +1,87 @@
+{
+    "actors": [
+        "Patient",
+        "Doctor",
+        "Nurse",
+        "Specialist Doctor",
+        "Head Nurse",
+        "Toll Collector"
+    ],
+    "usecases": [
+        "Print Payment Vouchers",
+        "Input Diagnostic Information",
+        "Initiate Multidisciplinary Consultations",
+        "View Electronic Medical Record",
+        "Pay Consultation Fee",
+        "Triage Patients",
+        "Handle Payment Matters",
+        "Select Time Slot",
+        "View Doctor Schedule",
+        "Record Vital Signs",
+        "Issue Prescriptions",
+        "Guide Patients",
+        "Make Appointments",
+        "Arrange Examinations",
+        "Arrange Nurse Shifts",
+        "Manage Medical Consumables",
+        "Schedule Special Examinations"
+    ],
+    "association_relationships": {
+        "Patient": [
+            "Make Appointments",
+            "View Doctor Schedule",
+            "Select Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record"
+        ],
+        "Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Nurse": [
+            "Triage Patients",
+            "Guide Patients",
+            "Record Vital Signs"
+        ],
+        "Specialist Doctor": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Head Nurse": [
+            "Triage Patients",
+            "Guide Patients",
+            "Record Vital Signs",
+            "Arrange Nurse Shifts",
+            "Manage Medical Consumables"
+        ],
+        "Toll Collector": [
+            "Handle Payment Matters",
+            "Print Payment Vouchers"
+        ]
+    },
+    "inclusion_relationships": {
+        "Select Time Slot": [
+            "View Doctor Schedule"
+        ]
+    },
+    "extension_relationships": {
+        "Input Diagnostic Information": [
+            "Arrange Examinations"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctor": [
+            "Specialist Doctor"
+        ],
+        "Nurse": [
+            "Head Nurse"
+        ]
+    }
+}

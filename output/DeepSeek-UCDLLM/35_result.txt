@@ -1,0 +1,50 @@
+@startuml
+left to right direction
+actor "Customer"
+actor "Server"
+usecase "Initiate Checkout Request"
+usecase "Confirm Order"
+usecase "Learn About Dishes"
+usecase "Verify Dish Information"
+usecase "Confirm Order Content"
+usecase "Submit Order Request"
+usecase "Choose Serving Option"
+usecase "Call Waiter For Assistance"
+usecase "Receive Order"
+usecase "Deliver Dishes"
+usecase "Browse Electronic Menu"
+usecase "View Total Prices"
+usecase "Add Dishes To Shopping Cart"
+usecase "View Selected Dishes"
+usecase "Handle Customer Requests"
+usecase "Select Dishes"
+usecase "Add Dishes During Dining"
+usecase "Choose Payment Method"
+"Customer"--"View Selected Dishes"
+"Customer"--"View Total Prices"
+"Customer"--"Initiate Checkout Request"
+"Customer"--"Call Waiter For Assistance"
+"Server"--"Deliver Dishes"
+"Server"--"Handle Customer Requests"
+"Choose Payment Method"<|."Initiate Checkout Request": <<include>>
+"Submit Order Request"<|."Confirm Order": <<include>>
+"Confirm Order"<|."Deliver Dishes": <<include>>
+"Verify Dish Information"<|."Deliver Dishes": <<include>>
+"Submit Order Request"<|."Deliver Dishes": <<include>>
+"Receive Order"<|."Deliver Dishes": <<include>>
+"Learn About Dishes"<|."Select Dishes": <<include>>
+"Submit Order Request"<|."Verify Dish Information": <<include>>
+"Receive Order"<|."Verify Dish Information": <<include>>
+"Confirm Order Content"<|."Submit Order Request": <<include>>
+"Choose Serving Option"<|."Submit Order Request": <<include>>
+"Select Dishes"<|."Submit Order Request": <<include>>
+"Confirm Order Content"<|."Choose Serving Option": <<include>>
+"Add Dishes To Shopping Cart"<|."Choose Serving Option": <<include>>
+"Select Dishes"<|."Choose Serving Option": <<include>>
+"Browse Electronic Menu"<|."Confirm Order Content": <<include>>
+"Select Dishes"<|."Confirm Order Content": <<include>>
+"Submit Order Request"<|."Receive Order": <<include>>
+"Submit Order Request"<|."Handle Customer Requests": <<include>>
+"Select Dishes"<|."Add Dishes To Shopping Cart": <<include>>
+"Select Dishes"<|."Add Dishes During Dining": <<extend>>
+@enduml

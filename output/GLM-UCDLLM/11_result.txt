@@ -1,0 +1,47 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Manage Meeting"
+usecase "Play Back Recording"
+usecase "Log In"
+usecase "Join Meeting"
+usecase "Record Conference"
+usecase "Create Meeting"
+usecase "Add Participant"
+usecase "Mute"
+usecase "Unmute"
+usecase "Set Meeting Time"
+usecase "Delete Participant"
+usecase "Hang Up"
+usecase "Edit Participant"
+usecase "Share File"
+usecase "Authenticate"
+usecase "Share Screen"
+usecase "Collaborate"
+usecase "Accept Invitation"
+"User"--"Create Meeting"
+"User"--"Join Meeting"
+"User"--"Accept Invitation"
+"User"--"Manage Meeting"
+"User"--"Set Meeting Time"
+"User"--"Add Participant"
+"User"--"Edit Participant"
+"User"--"Delete Participant"
+"User"--"Mute"
+"User"--"Unmute"
+"User"--"Hang Up"
+"User"--"Record Conference"
+"User"--"Play Back Recording"
+"User"--"Share Screen"
+"User"--"Share File"
+"User"--"Collaborate"
+"Log In"<|."Manage Meeting": <<include>>
+"Authenticate"<|."Manage Meeting": <<include>>
+"Log In"<|."Create Meeting": <<include>>
+"Authenticate"<|."Create Meeting": <<include>>
+"Authenticate"<|."Log In": <<include>>
+"Authenticate"<|."Join Meeting": <<include>>
+"Authenticate"<|."Set Meeting Time": <<include>>
+"Authenticate"<|."Edit Participant": <<include>>
+"Authenticate"<|."Accept Invitation": <<include>>
+@enduml

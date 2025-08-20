@@ -1,0 +1,59 @@
+{
+    "actors": [
+        "Scientific Expedition Team Member",
+        "Chief of Scientific Expedition Station",
+        "Remote Logistics Coordinator",
+        "Meteorological Analyst",
+        "Predictive Model"
+    ],
+    "usecases": [
+        "Register Material Consumption",
+        "Submit Material Replenishment Request",
+        "Check Inventory Level",
+        "Estimate Material Demand",
+        "Approve Material Applications",
+        "Develop Supply Order",
+        "Manage Task Scheduling",
+        "Allocate Human Resources",
+        "Release Weekly Reports",
+        "Process and Track Supply Orders",
+        "Coordinate Transportation Arrangements",
+        "Confirm Warehouse Storage",
+        "Negotiate with Suppliers",
+        "Provide Meteorological Forecast Data",
+        "Analyze Historical Consumption Data",
+        "Generate Demand Forecasting Reports"
+    ],
+    "association_relationships": {
+        "Scientific Expedition Team Member": [
+            "Register Material Consumption",
+            "Submit Material Replenishment Request",
+            "Check Inventory Level",
+            "Estimate Material Demand"
+        ],
+        "Chief of Scientific Expedition Station": [
+            "Approve Material Applications",
+            "Develop Supply Order",
+            "Manage Task Scheduling",
+            "Allocate Human Resources",
+            "Release Weekly Reports"
+        ],
+        "Remote Logistics Coordinator": [
+            "Process and Track Supply Orders",
+            "Coordinate Transportation Arrangements",
+            "Confirm Warehouse Storage",
+            "Negotiate with Suppliers"
+        ],
+        "Meteorological Analyst": [
+            "Provide Meteorological Forecast Data"
+        ],
+        "Predictive Model": [
+            "Analyze Historical Consumption Data",
+            "Generate Demand Forecasting Reports"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

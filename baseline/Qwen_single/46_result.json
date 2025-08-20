@@ -1,0 +1,74 @@
+{
+    "actors": [
+        "Patients",
+        "Doctors",
+        "Nurses",
+        "Specialist Doctors",
+        "Head Nurse",
+        "Toll Collector"
+    ],
+    "usecases": [
+        "Make Appointments for Registration",
+        "View Doctor's Schedule",
+        "Select Time Slot",
+        "Pay Consultation Fee",
+        "View Electronic Medical Record Summary",
+        "Input Diagnostic Information",
+        "Issue Prescriptions",
+        "Arrange Examinations",
+        "Triage Patients",
+        "Record Vital Signs",
+        "Schedule Special Examinations",
+        "Initiate Multidisciplinary Consultations",
+        "Arrange Nurse Shifts",
+        "Manage Medical Consumables",
+        "Handle Payment Matters",
+        "Print Payment Vouchers"
+    ],
+    "association_relationships": {
+        "Patients": [
+            "Make Appointments for Registration",
+            "View Doctor's Schedule",
+            "Select Time Slot",
+            "Pay Consultation Fee",
+            "View Electronic Medical Record Summary"
+        ],
+        "Doctors": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations"
+        ],
+        "Nurses": [
+            "Triage Patients",
+            "Record Vital Signs"
+        ],
+        "Specialist Doctors": [
+            "Input Diagnostic Information",
+            "Issue Prescriptions",
+            "Arrange Examinations",
+            "Schedule Special Examinations",
+            "Initiate Multidisciplinary Consultations"
+        ],
+        "Head Nurse": [
+            "Triage Patients",
+            "Record Vital Signs",
+            "Arrange Nurse Shifts",
+            "Manage Medical Consumables"
+        ],
+        "Toll Collector": [
+            "Handle Payment Matters",
+            "Print Payment Vouchers"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Doctors": [
+            "Specialist Doctors"
+        ],
+        "Nurses": [
+            "Head Nurse"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "actors": [
+        "Developers",
+        "Manager"
+    ],
+    "usecases": [
+        "Analyse Timestamp Records",
+        "Store Timestamp Records"
+    ],
+    "association_relationships": {},
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

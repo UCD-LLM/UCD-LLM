@@ -1,0 +1,32 @@
+{
+    "actors": [
+        "Resident",
+        "VoiceAssistant"
+    ],
+    "usecases": [
+        "RemoteOperation",
+        "LocalControl",
+        "RealTimeStatusViewing",
+        "TemperatureAdjustment",
+        "LightingControl",
+        "SecurityModeSetting",
+        "VoiceCommandExecution"
+    ],
+    "association_relationships": {
+        "Resident": [
+            "RemoteOperation",
+            "LocalControl",
+            "RealTimeStatusViewing",
+            "TemperatureAdjustment",
+            "LightingControl",
+            "SecurityModeSetting"
+        ],
+        "VoiceAssistant": [
+            "VoiceCommandExecution"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

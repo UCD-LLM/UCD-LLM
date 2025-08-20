@@ -1,0 +1,65 @@
+{
+    "actors": [
+        "Family Members",
+        "Administrators",
+        "Guests",
+        "Security Monitoring Service",
+        "Home Appliance Repairman"
+    ],
+    "usecases": [
+        "Configure Security Rules",
+        "Diagnose Faulty Equipment",
+        "Push Alarm Notifications",
+        "Identify Problem",
+        "Manage Family Member Accounts",
+        "Set Up Automation Scenarios",
+        "Update Firmware",
+        "Access Energy Consumption Data",
+        "Adjust Indoor Temperature",
+        "Delete Devices",
+        "Operate Curtains",
+        "Adjust Temperature",
+        "Receive Alarm Information",
+        "Add Devices",
+        "Control Lights",
+        "Control Lighting",
+        "Check Security Status"
+    ],
+    "association_relationships": {
+        "Family Members": [
+            "Control Lights",
+            "Adjust Indoor Temperature",
+            "Operate Curtains",
+            "Check Security Status",
+            "Access Energy Consumption Data"
+        ],
+        "Administrators": [
+            "Add Devices",
+            "Delete Devices",
+            "Manage Family Member Accounts",
+            "Set Up Automation Scenarios",
+            "Configure Security Rules"
+        ],
+        "Guests": [
+            "Control Lighting",
+            "Adjust Temperature"
+        ],
+        "Security Monitoring Service": [
+            "Receive Alarm Information",
+            "Push Alarm Notifications"
+        ],
+        "Home Appliance Repairman": [
+            "Diagnose Faulty Equipment",
+            "Identify Problem",
+            "Update Firmware"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Family Members": [
+            "Administrators"
+        ]
+    }
+}

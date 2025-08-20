@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "User"
+actor "Technical Support Personnel"
+usecase "Provide Contact Information"
+usecase "Provide Problem Description"
+usecase "Allocate Work Orders"
+usecase "Process Work Orders"
+usecase "Select Problem Category"
+usecase "Submit Technical Support Work Order"
+"Technical Support Personnel"--"Process Work Orders"
+"Provide Contact Information"<|."Submit Technical Support Work Order": <<include>>
+"Provide Problem Description"<|."Submit Technical Support Work Order": <<include>>
+"Select Problem Category"<|."Submit Technical Support Work Order": <<include>>
+"Provide Problem Description"<|."Process Work Orders": <<include>>
+"Allocate Work Orders"<|."Process Work Orders": <<include>>
+"Submit Technical Support Work Order"<|."Process Work Orders": <<include>>
+"Submit Technical Support Work Order"<|."Allocate Work Orders": <<include>>
+@enduml

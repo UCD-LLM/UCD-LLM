@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+actor "Project Manager"
+actor "Developer"
+actor "Tester"
+usecase "Define Project Milestones"
+usecase "Generate Project Progress Report"
+usecase "Verify Repaired Defects"
+usecase "Create Defect Report"
+usecase "Execute Test Cases"
+usecase "Claim Assigned Tasks"
+usecase "Assign Tasks"
+usecase "Update Task Status"
+usecase "Submit Code Change Related Tasks"
+"Project Manager"--"Assign Tasks"
+"Project Manager"--"Generate Project Progress Report"
+"Developer"--"Claim Assigned Tasks"
+"Developer"--"Update Task Status"
+"Developer"--"Submit Code Change Related Tasks"
+"Developer"--"Create Defect Report"
+"Tester"--"Execute Test Cases"
+"Tester"--"Verify Repaired Defects"
+"Define Project Milestones"<|."Generate Project Progress Report": <<include>>
+"Tester"--|>"Developer"
+@enduml

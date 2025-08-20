@@ -1,0 +1,7 @@
+The e-commerce platform facilitates online shopping by connecting buyers, sellers, and administrators. 
+The core system includes a product catalog module that manages item listings, prices, and inventory. 
+The platform contains an order processing component that handles cart management, payment, and shipping. Buyers can browse products, apply filters (e.g., price, category), and place orders. 
+Sellers use a dedicated dashboard to manage their inventory, update product details, and track sales, which extends the basic catalog management with bulk upload and sales analytics features. 
+Administrators oversee the entire platform, resolving disputes and monitoring transactions through a centralized control panel. 
+The system’s user management module is generalized to support different user types (buyers, sellers, admins), with shared authentication logic but role-specific permissions. 
+Additionally, the platform extends its payment processing to support multiple gateways (credit cards, digital wallets), each implementing a common payment interface but with unique validation rules.

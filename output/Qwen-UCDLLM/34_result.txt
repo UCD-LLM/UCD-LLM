@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor "Residents"
+actor "Voice Assistants"
+usecase "Control Devices Locally"
+usecase "Use Mobile App"
+usecase "View Device Status"
+usecase "Perform Device Control Operations"
+usecase "Control Lighting"
+usecase "Adjust Temperature"
+usecase "Receive Voice Commands"
+usecase "Set Security Modes"
+"Residents"--"Use Mobile App"
+"Residents"--"Control Devices Locally"
+"Residents"--"View Device Status"
+"Residents"--"Adjust Temperature"
+"Residents"--"Control Lighting"
+"Residents"--"Set Security Modes"
+"Voice Assistants"--"Receive Voice Commands"
+"Voice Assistants"--"Perform Device Control Operations"
+@enduml

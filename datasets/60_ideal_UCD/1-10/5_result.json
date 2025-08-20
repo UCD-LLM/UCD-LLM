@@ -1,0 +1,62 @@
+{
+    "actors": [
+        "User",
+        "Administrator"
+    ],
+    "usecases": [
+        "Download Software",
+        "Log In",
+        "Browse Museum Information",
+        "Search Museums",
+        "Search Exhibitions",
+        "Navigate Using Indoor Map",
+        "Find Location of Exhibition",
+        "Find Location of Cultural Relic",
+        "Receive Text Guidance",
+        "Receive Audio Guidance",
+        "Collect Favorite Exhibitions",
+        "Collect Favorite Cultural Relics",
+        "Access Collected Content",
+        "Leave Comments",
+        "Rate Exhibitions",
+        "Share Views and Feelings",
+        "Add Exhibition Information",
+        "Modify Exhibition Information",
+        "Delete Exhibition Information",
+        "Add Artifact Information",
+        "Modify Artifact Information",
+        "Delete Artifact Information"
+    ],
+    "association_relationships": {
+        "User": [
+            "Download Software",
+            "Log In",
+            "Browse Museum Information",
+            "Search Museums",
+            "Search Exhibitions",
+            "Navigate Using Indoor Map",
+            "Find Location of Exhibition",
+            "Find Location of Cultural Relic",
+            "Receive Text Guidance",
+            "Receive Audio Guidance",
+            "Collect Favorite Exhibitions",
+            "Collect Favorite Cultural Relics",
+            "Access Collected Content",
+            "Leave Comments",
+            "Rate Exhibitions",
+            "Share Views and Feelings"
+        ],
+        "Administrator": [
+            "Add Exhibition Information",
+            "Modify Exhibition Information",
+            "Delete Exhibition Information",
+            "Add Artifact Information",
+            "Modify Artifact Information",
+            "Delete Artifact Information"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

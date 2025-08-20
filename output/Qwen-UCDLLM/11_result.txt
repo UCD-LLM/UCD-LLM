@@ -1,0 +1,37 @@
+@startuml
+left to right direction
+actor "User"
+usecase "Add Meeting Participants"
+usecase "Log In"
+usecase "Invite Users"
+usecase "Edit Meeting Participants"
+usecase "Delete Meeting Participants"
+usecase "Playback Conference Recording"
+usecase "Set Meeting Time"
+usecase "Record Conference Call"
+usecase "Share Screen"
+usecase "Mute"
+usecase "Authenticate"
+usecase "Hang Up"
+usecase "Join Conference Call"
+usecase "Share Files"
+usecase "Create Conference Call"
+usecase "Unmute"
+"User"--"Create Conference Call"
+"User"--"Invite Users"
+"User"--"Join Conference Call"
+"User"--"Set Meeting Time"
+"User"--"Add Meeting Participants"
+"User"--"Edit Meeting Participants"
+"User"--"Delete Meeting Participants"
+"User"--"Mute"
+"User"--"Hang Up"
+"User"--"Record Conference Call"
+"User"--"Playback Conference Recording"
+"User"--"Share Files"
+"Log In"<|."Add Meeting Participants": <<include>>
+"Log In"<|."Join Conference Call": <<include>>
+"Authenticate"<|."Playback Conference Recording": <<include>>
+"Create Conference Call"<|."Share Screen": <<extend>>
+"Join Conference Call"<|."Unmute": <<extend>>
+@enduml

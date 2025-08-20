@@ -1,0 +1,85 @@
+{
+    "actors": [
+        "Citizens",
+        "Individual Applicants",
+        "Enterprise Operators",
+        "Window Staff",
+        "Approval Personnel"
+    ],
+    "usecases": [
+        "Browse Service Guide",
+        "Understand Application Process",
+        "Check Application Progress",
+        "Online Consultation",
+        "Register/Login Account",
+        "Submit Business License Application",
+        "Upload Application Materials",
+        "Online Payment",
+        "Download Electronic Certificates",
+        "Submit Enterprise Qualification Certificates",
+        "Manage Enterprise Certificates",
+        "Accept Application Materials",
+        "Preliminary Review",
+        "Collect Application Fees",
+        "Issue Notices",
+        "Substantive Approval",
+        "Make Approval Decisions"
+    ],
+    "association_relationships": {
+        "Citizens": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Online Consultation",
+            "Register/Login Account"
+        ],
+        "Individual Applicants": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Online Consultation",
+            "Register/Login Account",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Online Payment",
+            "Download Electronic Certificates"
+        ],
+        "Enterprise Operators": [
+            "Browse Service Guide",
+            "Understand Application Process",
+            "Check Application Progress",
+            "Online Consultation",
+            "Register/Login Account",
+            "Submit Business License Application",
+            "Upload Application Materials",
+            "Online Payment",
+            "Download Electronic Certificates",
+            "Submit Enterprise Qualification Certificates",
+            "Manage Enterprise Certificates"
+        ],
+        "Window Staff": [
+            "Accept Application Materials",
+            "Preliminary Review",
+            "Collect Application Fees",
+            "Issue Notices"
+        ],
+        "Approval Personnel": [
+            "Accept Application Materials",
+            "Preliminary Review",
+            "Substantive Approval",
+            "Make Approval Decisions"
+        ]
+    },
+    "inclusion_relationships": {},
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Citizens": [
+            "Individual Applicants",
+            "Enterprise Operators"
+        ],
+        "Window Staff": [
+            "Approval Personnel"
+        ]
+    }
+}

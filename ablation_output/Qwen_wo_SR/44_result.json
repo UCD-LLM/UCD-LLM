@@ -1,0 +1,74 @@
+{
+    "actors": [
+        "Traveler",
+        "Hotel Front Desk",
+        "Hotel Manager",
+        "System Maintenance Personnel"
+    ],
+    "usecases": [
+        "Handle Check-in Procedures",
+        "Assign Room Keys",
+        "Manage User Accounts",
+        "Manage System Configuration",
+        "View Financial Reports",
+        "Handle Check-out",
+        "Screen Accommodation Options",
+        "Book Room Online",
+        "Manage Room Prices",
+        "Handle Checkout Matters",
+        "Confirm Check-in",
+        "Handle Check-in",
+        "Verify Identity Information",
+        "View Room Details",
+        "Search For Available Rooms"
+    ],
+    "association_relationships": {
+        "Traveler": [
+            "Search For Available Rooms",
+            "Screen Accommodation Options",
+            "View Room Details",
+            "Confirm Check-in",
+            "Book Room Online"
+        ],
+        "Hotel Front Desk": [
+            "Handle Check-in Procedures",
+            "Verify Identity Information",
+            "Assign Room Keys",
+            "Handle Check-out",
+            "Handle Checkout Matters"
+        ],
+        "Hotel Manager": [
+            "Handle Check-in",
+            "Verify Identity Information",
+            "Assign Room Keys",
+            "Handle Check-out",
+            "View Financial Reports",
+            "Manage Room Prices"
+        ],
+        "System Maintenance Personnel": [
+            "Manage System Configuration",
+            "Manage User Accounts"
+        ]
+    },
+    "inclusion_relationships": {
+        "Screen Accommodation Options": [
+            "Search For Available Rooms"
+        ],
+        "Book Room Online": [
+            "Search For Available Rooms"
+        ],
+        "Confirm Check-in": [
+            "Search For Available Rooms"
+        ],
+        "Handle Check-in": [
+            "Verify Identity Information"
+        ]
+    },
+    "extension_relationships": {},
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {
+        "Hotel Front Desk": [
+            "Hotel Manager"
+        ]
+    }
+}

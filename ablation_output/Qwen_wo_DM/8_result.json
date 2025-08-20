@@ -1,0 +1,69 @@
+{
+    "actors": [
+        "User",
+        "Customer Service"
+    ],
+    "usecases": [
+        "Access Customer Service",
+        "Submit Claims Application",
+        "Purchase Insurance",
+        "Use Insurance Calculator",
+        "Record Insurance Information",
+        "Check Policy Information",
+        "Log In",
+        "Provide Online Consultation",
+        "Handle Complaint Suggestions",
+        "Browse Insurance Products",
+        "Provide Feedback",
+        "View Claim Progress"
+    ],
+    "association_relationships": {
+        "User": [
+            "Log In",
+            "Record Insurance Information",
+            "Check Policy Information",
+            "Submit Claims Application",
+            "View Claim Progress",
+            "Purchase Insurance",
+            "Browse Insurance Products",
+            "Use Insurance Calculator",
+            "Access Customer Service",
+            "Provide Feedback"
+        ],
+        "Customer Service": [
+            "Provide Online Consultation",
+            "Handle Complaint Suggestions"
+        ]
+    },
+    "inclusion_relationships": {
+        "Submit Claims Application": [
+            "Log In"
+        ],
+        "Purchase Insurance": [
+            "Log In",
+            "Browse Insurance Products"
+        ],
+        "Use Insurance Calculator": [
+            "Log In"
+        ],
+        "Check Policy Information": [
+            "Log In"
+        ],
+        "Browse Insurance Products": [
+            "Log In"
+        ]
+    },
+    "extension_relationships": {
+        "Access Customer Service": [
+            "Handle Complaint Suggestions"
+        ],
+        "Submit Claims Application": [
+            "View Claim Progress"
+        ],
+        "Log In": [
+            "View Claim Progress"
+        ]
+    },
+    "generalization_relationships_for_usecases": {},
+    "generalization_relationships_for_actors": {}
+}

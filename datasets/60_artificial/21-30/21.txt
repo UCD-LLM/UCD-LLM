@@ -1,0 +1,11 @@
+The functional requirements of the ERP (Enterprise Resource Planning) system are as follows:
+Users can log in to the system using their username and password;
+The system needs to provide financial management functions, including accounting, accounting processing, invoice management, accounts receivable and accounts payable management, etc;
+Users can input, edit, and query financial data, and generate financial statements if needed;
+The system needs to provide supply chain management functions, including purchase orders, inventory management, sales orders, and logistics management;
+Users can create and manage supply chain related documents, track order status, and monitor inventory levels;
+The system needs to have production management functions, including production planning, work order management, and production progress tracking;
+Users can set production plans, allocate work orders, and monitor production progress;
+The system needs to provide sales management functions, including customer relationship management, sales order, quotation and discount management, etc;
+Users can manage customer information, create sales orders, and provide quotes and discounts;
+The system needs to have reporting and analysis functions to help administrators monitor business performance and provide decision support.
